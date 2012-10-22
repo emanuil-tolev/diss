@@ -1,0 +1,2 @@
+Scholarships which allow people to simply study science without contributing any scientific output are not included in the scope of this project at the moment (e.g. bursaries for undergraduate study). Masters and PhD funding is included since even taught Masters schemes have a dissertation requirement which has to be contributed back to the scientific community (a.k.a. published).
+
