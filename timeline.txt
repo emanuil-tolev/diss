@@ -1,0 +1,156 @@
+~~ Oct 2012 ~~
+	DONE. Outline project specification, some spike work here and there, meet with supervisor for 1st time, register project, tell Cottage Labs it's been started.
+~~ Nov 2012 ~~
+	DONE. decide on title :). FundFind.
+	read 10 papers/sources closely (enough to base diss. into on..) related to what I'm trying to do
+	DONE. write out more detailed feature list (i.e. produce feature cards for feature I CAN think of)
+	DONE. do project planning - iteration length, how many sprints. This document. Iteration length is 1 week.
+	DONE. start blog. Need to do first blog post now!
+	First blog post - software dev. methodology selection, tech. selection rationales?
+	get some requirements: features / stories / prioritisation from users
+		NOTE: engage user's time for <= 30 min / month except rrz
+		NOTE: bother level == how often I'd like to meet these users
+		BotherLVL == regular:
+			rrz - Comp Sci, scientist, Professor
+			jnw - Research Dev Officer
+			rkj - Comp Sci, scientist, Lecturer
+			DONE. ACTION: FIND 1x non comp-sci scientist i can physically meet
+			ACTION: confirm rcm and cox want to be bothered by me, and how regularly can they afford to be bothered
+			
+		ACTION: TALK TO Cottage Labs
+			ask jnw, Richard@CL about ARMA Research Dev. Officers' conference - he's presented on UKRISS project - what is it like, should I aim for a poster of this project for the next conf., i.e. is it for that kind of thing?
+		ACTION: TALK TO open knowledge foundation about useful features
+			is there a similar project going on?
+			aware of stuff vaguely useful or connected to this?
+			what does okfn-discuss@okfn.org think would be useful in such a thing?
+		
+		[ OPTIONAL if I need to focus on sth. else like more dev. or reading ]
+		BotherLVL == irregular
+		(in order of preference: regular, 3x[start, mid, end of s/w dev.], 2x [start, end of s/w dev.)
+		ACTION: TALK TO 1x comp-sci and 1x non-comp-sci RA
+		ACTION: TALK TO 1x current MSc and 1x current PhD student
+		ACTION: TALK TO 1x MSc, 1x PhD candidate
+		ACTION: TALK TO 1x commercial company (the one in Aber doing VFX seemed keen on using research but couldn't really + if that doesn't work out, maybe ask OKF about companies currently interested in exploiting scientific output)
+		
+	~ Week 1 (15/11 - 22/11) ~
+	CODING: set up initial code structure - IDFind as base with newest facetview as front end
+	CODING: a user should be able to submit info about a scholarly funding opportunity
+	[by 18 Nov] write Progress report
+	
+	~ Week 2 (22/11 - 29/11) ~
+	CODING: a user should be able to search for scholarly funding opportunities
+	
+~~ Dec 2012 ~~
+	ACTION: TALK TO jnw about features of current systems e.g. Pivot (+ prev. ones). I've already done that in my initial meeting with her, but it might be good to talk a bit more about this, she's my only research dev. officer.
+	
+	regular user meetings
+	
+	
+	~ Week 3 (29/11 - 6/12) ~
+	CODING: users should be able to set up e-mail alerts based on their searches
+	
+	~ Week 4 (6/12 - 13/12) ~
+	CODING: users should be able to create profiles
+~~ Jan 2013 ~~
+	
+	~ Week 5 (24/1 - 31/1) ~
+	CODING: users should be able to save their searches
+	
+~~ Feb 2013 ~~
+	
+	~ Week 6 (31/1 - 7/2) ~
+	CODING: users should be able to export the results of their searches
+	RELEASE: software should be ready for mid-project demonstration
+	
+	~ Week 7 (7/2 - 14/2) ~
+	CODING: users should be able to see a javascript visualisation of the data (just 1x to start with)
+	
+	~ Week 8 (14/2 - 21/2) ~
+	CODING: bulk funding opportunity data import
+	
+	~ Week 9 (21/2 - 28/2) ~
+	CODING: application should be able to harvest funding opportunities data from e-mail lists that funders provide to actual scientists (so subscribe to the same lists, especially when they are digests)
+	
+~~ Mar 2013 ~~
+
+	~ Week 10 (28/2 - 7/3) ~
+	CODING: RESTful API + tests + docs for it. JSON-only at first.
+	RELEASE: release candidate 1 (a.k.a. first good draft of software). Can't be delayed since (more comprehensive) evaluation will have to be collected in the next 3 weeks alongside any development.
+	
+	~ Week 11 (7/3 - 14/3) ~
+	CODING: RESTful API + tests + docs for it. JSON-only at first.
+
+	EVALUATION: more comprehensive than the monthly regular feedback, sort of "this is it right now, what do you think"
+	WRITEUP: Writeup is supposed to go alongside development, but comprehensive putting together, editing and so on starts now.
+	
+	~ Week 12 (14/3 - 21/3) ~
+	CODING SLACK: if previous coding work is delayed, this week provides slack buffer
+	EVALUATION: comprehensive (see Week 11 for description)
+	WRITEUP: see Week 11
+
+	CODING: responsive mobile web design (enhance Facetview). This feature is quite optional - any previous work, any evaluation collection and any writeup work takes precedence, so this feature may not even get started.
+	
+	~ Week 13 (21/3 - 28/3) ~
+	WRITEUP: see Week 11
+	
+	CODING: responsive mobile web design (enhance Facetview). Same notes apply as in Week 11.
+~~ Apr 2013 ~~
+	~ Week 14 (28/3 - 4/4) ~
+	WRITEUP RELEASE: deliver final draft of writeup to rrz for review
+	
+	~ Week 15 (4/4 - 11/4) ~
+	WRITEUP SLACK: boo. Better to not have to use this, but it's there.
+	FINAL DEMO: prepare the software + start preparing the documentation (final edits, new pages..)
+	
+	WRITEUP RELEASE: Give in for binding as soon as rrz gives back with feedback and feedback is incorporated.
+	
+	~ Week 16 (11/4 - 18/4) ~
+	WRITEUP SLACK: boo. Better to not have to use this, but it's there.
+	FINAL DEMO: finishing software and documentation touches, package it up nicely, make the Github repository public, make sure continous integration and tests service shows nice big green flags for test code coverage and so on. That should be the case anyway, so: start on final demo slides.
+	
+	WRITEUP RELEASE: see week 15. Must be given in for binding this week at latest!
+	
+	~ Week 17 (18/4 - 25/4) ~
+	FINAL DEMO: finish slides.
+	
+	WRITEUP RELEASE: must be handed in this week.
+	
+	~ Week 18 (25/4 - 30/4) ~
+	NOTE: this week is shorter since demos start on 1st May 2013.
+	FINAL DEMO SLACK: finish slides.
+	
+~~ May 2013 ~~
+	Present final demo, hopefully it will be awesome software with nice feedback from involved users and I will present it well.
+	
+	Also,
+	DONE: finally.
+	
+== "usual" lengths of time that I might be able to work are: 
+	0.25, 0.5h, 1h, 2h, 4h
+	Rarely: 6h, 8h, 10h
+== 1 working day (in this project) = 4 hours
+== Need 400h (useful hours..) = 100 days
+== Breakdown
+	5x (Nov-March incl.) regular meetings with 4x users = 20x0.5h = 10h
+	Supervisor meetings: 23 x 0.5h = 11.5h
+	Extra ask CL, OKF = 1h at least (increase this if they are interested and want to give more ideas / feedback)
+	Project outline spec.: 3h
+	Progress report: 12h
+	Mid-project demo: 4h
+	Write-up (ongoing through lifetime of project): 92h
+	Final demo prep.: 8h
+	Admin (writing docs like this one, writing initial list of features, writing down ideas, organising to meet ppl, doing kanban board & looking after other agile aspects, write blog): 30h
+	Software development: 200h
+	Buffer (if any of these tasks take longer than est.): 29.5h
+== Total calendar months available: 6
+	== Total software development months available: 4
+	== Coding weeks: 11-13 (depending on how the other stuff around the project is going, there may be time to do one last feature, but then again, there might not be)
+	== Comprehensive evaluation gathering weeks: 2
+	== Writeup weeks: 3
+	== Final demo prep: 2 weeks
+	== Coding per week: 19 hours
+	== Other stuff per week: 19 hours
+	== NOTE: total estimates tend to be useless unless you're working full-time. As a student one might put in 60 hours (only once or twice, granted), but may only put in 10 in other weeks.
+	
+	Aim for finishing s/w development 7th Mar 2013
+	Final write up and gathering comprehensive feedback during March. Write-up completed by first week of April (conditional on Media and Sales able to bind during April holiday, need to check)

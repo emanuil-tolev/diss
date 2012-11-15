@@ -1,0 +1,7 @@
+Initial scope of application
+	accepting info about scifundopps (i.e. enable crowdsourcing)
+	nice functional catalogue of these opps
+	JSON + HTML representation of data made available by the app.
+Potential expansions
+	jnw thought it'd be useful for Research Dev. officers if they could store their searches and the opportunities they have found / forwarded on to their scientists. Would be nice if they could get out a report of what they've forwarded to scientists.
+	app could subscribe itself to mailing lists of funding institutions, parse the digests and index the info
