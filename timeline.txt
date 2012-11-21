@@ -59,11 +59,11 @@
 ~~ Feb 2013 ~~
 	
 	~ Week 6 (31/1 - 7/2) ~
-	CODING: users should be able to export the results of their searches
+	CODING: users should be able to see a javascript visualisation of the data (just 1x to start with)
 	RELEASE: software should be ready for mid-project demonstration
 	
 	~ Week 7 (7/2 - 14/2) ~
-	CODING: users should be able to see a javascript visualisation of the data (just 1x to start with)
+	CODING: users should be able to export the results of their searches
 	
 	~ Week 8 (14/2 - 21/2) ~
 	CODING: bulk funding opportunity data import
@@ -93,7 +93,7 @@
 	~ Week 13 (21/3 - 28/3) ~
 	WRITEUP: see Week 11
 	
-	CODING: responsive mobile web design (enhance Facetview). Same notes apply as in Week 11.
+	CODING: responsive mobile web design (enhance Facetview). Same notes apply as in Week 12.
 ~~ Apr 2013 ~~
 	~ Week 14 (28/3 - 4/4) ~
 	WRITEUP RELEASE: deliver final draft of writeup to rrz for review
