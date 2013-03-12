@@ -1,0 +1,8 @@
+#Accepting content:
+FundingInformationProvider
+	-> FunderProvider
+		-> Crowdsourcing
+	-> FundingOpportunityProvider
+		-> Crowdsourcing
+		-> FeedConsumer
+		-> EmailParser
