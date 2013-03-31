@@ -1,0 +1,496 @@
+% This is an example of a string: this is the way you do variables in BiBTex
+% @string{variable_name="string the variable_name refers to"}
+@string{aij= "Artificial Intelligence"}
+
+
+% This is an example of a book. By putting the title in {{ double brackets,
+% capitalisation is preserved.
+
+@MISC{Scrum,
+author = {{Scrum Alliance Inc.}},
+title = {{Scrum Is an Innovative Approach to Getting Work Done}},
+howpublished={\url{http://scrumalliance.org/pages/what_is_scrum}},
+note={Accessed November 2012},
+annote={A succinct description of the Scrum framework of Agile software development practices.}
+}
+
+@MISC{pairprg,
+author = {James Shore},
+title = {{The Art of Agile Development}},
+howpublished={\url{http://www.jamesshore.com/Agile-Book/pair_programming.html}},
+month = Feb,
+year = {2010},
+note={Accessed November 2012},
+annote={The online edition of a famous work (book) on Agile Development. This section focuses on and provides a good description of Pair Programming, an Agile software development practice.}
+}
+
+@MISC{waterfall,
+author = {{The Smart Method Ltd}},
+title = {{The Waterfall Development Methodology}},
+howpublished={\url{http://www.learnaccessvba.com/application_development/waterfall_method.htm}},
+note={Accessed November 2012},
+annote={A brief explanation of the Waterfall software development methodology. Also (briefly) compares Waterfall to Agile approaches.}
+}
+
+@MISC{stories,
+author = {{Scott Ambler + Associates}},
+title = {{Introduction to User Stories}},
+howpublished={\url{http://www.agilemodeling.com/artifacts/userStory.htm}},
+note={Accessed November 2012},
+annote={A explanation of what ``stories'' or ``user stories'' are when the term is used in the context of Agile approaches to software development.}
+}
+
+@MISC{vmodel,
+author = {{SoftDevTeam}},
+title = {{V-shaped lifecycle model}},
+howpublished={\url{http://www.softdevteam.com/V-shaped-lifecycle.asp}},
+note={Accessed November 2012},
+annote={Explains the V-shaped software development lifecycle model. Also has a nice succinct summary of advantages and disadvantages compared to other models (mostly Waterfall) which seems to fit previous knowledge I have of this model from less reliable sources such as Wikipedia and more reliable ones such as the teaching accompanying my Computer Science degree at Aberystwyth University.}
+}
+
+@MISC{wmodel,
+author = {{Gerrard Consulting}},
+title = {{The W-Model}},
+howpublished={\url{http://www.gerrardconsulting.com/?q=node/531}},
+note={Accessed November 2012},
+annote={Explains the W software development lifecycle model and how it follows on from (or has evolved from) the V-model. This model could also be referred to as the double-V model.}
+}
+
+@MISC{spiral-model,
+author = {Osman Balci and William S. Gilley and Robin J. Adams and Emre Tunar and N. Dwight Barnette},
+title = {{The Spiral Model}},
+howpublished={\url{http://courses.cs.vt.edu/csonline/SE/Lessons/Spiral/index.html}},
+note={Accessed November 2012},
+annote={A textbook section-length explanation of the Spiral software development model with a graphic visualisation and a table enumerating the various artefacts of the model. Although this an online educational resource from an academic institution, there is no publication date available for the project itself or the section on the Spiral model.}
+}
+
+@MISC{fdd,
+author = {Stephen Palmer},
+title = {{An Introduction to Feature-Driven Development}},
+howpublished={\url{http://agile.dzone.com/articles/introduction-feature-driven}},
+month = Nov,
+year = {2009},
+note={Accessed November 2012},
+annote={A good introductory overview of what the Feature-Driven software development methodology is about, why it is considered an Agile methodology and when it is applicable (it evolved as an Agile approach for larger projects).}
+}
+
+@MISC{okfn-vision,
+author = {{Open Knowledge Foundation}},
+title = {{Our Vision / We Believe in the Power of Openness}},
+howpublished={\url{http://okfn.org/about/vision/}},
+note={Accessed November 2012},
+annote={Notes on the Open Knowledge Foundation's vision of how openness can be beneficial for society (meaning all of current human civilisation).}
+}
+
+@MISC{agile-manifesto,
+author = {Kent Beck and Mike Beedle and Arie van Bennekum and Alistair Cockburn and Ward Cunningham and Martin Fowler and James Grenning and Jim Highsmith and Andrew Hunt and Ron Jeffries and Jon Kern and Brian Marick and Robert C. Martin and Steve Mellor and Ken Schwaber and Jeff Sutherland and Dave Thomas},
+title = {{Manifesto for Agile Software Development}},
+howpublished={\url{http://agilemanifesto.org/}},
+note={Accessed November 2012},
+annote={A succinct set of statements enumerating the core values behind the Agile software development collection of approaches to software development.}
+}
+
+@MISC{pm,
+author = {Emanuil Tolev},
+title = {{PivotalTracker - FundFind}},
+howpublished={\url{https://www.pivotaltracker.com/projects/688967}},
+month=Nov,
+year={2012},
+note={Accessed November 2012},
+annote={Publicly visible project management for the software component of this project. By default, it will show what the author is currently working on and what is in the backlog. Click on ``Icebox'' (in the top left-hand corner of the web page, next to the ``CURRENT'' and ``BACKLOG'' links) to see all recorded user stories and chores for getting the project done. Stories in the Icebox are ordered in descending order in terms of priority, i.e. the more important ones according to aggregated user opinion are at the top.}
+}
+
+@MISC{github,
+author = {{GitHub Inc}},
+title = {{GitHub - Homepage}},
+howpublished={\url{https://github.com/}},
+note={Accessed November 2012},
+annote={Currently popular decentralised version control system, usually used for software source code (but suitable for any artefacts although less suitable for binary formats or large files).}
+}
+
+@MISC{xp-lifecycle,
+author = {{Don Wells}},
+title = {{Extreme Programming Project}},
+howpublished={\url{http://www.extremeprogramming.org/map/project.html}},
+note={Accessed November 2012},
+annote={A diagram showcasing the Extreme Programming (Agile software development practice) project lifecycle. Different sections of the diagram provide links to more detailed explanations of the various parts of the project lifecycle.}
+}
+
+@MISC{bdd,
+author = {{Various authors}},
+title = {{Behaviour-Driven Development}},
+howpublished={\url{http://behaviour-driven.org/}},
+month=Jan,
+year={2009},
+note={Accessed November 2012},
+annote={A description of Behaviour-Driven Development. This is a Wiki-style web resource, so the year and month of publication are taken from the last edited date and may change by the time the reader accesses this resource.}
+}
+
+@MISC{fibonacci,
+author = {{Ron Knott}},
+title = {{Fibonacci Numbers and the Golden Section}},
+howpublished={\url{http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fib.html}},
+month=Jun,
+year={2012},
+note={Accessed November 2012},
+annote={An explanation of the Fibonacci number sequence and related mathematical concepts. The Fibonacci sequence is being used as the complexity estimate for each user story in this Agile-managed project.}
+}
+
+@MISC{json-vs-xml,
+author = {{Various}},
+title = {{What are the pros and cons of XML and JSON?}},
+howpublished={\url{http://stackoverflow.com/questions/3536893/what-are-the-pros-and-cons-of-xml-and-json}},
+note={Accessed November 2012},
+annote={A discussion on why / how JSON maps better to intuitive human understanding of the world than XML does and why this is important for a data representation format.}
+}
+
+@MISC{catb,
+author = {{Eric S. Raymond}},
+title = {{The Cathedral and the Bazaar}},
+howpublished={\url{http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/}},
+month=Sep,
+year={2000},
+note={Accessed November 2012},
+annote={A discussion on why / how JSON maps better to intuitive human understanding of the world than XML does and why this is important for a data representation format.}
+}
+
+@MISC{guardian-ukgov-oa2014,
+author = {{Ian Sample}},
+title = {{Free access to British scientific research within two years}},
+howpublished={\url{http://www.guardian.co.uk/science/2012/jul/15/free-access-british-scientific-research}},
+month=Jul,
+year={2012},
+note={Accessed November 2012},
+annote={An article in the electronic edition in the Guardian newspaper detailing the UK Government's policy on Open Access publications in 2014.}
+}
+
+@MISC{open-uk-gov-data,
+author = {{UK Government - Unknown individual name}},
+title = {{DATA.GOV.UK - OPENING UP GOVERNMENT}},
+howpublished={\url{http://data.gov.uk/}},
+month=Jul,
+year={2012},
+note={Accessed November 2012},
+annote={The UK Government Open Data portal containing various datasets released under Open licences.}
+}
+
+@MISC{guardian-finch,
+author = {{Alok Jha}},
+title = {{Open access is the future of academic publishing, says Finch report}},
+howpublished={\url{http://www.guardian.co.uk/science/2012/jun/19/open-access-academic-publishing-finch-report}},
+month=Jun,
+year={2012},
+note={Accessed November 2012},
+annote={A Guardian article describing the Finch report which looked into Open Access and its benefits for academic publishing and society at large.}
+}
+
+@MISC{finch,
+author = {{Various (a UK Government Working Group), chaired by Dame Janet Finch}},
+title = {{Accessibility, sustainability, excellence: how to expand 
+access to research publications}},
+howpublished={\url{http://www.researchinfonet.org/wp-content/uploads/2012/06/Finch-Group-report-FINAL-VERSION.pdf}},
+month=Jun,
+year={2012},
+note={Accessed November 2012},
+annote={The Finch report - looked into Open Access and its benefits for academic publishing and society at large, commisioned by the UK Government.}
+}
+
+@MISC{wellcome-oa,
+author = {{Craig Brierley}},
+title = {{Wellcome Trust strengthens its open access policy}},
+howpublished={\url{http://www.wellcome.ac.uk/News/Media-office/Press-releases/2012/WTVM055745.htm}},
+month=Jun,
+year={2012},
+note={Accessed November 2012},
+annote={A press release by the Wellcome Trust stating it is strengthening its Open Access policy and related punishment for breaking the terms of the policy, as well as linking to a full version of the policy.}
+}
+
+@MISC{rcuk-home,
+author = {{Research Councils UK}},
+title = {{Welcome to Research Councils UK - Excellence with Impact}},
+howpublished={\url{http://www.rcuk.ac.uk/Pages/Home.aspx}},
+note={Accessed November 2012},
+annote={The home page of Research Councils UK.}
+}
+
+@MISC{od,
+author = {{Open Knowledge Foundation}},
+title = {{Open Definition}},
+howpublished={\url{http://opendefinition.org/}},
+note={Accessed November 2012},
+annote={The Open Definition - defines what ``open'' is in relation to content and data.}
+}
+
+@MISC{okfn-labs,
+author = {{Open Knowledge Foundation}},
+title = {{Open Knowledge Labs creates services and tools that unlock the digital commons for everyone.}},
+howpublished={\url{http://okfnlabs.org/}},
+note={Accessed November 2012},
+annote={The homepage of a collection of sofware projects which have sprung up to support or resulted from the Open Knowledge Foundation's pursuit of spreading the Openness cause in society.}
+}
+
+@MISC{okfn-github,
+author = {{Open Knowledge Foundation}},
+title = {{Open Knowledge Foundation Github Organisation Page}},
+howpublished={\url{https://github.com/okfn}},
+note={Accessed November 2012},
+annote={The homepage of the Open Knowledge Foundation organisation on Github, the currently popular version control system.}
+}
+
+@MISC{rcuk-india,
+author = {{RCUK}},
+title = {{RCUK India - Opportunities provided by UK Research Councils}},
+howpublished={\url{http://www.rcuk.ac.uk/international/Offices/OfficeinIndia/Funding/Pages/Home.aspx}},
+note={Accessed November 2012},
+annote={The root funding page of RCUK / International Office / India.}
+}
+
+@MISC{ahrc-opps,
+author = {{AHRC}},
+title = {{AHRC Funding Opportunities}},
+howpublished={\url{http://www.ahrc.ac.uk/Funding-Opportunities/Pages/Funding-Opportunities.aspx}},
+note={Accessed November 2012},
+annote={The root funding page of AHRC, the Arts and Humanities Research Council.}
+}
+
+@MISC{bbsrc-opps,
+author = {{BBSRC}},
+title = {{BBSRC Research Funding}},
+howpublished={\url{http://www.bbsrc.ac.uk/funding/funding-index.aspx}},
+note={Accessed November 2012},
+annote={The root funding page of BBSRC, the Biotechnology and Biological Sciences Research Council.}
+}
+
+@MISC{epsrc-opps,
+author = {{EPSRC}},
+title = {{EPSRC Research Funding}},
+howpublished={\url{http://www.epsrc.ac.uk/funding/Pages/default.aspx}},
+note={Accessed November 2012},
+annote={The root funding page of EPSRC, the Engineering and Physical Sciences Research Council.}
+}
+
+@MISC{au-nhmrc,
+author = {{NHMRC / Australian Government}},
+title = {{NHMRC research funding datasets 1990 - 2012}},
+howpublished={\url{http://www.nhmrc.gov.au/grants/research-funding-statistics-and-data/funding-datasets}},
+note={Accessed November 2012},
+annote={The NHMRC research funding data for the period 1990 to 2012 covering all new and continuing grants funded and active in that 23 year period.}
+}
+
+@MISC{faceted,
+author = {{Various authors / Wikipedia}},
+title = {{Faceted search}},
+howpublished={\url{http://en.wikipedia.org/wiki/Faceted_search}},
+note={Accessed November 2012},
+annote={The Wikipedia page on faceted search. Would not make much sense to a reader unfamiliar with the topic, but should do with the example in the report body.}
+}
+
+@MISC{bootstrap,
+author = {{Twitter Inc.}},
+title = {{Bootstrap - Sleek, intuitive, and powerful front-end framework for faster and easier web development.}},
+howpublished={\url{http://twitter.github.com/bootstrap/}},
+note={Accessed November 2012},
+annote={The homepage of the Twitter Bootstrap User Interface library.}
+}
+
+@MISC{jquery,
+author = {{Various authors - an open-source project}},
+title = {{jQuery is a new kind of JavaScript Library.}},
+howpublished={\url{http://jquery.com/}},
+note={Accessed November 2012},
+annote={The homepage of the jQuery Javascript and User Interface library.}
+}
+
+@MISC{es,
+author = {{Various authors - an open-source project}},
+title = {{elasticsearch - You know, for Search}},
+howpublished={\url{http://www.elasticsearch.org/}},
+note={Accessed November 2012},
+annote={The homepage of the elasticsearch indexing server.}
+}
+
+@MISC{idfind,
+author = {{Emanuil Tolev and Cottage Labs LLP}},
+title = {{IDFind - Got an ID? Not sure what it is? What you can do with it? Well, use this!}},
+howpublished={\url{https://github.com/CottageLabs/idfind/}},
+note={Accessed November 2012},
+annote={The current homepage and version control repository page of the IDFind project. It tries to guess what kind of identifier an unknown string is.}
+}
+
+@MISC{facetview,
+author = {{Cottage Labs LLP and Open Knowledge Foundation}},
+title = {{FacetView - Pure Javascript Frontend for SOLR and ElasticSearch}},
+howpublished={\url{http://okfnlabs.org/facetview/}},
+note={Accessed November 2012},
+annote={Homepage of the Facetview project, a faceted Javascript browser (front-end) to indexing servers such as elasticsearch.}
+}
+
+@MISC{flask,
+author = {{Various authors - an open-source project}},
+title = {{Flask - Web development, one drop at a time}},
+howpublished={\url{http://flask.pocoo.org/}},
+note={Accessed November 2012},
+annote={Homepage of the Flask Python web framework project, helps build RESTful web applications in Python.}
+}
+
+@MISC{d3,
+author = {{Various authors - an open-source project}},
+title = {{D3 - Data-Driven Documents}},
+howpublished={\url{http://d3js.org/}},
+note={Accessed November 2012},
+annote={Homepage of D3.js, a lower-level Javascript graphical visualisation library.}
+}
+
+@MISC{bubbletree,
+author = {{Open Knowledge Foundation}},
+title = {{Radial Bubble Tree Visualization}},
+howpublished={\url{https://github.com/okfn/bubbletree}},
+note={Accessed November 2012},
+annote={Homepage of BubbleTree, a higher-level Javascript graphical visualisation library.}
+}
+
+@MISC{wdmmg,
+author = {{Open Knowledge Foundation}},
+title = {{Where Does My Money Go? - Showing where your taxes get spent - Country \& Regional analysis}},
+howpublished={\url{http://wheredoesmymoneygo.org/bubbletree-map.html}},
+note={Accessed November 2012},
+annote={A BubbleTree visualisation of UK public spending.}
+}
+
+@MISC{gmaps,
+author = {{Google Inc.}},
+title = {{Google Maps}},
+howpublished={\url{https://maps.google.co.uk/}},
+note={Accessed November 2012},
+annote={A geographical mapping service by a commercial company.}
+}
+
+@MISC{osm,
+author = {{Various authors - an open-source project hosting open data}},
+title = {{OpenStreetMap - The Free Wiki World Map}},
+howpublished={\url{http://www.openstreetmap.org/}},
+note={Accessed November 2012},
+annote={An open-source, open data geographical mapping service.}
+}
+
+@MISC{calc,
+author = {{The Document Foundation}},
+title = {{LibreOffice Calc - a Spreadsheet That Meets Any Need}},
+howpublished={\url{http://www.libreoffice.org/features/calc/}},
+note={Accessed November 2012},
+annote={A piece of open-source spreadsheet viewing and editing software, part of the LibreOffice office productivity suite.}
+}
+
+@MISC{orefine,
+author = {{Various authors - an open-source project}},
+title = {{OpenRefine}},
+howpublished={\url{https://github.com/OpenRefine/OpenRefine}},
+note={Accessed November 2012},
+annote={A piece of open-source software for handling large semistructured datasets, making en-masse changes to them and cleaning them up. Used to be the Google Refine project.}
+}
+
+@MISC{grefine,
+author = {{Google Inc. and various authors - an open-source project}},
+title = {{Google Refine, a power tool for working with messy data (formerly Freebase Gridworks)}},
+howpublished={\url{http://code.google.com/p/google-refine/}},
+note={Accessed November 2012},
+annote={A piece of open-source software for handling large semistructured datasets, making en-masse changes to them and cleaning them up. Google has now relinquished control and ownership of the project to the community, it is now the OpenRefine project.}
+}
+
+@MISC{recline,
+author = {{Open Knowledge Foundation}},
+title = {{Recline.js - relax with your data}},
+howpublished={\url{http://okfnlabs.org/recline/}},
+note={Accessed November 2012},
+annote={A library for building applications which handle potentially large amounts of the data and intend to allow and focus on more or less advanced data manipulation.}
+}
+
+@MISC{ibm,
+author = {{FAST}},
+title = {{Organisation Details - IBM UK Research Laboratories}},
+howpublished={\url{http://www.fastuk.org/atcommunity/orgview.php?id=3073}},
+note={Accessed April 2013},
+annote={"The Foundation for Assistive Technology was founded in 1998 to tackle the inadequate design of assistive technology products and services." This listing of IBM as a "source of funding" in their R\&D section seemed as an appropriate reference to IBM Research UK as a commercial R\&D vendor in the context of the project.}
+}
+
+@MISC{jisc,
+author = {{JISC}},
+title = {{JISC - We are the UK's expert on information and digital technologies for education and research}},
+howpublished={\url{http://www.jisc.ac.uk/}},
+note={Accessed November 2012},
+annote={A UK governmental institution focused on enhancing the usage of digital technology in education and research in the UK.}
+}
+
+@MISC{wellcome-trust,
+author = {{Wellcome Trust}},
+title = {{Wellcome Trust - We are a global charitable foundation dedicated to achieving extraordinary improvements in health by supporting the brightest minds.}},
+howpublished={\url{http://www.wellcome.ac.uk/}},
+note={Accessed November 2012},
+annote={The homepage of a global charitable foundation which funds lots of scholarly activities in a variety of areas.}
+}
+
+@MISC{shuttleworth-foundation,
+author = {{Shuttleworth Foundation}},
+title = {{Shuttleworth Foundation - Supporting exceptional people to change the world}},
+howpublished={\url{http://www.shuttleworthfoundation.org/}},
+note={Accessed November 2012},
+annote={The homepage of a global charitable foundation which funds individuals with its scholarships and then multiplies the money they invest in projects which aim to bring about social change for the better.}
+}
+
+@MISC{knight-foundation,
+author = {{Knight Foundation}},
+title = {{Knight Foundation - Informed \& Engaged Communities}},
+howpublished={\url{http://www.knightfoundation.org/}},
+note={Accessed November 2012},
+annote={The homepage of a global charitable foundation which supports (financially and otherwise) ideas that aim to change the world. They are particularly interested in quality journalism, media innovation, engaging the various communities around the world / in society and in fostering the arts.}
+}
+
+@MISC{cl,
+author = {{Cottage Labs LLP}},
+title = {{cottage labs - we don't sell products, we trade our skills}},
+howpublished={\url{http://cottagelabs.com/}},
+note={Accessed November 2012},
+annote={The homepage of a partnership of freelance software developers working together to produce open source software for the benefit of Higher Education and commercial companies around the world. Dedicated to Open Knowledge and Open Scholarship.}
+}
+
+@MISC{selenium,
+author = {{Various authors - an open-source project}},
+title = {{SeleniumHQ - Web application testing system}},
+howpublished={\url{http://seleniumhq.org/}},
+note={Accessed November 2012},
+annote={The homepage of an open-source software project which enables the automation of web browsers and other testing techniques for the purposes of testing web applications.}
+}
+
+@MISC{ci,
+author = {{Martin Fowler}},
+title = {{Continuous Integration}},
+howpublished={\url{http://martinfowler.com/articles/continuousIntegration.html}},
+note={Accessed November 2012},
+annote={An article describing the principle of Continuous Integration in software development and illustrating why a developer or a development team might consider adopting this practice.}
+}
+
+@MISC{ci,
+author = {{Martin Fowler}},
+title = {{Continuous Integration}},
+howpublished={\url{http://martinfowler.com/articles/continuousIntegration.html}},
+month=May,
+year={2006},
+note={Accessed November 2012},
+annote={An article describing the principle of Continuous Integration in software development and illustrating why a developer or a development team might consider adopting this practice.}
+}
+
+@MISC{jenkins,
+author = {{Various authors - an open-source project}},
+title = {{Jenkins - An extendable open source continuous integration server}},
+howpublished={\url{http://jenkins-ci.org/}},
+note={Accessed November 2012},
+annote={Homepage of the Jenkins Continuous Integration server, a tool which helps a developer or a team of developers practice the Continuous Integration software development principle.}
+}
+
+@MISC{browshot,
+author = {{Browshot}},
+title = {{Browshot - Powerful web screenshots}},
+howpublished={\url{https://browshot.com/}},
+note={Accessed November 2012},
+annote={Homepage of the Browshot service. This allows a developer to make screenshots of web pages in any screen size, as any device including Personal Computers and mobile devices, in a variety of resolutions.}
+}

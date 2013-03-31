@@ -1,0 +1,9 @@
+\thispagestyle{empty}
+
+\begin{center}
+    {\LARGE\bf Abstract}
+\end{center}
+
+FundFind is a web application which enables scholars, research development officers and postgraduates to share information about funding opportunities. Data about funding opportunities and funding organisations can be submitted, browsed and searched via a mobile-friendly web UI as well as a JSON API. The project stores data using an asynchronous approach, which enables the development of small independent modules for automatic funding data harvesting.
+
+The aim is to explore the field of scholarly funding, identifying potential problems with the open sharing of such data. Prototype technical solutions concretise the technical problems. Other problems are noted and discussed.

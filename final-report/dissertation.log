@@ -1,0 +1,634 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.27)  30 MAR 2013 20:38
+entering extended mode
+ %&-line parsing enabled.
+**dissertation.tex
+(./dissertation.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./mmp.sty
+Package: mmp 
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/palatino.sty
+Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/latex/carlisle/plain.sty
+Package: plain 1996/04/22 Plain TeX emulation (DPC)
+\tabs@latex=\box26
+\tabsyet@latex=\box27
+\tabsdone@latex=\box28
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks16
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip46
+\subfigcapskip=\skip47
+\subfigcaptopadj=\dimen114
+\subfigbottomskip=\skip48
+\subfigcapmargin=\dimen115
+\subfiglabelskip=\skip49
+\c@subfigure=\count101
+\c@lofdepth=\count102
+\c@subtable=\count103
+\c@lotdepth=\count104
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip50
+\subfig@bottom=\skip51
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks20
+\float@box=\box31
+\@float@everytoks=\toks21
+\@floatcapt=\box32
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip52
+\f@ncyO@elh=\skip53
+\f@ncyO@erh=\skip54
+\f@ncyO@olh=\skip55
+\f@ncyO@orh=\skip56
+\f@ncyO@elf=\skip57
+\f@ncyO@erf=\skip58
+\f@ncyO@olf=\skip59
+\f@ncyO@orf=\skip60
+)
+(/usr/share/texmf-texlive/tex/latex/lastpage/lastpage.sty
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
+ (JPG)
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+))
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip61
+\bibsep=\skip62
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count106
+)
+(/usr/share/texmf-texlive/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip63
+\thanksmargin=\skip64
+\droptitle=\skip65
+)
+(/usr/share/texmf-texlive/tex/latex/tabulary/tabulary.sty
+Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen116
+\extrarowheight=\dimen117
+\NC@list=\toks22
+\extratabsurround=\skip66
+\backup@length=\skip67
+)
+\TY@count=\count107
+\TY@linewidth=\dimen118
+\tymin=\dimen119
+\tymax=\dimen120
+\TY@tablewidth=\dimen121
+) (./dissertation.aux
+(./cover.aux) (./declaration.aux) (./acknowledgements.aux) (./abstract.aux)
+(./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
+(./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
+(./Appendix1/appendix1.aux) (./Appendix2/appendix2.aux))
+\openout1 = `dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 45.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen122
+\scratchbox=\box33
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen123
+\MPnumerator=\count112
+\everyMPtoPDFconversion=\toks24
+)
+\openout2 = `cover.aux'.
+
+ (./cover.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [0
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\openout2 = `declaration.aux'.
+
+ (./declaration.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+) [1
+
+
+]
+\openout2 = `acknowledgements.aux'.
+
+ (./acknowledgements.tex
+Overfull \hbox (2.49446pt too wide) in paragraph at lines 15--16
+[]\OT1/ptm/m/n/10.95 Thanks to the Open Knowl-edge Foun-da-tion for strik-ing o
+ut and en-cour-ag-ing pro-to-type projects,
+ []
+
+) [2
+
+
+]
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex) [3
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 72.
+ (./dissertation.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [1
+
+])
+\tf@toc=\write3
+\openout3 = `dissertation.toc'.
+
+ [2] (./dissertation.lof)
+\tf@lof=\write4
+\openout4 = `dissertation.lof'.
+
+
+[3] (./dissertation.lot
+
+Package natbib Warning: Citation `dumbo' on page iv undefined on input line 2.
+
+)
+\tf@lot=\write5
+\openout5 = `dissertation.lot'.
+
+ [4]
+\openout2 = `Chapter1/chapter1.aux'.
+
+ (./Chapter1/chapter1.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+Overfull \hbox (0.14941pt too wide) in paragraph at lines 16--17
+[]\OT1/ptm/m/n/10.95 Postgraduate-level schol-ars (can-di-dates, post-grad-u-at
+es, post-doctoral re-searchers) are also usu-
+ []
+
+
+Package natbib Warning: Citation `cronyism1' on page 1 undefined on input line 
+20.
+
+
+Package natbib Warning: Citation `cronyism2' on page 1 undefined on input line 
+20.
+
+[1
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+ [2]
+
+Package natbib Warning: Citation `dumbo' on page 3 undefined on input line 72.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+[][]
+ []
+
+
+LaTeX Warning: Float too large for page by 254.74712pt on input line 87.
+
+[3] [4] [5]
+Overfull \hbox (0.90579pt too wide) in paragraph at lines 142--143
+[]\OT1/ptm/m/n/10.95 However, this project fits well within a cur-rent frame-wo
+rk of Open Knowledge-related projects,
+ []
+
+) [6]
+\openout2 = `Chapter2/chapter2.aux'.
+
+ (./Chapter2/chapter2.tex
+Chapter 2.
+) [7
+
+
+
+]
+\openout2 = `Chapter3/chapter3.aux'.
+
+ (./Chapter3/chapter3.tex
+Chapter 3.
+) [8
+
+
+
+]
+\openout2 = `Chapter4/chapter4.aux'.
+
+ (./Chapter4/chapter4.tex
+Chapter 4.
+) [9
+
+
+
+]
+\openout2 = `Chapter5/chapter5.aux'.
+
+ (./Chapter5/chapter5.tex
+Chapter 5.
+) [10
+
+
+
+]
+\openout2 = `Chapter6/chapter6.aux'.
+
+ (./Chapter6/chapter6.tex
+Chapter 6.
+
+Overfull \hbox (6.24094pt too wide) in paragraph at lines 18--18
+[]\OT1/ptm/b/n/14.4 Collecting in-for-ma-tion from dis-parate sources - tech-no
+-log-i-cal suit-
+ []
+
+) [11
+
+
+
+] [12
+
+
+]
+\openout2 = `Appendix1/appendix1.aux'.
+
+ (./Appendix1/appendix1.tex
+Appendix A.
+) [13
+
+
+]
+\openout2 = `Appendix2/appendix2.aux'.
+
+ (./Appendix2/appendix2.tex
+Appendix B.
+
+Package natbib Warning: Citation `NumericalRecipes' on page 14 undefined on inp
+ut line 5.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [14
+
+
+
+] [15]) [16]
+(./dissertation.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+[]\OT1/ptm/m/n/10.95 AHRC.  \OT1/ptm/m/it/10.95 AHRC Fund-ing Op-por-tu-ni-ties
+\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : / / www . ahrc . ac . uk /
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 4--10
+\OT1/pcr/m/n/10.95 Funding-[]Opportunities / Pages / Funding-[]Opportunities . 
+aspx$\OT1/ptm/m/n/10.95 .  Ac-cessed
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 14--21
+[]\OT1/ptm/m/n/10.95 Alok Jha. 2012 (June).  \OT1/ptm/m/it/10.95 Open ac-cess i
+s the fu-ture of aca-demic pub-lish-ing, says
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--21
+\OT1/ptm/m/it/10.95 Finch re-port\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http
+ : / / www . guardian . co . uk / science / 2012 / jun / 19 /
+ []
+
+
+Underfull \hbox (badness 6396) in paragraph at lines 14--21
+\OT1/pcr/m/n/10.95 open-[]access-[]academic-[]publishing-[]finch-[]report$\OT1/
+ptm/m/n/10.95 .  Ac-cessed Novem-ber
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 39--43
+[]\OT1/ptm/m/n/10.95 BBSRC.  \OT1/ptm/m/it/10.95 BB-SRC Re-search Fund-ing\OT1/
+ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : / / www . bbsrc . ac . uk / funding
+ /
+ []
+
+[17
+
+
+]
+Underfull \hbox (badness 6268) in paragraph at lines 90--96
+[]\OT1/ptm/m/n/10.95 Craig Brier-ley. 2012 (June).  \OT1/ptm/m/it/10.95 Well-co
+me Trust strength-ens its open ac-cess pol-icy\OT1/ptm/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
+\OT1/pcr/m/n/10.95 http : / / www . wellcome . ac . uk / News / Media-[]office 
+/ Press-[]releases /
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 189--195
+[]\OT1/ptm/m/n/10.95 Ian Sam-ple. 2012 (July).  \OT1/ptm/m/it/10.95 Free ac-ces
+s to British sci-en-tific re-search within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--195
+\OT1/ptm/m/it/10.95 two years\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : /
+ / www . guardian . co . uk / science / 2012 / jul / 15 /
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 221--225
+[]\OT1/ptm/m/n/10.95 Martin Fowler.  \OT1/ptm/m/it/10.95 Con-tin-u-ous In-te-gr
+a-tion\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : / / martinfowler . com /
+ articles /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--236
+\OT1/pcr/m/n/10.95 www . nhmrc . gov . au / grants / research-[]funding-[]stati
+stics-[]and-[]data /
+ []
+
+[19]
+Underfull \hbox (badness 1371) in paragraph at lines 295--300
+\OT1/ptm/m/it/10.95 get spent - Coun-try & Re-gional anal-y-sis\OT1/ptm/m/n/10.
+95 .  $\OT1/pcr/m/n/10.95 http : / / wheredoesmymoneygo . org /
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 304--308
+\OT1/pcr/m/n/10.95 / / agile . dzone . com / articles / introduction-[]feature-
+[]driven$\OT1/ptm/m/n/10.95 .  Ac-cessed
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 314--320
+[]\OT1/ptm/m/n/10.95 RCUK.  \OT1/ptm/m/it/10.95 RCUK In-dia - Op-por-tu-ni-ties
+ pro-vided by UK Re-search Coun-cils\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 h
+ttp :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--320
+\OT1/pcr/m/n/10.95 / / www . rcuk . ac . uk / international / Offices / Officei
+nIndia / Funding /
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 381--385
+[]\OT1/ptm/m/n/10.95 SoftDevTeam.  \OT1/ptm/m/it/10.95 V-shaped life-cy-cle mod
+el\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : / / www . softdevteam . com 
+/
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 402--408
+[]\OT1/ptm/m/n/10.95 The Smart Method Ltd.  \OT1/ptm/m/it/10.95 The Wa-ter-fall
+ De-vel-op-ment Method-ol-ogy\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : /
+ / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
+\OT1/pcr/m/n/10.95 learnaccessvba . com / application _ development / waterfall
+ _ method .
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 445--451
+\OT1/pcr/m/n/10.95 questions / 3536893 / what-[]are-[]the-[]pros-[]and-[]cons-[
+]of-[]xml-[]and-[]json$\OT1/ptm/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 3029) in paragraph at lines 457--465
+\OT1/ptm/m/it/10.95 Ac-ces-si-bil-ity, sus-tain-abil-ity, ex-cel-lence: how to 
+ex-pand ac-cess to re-search pub-li-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
+[]\OT1/ptm/m/n/10.95 Various au-thors. 2009 (Jan.).  \OT1/ptm/m/it/10.95 Behavi
+our-Driven De-vel-op-ment\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 http : / /
+ []
+
+[22]
+Underfull \hbox (badness 3323) in paragraph at lines 528--532
+[]\OT1/ptm/m/n/10.95 Various au-thors - an open-source project.  \OT1/ptm/m/it/
+10.95 Open-Re-fine\OT1/ptm/m/n/10.95 .  $\OT1/pcr/m/n/10.95 https : / / github 
+. com /
+ []
+
+) AED: lastpage setting LastPage [23]
+
+Package natbib Warning: There were undefined citations.
+
+(./dissertation.aux (./cover.aux) (./declaration.aux) (./acknowledgements.aux)
+(./abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
+(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
+(./Chapter6/chapter6.aux) (./Appendix1/appendix1.aux)
+(./Appendix2/appendix2.aux)) ) 
+Here is how much of TeX's memory you used:
+ 3263 strings out of 495061
+ 40529 string characters out of 1182621
+ 104909 words of memory out of 3000000
+ 6281 multiletter control sequences out of 15000+50000
+ 29706 words of font info for 65 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 34i,11n,45p,864b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r
+.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texliv
+e/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr
+/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertation.pdf (31 pages, 154771 bytes).
+PDF statistics:
+ 127 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

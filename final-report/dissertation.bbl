@@ -1,0 +1,575 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{{AHRC}, }n.d.]{ahrc-opps}
+{AHRC}.
+\newblock {\em {AHRC Funding Opportunities}}.
+\newblock
+  \url{http://www.ahrc.ac.uk/Funding-Opportunities/Pages/Funding-Opportunities%
+.aspx}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The root funding page of AHRC, the Arts and
+  Humanities Research Council. \end{quotation}
+
+\bibitem[\protect\citename{{Alok Jha}, }2012]{guardian-finch}
+{Alok Jha}. 2012 (June).
+\newblock {\em {Open access is the future of academic publishing, says Finch
+  report}}.
+\newblock
+  \url{http://www.guardian.co.uk/science/2012/jun/19/open-access-academic-publ%
+ishing-finch-report}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A Guardian article describing the Finch report
+  which looked into Open Access and its benefits for academic publishing and
+  society at large. \end{quotation}
+
+\bibitem[\protect\citename{Balci {\em et~al.}, }n.d.]{spiral-model}
+Balci, Osman, Gilley, William~S., Adams, Robin~J., Tunar, Emre, \& Barnette,
+  N.~Dwight.
+\newblock {\em {The Spiral Model}}.
+\newblock \url{http://courses.cs.vt.edu/csonline/SE/Lessons/Spiral/index.html}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A textbook section-length explanation of the Spiral
+  software development model with a graphic visualisation and a table
+  enumerating the various artefacts of the model. Although this an online
+  educational resource from an academic institution, there is no publication
+  date available for the project itself or the section on the Spiral model.
+  \end{quotation}
+
+\bibitem[\protect\citename{{BBSRC}, }n.d.]{bbsrc-opps}
+{BBSRC}.
+\newblock {\em {BBSRC Research Funding}}.
+\newblock \url{http://www.bbsrc.ac.uk/funding/funding-index.aspx}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The root funding page of BBSRC, the Biotechnology
+  and Biological Sciences Research Council. \end{quotation}
+
+\bibitem[\protect\citename{Beck {\em et~al.}, }n.d.]{agile-manifesto}
+Beck, Kent, Beedle, Mike, van Bennekum, Arie, Cockburn, Alistair, Cunningham,
+  Ward, Fowler, Martin, Grenning, James, Highsmith, Jim, Hunt, Andrew,
+  Jeffries, Ron, Kern, Jon, Marick, Brian, Martin, Robert~C., Mellor, Steve,
+  Schwaber, Ken, Sutherland, Jeff, \& Thomas, Dave.
+\newblock {\em {Manifesto for Agile Software Development}}.
+\newblock \url{http://agilemanifesto.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A succinct set of statements enumerating the core
+  values behind the Agile software development collection of approaches to
+  software development. \end{quotation}
+
+\bibitem[\protect\citename{{Browshot}, }n.d.]{browshot}
+{Browshot}.
+\newblock {\em {Browshot - Powerful web screenshots}}.
+\newblock \url{https://browshot.com/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Homepage of the Browshot service. This allows a
+  developer to make screenshots of web pages in any screen size, as any device
+  including Personal Computers and mobile devices, in a variety of resolutions.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Cottage Labs LLP}, }n.d.]{cl}
+{Cottage Labs LLP}.
+\newblock {\em {cottage labs - we don't sell products, we trade our skills}}.
+\newblock \url{http://cottagelabs.com/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of a partnership of freelance software
+  developers working together to produce open source software for the benefit
+  of Higher Education and commercial companies around the world. Dedicated to
+  Open Knowledge and Open Scholarship. \end{quotation}
+
+\bibitem[\protect\citename{{Cottage Labs LLP and Open Knowledge Foundation},
+  }n.d.]{facetview}
+{Cottage Labs LLP and Open Knowledge Foundation}.
+\newblock {\em {FacetView - Pure Javascript Frontend for SOLR and
+  ElasticSearch}}.
+\newblock \url{http://okfnlabs.org/facetview/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Homepage of the Facetview project, a faceted
+  Javascript browser (front-end) to indexing servers such as elasticsearch.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Craig Brierley}, }2012]{wellcome-oa}
+{Craig Brierley}. 2012 (June).
+\newblock {\em {Wellcome Trust strengthens its open access policy}}.
+\newblock
+  \url{http://www.wellcome.ac.uk/News/Media-office/Press-releases/2012/WTVM055%
+745.htm}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A press release by the Wellcome Trust stating it is
+  strengthening its Open Access policy and related punishment for breaking the
+  terms of the policy, as well as linking to a full version of the policy.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Don Wells}, }n.d.]{xp-lifecycle}
+{Don Wells}.
+\newblock {\em {Extreme Programming Project}}.
+\newblock \url{http://www.extremeprogramming.org/map/project.html}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A diagram showcasing the Extreme Programming (Agile
+  software development practice) project lifecycle. Different sections of the
+  diagram provide links to more detailed explanations of the various parts of
+  the project lifecycle. \end{quotation}
+
+\bibitem[\protect\citename{{Emanuil Tolev and Cottage Labs LLP}, }n.d.]{idfind}
+{Emanuil Tolev and Cottage Labs LLP}.
+\newblock {\em {IDFind - Got an ID? Not sure what it is? What you can do with
+  it? Well, use this!}}
+\newblock \url{https://github.com/CottageLabs/idfind/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The current homepage and version control repository
+  page of the IDFind project. It tries to guess what kind of identifier an
+  unknown string is. \end{quotation}
+
+\bibitem[\protect\citename{{EPSRC}, }n.d.]{epsrc-opps}
+{EPSRC}.
+\newblock {\em {EPSRC Research Funding}}.
+\newblock \url{http://www.epsrc.ac.uk/funding/Pages/default.aspx}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The root funding page of EPSRC, the Engineering and
+  Physical Sciences Research Council. \end{quotation}
+
+\bibitem[\protect\citename{{Eric S. Raymond}, }2000]{catb}
+{Eric S. Raymond}. 2000 (Sept.).
+\newblock {\em {The Cathedral and the Bazaar}}.
+\newblock
+  \url{http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A discussion on why / how JSON maps better to
+  intuitive human understanding of the world than XML does and why this is
+  important for a data representation format. \end{quotation}
+
+\bibitem[\protect\citename{{FAST}, }n.d.]{ibm}
+{FAST}.
+\newblock {\em {Organisation Details - IBM UK Research Laboratories}}.
+\newblock \url{http://www.fastuk.org/atcommunity/orgview.php?id=3073}.
+\newblock Accessed April 2013.
+ \begin{quotation}\noindent "The Foundation for Assistive Technology was
+  founded in 1998 to tackle the inadequate design of assistive technology
+  products and services." This listing of IBM as a "source of funding" in their
+  R\&D section seemed as an appropriate reference to IBM Research UK as a
+  commercial R\&D vendor in the context of the project. \end{quotation}
+
+\bibitem[\protect\citename{{Gerrard Consulting}, }n.d.]{wmodel}
+{Gerrard Consulting}.
+\newblock {\em {The W-Model}}.
+\newblock \url{http://www.gerrardconsulting.com/?q=node/531}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Explains the W software development lifecycle model
+  and how it follows on from (or has evolved from) the V-model. This model
+  could also be referred to as the double-V model. \end{quotation}
+
+\bibitem[\protect\citename{{GitHub Inc}, }n.d.]{github}
+{GitHub Inc}.
+\newblock {\em {GitHub - Homepage}}.
+\newblock \url{https://github.com/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Currently popular decentralised version control
+  system, usually used for software source code (but suitable for any artefacts
+  although less suitable for binary formats or large files). \end{quotation}
+
+\bibitem[\protect\citename{{Google Inc.}, }n.d.]{gmaps}
+{Google Inc.}
+\newblock {\em {Google Maps}}.
+\newblock \url{https://maps.google.co.uk/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A geographical mapping service by a commercial
+  company. \end{quotation}
+
+\bibitem[\protect\citename{{Google Inc. and various authors - an open-source
+  project}, }n.d.]{grefine}
+{Google Inc. and various authors - an open-source project}.
+\newblock {\em {Google Refine, a power tool for working with messy data
+  (formerly Freebase Gridworks)}}.
+\newblock \url{http://code.google.com/p/google-refine/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A piece of open-source software for handling large
+  semistructured datasets, making en-masse changes to them and cleaning them
+  up. Google has now relinquished control and ownership of the project to the
+  community, it is now the OpenRefine project. \end{quotation}
+
+\bibitem[\protect\citename{{Ian Sample}, }2012]{guardian-ukgov-oa2014}
+{Ian Sample}. 2012 (July).
+\newblock {\em {Free access to British scientific research within two years}}.
+\newblock
+  \url{http://www.guardian.co.uk/science/2012/jul/15/free-access-british-scien%
+tific-research}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent An article in the electronic edition in the
+  Guardian newspaper detailing the UK Government's policy on Open Access
+  publications in 2014. \end{quotation}
+
+\bibitem[\protect\citename{{JISC}, }n.d.]{jisc}
+{JISC}.
+\newblock {\em {JISC - We are the UK's expert on information and digital
+  technologies for education and research}}.
+\newblock \url{http://www.jisc.ac.uk/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A UK governmental institution focused on enhancing
+  the usage of digital technology in education and research in the UK.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Knight Foundation}, }n.d.]{knight-foundation}
+{Knight Foundation}.
+\newblock {\em {Knight Foundation - Informed \& Engaged Communities}}.
+\newblock \url{http://www.knightfoundation.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of a global charitable foundation
+  which supports (financially and otherwise) ideas that aim to change the
+  world. They are particularly interested in quality journalism, media
+  innovation, engaging the various communities around the world / in society
+  and in fostering the arts. \end{quotation}
+
+\bibitem[\protect\citename{{Martin Fowler}, }n.d.]{ci}
+{Martin Fowler}.
+\newblock {\em {Continuous Integration}}.
+\newblock \url{http://martinfowler.com/articles/continuousIntegration.html}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent An article describing the principle of Continuous
+  Integration in software development and illustrating why a developer or a
+  development team might consider adopting this practice. \end{quotation}
+
+\bibitem[\protect\citename{{NHMRC / Australian Government}, }n.d.]{au-nhmrc}
+{NHMRC / Australian Government}.
+\newblock {\em {NHMRC research funding datasets 1990 - 2012}}.
+\newblock
+  \url{http://www.nhmrc.gov.au/grants/research-funding-statistics-and-data/fun%
+ding-datasets}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The NHMRC research funding data for the period 1990
+  to 2012 covering all new and continuing grants funded and active in that 23
+  year period. \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.a]{od}
+{Open Knowledge Foundation}.
+\newblock {\em {Open Definition}}.
+\newblock \url{http://opendefinition.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The Open Definition - defines what ``open'' is in
+  relation to content and data. \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.b]{okfn-github}
+{Open Knowledge Foundation}.
+\newblock {\em {Open Knowledge Foundation Github Organisation Page}}.
+\newblock \url{https://github.com/okfn}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of the Open Knowledge Foundation
+  organisation on Github, the currently popular version control system.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.c]{okfn-labs}
+{Open Knowledge Foundation}.
+\newblock {\em {Open Knowledge Labs creates services and tools that unlock the
+  digital commons for everyone.}}
+\newblock \url{http://okfnlabs.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of a collection of sofware projects
+  which have sprung up to support or resulted from the Open Knowledge
+  Foundation's pursuit of spreading the Openness cause in society.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.d]{okfn-vision}
+{Open Knowledge Foundation}.
+\newblock {\em {Our Vision / We Believe in the Power of Openness}}.
+\newblock \url{http://okfn.org/about/vision/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Notes on the Open Knowledge Foundation's vision of
+  how openness can be beneficial for society (meaning all of current human
+  civilisation). \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.e]{bubbletree}
+{Open Knowledge Foundation}.
+\newblock {\em {Radial Bubble Tree Visualization}}.
+\newblock \url{https://github.com/okfn/bubbletree}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Homepage of BubbleTree, a higher-level Javascript
+  graphical visualisation library. \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.f]{recline}
+{Open Knowledge Foundation}.
+\newblock {\em {Recline.js - relax with your data}}.
+\newblock \url{http://okfnlabs.org/recline/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A library for building applications which handle
+  potentially large amounts of the data and intend to allow and focus on more
+  or less advanced data manipulation. \end{quotation}
+
+\bibitem[\protect\citename{{Open Knowledge Foundation}, }n.d.g]{wdmmg}
+{Open Knowledge Foundation}.
+\newblock {\em {Where Does My Money Go? - Showing where your taxes get spent -
+  Country \& Regional analysis}}.
+\newblock \url{http://wheredoesmymoneygo.org/bubbletree-map.html}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A BubbleTree visualisation of UK public spending.
+  \end{quotation}
+
+\bibitem[\protect\citename{Palmer, }2009]{fdd}
+Palmer, Stephen. 2009 (Nov.).
+\newblock {\em {An Introduction to Feature-Driven Development}}.
+\newblock \url{http://agile.dzone.com/articles/introduction-feature-driven}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A good introductory overview of what the
+  Feature-Driven software development methodology is about, why it is
+  considered an Agile methodology and when it is applicable (it evolved as an
+  Agile approach for larger projects). \end{quotation}
+
+\bibitem[\protect\citename{{RCUK}, }n.d.]{rcuk-india}
+{RCUK}.
+\newblock {\em {RCUK India - Opportunities provided by UK Research Councils}}.
+\newblock
+  \url{http://www.rcuk.ac.uk/international/Offices/OfficeinIndia/Funding/Pages%
+/Home.aspx}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The root funding page of RCUK / International
+  Office / India. \end{quotation}
+
+\bibitem[\protect\citename{{Research Councils UK}, }n.d.]{rcuk-home}
+{Research Councils UK}.
+\newblock {\em {Welcome to Research Councils UK - Excellence with Impact}}.
+\newblock \url{http://www.rcuk.ac.uk/Pages/Home.aspx}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The home page of Research Councils UK.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Ron Knott}, }2012]{fibonacci}
+{Ron Knott}. 2012 (June).
+\newblock {\em {Fibonacci Numbers and the Golden Section}}.
+\newblock
+  \url{http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fib.html}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent An explanation of the Fibonacci number sequence and
+  related mathematical concepts. The Fibonacci sequence is being used as the
+  complexity estimate for each user story in this Agile-managed project.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Scott Ambler + Associates}, }n.d.]{stories}
+{Scott Ambler + Associates}.
+\newblock {\em {Introduction to User Stories}}.
+\newblock \url{http://www.agilemodeling.com/artifacts/userStory.htm}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A explanation of what ``stories'' or ``user
+  stories'' are when the term is used in the context of Agile approaches to
+  software development. \end{quotation}
+
+\bibitem[\protect\citename{{Scrum Alliance Inc.}, }n.d.]{Scrum}
+{Scrum Alliance Inc.}
+\newblock {\em {Scrum Is an Innovative Approach to Getting Work Done}}.
+\newblock \url{http://scrumalliance.org/pages/what_is_scrum}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A succinct description of the Scrum framework of
+  Agile software development practices. \end{quotation}
+
+\bibitem[\protect\citename{Shore, }2010]{pairprg}
+Shore, James. 2010 (Feb.).
+\newblock {\em {The Art of Agile Development}}.
+\newblock \url{http://www.jamesshore.com/Agile-Book/pair_programming.html}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The online edition of a famous work (book) on Agile
+  Development. This section focuses on and provides a good description of Pair
+  Programming, an Agile software development practice. \end{quotation}
+
+\bibitem[\protect\citename{{Shuttleworth Foundation},
+  }n.d.]{shuttleworth-foundation}
+{Shuttleworth Foundation}.
+\newblock {\em {Shuttleworth Foundation - Supporting exceptional people to
+  change the world}}.
+\newblock \url{http://www.shuttleworthfoundation.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of a global charitable foundation
+  which funds individuals with its scholarships and then multiplies the money
+  they invest in projects which aim to bring about social change for the
+  better. \end{quotation}
+
+\bibitem[\protect\citename{{SoftDevTeam}, }n.d.]{vmodel}
+{SoftDevTeam}.
+\newblock {\em {V-shaped lifecycle model}}.
+\newblock \url{http://www.softdevteam.com/V-shaped-lifecycle.asp}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Explains the V-shaped software development
+  lifecycle model. Also has a nice succinct summary of advantages and
+  disadvantages compared to other models (mostly Waterfall) which seems to fit
+  previous knowledge I have of this model from less reliable sources such as
+  Wikipedia and more reliable ones such as the teaching accompanying my
+  Computer Science degree at Aberystwyth University. \end{quotation}
+
+\bibitem[\protect\citename{{The Document Foundation}, }n.d.]{calc}
+{The Document Foundation}.
+\newblock {\em {LibreOffice Calc - a Spreadsheet That Meets Any Need}}.
+\newblock \url{http://www.libreoffice.org/features/calc/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A piece of open-source spreadsheet viewing and
+  editing software, part of the LibreOffice office productivity suite.
+  \end{quotation}
+
+\bibitem[\protect\citename{{The Smart Method Ltd}, }n.d.]{waterfall}
+{The Smart Method Ltd}.
+\newblock {\em {The Waterfall Development Methodology}}.
+\newblock
+  \url{http://www.learnaccessvba.com/application_development/waterfall_method.%
+htm}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A brief explanation of the Waterfall software
+  development methodology. Also (briefly) compares Waterfall to Agile
+  approaches. \end{quotation}
+
+\bibitem[\protect\citename{Tolev, }2012]{pm}
+Tolev, Emanuil. 2012 (Nov.).
+\newblock {\em {PivotalTracker - FundFind}}.
+\newblock \url{https://www.pivotaltracker.com/projects/688967}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Publicly visible project management for the
+  software component of this project. By default, it will show what the author
+  is currently working on and what is in the backlog. Click on ``Icebox'' (in
+  the top left-hand corner of the web page, next to the ``CURRENT'' and
+  ``BACKLOG'' links) to see all recorded user stories and chores for getting
+  the project done. Stories in the Icebox are ordered in descending order in
+  terms of priority, i.e. the more important ones according to aggregated user
+  opinion are at the top. \end{quotation}
+
+\bibitem[\protect\citename{{Twitter Inc.}, }n.d.]{bootstrap}
+{Twitter Inc.}
+\newblock {\em {Bootstrap - Sleek, intuitive, and powerful front-end framework
+  for faster and easier web development.}}
+\newblock \url{http://twitter.github.com/bootstrap/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of the Twitter Bootstrap User
+  Interface library. \end{quotation}
+
+\bibitem[\protect\citename{{UK Government - Unknown individual name},
+  }2012]{open-uk-gov-data}
+{UK Government - Unknown individual name}. 2012 (July).
+\newblock {\em {DATA.GOV.UK - OPENING UP GOVERNMENT}}.
+\newblock \url{http://data.gov.uk/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The UK Government Open Data portal containing
+  various datasets released under Open licences. \end{quotation}
+
+\bibitem[\protect\citename{{Various}, }n.d.]{json-vs-xml}
+{Various}.
+\newblock {\em {What are the pros and cons of XML and JSON?}}
+\newblock
+  \url{http://stackoverflow.com/questions/3536893/what-are-the-pros-and-cons-o%
+f-xml-and-json}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A discussion on why / how JSON maps better to
+  intuitive human understanding of the world than XML does and why this is
+  important for a data representation format. \end{quotation}
+
+\bibitem[\protect\citename{{Various (a UK Government Working Group), chaired by
+  Dame Janet Finch}, }2012]{finch}
+{Various (a UK Government Working Group), chaired by Dame Janet Finch}. 2012
+  (June).
+\newblock {\em {Accessibility, sustainability, excellence: how to expand access
+  to research publications}}.
+\newblock
+  \url{http://www.researchinfonet.org/wp-content/uploads/2012/06/Finch-Group-r%
+eport-FINAL-VERSION.pdf}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The Finch report - looked into Open Access and its
+  benefits for academic publishing and society at large, commisioned by the UK
+  Government. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors}, }2009]{bdd}
+{Various authors}. 2009 (Jan.).
+\newblock {\em {Behaviour-Driven Development}}.
+\newblock \url{http://behaviour-driven.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A description of Behaviour-Driven Development. This
+  is a Wiki-style web resource, so the year and month of publication are taken
+  from the last edited date and may change by the time the reader accesses this
+  resource. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.a]{d3}
+{Various authors - an open-source project}.
+\newblock {\em {D3 - Data-Driven Documents}}.
+\newblock \url{http://d3js.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Homepage of D3.js, a lower-level Javascript
+  graphical visualisation library. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.b]{es}
+{Various authors - an open-source project}.
+\newblock {\em {elasticsearch - You know, for Search}}.
+\newblock \url{http://www.elasticsearch.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of the elasticsearch indexing server.
+  \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.c]{flask}
+{Various authors - an open-source project}.
+\newblock {\em {Flask - Web development, one drop at a time}}.
+\newblock \url{http://flask.pocoo.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Homepage of the Flask Python web framework project,
+  helps build RESTful web applications in Python. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.d]{jenkins}
+{Various authors - an open-source project}.
+\newblock {\em {Jenkins - An extendable open source continuous integration
+  server}}.
+\newblock \url{http://jenkins-ci.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent Homepage of the Jenkins Continuous Integration
+  server, a tool which helps a developer or a team of developers practice the
+  Continuous Integration software development principle. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.e]{jquery}
+{Various authors - an open-source project}.
+\newblock {\em {jQuery is a new kind of JavaScript Library.}}
+\newblock \url{http://jquery.com/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of the jQuery Javascript and User
+  Interface library. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.f]{orefine}
+{Various authors - an open-source project}.
+\newblock {\em {OpenRefine}}.
+\newblock \url{https://github.com/OpenRefine/OpenRefine}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent A piece of open-source software for handling large
+  semistructured datasets, making en-masse changes to them and cleaning them
+  up. Used to be the Google Refine project. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project},
+  }n.d.g]{selenium}
+{Various authors - an open-source project}.
+\newblock {\em {SeleniumHQ - Web application testing system}}.
+\newblock \url{http://seleniumhq.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of an open-source software project
+  which enables the automation of web browsers and other testing techniques for
+  the purposes of testing web applications. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors - an open-source project hosting
+  open data}, }n.d.]{osm}
+{Various authors - an open-source project hosting open data}.
+\newblock {\em {OpenStreetMap - The Free Wiki World Map}}.
+\newblock \url{http://www.openstreetmap.org/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent An open-source, open data geographical mapping
+  service. \end{quotation}
+
+\bibitem[\protect\citename{{Various authors / Wikipedia}, }n.d.]{faceted}
+{Various authors / Wikipedia}.
+\newblock {\em {Faceted search}}.
+\newblock \url{http://en.wikipedia.org/wiki/Faceted_search}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The Wikipedia page on faceted search. Would not
+  make much sense to a reader unfamiliar with the topic, but should do with the
+  example in the report body. \end{quotation}
+
+\bibitem[\protect\citename{{Wellcome Trust}, }n.d.]{wellcome-trust}
+{Wellcome Trust}.
+\newblock {\em {Wellcome Trust - We are a global charitable foundation
+  dedicated to achieving extraordinary improvements in health by supporting the
+  brightest minds.}}
+\newblock \url{http://www.wellcome.ac.uk/}.
+\newblock Accessed November 2012.
+ \begin{quotation}\noindent The homepage of a global charitable foundation
+  which funds lots of scholarly activities in a variety of areas.
+  \end{quotation}
+
+\end{thebibliography}

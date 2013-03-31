@@ -1,0 +1,33 @@
+
+\title{FundFind}
+
+\subtitle{Sharing scholarly funding opportunities}
+
+% Your name
+\author{Emanuil Evgeniev Tolev}
+
+% Your email 
+\authoremail{eet9@aber.ac.uk}
+
+\degreeschemecode{G401} %e.g. G400 
+\degreeschemetitle{Computer Science (Inc Integrated Industrial and Professional Training)} % e.g. Computer Science
+\degreetype{BSc}
+
+\modulecode{CS39440} % i.e. CS39440, CC39440, CS39620
+\moduletitle{Major Project} % i.e. Major Project or Minor Project
+
+%\date{6th March 2012} % i.e. the date of this version of the report
+
+\status{Draft} % Use draft until you create the release version. Then, change this to Release.
+\version{1.0}
+
+%The title and name of your supervisor.
+\supervisor{Prof. Reyer Zwiggelaar} 
+
+%The email for your supervisor. 
+\supervisoremail{rrz@aber.ac.uk}
+
+\maketitle
+
+
+

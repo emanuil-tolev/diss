@@ -1,0 +1,144 @@
+\chapter{Background \& Objectives}
+
+%This section should pick-up material from your progress report and enhance it based on the feedback and also your additional experience up to now.
+
+%outline the research context or commercial context in which the work was carried out;
+%state clearly the objectives of the work;
+%review the relevant literature and any similar existing systems;
+
+A note on ``scholarship'' - the word and its derivatives are used throughout this text to mean all types of academic work, due to ``science'' being sometimes perceived as exclusionary to the Arts and Humanities fields.
+
+\section{Scholarship and funding}
+Scholars need money to conduct research. To be precise, research projects need \emph{additional} money (on top of the investigators' salaries) in order to cover material expenses, travel costs, hiring Research Assistants or providing studentships to PhD candidates and other expenses. 
+
+In other words, established scholars need to look for funding for aims which may be hard to define, for amounts of money ranging from thousands to millions.
+
+Postgraduate-level scholars (candidates, postgraduates, post-doctoral researchers) are also usually looking for a way to fund the next stage of their scholarly career. (Note: undergraduate-level funding was not considered in this project.)
+
+The quintessential problem is that the information about available funding is published in many different places. Usually each funding organisation publishes its own calls for proposals and announces its own studentships on its own website(s) and mailing list(s).
+
+Keeping up with these sources of information becomes quite difficult - so much so, that it takes a significant portion of research development officers' time. Worse still, this is a significant barrier for those looking into a career in academia - the fragmented information can make it difficult to build a mental picture of what the funding in one's chosen field ``looks like''. This leads to a feeling of opaqueness instead of transparency and being overwhelmed - instead of having a clear idea of what it takes to succeed in a chosen field. Sometimes it even leads to accusations of cronyism in distributing funding (private conversation as well as \cite{cronyism1, cronyism2}).
+
+These problems seem to stem from the fact that the distribution of scholarly funding seems to have evolved over time from a series of changes to more general money distribution in society. This is actually a well-known problem that the software development field has had to deal with - if multiple stakeholders with distinctive interests try to influence the development of a software system, changing its requirements over time, the results can be disastrous.
+
+There is no easy way to track money - where it gets allocated to, what fields (or even topics) within scholarship get funded more than others. Up until November 2012, there was no publicly accessible \emph{centralised} detailed account of historic funding information in the United Kingdom. The Gateway to Research project being implemented by Research Councils UK finally gives a partial (RCUK-specific) overview of historical data.
+
+However, there is still no mechanism of getting \emph{present, current} data about scholarly funding.
+
+Something which allows searching the (vastly) different, \emph{currently available} streams of funding within academia was thus identified as potentially useful by various people interested in the subject:
+
+\section{Audience and high-level requirements}
+\label{audience}
+The potential audience of this project was discovered to be quite varied. It seems multiple stakeholders stand to benefit from more transparent scholarly funding dissemination.
+
+The requirements or potential uses that these users might want to put FundFind to are closely tied to the benefits that come with opening up funding data.
+
+\subsection{Professionals looking for funding}
+
+\subsubsection{Accomplished scholars}
+\begin{itemize}
+ \item \textbf{Who}: Academics - lecturers, professors
+ \item \textbf{Aims}: Wish to fund future projects
+ \item \textbf{Benefits from opening up funding data}: Easier access and search across funding institutions through tools which aggregate funding data; Transparency and accountability of their funding bodies.
+ \item \textbf{Possible requirements from FundFind}: Aforementioned cross-funder search; Sharing opportunities with colleagues.
+\end{itemize}
+
+\subsubsection{Junior academics}
+\begin{itemize}
+ \item \textbf{Who}: Postgraduate candidates, postgraduate students, academics in post-doctoral posts (e.g. Research Associates)
+ \item \textbf{Aims}: Wish to find suitable positions to move on with their academic career, e.g. a postgraduate with a PhD will be looking for a post-doctoral position
+ \item \textbf{Benefits from opening up funding data}: (More) easily find and compare funding sources
+ \item \textbf{Possible requirements from FundFind}: Find funding. To quote a postgraduate candidate: ``I want to do a taught MSc in Astrophysics but I can't afford to self fund. Where can I go and who will pay me?''
+ 
+ Share funding information with peers (e.g. if a canididate for a Computer Vision PhD finds a good PhD studentship call for applications in Bioinformatics, they may well want to forward it to a colleague).
+\end{itemize}
+
+\subsubsection{Research development officers}
+\begin{itemize}
+ \item \textbf{Who}: Professionals who find more funding opportunities for scholars
+ \item \textbf{Aims}: Wish to record the opportunities they find somewhere and share them with scholars. Also may want to access a list of all opportunities \emph{they} have found over time, so that they can report to their line managers more easily.
+ \item \textbf{Benefits from opening up funding data}: Not as many as scholars, unless they are happy to share the opportunities they have found with research officers from other institutions (which they do not always want). However, a system which allows sharing of recorded opportunities with a select subset of users (such as all within the officer's institution) would be welcome as this can allow them to record a funding opportunity once, share it with ``their'' scholars and include it in reports.
+ \item \textbf{Possible requirements from FundFind}: Find funding. Share funding with subset of users. See information submitted per user (themselves).
+\end{itemize}
+
+\subsection{Those looking to advertise funding opportunities.}
+Funding Stream and Programme managers at various institutions such as:
+
+
+\bgroup
+\tymin=30pt
+\def\arraystretch{2}
+\begin{table}
+\caption{Notes on case representation. Based on Table 1 from \cite{dumbo}}
+\begin{tabulary}{\linewidth}{LLL}
+Potential users & Their aims & Benefits of opening up funding data \\
+\hline
+Research Councils in the UK & Wish to attract the best scholars in their own field, but also look to establish new cross-disciplinary  projects & Already committed to opening up historical funding data, would like to advertise current funding data more widely. \\
+JISC \cite{jisc} (digital infrastructure in education/research) & Wish to attract talent to work on scholarly infrastructure in the UK, i.e. give their aims and projects more exposure. Scholars rarely choose scholarship infrastructure as their main field. & Have always wanted wider reach, as well as vigorously supported Open Data. Have a lot of funding opportunities from minor to large, would like to advertise them better.\\
+Various charitable Foundations, Institutes, Endowments and so on which fund scholarly activities (e.g. the Wellcome Trust \cite{wellcome-trust}, Shuttleworth Foundation \cite{shuttleworth-foundation}, Knight Foundation \cite{knight-foundation}) & Want the best scholars competing for their money. & Need to reach more scholars to build up an ever-improving pool of applicants (in terms of quality). Also, as private institutions, would like to demonstrate greater transparency with their funding dissemination and allocation. \\
+Commercial organisations which perform R\&D activities & Simply need quality applicants when using talent outside the organisation & Might make it significantly easier to reach a lot of good scholars. Such organisations may only need external help with R\&D intermittently and thus may not have an audience of scholars following their every move. \\
+
+There is a group which has markedly different needs from the first two groups - people interested in analysing how scholarly money is allocated and/or spent \\
+\cline{1-1}
+Software developers, journalists and others interested in Open Knowledge and visualising data for the purposes of transparency or advancing the digital economy \cite{okfn-vision} The author is included in this group. & Want transparency and accountability. May want to visualise how scholarship money is being spent or otherwise help society engage with scholarly spending. & Open Data essential for re-use for their aims. Usually do not have first hand information about what happens behind closed doors when funding is distributed and used by universities. Think that this is strange, since often both funder and fundee are public sector organisations / employees. \\
+Politicians, analysts, bloggers, the general public & Want to demonstrate accountability and good decision making, or analyse it & Essentially want to use outputs of the group above (which requires Open Data) or do their own analysis, which also requires Open Data since they rarely have direct access to closed doors information. \\
+\end{tabulary}
+\label{tab:case-repr}
+\end{table}
+\egroup
+
+\subsubsection{Focusing on certain audience groups}
+\label{focus-groups}
+Satisfying the major requirements of all these users is not a suitable scope for this project (it may be for a follow-up project).
+
+Therefore, this project will focus on the first group of users. The main reasons are time constraints and ease of access to such users. Searching for opportunities can be significantly harder than submitting them. In a way, providing data to academic users will pave the way for providing data to a more general public (third group) for re-use and analysis.
+
+The project will nonetheless provide basic information submission (``digestion'') capabilities and basic general raw data access via an open machine-ready interface (``API'') to satisfy some of the requirements of the second and third groups. The author belongs to the third group. The Open Knowledge Foundation \cite{okfn-vision} and Cottage Labs LLP \cite{cl} will be briefly consulted on the completed project. Cottage Labs has stated that the project will be valuable to Open Knowledge if executed well and is happy to provide feedback.
+
+
+% FIXME delete all below here
+\section{Scholarly funding opportunities}
+This project deals with an important bit of the infrastructure of scholarship - namely, the money it relies upon. ``Scholarship'' in this case (and throughout this document) refers to the human endeavours in the fields of the Humanities(e.g. arts), Social Sciences (e.g. law) and Science (e.g. biology, computer science).
+
+
+
+\subsection{Funders}
+There is no easy way for people who wish to fund scholarly endeavours to advertise their funding to a lot of scholars at once, getting a higher chance of the ``perfect'' researcher/problem fit.
+
+Certain ad-hoc channels have evolved around this problem - for example, scholars interested in a funder's sphere can subscribe to their e-mail list. There are problems with this - the most obvious one is scholars having to subscribe to all the funders they might be interested in. While this sort of works for national funding bodies like the UK Research Councils, there are many more private funders - various non-profit and/or Non-Governmental Organisations and even private companies. A cross-disciplinary funding opportunity would have to be advertised across multiple channels, which would take time/effort on the part of funders therefore making such opportunities costlier to set up.
+
+It also fails fantastically when it comes to the globalisation of scholarship. There are only two ways to get to know about funds coming from the other side of the world:
+\begin{enumerate}
+	\item directly: be subscribed to that particular funder's news (the number of funders has not been estimated globally to the best of the author's knowledge, not to mention the huge variety of forms which news feeds take - from RSS through e-mail to just publishing on a website somewhere).
+	\item indirectly: hear about the opportunity from others. ``Others'' could mean colleagues - research development officers, other scholars - but these people have to be directly or indirectly related to the funding source. The funder will only reach a very small subset of the world's scholars directly, however, and this is crucial for a network model.
+\end{enumerate}
+
+The other currently possible meaning of ``Others'' is commercial companies who collect scholarly funding information, package it into databases with a front-end and sell it to research institutions. While the author is not against making a profit out of information, there has been overwhelming evidence in the past two decades that commercially exploiting information \emph{by virtue of hoarding it and then restricting access to it} is not a good strategy for anybody but the hoarder.
+
+\subsection{The value of Openness in scholarship and elsewhere}
+The Free Software, Open Source and more recently, Open Knowledge (which Open Access is a part of) movements have all demonstrated that the value of information can be greatly multiplied simply by having more people access it, reuse it and even be creative with it (e.g. visualise or summarise). The Open Knowledge Foundation argues this \cite{okfn-vision}. Seminal works like ``The Cathedral and the Bazaar'' \cite{catb} have also argued this.
+
+Governments seem to have grasped the benefits as well. The UK Government has mandated that all research funded with public money (which is a lot in the UK - almost everything through the seven Research Councils) should be published as Open Access by 2014 \cite{guardian-ukgov-oa2014}. It has also funded initiatives such as Open UK governmental data in the form of data.gov.uk \cite{open-uk-gov-data} and the recent Finch report \cite{guardian-finch} \cite{finch}.
+
+Private organisations are not far behind and may in fact be leading the way - one of the largest funders of science in the UK and around the world, the Wellcome Trust, has had a progressive and strict Open Access policy since 2006 \cite{wellcome-oa}.
+
+\subsection{Scholars}
+Openness is recognised as beneficial - and many scholars are supposed to be able to benefit from having access to all this scholarship for free instead of having the libraries pay extortionate amounts to academic publishers. The very essence of scholarship is building on what has been discovered before.
+
+However, while previous knowledge is a core requirement of science, sustenance is a very core human requirement, and in the modern world, this often translates to salaries \emph{and} (sometimes ``\emph{or}'') grant money, at least for scholars. Why should \emph{this} information be commercially exploited for the benefit of a few corporations when it could be used to better (globally) connect the minds to the money, to put it bluntly?
+
+There is another point - information about funding opportunities may be available but may be too generic or hidden beyond layers and layers of website navigation, reflecting the mental model of the funding organisation instead of the mental model of the researcher (RCUK are a case in point \cite{rcuk-home}). Thus, the goal of this project from the perspective of scholars can be summarised as ``bringing it together''.
+
+\section{The project}
+This project is about making an open-source web application named ``FundFind'' which lets stakeholders (just the scholars at first) share information about funding opportunities under open terms (the Open Definition defines ``open'' well \cite{od}).
+
+Follow-up work may increase this scope to include funding organisations or governments - they will already be able to submit funding information directly to a centrally hosted instance of the software produced by this project, but they will probably have special requirements related to this.
+
+The project does include functionality to allow scholars to access the information, and allow developers / journalists / analysts and other stakeholders to analyse and mash up the information.
+
+\section{Existing works}
+There is no single piece or combination of pieces of software which enables involved stakeholders to do what this project would allow them to do upon completion, to the best of the author's knowledge.
+
+However, this project fits well within a current framework of Open Knowledge-related projects, a nice selection of which are hosted and developed by the Open Knowledge Foundation \cite{okfn-labs} \cite{okfn-github}.
+
+This project will also require data to be useful. While one of its core aims is to enable crowdsourcing of scholarly funding information, it should also try to make use and ``digest'' existing information. This could mean looking at current funding opportunities \cite{rcuk-india} \cite{ahrc-opps} \cite{bbsrc-opps} \cite{epsrc-opps} or at loading information about past opportunities, such as what the Australian National Health and Medical Research Council has funded over the past 23 years \cite{au-nhmrc}. Of course, part of the point of this project is that it is not easy to get such information in a nice universally readable (e.g. machine-readable) format. Research about useful data would be an optional objective subject to good feedback on the core software output and enough budget (of time).

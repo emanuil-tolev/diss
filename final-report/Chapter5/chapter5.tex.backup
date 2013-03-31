@@ -1,0 +1,31 @@
+\chapter{Testing}
+
+% Detailed descriptions of every test case are definitely not what is required here. What is important is to show that you adopted a sensible strategy that was, in principle, capable of testing the system adequately even if you did not have the time to test the system fully.
+
+% Have you tested your system on 'real users'? For example, if your system is supposed to solve a problem for a business, then it would be appropriate to present your approach to involve the users in the testing process and to record the results that you obtained. Depending on the level of detail, it is likely that you would put any detailed results in an appendix.
+
+\section{Overall Approach to Testing}
+
+\section{Automated Testing}
+% pretty much the same content being tested in different ways
+% so unit -> selenium
+% unit -> stress
+% also functional
+
+\subsection{Unit Tests}
+% based on bibserver setup
+
+\subsection{Functional Tests}
+% based on bibserver setup
+% automated integration testing - after unit tests have succeeded, tests paths of functionality that use multiple modules
+
+\subsection{User Interface Testing}
+%selenuim ide
+
+\subsection{Stress Testing}
+% multi-mechanize
+
+%\subsection{Other types of testing}
+
+\section{User Testing}
+% candidate pg-s, pg-s, research dev officer, developers
