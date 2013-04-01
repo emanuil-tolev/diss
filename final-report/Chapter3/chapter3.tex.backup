@@ -1,25 +1,68 @@
 \chapter{Design}
 
+% The design should describe what you expected to do, and might also explain areas that you had to revise after some investigation.
 
+% Typically, for an object-oriented design, the discussion will focus on the choice of objects and classes and the allocation of methods to classes. The use made of reusable components should be described and their source referenced. Particularly important decisions concerning data structures usually affect the architecture of a system and so should be described here.
 
+% How much material you include on detailed design and implementation will depend very much on the nature of the project. It should not be padded out. Think about the significant aspects of your system. For example, describe the design of the user interface if it is a critical aspect of your system, or provide detail about methods and data structures that are not trivial. Do not spend time on long lists of trivial items and repetitive descriptions. If in doubt about what is appropriate, speak to your supervisor.
 
-
-The design should describe what you expected to do, and might also explain areas that you had to revise after some investigation.
-
-Typically, for an object-oriented design, the discussion will focus on the choice of objects and classes and the allocation of methods to classes. The use made of reusable components should be described and their source referenced. Particularly important decisions concerning data structures usually affect the architecture of a system and so should be described here.
-
-How much material you include on detailed design and implementation will depend very much on the nature of the project. It should not be padded out. Think about the significant aspects of your system. For example, describe the design of the user interface if it is a critical aspect of your system, or provide detail about methods and data structures that are not trivial. Do not spend time on long lists of trivial items and repetitive descriptions. If in doubt about what is appropriate, speak to your supervisor.
-
-
-\section{Overall Architecture}
 % You should concentrate on the more important aspects of the design. It is essential that an overview is presented before going into detail. As well as describing the design adopted it must also explain what other designs were considered and why they were rejected.
 
+\section{Overall Architecture}
+% asynchronous data store
+% diagram of architecture
+% changes from progress report - any?, why? why not?
+% these are all MODULES, not CLASSES - explain difference, rationale for using (convention at least)
 
+\section{Alternative Designs}
 
-\section{Some detailed design}
+\section{Main Application}
+% TODO remember to include classes contained within these modules in each module's description
 
-\subsection{Even more detail}
+\subsection{Core}
+This is a core class of any Flask Python web framework project. It monitors all the application code for changes and reloads components on-the-fly if changes are detected.
+
+\subsection{DAO}
+Data Access Object module – a database abstraction layer. Contains all the model classes of the application as well as functions which deal with the elasticsearch index (data store).
+
+\subsection{Web}
+This module is the ``web server'' of the application – it defines the routes and the corresponding functions which handle them (in a RESTful way), runs constantly and outputs exceptions to standard output. If more logic is needed to respond to a certain request than will fit comfortably in one short function, then the function can load another module (e.g. Importer).
+
+\subsection{Importer}
+A module which contains the Importer class. This handles data collection – submissions to the IDFind project. The Importer class gets created and used by the Web module.
+
+\subsection{Config}
+This class is a wrapper around a simple JSON dictionary of key-value pairs which contains hard-coded configuration information.
+
+\subsubsection{Default Settings}
+
+\subsection{Util}
+
+\subsection{TweetBot}
+
+\section{Harvesters}
+
+\subsection{HarvesterBase}
+
+\subsection{CliManualSubmitter}
+% why break naming conventions for classes? well, BBSRCRSSHarvester..... so hard-line first-letter-only-capital. But then have to use same convention everywhere - so that's how it happened.
+
+\subsection{RssHarvesterBase}
+
+\subsubsection{BbsrcRssHarvester}
+
+\subsubsection{EsrcRssHarvester}
+
+\subsection{EmailHarvesterBase}
+
+\subsection{EpsrcEmailHarvester}
 
 \section{User Interface}
+% using Bootstrap to be sure experience will be similar on all platforms
+% responsive mobile design with responsive bootstrap
+% an important part since project does crowdsourcing
+% based on what data funding bodies seem to give, mostly based on EPSRC so needs improvement! Or at least adding of custom key-value pairs.
 
-\section{Other relevant sections}
+\section{API Design}
+% working within context of similar projects - again
+% JSON

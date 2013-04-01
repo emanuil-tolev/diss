@@ -5,8 +5,54 @@
 %Introduce the specific model that you chose to use. 
 % You need to describe briefly the life cycle model that you used. Do not force your project into the waterfall model if it is better described by prototyping or some other evolutionary model. You do not need to write about all of the different process models that you are aware of. Focus on the process model that you have used. It is possible that you needed to adapt an existing process model to suit your project; clearly identify what you used and how you adapted it for your needs.
 
+An Agile approach to the development of the software was initially chosen.
+
+The main reasons for this choice were
+\begin{itemize}
+ \item Agile's perceived advantage in pinning down changing requirements.
+ \item Less formal communication with the users, who are all busy professionals. It was assumed they would not have sufficient time for writing functional specifications, even in collaboration with the author (as can sometimes be assumed in industry).
+ \item Linked to the user communication reason was a concept which many Agile methodologies used - user stories. These are short sentences (or rarely, paragraphs) which describe a single piece of functionality - a single ``thing'' that the user wants to do with the system.
+\end{itemize}
+
+However, it turned out that
+\begin{itemize}
+ \item The requirements did not change. Issues with funding data have been present for a while and a system which tries to prototype fixes through Open Data for some of them needs (a) developer(s) who know these issues inside out. Of course, the requirements gathering can still be done in an Agile way, but needs to be mostly completed before development starts. Defining the problem, in this case, had to come before solving it.
+ 
+ It could be argued that this was only a problem since the developer was also the ``initiator'' of the project. If a particular funder, Higher Education Institution or an organisation like the Open Knowledge Foundation wanted a project like this done, they would already know of certain problem characteristics - such as drawbacks of having so much funding data ``closed''. Then, more targeted exploration could be done and technical development would also have more precise targets to meet.
+ 
+ This means that the development process looked a lot more like \textbf{evolutionary prototyping} with a lot of requirements gathering between the prototype versions rather than an Agile iterative approach.
+ 
+ \item The assumption that users won't have time for anything but informal problem specification turned out to be correct. Thus, the ``stories'' concept proved to play an important role when gathering requirements from the target audience in short meetings, on the go or at hackdays.
+ 
+ \item The project's stories have been publicly accessible at the PivotalTracker management tool continuously throughout the exploration phase of the project which was used to record the aforementioned informal requirements. The ``Icebox'' still contains the list of features as prioritised by the various users who have been consulted during the exploration phase.
+\end{itemize}
+
+Initially, Agile practices such as Pair Programming \cite{pairprg}, full Scrum \cite{Scrum} and Feature-Driven Development were deemed unsuitable since they are aimed at groups of developers. Behaviour-Driven Development (with Cucumber \cite{cucumber}) was considered, but requires more commitment from the users - they need to learn an English-like domain-specific language which describes how the system is going to behave.
+
+Thus with no methodology fitting the precise needs of the project and the Agile Manifesto \cite{agile-manifesto} in mind, a methodology of an Agile \emph{character} was planned, using the Extreme Programming lifecycle as a base \cite{xp-lifecycle}.
+
+The basic steps which were defined were:
+\begin{enumerate}
+	\item Meet with a variety of potential users from the chosen user group (\S\ref{focus-groups}), trying to pick them so that each one has a different professional perspective on scholarship.
+	\item Define \emph{and prioritise} the functionality of the project with each user in the form of the ``stories'' mentioned above. Record the results using the chosen project management tools (\S\ref{pm-tools}).
+	\item Release planning - prepare an initial timeline of which project features are to be released when and denote ``release points''. This work can be repeated as required - the order and the features themselves might change on the basis of user feedback over time (this is how Agile projects try to deliver more value by responding to changing requirements). The total size of the work and the size of each feature will most probably remain the same. This piece of work produces the ``Project Timeline'' and the current version is included in \S\ref{timeline}.
+	\item Iterate - every week is a self-contained unit of work consisting of coding, documentation and write-up work. Before starting to code each week, break up that week's story into tasks so goals can be tracked more effectively and there is something to be accomplished each day.
+	\item Repeat items 1 and 2 - meaning regular meetings with previously chosen users - one per user per month, demonstrate the latest features and record the feedback.
+\end{enumerate}
+
+Within the coding part of each iteration, Test-Driven Development is employed using both unit and integration tests (the latter via browser automation with Selenium \cite{selenium}). This will be the evidence (on a basic technical level) for the ``correctness'' of the software. A basic form of Continuous Integration \cite{ci} will also be used - the Jenkins \cite{jenkins} software is currently being evaluated for the job. It basically runs all automated tests continuously, helping to detect regressions in code quality.
+
+This methodology makes for a considerably simpler lifecycle than the Extreme Programming one (a visualisation of which can be accessed at \cite{xp-lifecycle}). This is intentional as there are only about 11 (potentially 13) weeks which allow for programming work as can be seen in \S\ref{timeline}.
+
+
+
+The length of one iteration will be one week. Considering the tight deliverable deadlines (see \S\ref{timeline}), this will keep work on the project focused and will force the definition of user stories of a manageable size.
+
+%Agile approaches usually \emph{avoid} defining ``size'' - how long it will take to implement a story. Rather the complexity of each story is estimated using \emph{arbitrary} numbers (some people prefer to use larger/smaller animals) - how difficult it is to implement that story relative to other stories. If a story seems too \emph{complex}, it needs to broken up. This project uses the Fibonacci number sequence \cite{fibonacci} and ``too complex'' is a complexity estimate of more than 3. Previous experience with the technologies involved has also helped provide a link between complexity and ``how much time will it take'', thus helping enforce a maximum of 1 week to complete a story and add value to the software.
+
+
 \section{Modifications}
-Did you have to modify the model to suit a one-person project. If so, what did you change and why? 
+%Did you have to modify the model to suit a one-person project. If so, what did you change and why? 
 
 \section{Requirements}
 % In most cases, the agreed objectives or requirements will be the result of a compromise between what would ideally have been produced and what was felt to be possible in the time available. A discussion of the process of arriving at the final list is usually appropriate.
@@ -20,14 +66,23 @@ Did you have to modify the model to suit a one-person project. If so, what did y
 
 \subsection{Final requirements}
 % why different from intermediary - what was discovered to be different / new etc. New info? Realised sth.? (Data better than features?)
-% 
 
 
 
 % You should briefly describe the design method you used and any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.
 
 \section{Design process}
+% briefly describe the design method you used and any support tools that you used
 % context and process implications on design
 
+
 \section{Techologies used}
-% context and process implications on implementation tools - programming language, compilers, database management system, program development environment, etc.; frameworks; bootstrapping the codebase
+% context and process implications on implementation tools
+% programming language, compilers
+% database management system
+% program development environment
+% etc.
+% frameworks
+% always looking at other people's code, other FLOSS projects within OK movement
+% bootstrapping the codebase from IDFind
+% bootstrapping data gathering from bibserver

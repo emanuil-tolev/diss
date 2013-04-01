@@ -12,101 +12,63 @@ A level-1 auxiliary file: Chapter5/chapter5.aux
 A level-1 auxiliary file: Chapter6/chapter6.aux
 A level-1 auxiliary file: Appendix1/appendix1.aux
 A level-1 auxiliary file: Appendix2/appendix2.aux
-The style file: authordate2annot.bst
+The style file: IEEEannot.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
 Database file #1: References/references.bib
-Repeated entry---line 472 of file References/references.bib
+Repeated entry---line 473 of file References/references.bib
  : @misc{ci
  :         ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "dumbo"
 Warning--I didn't find a database entry for "cronyism1"
 Warning--I didn't find a database entry for "cronyism2"
+Warning--I didn't find a database entry for "progress-report"
 Warning--I didn't find a database entry for "NumericalRecipes"
-Warning--empty year in ahrc-opps
-Warning--empty year in spiral-model
-Warning--empty year in bbsrc-opps
-Warning--empty year in agile-manifesto
-Warning--empty year in browshot
-Warning--empty year in cl
-Warning--empty year in facetview
-Warning--empty year in xp-lifecycle
-Warning--empty year in idfind
-Warning--empty year in epsrc-opps
-Warning--empty year in ibm
-Warning--empty year in wmodel
-Warning--empty year in github
-Warning--empty year in gmaps
-Warning--empty year in grefine
-Warning--empty year in jisc
-Warning--empty year in knight-foundation
-Warning--empty year in ci
-Warning--empty year in au-nhmrc
-Warning--empty year in od
-Warning--empty year in okfn-github
-Warning--empty year in okfn-labs
-Warning--empty year in okfn-vision
-Warning--empty year in bubbletree
-Warning--empty year in recline
-Warning--empty year in wdmmg
-Warning--empty year in rcuk-india
-Warning--empty year in rcuk-home
-Warning--empty year in stories
-Warning--empty year in Scrum
-Warning--empty year in shuttleworth-foundation
-Warning--empty year in vmodel
-Warning--empty year in calc
-Warning--empty year in waterfall
-Warning--empty year in bootstrap
-Warning--empty year in json-vs-xml
-Warning--empty year in d3
-Warning--empty year in es
-Warning--empty year in flask
-Warning--empty year in jenkins
-Warning--empty year in jquery
-Warning--empty year in orefine
-Warning--empty year in selenium
-Warning--empty year in osm
-Warning--empty year in faceted
-Warning--empty year in wellcome-trust
-You've used 57 entries,
-            2510 wiz_defined-function locations,
-            877 strings with 20802 characters,
-and the built_in function-call counts, 16977 in all, are:
-= -- 1771
-> -- 522
-< -- 171
-+ -- 148
-- -- 136
-* -- 1173
-:= -- 2979
-add.period$ -- 239
-call.type$ -- 57
-change.case$ -- 399
-chr.to.int$ -- 45
-cite$ -- 103
-duplicate$ -- 684
-empty$ -- 1038
-format.name$ -- 191
-if$ -- 3252
-int.to.chr$ -- 13
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 402
-num.names$ -- 171
-pop$ -- 265
+-- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
+-- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Sorting version - not for use with work to be submitted to the IEEE.
+
+Done.
+You've used 58 entries,
+            4538 wiz_defined-function locations,
+            1191 strings with 24637 characters,
+and the built_in function-call counts, 28237 in all, are:
+= -- 2565
+> -- 528
+< -- 0
++ -- 234
+- -- 156
+* -- 1172
+:= -- 4934
+add.period$ -- 116
+call.type$ -- 58
+change.case$ -- 310
+chr.to.int$ -- 0
+cite$ -- 58
+duplicate$ -- 2094
+empty$ -- 2441
+format.name$ -- 158
+if$ -- 5954
+int.to.chr$ -- 0
+int.to.str$ -- 58
+missing$ -- 484
+newline$ -- 252
+num.names$ -- 116
+pop$ -- 1546
 preamble$ -- 1
-purify$ -- 399
-quote$ -- 0
-skip$ -- 650
+purify$ -- 194
+quote$ -- 2
+skip$ -- 2003
 stack$ -- 0
-substring$ -- 627
-swap$ -- 114
+substring$ -- 464
+swap$ -- 1141
 text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 456
-warning$ -- 46
-while$ -- 114
-width$ -- 0
-write$ -- 811
+top$ -- 6
+type$ -- 464
+warning$ -- 0
+while$ -- 116
+width$ -- 60
+write$ -- 552
 (There was 1 error message)

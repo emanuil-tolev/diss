@@ -8,16 +8,16 @@
 % all testing except user testing automated
 
 % pretty much the same content being tested in different ways
-% so unit -> selenium
-% unit -> stress
-% also functional
+% so have unit and integration tests
+% integration asserted content -> selenium for automated UI testing
+% integration asserted content -> mechanize for automated stress testing
 
 \section{Automated Testing}
 
 \subsection{Unit Tests}
 % based on bibserver setup
 
-\subsection{Functional Tests}
+\subsection{Functional / Integration Tests}
 % based on bibserver setup
 % automated integration testing - after unit tests have succeeded, tests paths of functionality that use multiple modules
 

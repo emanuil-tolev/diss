@@ -9,12 +9,63 @@
 % You should concentrate on the more important aspects of the design. It is essential that an overview is presented before going into detail. As well as describing the design adopted it must also explain what other designs were considered and why they were rejected.
 
 \section{Overall Architecture}
-% 
-
-
+% asynchronous data store
+% diagram of architecture
+% changes from progress report - any?, why? why not?
+% these are all MODULES, not CLASSES - explain difference, rationale for using (convention at least)
 
 \section{Alternative Designs}
 
-\section{Design Details}
+\section{Main Application}
+% TODO remember to include classes contained within these modules in each module's description
+
+\subsection{Core}
+This is a core class of any Flask Python web framework project. It monitors all the application code for changes and reloads components on-the-fly if changes are detected.
+
+\subsection{DAO}
+Data Access Object module – a database abstraction layer. Contains all the model classes of the application as well as functions which deal with the elasticsearch index (data store).
+
+\subsection{Web}
+This module is the ``web server'' of the application – it defines the routes and the corresponding functions which handle them (in a RESTful way), runs constantly and outputs exceptions to standard output. If more logic is needed to respond to a certain request than will fit comfortably in one short function, then the function can load another module (e.g. Importer).
+
+\subsection{Importer}
+A module which contains the Importer class. This handles data collection – submissions to the IDFind project. The Importer class gets created and used by the Web module.
+
+\subsection{Config}
+This class is a wrapper around a simple JSON dictionary of key-value pairs which contains hard-coded configuration information.
+
+\subsubsection{Default Settings}
+
+\subsection{Util}
+
+\subsection{TweetBot}
+
+\section{Harvesters}
+
+\subsection{HarvesterBase}
+
+\subsection{CliManualSubmitter}
+% why break naming conventions for classes? well, BBSRCRSSHarvester..... so hard-line first-letter-only-capital. But then have to use same convention everywhere - so that's how it happened.
+
+\subsection{RssHarvesterBase}
+
+\subsubsection{BbsrcRssHarvester}
+
+\subsubsection{EsrcRssHarvester}
+
+\subsection{EmailHarvesterBase}
+
+\subsection{EpsrcEmailHarvester}
 
 \section{User Interface}
+% using Bootstrap to be sure experience will be similar on all platforms
+% responsive mobile design with responsive bootstrap
+% an important part since project does crowdsourcing
+% initially developed on its own just based on what data funding bodies seem to give, mostly based on EPSRC so needs improvement! Or at least adding of custom key-value pairs.
+% see Testing chapter for details on feedback received on this
+
+% TODO WORK if any changes made after UI tests, also include here
+
+\section{API Design}
+% working within context of similar projects - again
+% JSON
