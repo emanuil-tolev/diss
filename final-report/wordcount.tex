@@ -29,20 +29,6 @@
 %\usepackage{natbib}
 
 % user-defined packages
-
-% bookmarks in the pdf, hyperlinked references and citations, automatic opening of PDF at Fit Width of Window...
-% \usepackage[
-%     pdfborder={0 0 0},
-% 	pdfstartview={FitH},
-% 	plainpages=false,
-% 	pdfpagelabels,
-% 	bookmarksopen=true,
-% 	bookmarksopenlevel=1
-% 	]{hyperref}
-
-\usepackage{titleref}
-
-% for the subtitle on the cover page
 \usepackage{titling}
 \renewcommand{\subtitle}[1]{%
   \posttitle{%
@@ -51,12 +37,7 @@
     \vskip0.5em}%
 }
 
-% word-wrapped tables
 \usepackage{tabulary}
-
-% unicode chars
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 
 % Use the following to selectively exclude chapters
 %\includeonly{cover,abstract,acknowledge,declare,chapter1,chapter2}
@@ -90,14 +71,8 @@
 {\begin{snugshade}\begin{quote}\openquote}
 {\hfill\closequote\end{quote}\end{snugshade}}
 
-% resuming enumerate env. (lists)
+% resuming enumerate
 \newcounter{tmpc}
-
-% inline code
-\let\code\texttt
-
-% reference format (references to other sections, NOT citation format)
-\def\myref#1{``\titleref{#1}'', \S\ref{#1}}
 
 \begin{document}
 
@@ -108,16 +83,16 @@
 \pagenumbering{roman}
 
 % This is the front page
-\include{cover}                        
+%\include{cover}                        
 
 % Set up page numbering
 \pagestyle{empty}
 
 % declarations of originality 
-\include{declaration}               
+%\include{declaration}               
 
-\include{acknowledgements} % Acknowledgements
-\include{abstract}                 % Abstract
+%\include{acknowledgements} % Acknowledgements
+%\include{abstract}                 % Abstract
 
 \pagenumbering{roman}
 \pagestyle{fancy}
@@ -126,12 +101,12 @@
 \renewcommand{\headrulewidth}{0 pt}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
-\tableofcontents   
-\newpage
-\listoffigures
-\newpage 
-\listoftables
-\newpage
+%\tableofcontents   
+%\newpage
+%\listoffigures
+%\newpage 
+%\listoftables
+%\newpage
 
 % Set up page numbering
 \pagenumbering{arabic}
@@ -172,8 +147,8 @@
 \fancyfoot[C]{{\thepage} of \pageref{LastPage}}
 
 % include any appendices here
-\include{Appendix1/appendix1}
-\include{Appendix2/appendix2}
+%\include{Appendix1/appendix1}
+%\include{Appendix2/appendix2}
 
 \fancypagestyle{plain}{%
    \fancyhead{} %[C]{Annotated Bibliography}

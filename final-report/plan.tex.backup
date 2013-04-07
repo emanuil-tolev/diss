@@ -1,0 +1,116 @@
+\chapter{Background \& Objectives}
+\section{Scholarship and funding}
+\section{Audience and high-level requirements}
+\subsection{Professionals looking for funding}
+\subsubsection{Accomplished scholars}
+\subsubsection{Junior academics}
+\subsubsection{Research development officers}
+\subsection{Those looking to advertise funding opportunities.}
+\subsubsection{Focusing on certain audience groups}
+\section{Existing works}
+\section{Scholarly funding opportunities}
+\subsection{Funders}
+\subsection{The value of Openness in scholarship and elsewhere}
+\subsection{Scholars}
+\section{The project}
+\section{Existing works}
+\section{Licensing}
+
+
+
+\chapter{Development Process}
+\section{Introduction}
+\subsection{Overview}
+\subsection{Project management tools}
+\section{Evolution of the Development Process}
+\section{Modifications}
+\subsection{What is Agile?}
+\subsection{Is it Agile?}
+\subsubsection{Underestimation}
+\section{Requirements}
+\subsection{Requirements gathering}
+\subsection{Final requirements}
+\section{Design process}
+\section{Techologies used}
+
+
+
+\chapter{Design}
+\section{Overall Architecture}
+\section{Alternative Designs}
+\section{Datastore}
+\section{Main Application}
+\subsection{Core}
+\subsection{DAO}
+\subsection{Web}
+\subsection{Importer}
+\subsection{Config}
+\subsubsection{Default Settings}
+\subsection{Util}
+\subsection{TweetBot}
+\section{Harvesters}
+\subsection{HarvesterBase}
+\subsection{CliManualSubmitter}
+\subsection{RssHarvesterBase}
+\subsubsection{BbsrcRssHarvester}
+\subsubsection{EsrcRssHarvester}
+\subsection{EmailHarvesterBase}
+\subsubsection{EpsrcEmailHarvester}
+\section{User Interface}
+% Looked at what values the data had in general, starting with EPSRC examples and some RSS feeds (cite them here).
+% Bootstrap integrates a lot of UI knowledge into itself
+% which is good, but not sufficient - reused IDFind's homepage design made by Mark @ Cottage Labs \cite{mark}.
+% submission forms - just ordered the items in order of perceived importance, mostly as presented in EPSRC data and RSS feeds. Put things related to FundFind at the bottom (e.g. tags) since the best way to write such metadata is to have thought about the values in the rest of the form.
+\subsection{AJAX functionality}
+\label{design-ajax}
+  %utilities e.g. slug
+  %gtr advanced suggestion stuff
+
+\section{API}
+  % divide into ``usability design'' - how usable API is by developers, what thought was put into that
+  % and technical design
+  \subsection{Design for Developers}
+    % general waffle
+    % route table with explanations
+    
+    In addition to the functionality exposed through the routes described above, the AJAX functionality (\S\ref{design-ajax}) can also be used by API consumers. For example, the developers of a hypothetical ``News for Scholars'' newsfeed reader application might want to suggest previously funded bids to its UK readers. They have two options:
+    
+    \begin{enumerate}
+     \item Re-use the SuggestionEngine and SuggestSuccessfulProjects classes which enable FundFind's ``this may be of interest'' feature. If the hypothetical application is written in Python, this will just involve copying $+$ editing the code and perhaps reading the Gateway to Research API documentation (for the UK information). If it is written in another language, ``re-use'' will mean looking at the logic 
+    \end{enumerate}
+
+  \subsection{Technical design}
+  % Intro - API achieved by relying on the usual Python technologies, Flask, whatever IDFind had as basic API..
+  % Used HTTP protocol. What it is. Why.
+  \subsubsection{Data format}
+  % JSON. What it is. Why. (Take some from PR).
+  % conneg. integrated Richard's package?
+
+
+
+
+
+\chapter{Implementation}
+
+
+
+\chapter{Testing}
+\section{Overall Approach to Testing}
+\section{Automated Testing}
+\subsection{Unit Tests}
+\subsection{Functional / Integration Tests}
+\subsection{User Interface Testing}
+\subsection{Stress Testing}
+%\subsection{Other types of testing}
+\section{User Testing}
+
+
+
+\chapter{Evaluation}
+\section{Approaching the field of scholarly funding}
+\section{Whose requirements?}
+\section{Collecting information from disparate sources - technological suitability}
+\section{User needs}
+\section{Exploring scholarly funding}
+\section{In retrospect}
+\section{Learning}

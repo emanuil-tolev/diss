@@ -120,6 +120,16 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   page of the IDFind project. It tries to guess what kind of identifier an
   unknown string is. \end{quotation}
 
+\bibitem{gow}
+{Engineering and Physical Sciences Research Council}, ``{Grants on the Web},''
+  \url{http://gow.epsrc.ac.uk/NGBODefault.aspx}, accessed April 2013.
+ \begin{quotation}\noindent This is a service on the web run by EPSRC UK which
+  provides information about research, training and public engagement grants.
+  Essentially, it provides historical information about what was funded and has
+  some nice functionality, such as breakdown by field funded, number of funded
+  proposals within that field and several simple quarterly statistics.
+  \end{quotation}
+
 \bibitem{epsrc-opps}
 {EPSRC}, ``{EPSRC Research Funding},''
   \url{http://www.epsrc.ac.uk/funding/Pages/default.aspx}, accessed November
@@ -200,10 +210,18 @@ tific-research}, July 2012, accessed November 2012.
   innovation, engaging the various communities around the world / in society
   and in fostering the arts. \end{quotation}
 
+\bibitem{hifi-api}
+{Kris Jordan}, ``{First we built an API, then we built a CMS},''
+  \url{http://www.gethifi.com/blog/first-we-built-an-api-then-we-built-a-cms},
+  2010, accessed April 2013.
+ \begin{quotation}\noindent An article by a HiFi company developer detailing
+  why they built their Application Programming Interface first, right from the
+  start. \end{quotation}
+
 \bibitem{ci}
 {Martin Fowler}, ``{Continuous Integration},''
-  \url{http://martinfowler.com/articles/continuousIntegration.html}, accessed
-  November 2012.
+  \url{http://martinfowler.com/articles/continuousIntegration.html}, May 2006,
+  accessed November 2012.
  \begin{quotation}\noindent An article describing the principle of Continuous
   Integration in software development and illustrating why a developer or a
   development team might consider adopting this practice. \end{quotation}

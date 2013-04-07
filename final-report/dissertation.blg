@@ -15,14 +15,31 @@ A level-1 auxiliary file: Appendix2/appendix2.aux
 The style file: IEEEannot.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
 Database file #1: References/references.bib
-Repeated entry---line 473 of file References/references.bib
- : @misc{ci
- :         ,
-I'm skipping whatever remains of this entry
+Warning--string name "december" is undefined
+--line 503 of file References/references.bib
+Warning--I didn't find a database entry for "progress-report"
 Warning--I didn't find a database entry for "dumbo"
 Warning--I didn't find a database entry for "cronyism1"
 Warning--I didn't find a database entry for "cronyism2"
-Warning--I didn't find a database entry for "progress-report"
+Warning--I didn't find a database entry for "gtr"
+Warning--I didn't find a database entry for "evol-proto-def"
+Warning--I didn't find a database entry for "agile-estimate"
+Warning--I didn't find a database entry for "acat"
+Warning--I didn't find a database entry for "nomenklatura"
+Warning--I didn't find a database entry for "offenesparlament"
+Warning--I didn't find a database entry for "pybossa"
+Warning--I didn't find a database entry for "activityapi"
+Warning--I didn't find a database entry for "leaps"
+Warning--I didn't find a database entry for "portality"
+Warning--I didn't find a database entry for "iioa"
+Warning--I didn't find a database entry for "artemis"
+Warning--I didn't find a database entry for "cl-web-code"
+Warning--I didn't find a database entry for "xcri"
+Warning--I didn't find a database entry for "negotiator"
+Warning--I didn't find a database entry for "advantages-apis"
+Warning--I didn't find a database entry for "python-doc-modules"
+Warning--I didn't find a database entry for "mysql"
+Warning--I didn't find a database entry for "oracle"
 Warning--I didn't find a database entry for "NumericalRecipes"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
@@ -30,45 +47,45 @@ Warning--I didn't find a database entry for "NumericalRecipes"
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 58 entries,
+You've used 60 entries,
             4538 wiz_defined-function locations,
-            1191 strings with 24637 characters,
-and the built_in function-call counts, 28237 in all, are:
-= -- 2565
-> -- 528
+            1221 strings with 25557 characters,
+and the built_in function-call counts, 29227 in all, are:
+= -- 2661
+> -- 542
 < -- 0
-+ -- 234
-- -- 156
-* -- 1172
-:= -- 4934
-add.period$ -- 116
-call.type$ -- 58
-change.case$ -- 310
++ -- 240
+- -- 160
+* -- 1213
+:= -- 5114
+add.period$ -- 120
+call.type$ -- 60
+change.case$ -- 320
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 2094
-empty$ -- 2441
-format.name$ -- 158
-if$ -- 5954
+cite$ -- 60
+duplicate$ -- 2168
+empty$ -- 2527
+format.name$ -- 162
+if$ -- 6164
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 484
-newline$ -- 252
-num.names$ -- 116
-pop$ -- 1546
+int.to.str$ -- 60
+missing$ -- 500
+newline$ -- 260
+num.names$ -- 120
+pop$ -- 1590
 preamble$ -- 1
-purify$ -- 194
+purify$ -- 200
 quote$ -- 2
-skip$ -- 2003
+skip$ -- 2078
 stack$ -- 0
-substring$ -- 464
-swap$ -- 1141
+substring$ -- 480
+swap$ -- 1185
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 464
+type$ -- 480
 warning$ -- 0
-while$ -- 116
-width$ -- 60
-write$ -- 552
-(There was 1 error message)
+while$ -- 120
+width$ -- 62
+write$ -- 572
+(There were 25 warnings)

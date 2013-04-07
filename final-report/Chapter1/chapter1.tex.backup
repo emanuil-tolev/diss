@@ -1,4 +1,4 @@
-\chapter{Background \& Objectives}
+\chapter{Background and Objectives}
 
 %This section should pick-up material from your progress report and enhance it based on the feedback and also your additional experience up to now.
 
@@ -25,7 +25,7 @@ There is no easy way to track money - where it gets allocated to, what fields (o
 
 However, there is still no mechanism of getting \emph{present, current} data about scholarly funding.
 
-Something which allows searching the (vastly) different, \emph{currently available} streams of funding within academia was thus identified as potentially useful by various people interested in the subject:
+Something which allows searching the (vastly) different, \emph{currently available} streams of funding within academia was thus identified as potentially useful by various people interested in the subject.
 
 \section{Audience and high-level requirements}
 \label{audience}
@@ -33,7 +33,7 @@ The potential audience of this project was discovered to be quite varied. It see
 
 The requirements or potential uses that these users might want to put FundFind to are closely tied to the benefits that come with opening up funding data.
 
-\subsection{Professionals \textbf{looking for} funding}
+\subsection{Professionals looking for funding}
 
 \subsubsection{Accomplished scholars}
 \begin{itemize}
@@ -54,19 +54,22 @@ The requirements or potential uses that these users might want to put FundFind t
 \end{itemize}
 
 \subsubsection{Research development officers}
+\label{audience-research-officers}
 \begin{itemize}
  \item \textbf{Who}: Professionals who find more funding opportunities for scholars
  \item \textbf{Aims}: Wish to record the opportunities they find somewhere and share them with scholars. Also may want to access a list of all opportunities \emph{they} have found over time, so that they can report to their line managers more easily.
  \item \textbf{Benefits from opening up funding data}: Not as many as scholars, unless they are happy to share the opportunities they have found with research officers from other institutions (which they do not always want). However, a system which allows sharing of recorded opportunities with a select subset of users (such as all within the officer's institution) would be welcome as this can allow them to record a funding opportunity once, share it with ``their'' scholars and include it in reports.
- \item \textbf{Possible requirements from FundFind}: Find funding. To quote a postgraduate candidate: ``I want to do a taught MSc in Astrophysics but I can't afford to self fund. Where can I go and who will pay me?''
- 
- Share funding information with peers (e.g. if a canididate for a Computer Vision PhD finds a good PhD studentship call for applications in Bioinformatics, they may well want to forward it to a colleague).
+ \item \textbf{Possible requirements from FundFind}: Find funding. Share funding with subset of users. See information submitted per user (themselves).
 \end{itemize}
 
- () & &  \\
+\subsection{Funders}
+Those looking to advertise funding opportunities - Funding Stream and Programme managers at various institutions such as:
 
+\subsection{``Analyst'' group}
+\label{audience-analyst}
+Those looking to analyse scholarly funding
 
-
+A hackday in the middle of March which focussed on the Gateway to Research project provided insight into the usefulness of certain initially planned features and inspired new ideas. The main audience of the hackday was this group. The GtR is an attempt to get the seven UK Research councils to publish historical funding data - who got funded, grant codes, who worked with whom, any related publications \cite{gtr}, etcetera. In this way, it is actually quite similar to FundFind, except that it related to \emph{historical}, not current funding information, and of course contains a lot more information than FundFind is currently scoped to hold.
 
 \bgroup
 \tymin=30pt
@@ -76,11 +79,6 @@ The requirements or potential uses that these users might want to put FundFind t
 \begin{tabulary}{\linewidth}{LLL}
 Potential users & Their aims & Benefits of opening up funding data \\
 \hline
- \\
-\cline{1-1}
-
-Those \textbf{looking to advertise} funding opportunities. Funding and Programme managers at various institutions such as: \\
-\cline{1-1}
 Research Councils in the UK & Wish to attract the best scholars in their own field, but also look to establish new cross-disciplinary  projects & Already committed to opening up historical funding data, would like to advertise current funding data more widely. \\
 JISC \cite{jisc} (digital infrastructure in education/research) & Wish to attract talent to work on scholarly infrastructure in the UK, i.e. give their aims and projects more exposure. Scholars rarely choose scholarship infrastructure as their main field. & Have always wanted wider reach, as well as vigorously supported Open Data. Have a lot of funding opportunities from minor to large, would like to advertise them better.\\
 Various charitable Foundations, Institutes, Endowments and so on which fund scholarly activities (e.g. the Wellcome Trust \cite{wellcome-trust}, Shuttleworth Foundation \cite{shuttleworth-foundation}, Knight Foundation \cite{knight-foundation}) & Want the best scholars competing for their money. & Need to reach more scholars to build up an ever-improving pool of applicants (in terms of quality). Also, as private institutions, would like to demonstrate greater transparency with their funding dissemination and allocation. \\
@@ -95,6 +93,7 @@ Politicians, analysts, bloggers, the general public & Want to demonstrate accoun
 \end{table}
 \egroup
 
+% FIXME - from Progress Report for ALL TEXT BELOW THIS LINE
 \subsubsection{Focusing on certain audience groups}
 \label{focus-groups}
 Satisfying the major requirements of all these users is not a suitable scope for this project (it may be for a follow-up project).
@@ -102,6 +101,20 @@ Satisfying the major requirements of all these users is not a suitable scope for
 Therefore, this project will focus on the first group of users. The main reasons are time constraints and ease of access to such users. Searching for opportunities can be significantly harder than submitting them. In a way, providing data to academic users will pave the way for providing data to a more general public (third group) for re-use and analysis.
 
 The project will nonetheless provide basic information submission (``digestion'') capabilities and basic general raw data access via an open machine-ready interface (``API'') to satisfy some of the requirements of the second and third groups. The author belongs to the third group. The Open Knowledge Foundation \cite{okfn-vision} and Cottage Labs LLP \cite{cl} will be briefly consulted on the completed project. Cottage Labs has stated that the project will be valuable to Open Knowledge if executed well and is happy to provide feedback.
+
+\section{Existing works}
+There is no single piece or combination of pieces of software which enables involved stakeholders to do what this project would allow them to do upon completion, to the best of the author's knowledge.
+
+However, this project fits well within a current framework of Open Knowledge-related projects, a nice selection of which are hosted and developed by the Open Knowledge Foundation \cite{okfn-labs} \cite{okfn-github}.
+
+% FIXME extend - IDFind itself based on Bibserver, OKF project
+% Code and ideas contribution paths
+% Bibserver -> IDFind -> FundFind
+% Bibserver -> FundFind (since Bibserver updated after IDFind made and changes not ported over yet)
+FundFind is largely based on IDFind \cite{idfind}, another project in the Open Knowledge field, developed by Cottage Labs LLP.
+
+% FIXME - from PR!
+This project will also require data to be useful. While one of its core aims is to enable crowdsourcing of scholarly funding information, it should also try to make use and ``digest'' existing information. This could mean looking at current funding opportunities \cite{rcuk-india} \cite{ahrc-opps} \cite{bbsrc-opps} \cite{epsrc-opps} or at loading information about past opportunities, such as what the Australian National Health and Medical Research Council has funded over the past 23 years \cite{au-nhmrc}. Of course, part of the point of this project is that it is not easy to get such information in a nice universally readable (e.g. machine-readable) format. Research about useful data would be an optional objective subject to good feedback on the core software output and enough budget (of time).
 
 
 % FIXME delete all below here
@@ -150,3 +163,6 @@ There is no single piece or combination of pieces of software which enables invo
 However, this project fits well within a current framework of Open Knowledge-related projects, a nice selection of which are hosted and developed by the Open Knowledge Foundation \cite{okfn-labs} \cite{okfn-github}.
 
 This project will also require data to be useful. While one of its core aims is to enable crowdsourcing of scholarly funding information, it should also try to make use and ``digest'' existing information. This could mean looking at current funding opportunities \cite{rcuk-india} \cite{ahrc-opps} \cite{bbsrc-opps} \cite{epsrc-opps} or at loading information about past opportunities, such as what the Australian National Health and Medical Research Council has funded over the past 23 years \cite{au-nhmrc}. Of course, part of the point of this project is that it is not easy to get such information in a nice universally readable (e.g. machine-readable) format. Research about useful data would be an optional objective subject to good feedback on the core software output and enough budget (of time).
+
+\section{Licensing}
+% add IDFind's licensing status history here (bibserver's 2 copies, our copy MIT -> IDFind MIT April 2013 -> FundFind MIT April 2013), alluded to in \S\ref{pm-tools}

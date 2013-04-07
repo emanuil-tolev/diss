@@ -95,9 +95,7 @@
 
 % inline code
 \let\code\texttt
-
-% reference format (references to other sections, NOT citation format)
-\def\myref#1{``\titleref{#1}'', \S\ref{#1}}
+\def \myref {\titleref \S\ref}
 
 \begin{document}
 

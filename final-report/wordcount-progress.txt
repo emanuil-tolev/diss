@@ -1,0 +1,563 @@
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ ./countwords.sh 
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 5512
+Words in headers: 166
+Words outside text (captions, etc.): 12
+Number of headers: 78
+Number of floats/tables/figures: 2
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2224+51+9 (17/1/0/0) Chapter: Background \& Objectives
+  2422+29+3 (14/1/1/0) Chapter: Development Process
+  655+41+0 (29/0/1/0) Chapter: Design
+  0+1+0 (1/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  204+24+0 (8/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ ./countwords.sh 
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 6115
+Words in headers: 174
+Words outside text (captions, etc.): 12                                                                                                                                                         
+Number of headers: 80                                                                                                                                                                           
+Number of floats/tables/figures: 2                                                                                                                                                              
+Number of math inlines: 2                                                                                                                                                                       
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2224+57+9 (18/1/0/0) Chapter: Background \& Objectives
+  2422+29+3 (14/1/1/0) Chapter: Development Process
+  1258+41+0 (29/0/1/0) Chapter: Design
+  0+3+0 (2/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  204+24+0 (8/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ ./countwords.sh 
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 6115
+Words in headers: 174
+Words outside text (captions, etc.): 12
+Number of headers: 80
+Number of floats/tables/figures: 2
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2224+57+9 (18/1/0/0) Chapter: Background \& Objectives
+  2422+29+3 (14/1/1/0) Chapter: Development Process
+  1258+41+0 (29/0/1/0) Chapter: Design
+  0+3+0 (2/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  204+24+0 (8/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ ./countwords.sh 
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 6839
+Words in headers: 246
+Words outside text (captions, etc.): 24
+Number of headers: 99
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2224+58+9 (18/1/0/0) Chapter: Background and Objectives
+  2550+93+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  0+3+0 (2/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  204+24+0 (8/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ ./countwords.sh 
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 7187
+Words in headers: 246
+Words outside text (captions, etc.): 24
+Number of headers: 99
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2224+58+9 (18/1/0/0) Chapter: Background and Objectives
+  2898+93+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  0+3+0 (2/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  204+24+0 (8/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ scp
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ ./countwords.sh 
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 7967
+Words in headers: 247
+Words outside text (captions, etc.): 24
+Number of headers: 102
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2343+49+9 (18/1/0/0) Chapter: Background and Objectives
+  3493+93+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  0+3+0 (2/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  270+34+0 (11/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Fri Apr  5 22:44:18 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 7967
+Words in headers: 247
+Words outside text (captions, etc.): 24
+Number of headers: 102
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2343+49+9 (18/1/0/0) Chapter: Background and Objectives
+  3493+93+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  0+3+0 (2/0/0/0) Chapter: Implementation
+  0+19+0 (8/0/0/0) Chapter: Testing
+  270+34+0 (11/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ history --help
+bash: history: --: invalid option
+history: usage: history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg...]
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Fri Apr  5 23:19:45 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8447
+Words in headers: 273
+Words outside text (captions, etc.): 24
+Number of headers: 108
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2343+49+9 (18/1/0/0) Chapter: Background and Objectives
+  3956+95+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+23+0 (7/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  270+34+0 (11/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Fri Apr  5 23:40:13 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 7417
+Words in headers: 256
+Words outside text (captions, etc.): 24
+Number of headers: 102
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  3956+95+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+23+0 (7/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  270+34+0 (11/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ vim countwords.sh 
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sat Apr  6 19:13:43 BST 2013
+
+!!!  Encountered \end without corresponding \begin  !!!
+
+!!!  Reached end of file while waiting for }.  !!!
+
+!!!  Reached end of file while waiting for \end.  !!!
+
+!!!  Environment ended while waiting for d{itemize}.  !!!
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8144
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4416+95+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  537+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:5)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sat Apr  6 19:15:16 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8143
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4415+95+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  537+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ vim countwords.sh 
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh -sub=section
+Sat Apr  6 19:16:11 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8143
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  35+3+0 (1/0/0/0) Chapter: Background and Objectives
+  423+3+0 (1/0/0/0) Section: Scholarship and funding
+  659+23+9 (8/1/0/0) Section: Audience and high-level requirements
+  196+2+0 (1/0/0/0) Section: Existing works
+  0+1+0 (1/0/0/0) Section: Licensing
+  0+2+0 (1/0/0/0) Chapter: Development Process
+  543+5+0 (3/0/0/0) Section: Introduction
+  788+5+0 (1/0/0/0) Section: Evolution of the Development Process
+  985+8+3 (4/1/1/0) Section: Modifications
+  2099+71+0 (19/0/0/0) Section: Requirements
+  0+2+0 (1/0/0/0) Section: Design process
+  0+2+0 (1/0/0/0) Section: Techologies used
+  0+1+0 (1/0/0/0) Chapter: Design
+  649+4+0 (2/0/0/0) Section: Introduction
+  579+8+12 (3/1/0/0) Section: Overall Architecture
+  160+11+0 (9/0/0/0) Section: Main Application
+  0+1+0 (1/0/0/0) Section: Suggestions
+  0+8+0 (8/0/0/0) Section: Harvesters
+  355+1+0 (1/0/0/0) Section: Datastore
+  0+4+0 (2/0/0/0) Section: User Interface
+  111+8+0 (4/0/1/0) Section: API
+  0+2+0 (1/0/0/0) Section: Alternative Designs
+  0+1+0 (1/0/0/0) Chapter: Implementation
+  0+2+0 (1/0/0/0) Section: User Interface
+  17+22+0 (6/0/0/0) Section: Implementing The Main Application
+  0+1+0 (1/0/0/0) Chapter: Testing
+  0+4+0 (1/0/0/0) Section: Overall Approach to Testing
+  0+12+0 (5/0/0/0) Section: Automated Testing
+  0+6+0 (2/0/0/0) Section: User Testing
+  0+1+0 (1/0/0/0) Chapter: Evaluation
+  425+10+0 (2/0/0/0) Section: Approaching the field of scholarly funding
+  0+7+0 (1/0/0/0) Section: Collecting Information From Disparate Sources - Technological Suitability
+  66+15+0 (5/0/0/0) Section: User Needs
+  0+2+0 (1/0/0/0) Section: In Retrospect
+  46+9+0 (3/0/0/0) Section: Future Work
+  0+1+0 (1/0/0/0) Section: Learning
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh -sub=subsection
+Sat Apr  6 19:35:35 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8143
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  35+3+0 (1/0/0/0) Chapter: Background and Objectives
+  423+3+0 (1/0/0/0) Section: Scholarship and funding
+  52+4+0 (1/0/0/0) Section: Audience and high-level requirements
+  315+11+0 (4/0/0/0) Subsection: Professionals looking for funding
+  16+1+0 (1/0/0/0) Subsection: Funders
+  276+7+9 (2/1/0/0) Subsection: ``Analyst'' group
+  196+2+0 (1/0/0/0) Section: Existing works
+  0+1+0 (1/0/0/0) Section: Licensing
+  0+2+0 (1/0/0/0) Chapter: Development Process
+  0+1+0 (1/0/0/0) Section: Introduction
+  228+1+0 (1/0/0/0) Subsection: Overview
+  315+3+0 (1/0/0/0) Subsection: Project management tools
+  788+5+0 (1/0/0/0) Section: Evolution of the Development Process
+  25+1+0 (1/0/0/0) Section: Modifications
+  276+3+0 (1/0/1/0) Subsection: What is Agile?
+  684+4+3 (2/1/0/0) Subsection: Is it Agile?
+  36+1+0 (1/0/0/0) Section: Requirements
+  0+2+0 (1/0/0/0) Subsection: Requirements Gathering
+  1982+66+0 (16/0/0/0) Subsection: Initial Requirements
+  81+2+0 (1/0/0/0) Subsection: Final Requirements
+  0+2+0 (1/0/0/0) Section: Design process
+  0+2+0 (1/0/0/0) Section: Techologies used
+  0+1+0 (1/0/0/0) Chapter: Design
+  102+1+0 (1/0/0/0) Section: Introduction
+  547+3+0 (1/0/0/0) Subsection: Details and Rationale
+  38+2+0 (1/0/0/0) Section: Overall Architecture
+  315+3+0 (1/0/0/0) Subsection: Modules and Packages
+  226+3+12 (1/1/0/0) Subsection: Changes over time
+  0+2+0 (1/0/0/0) Section: Main Application
+  27+1+0 (1/0/0/0) Subsection: Core
+  28+1+0 (1/0/0/0) Subsection: DAO
+  60+1+0 (1/0/0/0) Subsection: Web
+  27+1+0 (1/0/0/0) Subsection: Importer
+  18+3+0 (2/0/0/0) Subsection: Config
+  0+1+0 (1/0/0/0) Subsection: Util
+  0+1+0 (1/0/0/0) Subsection: TweetBot
+  0+1+0 (1/0/0/0) Section: Suggestions
+  0+1+0 (1/0/0/0) Section: Harvesters
+  0+1+0 (1/0/0/0) Subsection: HarvesterBase
+  0+1+0 (1/0/0/0) Subsection: CliManualSubmitter
+  0+3+0 (3/0/0/0) Subsection: RssHarvesterBase
+  0+2+0 (2/0/0/0) Subsection: EmailHarvesterBase
+  355+1+0 (1/0/0/0) Section: Datastore
+  0+2+0 (1/0/0/0) Section: User Interface
+  0+2+0 (1/0/0/0) Subsection: AJAX functionality
+  0+1+0 (1/0/0/0) Section: API
+  111+3+0 (1/0/1/0) Subsection: Design for Developers
+  0+4+0 (2/0/0/0) Subsection: Technical design
+  0+2+0 (1/0/0/0) Section: Alternative Designs
+  0+1+0 (1/0/0/0) Chapter: Implementation
+  0+2+0 (1/0/0/0) Section: User Interface
+  0+4+0 (1/0/0/0) Section: Implementing The Main Application
+  0+2+0 (1/0/0/0) Subsection: Faceted Search
+  0+7+0 (2/0/0/0) Subsection: The Final Features
+  17+9+0 (2/0/0/0) Subsection: The Dropped Features
+  0+1+0 (1/0/0/0) Chapter: Testing
+  0+4+0 (1/0/0/0) Section: Overall Approach to Testing
+  0+2+0 (1/0/0/0) Section: Automated Testing
+  0+2+0 (1/0/0/0) Subsection: Unit Tests
+  0+3+0 (1/0/0/0) Subsection: Functional / Integration Tests
+  0+3+0 (1/0/0/0) Subsection: User Interface Testing
+  0+2+0 (1/0/0/0) Subsection: Stress Testing
+  0+2+0 (1/0/0/0) Section: User Testing
+  0+4+0 (1/0/0/0) Subsection: Responsive Mobile Web Design
+  0+1+0 (1/0/0/0) Chapter: Evaluation
+  238+6+0 (1/0/0/0) Section: Approaching the field of scholarly funding
+  187+4+0 (1/0/0/0) Subsection: Condensing the insights gained
+  0+7+0 (1/0/0/0) Section: Collecting Information From Disparate Sources - Technological Suitability
+  0+2+0 (1/0/0/0) Section: User Needs
+  0+2+0 (1/0/0/0) Subsection: Identifying Requirements
+  66+11+0 (3/0/0/0) Subsection: Meeting Needs
+  0+2+0 (1/0/0/0) Section: In Retrospect
+  46+9+0 (3/0/0/0) Section: Future Work
+  0+1+0 (1/0/0/0) Section: Learning
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh -sub=subsubsection
+Sat Apr  6 19:36:08 BST 2013
+Warning: Option value subsubsection not valid, using default instead.
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8143
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  35+3+0 (1/0/0/0) Chapter: Background and Objectives
+  423+3+0 (1/0/0/0) Section: Scholarship and funding
+  52+4+0 (1/0/0/0) Section: Audience and high-level requirements
+  315+11+0 (4/0/0/0) Subsection: Professionals looking for funding
+  16+1+0 (1/0/0/0) Subsection: Funders
+  276+7+9 (2/1/0/0) Subsection: ``Analyst'' group
+  196+2+0 (1/0/0/0) Section: Existing works
+  0+1+0 (1/0/0/0) Section: Licensing
+  0+2+0 (1/0/0/0) Chapter: Development Process
+  0+1+0 (1/0/0/0) Section: Introduction
+  228+1+0 (1/0/0/0) Subsection: Overview
+  315+3+0 (1/0/0/0) Subsection: Project management tools
+  788+5+0 (1/0/0/0) Section: Evolution of the Development Process
+  25+1+0 (1/0/0/0) Section: Modifications
+  276+3+0 (1/0/1/0) Subsection: What is Agile?
+  684+4+3 (2/1/0/0) Subsection: Is it Agile?
+  36+1+0 (1/0/0/0) Section: Requirements
+  0+2+0 (1/0/0/0) Subsection: Requirements Gathering
+  1982+66+0 (16/0/0/0) Subsection: Initial Requirements
+  81+2+0 (1/0/0/0) Subsection: Final Requirements
+  0+2+0 (1/0/0/0) Section: Design process
+  0+2+0 (1/0/0/0) Section: Techologies used
+  0+1+0 (1/0/0/0) Chapter: Design
+  102+1+0 (1/0/0/0) Section: Introduction
+  547+3+0 (1/0/0/0) Subsection: Details and Rationale
+  38+2+0 (1/0/0/0) Section: Overall Architecture
+  315+3+0 (1/0/0/0) Subsection: Modules and Packages
+  226+3+12 (1/1/0/0) Subsection: Changes over time
+  0+2+0 (1/0/0/0) Section: Main Application
+  27+1+0 (1/0/0/0) Subsection: Core
+  28+1+0 (1/0/0/0) Subsection: DAO
+  60+1+0 (1/0/0/0) Subsection: Web
+  27+1+0 (1/0/0/0) Subsection: Importer
+  18+3+0 (2/0/0/0) Subsection: Config
+  0+1+0 (1/0/0/0) Subsection: Util
+  0+1+0 (1/0/0/0) Subsection: TweetBot
+  0+1+0 (1/0/0/0) Section: Suggestions
+  0+1+0 (1/0/0/0) Section: Harvesters
+  0+1+0 (1/0/0/0) Subsection: HarvesterBase
+  0+1+0 (1/0/0/0) Subsection: CliManualSubmitter
+  0+3+0 (3/0/0/0) Subsection: RssHarvesterBase
+  0+2+0 (2/0/0/0) Subsection: EmailHarvesterBase
+  355+1+0 (1/0/0/0) Section: Datastore
+  0+2+0 (1/0/0/0) Section: User Interface
+  0+2+0 (1/0/0/0) Subsection: AJAX functionality
+  0+1+0 (1/0/0/0) Section: API
+  111+3+0 (1/0/1/0) Subsection: Design for Developers
+  0+4+0 (2/0/0/0) Subsection: Technical design
+  0+2+0 (1/0/0/0) Section: Alternative Designs
+  0+1+0 (1/0/0/0) Chapter: Implementation
+  0+2+0 (1/0/0/0) Section: User Interface
+  0+4+0 (1/0/0/0) Section: Implementing The Main Application
+  0+2+0 (1/0/0/0) Subsection: Faceted Search
+  0+7+0 (2/0/0/0) Subsection: The Final Features
+  17+9+0 (2/0/0/0) Subsection: The Dropped Features
+  0+1+0 (1/0/0/0) Chapter: Testing
+  0+4+0 (1/0/0/0) Section: Overall Approach to Testing
+  0+2+0 (1/0/0/0) Section: Automated Testing
+  0+2+0 (1/0/0/0) Subsection: Unit Tests
+  0+3+0 (1/0/0/0) Subsection: Functional / Integration Tests
+  0+3+0 (1/0/0/0) Subsection: User Interface Testing
+  0+2+0 (1/0/0/0) Subsection: Stress Testing
+  0+2+0 (1/0/0/0) Section: User Testing
+  0+4+0 (1/0/0/0) Subsection: Responsive Mobile Web Design
+  0+1+0 (1/0/0/0) Chapter: Evaluation
+  238+6+0 (1/0/0/0) Section: Approaching the field of scholarly funding
+  187+4+0 (1/0/0/0) Subsection: Condensing the insights gained
+  0+7+0 (1/0/0/0) Section: Collecting Information From Disparate Sources - Technological Suitability
+  0+2+0 (1/0/0/0) Section: User Needs
+  0+2+0 (1/0/0/0) Subsection: Identifying Requirements
+  66+11+0 (3/0/0/0) Subsection: Meeting Needs
+  0+2+0 (1/0/0/0) Section: In Retrospect
+  46+9+0 (3/0/0/0) Section: Future Work
+  0+1+0 (1/0/0/0) Section: Learning
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sat Apr  6 19:36:21 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8143
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4415+95+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  537+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sat Apr  6 21:05:52 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8143
+Words in headers: 269
+Words outside text (captions, etc.): 24
+Number of headers: 106
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4415+95+3 (30/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  537+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ 

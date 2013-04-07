@@ -25,10 +25,24 @@
 % Use the cite package if you are using the numeric style (e.g. IEEEannot). 
 % Use the natbib package if you are using the author-date style (e.g. authordate2annot). 
 % Only use one of these and comment out the other one. 
-%\usepackage{cite}
-\usepackage{natbib}
+\usepackage{cite}
+%\usepackage{natbib}
 
 % user-defined packages
+
+% bookmarks in the pdf, hyperlinked references and citations, automatic opening of PDF at Fit Width of Window...
+% \usepackage[
+%     pdfborder={0 0 0},
+% 	pdfstartview={FitH},
+% 	plainpages=false,
+% 	pdfpagelabels,
+% 	bookmarksopen=true,
+% 	bookmarksopenlevel=1
+% 	]{hyperref}
+
+\usepackage{titleref}
+
+% for the subtitle on the cover page
 \usepackage{titling}
 \renewcommand{\subtitle}[1]{%
   \posttitle{%
@@ -37,12 +51,18 @@
     \vskip0.5em}%
 }
 
+% word-wrapped tables
 \usepackage{tabulary}
+
+% unicode chars
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 % Use the following to selectively exclude chapters
 %\includeonly{cover,abstract,acknowledge,declare,chapter1,chapter2}
 
 % custom code
+
 % custom block quotes
 \usepackage{ifxetex}
 \usepackage[svgnames]{xcolor}
@@ -70,6 +90,14 @@
 {\begin{snugshade}\begin{quote}\openquote}
 {\hfill\closequote\end{quote}\end{snugshade}}
 
+% resuming enumerate env. (lists)
+\newcounter{tmpc}
+
+% inline code
+\let\code\texttt
+
+% reference format (references to other sections, NOT citation format)
+\def\myref#1{``\titleref{#1}'', \S\ref{#1}}
 
 \begin{document}
 
