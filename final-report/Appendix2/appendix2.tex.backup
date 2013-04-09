@@ -3,8 +3,6 @@
 
 This Appendix provides a listing of all files in the source code repositories of |fundfind|, the main web application, and |fundingharvest|, the additional funding data harvesting project.
 
-Its aim is to aid source code review and deeper understanding of the projects' technical details.
-
 \section{fundfind}
 
 \section{fundingharvest}

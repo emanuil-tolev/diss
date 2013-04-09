@@ -113,16 +113,29 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   the project lifecycle. \end{quotation}
 
 \bibitem{idfind}
-{Emanuil Tolev and Cottage Labs LLP}, ``{IDFind - Got an ID? Not sure what it
-  is? What you can do with it? Well, use this!}''
-  \url{https://github.com/CottageLabs/idfind/}, accessed November 2012.
- \begin{quotation}\noindent The current homepage and version control repository
-  page of the IDFind project. It tries to guess what kind of identifier an
-  unknown string is. \end{quotation}
+{Emanuil Tolev and Cottage Labs LLP}, ``{ID Find - an identifier identifier},''
+  \url{http://test.cottagelabs.com/idfind/}, accessed April 2013.
+ \begin{quotation}\noindent The current home page and public instance of the
+  IDFind project. \end{quotation}
+
+\bibitem{idfind-src}
+------, ``{IDFind - Got an ID? Not sure what it is? What you can do with it?
+  Well, use this!}'' \url{https://github.com/CottageLabs/idfind/}, accessed
+  April 2013.
+ \begin{quotation}\noindent The version control repository page of the IDFind
+  project. It tries to guess what kind of identifier an unknown string is.
+  \end{quotation}
+
+\bibitem{epsrc-rss}
+{Engineering and Physical Sciences Research Council}, ``{EPSRC Open Calls RSS
+  Feed},'' \url{http://www.epsrc.ac.uk/funding/calls/open/pages/rss2.aspx},
+  accessed April 2013.
+ \begin{quotation}\noindent A machine-readable RSS feed of current funding
+  opportunities at the EPSRC, one of the UK Research Councils. \end{quotation}
 
 \bibitem{gow}
-{Engineering and Physical Sciences Research Council}, ``{Grants on the Web},''
-  \url{http://gow.epsrc.ac.uk/NGBODefault.aspx}, accessed April 2013.
+------, ``{Grants on the Web},'' \url{http://gow.epsrc.ac.uk/NGBODefault.aspx},
+  accessed April 2013.
  \begin{quotation}\noindent This is a service on the web run by EPSRC UK which
   provides information about research, training and public engagement grants.
   Essentially, it provides historical information about what was funded and has
@@ -188,17 +201,23 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
 {Ian Sample}, ``{Free access to British scientific research within two
   years},''
   \url{http://www.guardian.co.uk/science/2012/jul/15/free-access-british-scien%
-tific-research}, July 2012, accessed November 2012.
+tific-research}, July 2012, accessed April 2013.
  \begin{quotation}\noindent An article in the electronic edition in the
   Guardian newspaper detailing the UK Government's policy on Open Access
   publications in 2014. \end{quotation}
 
 \bibitem{jisc}
-{JISC}, ``{JISC - We are the UK's expert on information and digital
+{Jisc}, ``{Jisc - We are the UK's expert on information and digital
   technologies for education and research},'' \url{http://www.jisc.ac.uk/},
-  accessed November 2012.
+  accessed April 2013.
  \begin{quotation}\noindent A UK governmental institution focused on enhancing
   the usage of digital technology in education and research in the UK.
+  \end{quotation}
+
+\bibitem{jisc-rebrand}
+------, ``{Our history : JISC},'' \url{http://www.jisc.ac.uk/}, accessed April
+  2013.
+ \begin{quotation}\noindent History page of Jisc. JISC have rebranded as Jisc.
   \end{quotation}
 
 \bibitem{knight-foundation}
@@ -213,7 +232,7 @@ tific-research}, July 2012, accessed November 2012.
 \bibitem{hifi-api}
 {Kris Jordan}, ``{First we built an API, then we built a CMS},''
   \url{http://www.gethifi.com/blog/first-we-built-an-api-then-we-built-a-cms},
-  2010, accessed April 2013.
+  Dec. 2010, accessed April 2013.
  \begin{quotation}\noindent An article by a HiFi company developer detailing
   why they built their Application Programming Interface first, right from the
   start. \end{quotation}
@@ -235,9 +254,23 @@ ding-datasets}, accessed November 2012.
   to 2012 covering all new and continuing grants funded and active in that 23
   year period. \end{quotation}
 
+\bibitem{bibserver}
+{Open Knowledge Foundation}, ``{BibServer},'' \url{http://bibserver.org/},
+  accessed April 2013.
+ \begin{quotation}\noindent Home page of the BibServer project. BibServer is an
+  open-source RESTful bibliographic data server. BibServer makes it easy to
+  create and manage collections of bibliographic records such as reading lists,
+  publication lists and even complete library catalogs. \end{quotation}
+
+\bibitem{bibserver-src}
+------, ``{BibServer at GitHub},'' \url{https://github.com/okfn/bibserver},
+  accessed April 2013.
+ \begin{quotation}\noindent This is the source code of the BibServer
+  \cite{bibserver} project. \end{quotation}
+
 \bibitem{od}
-{Open Knowledge Foundation}, ``{Open Definition},''
-  \url{http://opendefinition.org/}, accessed November 2012.
+------, ``{Open Definition v.1.1},'' \url{http://opendefinition.org/okd/},
+  accessed April 2013.
  \begin{quotation}\noindent The Open Definition - defines what ``open'' is in
   relation to content and data. \end{quotation}
 
@@ -308,6 +341,20 @@ S.~Palmer, ``{An Introduction to Feature-Driven Development},''
  \begin{quotation}\noindent The home page of Research Councils UK.
   \end{quotation}
 
+\bibitem{rcuk-on-gtr}
+{Research Councils United Kingdom}, ``{Gateway to Research},''
+  \url{http://www.rcuk.ac.uk/research/Pages/gtr.aspx}, accessed April 2013.
+ \begin{quotation}\noindent A description of the Gateway to Research project by
+  its parent organisation, Research Councils UK. \end{quotation}
+
+\bibitem{rolls-royce}
+{Rolls-Royce plc}, ``{Research - Rolls-Royce},''
+  \url{http://www.rolls-royce.com/about/technology/research_programmes/},
+  accessed April 2013.
+ \begin{quotation}\noindent Rolls-Royce is a commercial company which sports
+  extensive R\&D. This page details Research Programmes in a wide variety of
+  (technical and scientific) sectors. \end{quotation}
+
 \bibitem{fibonacci}
 {Ron Knott}, ``{Fibonacci Numbers and the Golden Section},''
   \url{http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fib.html},
@@ -359,6 +406,14 @@ J.~Shore, ``{The Art of Agile Development},''
   previous knowledge I have of this model from less reliable sources such as
   Wikipedia and more reliable ones such as the teaching accompanying my
   Computer Science degree at Aberystwyth University. \end{quotation}
+
+\bibitem{devxs}
+{Team DevXS; hello@devxs.org . University of Lincoln, Student as a Producer
+  project.}, ``{DevXS Conference},'' \url{http://devxs.org}, accessed April
+  2013.
+ \begin{quotation}\noindent DevXS was a national student developer conference
+  running from 11th to 13th November 2011 at the University of Lincoln.
+  \end{quotation}
 
 \bibitem{calc}
 {The Document Foundation}, ``{LibreOffice Calc - a Spreadsheet That Meets Any
@@ -419,6 +474,15 @@ eport-FINAL-VERSION.pdf}, June 2012, accessed November 2012.
  \begin{quotation}\noindent The Finch report - looked into Open Access and its
   benefits for academic publishing and society at large, commisioned by the UK
   Government. \end{quotation}
+
+\bibitem{so-python-import}
+{Various Authors}, ``{Search stackoverflow - python import},''
+  \url{http://stackoverflow.com/search?q=python+import}, accessed April 2013.
+ \begin{quotation}\noindent A search on programming Questions and Answers
+  website stackoverflow.com showing questions related to importing modules in
+  Python. Too many questions - which is the point. There seems to be some
+  cognitive barrier not allowing people to understand various basic and more
+  advanced concepts of the Python dynamic import system. \end{quotation}
 
 \bibitem{bdd}
 {Various authors}, ``{Behaviour-Driven Development},''

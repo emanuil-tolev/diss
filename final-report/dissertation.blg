@@ -15,10 +15,7 @@ A level-1 auxiliary file: Appendix2/appendix2.aux
 The style file: IEEEannot.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
 Database file #1: References/references.bib
-Warning--string name "december" is undefined
---line 503 of file References/references.bib
 Warning--I didn't find a database entry for "progress-report"
-Warning--I didn't find a database entry for "dumbo"
 Warning--I didn't find a database entry for "cronyism1"
 Warning--I didn't find a database entry for "cronyism2"
 Warning--I didn't find a database entry for "gtr"
@@ -47,45 +44,45 @@ Warning--I didn't find a database entry for "NumericalRecipes"
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 60 entries,
+You've used 69 entries,
             4538 wiz_defined-function locations,
-            1221 strings with 25557 characters,
-and the built_in function-call counts, 29227 in all, are:
-= -- 2661
-> -- 542
+            1259 strings with 27615 characters,
+and the built_in function-call counts, 33369 in all, are:
+= -- 3039
+> -- 605
 < -- 0
-+ -- 240
-- -- 160
-* -- 1213
-:= -- 5114
-add.period$ -- 120
-call.type$ -- 60
-change.case$ -- 320
++ -- 267
+- -- 178
+* -- 1376
+:= -- 5838
+add.period$ -- 138
+call.type$ -- 69
+change.case$ -- 365
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 2168
-empty$ -- 2527
-format.name$ -- 162
-if$ -- 6164
+cite$ -- 69
+duplicate$ -- 2483
+empty$ -- 2896
+format.name$ -- 180
+if$ -- 7042
 int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 500
-newline$ -- 260
-num.names$ -- 120
-pop$ -- 1590
+int.to.str$ -- 69
+missing$ -- 572
+newline$ -- 296
+num.names$ -- 138
+pop$ -- 1824
 preamble$ -- 1
-purify$ -- 200
+purify$ -- 227
 quote$ -- 2
-skip$ -- 2078
+skip$ -- 2374
 stack$ -- 0
-substring$ -- 480
-swap$ -- 1185
+substring$ -- 552
+swap$ -- 1349
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 480
+type$ -- 552
 warning$ -- 0
-while$ -- 120
-width$ -- 62
-write$ -- 572
-(There were 25 warnings)
+while$ -- 138
+width$ -- 71
+write$ -- 653
+(There were 23 warnings)

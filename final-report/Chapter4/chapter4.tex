@@ -19,9 +19,13 @@
 \subsubsection{Responsive Mobile Web Design}
 \label{impl-mobile}
 
+% the suggestions - initially decided to code as pure Javascript since all that is really needed is an AJAX call to the Gateway to Research API, which will happily return JSON. However, this breaks the commitment to providing all of FundFind's functionality via an API. Incidentally, Richard Jones from Cottage Labs LLP had written a Python client library in preparation for the GtR hackday in order to explore the GtR API. This made for an easy decision - FundFind was to use the Python library was used to access the GtR API. It would then expose the results as suggestions TODO
+
 \subsection{The Dropped Features}
 % TODO add all the dropped features from chapter 2, Initial Requirements here
 The decision to drop some features came after some design and exploratory technical work had been done.
 
 \subsubsection{Harvesting Funding Data From E-mail Digests}
 \label{impl-email-parse}
+% chap2 says It is far easier to process RSS feeds such as the EPSRC Open Calls RSS Feed \cite{epsrc-rss} than it was to process the EPSRC Funding Call E-mail Alerts, as discussed in \myref{impl-email-parse}.
+%fundfind.email.harvester@gmail.com

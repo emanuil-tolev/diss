@@ -161,7 +161,7 @@ title = {{Free access to British scientific research within two years}},
 howpublished={\url{http://www.guardian.co.uk/science/2012/jul/15/free-access-british-scientific-research}},
 month=Jul,
 year={2012},
-note={Accessed November 2012},
+note={Accessed April 2013},
 annote={An article in the electronic edition in the Guardian newspaper detailing the UK Government's policy on Open Access publications in 2014.}
 }
 
@@ -216,9 +216,9 @@ annote={The home page of Research Councils UK.}
 
 @MISC{od,
 author = {{Open Knowledge Foundation}},
-title = {{Open Definition}},
-howpublished={\url{http://opendefinition.org/}},
-note={Accessed November 2012},
+title = {{Open Definition v.1.1}},
+howpublished={\url{http://opendefinition.org/okd/}},
+note={Accessed April 2013},
 annote={The Open Definition - defines what ``open'' is in relation to content and data.}
 }
 
@@ -312,10 +312,18 @@ annote={The homepage of the elasticsearch indexing server.}
 
 @MISC{idfind,
 author = {{Emanuil Tolev and Cottage Labs LLP}},
+title = {{ID Find - an identifier identifier}},
+howpublished={\url{http://test.cottagelabs.com/idfind/}},
+note={Accessed April 2013},
+annote={The current home page and public instance of the IDFind project.}
+}
+
+@MISC{idfind-src,
+author = {{Emanuil Tolev and Cottage Labs LLP}},
 title = {{IDFind - Got an ID? Not sure what it is? What you can do with it? Well, use this!}},
 howpublished={\url{https://github.com/CottageLabs/idfind/}},
-note={Accessed November 2012},
-annote={The current homepage and version control repository page of the IDFind project. It tries to guess what kind of identifier an unknown string is.}
+note={Accessed April 2013},
+annote={The version control repository page of the IDFind project. It tries to guess what kind of identifier an unknown string is.}
 }
 
 @MISC{facetview,
@@ -415,10 +423,10 @@ annote={"The Foundation for Assistive Technology was founded in 1998 to tackle t
 }
 
 @MISC{jisc,
-author = {{JISC}},
-title = {{JISC - We are the UK's expert on information and digital technologies for education and research}},
+author = {{Jisc}},
+title = {{Jisc - We are the UK's expert on information and digital technologies for education and research}},
 howpublished={\url{http://www.jisc.ac.uk/}},
-note={Accessed November 2012},
+note={Accessed April 2013},
 annote={A UK governmental institution focused on enhancing the usage of digital technology in education and research in the UK.}
 }
 
@@ -500,18 +508,88 @@ annote={Cucumber is a system for Behaviour-Driven Development, which was conside
 author = {{Kris Jordan}},
 title = {{First we built an API, then we built a CMS}},
 howpublished={\url{http://www.gethifi.com/blog/first-we-built-an-api-then-we-built-a-cms}},
-month=December,
+month=Dec,
 year={2010},
 note={Accessed April 2013},
 annote={An article by a HiFi company developer detailing why they built their Application Programming Interface first, right from the start.}
 }
 
 @MISC{gow,
-author = {{Kris Jordan}},
-title = {{First we built an API, then we built a CMS}},
-howpublished={\url{http://www.gethifi.com/blog/first-we-built-an-api-then-we-built-a-cms}},
-month=December,
-year={2010},
+author = {{Engineering and Physical Sciences Research Council}},
+title = {{Grants on the Web}},
+howpublished={\url{http://gow.epsrc.ac.uk/NGBODefault.aspx}},
 note={Accessed April 2013},
-annote={An article by a HiFi company developer detailing why they built their Application Programming Interface first, right from the start.}
+annote={This is a service on the web run by EPSRC UK which provides information about research, training and public engagement grants. Essentially, it provides historical information about what was funded and has some nice functionality, such as breakdown by field funded, number of funded proposals within that field and several simple quarterly statistics.}
+}
+
+@MISC{epsrc-rss,
+author = {{Engineering and Physical Sciences Research Council}},
+title = {{EPSRC Open Calls RSS Feed}},
+howpublished={\url{http://www.epsrc.ac.uk/funding/calls/open/pages/rss2.aspx}},
+note={Accessed April 2013},
+annote={A machine-readable RSS feed of current funding opportunities at the EPSRC, one of the UK Research Councils.}
+}
+
+@MISC{so-python-import,
+author = {{Various Authors}},
+title = {{Search stackoverflow - python import}},
+howpublished={\url{http://stackoverflow.com/search?q=python+import}},
+note={Accessed April 2013},
+annote={A search on programming Questions and Answers website stackoverflow.com showing questions related to importing modules in Python. Too many questions - which is the point. There seems to be some cognitive barrier not allowing people to understand various basic and more advanced concepts of the Python dynamic import system.}
+}
+
+@MISC{rcuk-on-gtr,
+author = {{Research Councils United Kingdom}},
+title = {{Gateway to Research}},
+howpublished={\url{http://www.rcuk.ac.uk/research/Pages/gtr.aspx}},
+note={Accessed April 2013},
+annote={A description of the Gateway to Research project by its parent organisation, Research Councils UK.}
+}
+
+@MISC{jisc-rebrand,
+author = {{Jisc}},
+title = {{Our history : JISC}},
+howpublished={\url{http://www.jisc.ac.uk/}},
+note={Accessed April 2013},
+annote={History page of Jisc. JISC have rebranded as Jisc.}
+}
+
+@MISC{rolls-royce,
+author = {{Rolls-Royce plc}},
+title = {{Research - Rolls-Royce}},
+howpublished={\url{http://www.rolls-royce.com/about/technology/research_programmes/}},
+note={Accessed April 2013},
+annote={Rolls-Royce is a commercial company which sports extensive R\&D. This page details Research Programmes in a wide variety of (technical and scientific) sectors.}
+}
+
+@MISC{devxs,
+author = {{Team DevXS; hello@devxs.org . University of Lincoln, Student as a Producer project.}},
+title = {{DevXS Conference}},
+howpublished={\url{http://devxs.org}},
+note={Accessed April 2013},
+annote={DevXS was a national student developer conference running from 11th to 13th November 2011 at the University of Lincoln.}
+}
+
+@MISC{bibserver,
+author = {{Open Knowledge Foundation}},
+title = {{BibServer}},
+howpublished={\url{http://bibserver.org/}},
+note={Accessed April 2013},
+annote={Home page of the BibServer project. BibServer is an open-source RESTful bibliographic data server. BibServer makes it easy to create and manage collections of bibliographic records such as reading lists, publication lists and even complete library catalogs.}
+}
+
+@MISC{bibserver-src,
+author = {{Open Knowledge Foundation}},
+title = {{BibServer at GitHub}},
+howpublished={\url{https://github.com/okfn/bibserver}},
+note={Accessed April 2013},
+annote={This is the source code of the BibServer \cite{bibserver} project.}
+}
+
+@MISC{bibserver-src,
+author = {{Guido van Rossum <guido at python.org>, Barry Warsaw <barry at python.org>}},
+title = {{PEP 8: Style Guide for Python Code / A Foolish Consistency is the Hobgoblin of Little Minds}},
+howpublished={\url{http://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds}},
+note={Accessed April 2013},
+annote={}
 }

@@ -22,7 +22,7 @@ The technical design of an application is, in essence, the intersection of curre
 
 These characteristics have not changed since the start of the project. The technical decisions that stand behind them proved to be mostly correct and helpful, and are elaborated upon in the next section.
 
-\subsection{Details and Rationale}
+\subsection{Design Details and Rationale}
 \label{design-rationale}
 
 FundFind
@@ -33,7 +33,7 @@ This was decided right from the start of the project. The way current Open Knowl
  
  \item is written in Python
 
-Similar factors to the interoperability point raised above played a role in deciding the language of the application. A lot of Open Knowledge projects use Python \cite{nomenklatura, offenesparlament, pybossa, activityapi} - the same goes for Cottage Labs projects \cite{leaps, portality, iioa, artemis, cl-web-code, xcri, negotiator}.
+Similar factors to the interoperability point raised above played a role in deciding the language of the application. A lot of Open Knowledge projects use Python \cite{nomenklatura, offenesparlament, pybossa, activityapi} - the same goes for Cottage Labs projects \cite{leaps, portality, iioa, artemis, cl-web-code, xcri, negotiator}. The language is also simple and strives encourage and enable readability - ``code is read much more often than it is written'' \cite{pep8}.
  
  \item stores its data in an asynchronous NoSQL data store with built-in search capabilities
  
@@ -61,26 +61,49 @@ Similar factors to the interoperability point raised above played a role in deci
 % changes from progress report - any?, why? why not?
 % these are all MODULES, not CLASSES - explain difference, rationale for using (convention at least)
 
-All of the entities in the diagram are modules - collections of code related to solving the same problem. The contents of the modules - the details of the technical design of the main application - are discussed below in \S\ref{design-main-first} to \S\ref{design-main-last}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\textwidth,]{Chapter3/overview_design.pdf}
+\caption{Overview of FundFind and Funding Harvest's technical architecture.}
+\label{fig:arch}
+\end{figure}
 
-\subsection{Modules and Packages}
+The entities drawn with continuous lines in the diagram are modules - collections of code related to solving the same problem. The contents of the modules - the details of the technical design of the main application - are discussed below in \S\ref{design-main-first} to \S\ref{design-main-last}.
+
+The entities drawn with a heavy continuous line are the entry points - they are the modules which actually (need to) get run by the Python interpreter.
+
+The entities drawn with a rough dashed line are packages. Packages and modules are simply ways of organising code in Python and are discussed in more detail below.
+
+The entities drawn with a fine dashed line are more abstract concepts (datastore and user interface) which are elaborated upon below.
+
+Full listing of all source code files with notes is available in ``\titleref{file-listings}'', Appendix \ref{file-listings}.
+
+\subsection{Organising code in Python}
 Traditionally Object-Oriented Programming talks about ``classes'' as, essentially, blueprints combining data structures and imperative code (methods) together. These can then be ``instantiated'' to produce a concrete ``object''.
 
-This is of course well-supported in Python. However, Python also has an additional convention when it comes to organising code - ``modules''. The Python documentation says ``You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.'' \cite{python-doc-modules}. While re-use of code is usually achieved by making everything an object in other languages like Java, Python actually allows functions and even just code statements at the top level of a source code file. Thus, instead of having to create a ``Util'' class with several static methods, Python authors are encouraged to simply define the functions they need at the module level. In other words, modules are a convenient way to bundle together \emph{related} pieces of code - whether that would just be a sequence of statements, function or class definitions. This may seem messy but has proven to be quite efficient by essentially allowing the developer to better express their mental model of how their program should be organised, instead of forcing a particular structure.
+This is of course well-supported in Python. However, Python also has an additional convention when it comes to organising code - ``modules''. The Python documentation says ``You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.'' \cite{python-doc-modules}. While re-use of code is usually achieved by making everything an object in other languages like Java, Python actually allows functions and even just code statements at the top level of a source code file. Thus, instead of having to create a ``Util'' class with several static methods, Python authors are encouraged to simply define the functions they need at the module level. In other words, modules are a convenient way to bundle together \emph{related} pieces of code - whether that would just be a sequence of statements, function or class definitions. This may seem messy but has proven to be quite efficient by essentially allowing the developer to better express their mental model 
+of how their program should be organised, instead of forcing a particular structure.
 
-An obvious characteristic of Python modules is that they are also implicit namespaces. Thus, the built-in \code{int()} can easily be distinguished from \code{random.int()}. A Python program would have to \code{import random} before it can use \code{random.int()}.
+An obvious characteristic of Python modules is that they are also implicit namespaces. Thus, the built-in |int()| can easily be distinguished from |random.int()|. A Python program would have to |import random| before it can use |random.int()|.
 
-In this case, \code{random} happens to be a module that is part of the standard Python distribution. However, exactly the same rules apply to user-defined modules. Thus, the dotted arrows which connect the modules in Figure \ref{fig:arch} essentially mean ``module X imports module Y and uses something from Y''.
+In this case, |random| happens to be a module that is part of the standard Python distribution. However, exactly the same rules apply to user-defined modules. Thus, the dotted arrows which connect the modules in Figure \ref{fig:arch} essentially mean ``module X imports module Y and uses something from Y''.
 
-Packages are simply a collection of modules. Since a module is a file, packages are just directories (containing a possibly empty \code{\_\_init\_\_.py} file) - another way to organise related code.
+Packages are simply a collection of modules. Since a module is a file, packages are just directories (containing a possibly empty |__init__.py| file) - another way to organise related code.
+
+To sum up, packages contain modules. Modules could contain classes (alongside any other code and function definitions).
+
+% TODO Furthermore, certain naming conventions exist in Python for package, module and class names.
 
 \subsection{Changes over time}
-The modules which form the main web application have not changed much from the parent IDFind project. An overview of IDFind's technical design presented in the Progress Report \cite{progress-report} had actually left out the \code{util} module and mistakenly used the term ``class'' to refer to certain modules.
+% TODO redo this with a diagram showing the real initial IDFind code and showing deleted modules in red, added modules in green
+The modules which form the main web application have not changed much from the parent IDFind project. An overview of IDFind's technical design presented in the Progress Report \cite{progress-report} had actually left out the |util| module and mistakenly used the term ``class'' to refer to certain modules.
 
-This diagram is reproduced in Figure \ref{fig:idfind-uml}. Since it was supposed to be a rough overview, another IDFind module was left out - the \code{tweetlisten} module allows IDFind to respond to Twitter requests in a similar fashion as if the user was using the web user interface. This module was scrapped in FundFind since potential target users (including the author) just could not think of a way in which Twitter integration would be immediately useful. On the other hand, writing any sensible test coverage for an external service would have taken up valuable time which was used for more important features.
+% TODO delete this bullshit after creating diagram in prev. TODO
+This diagram is reproduced in Figure \ref{fig:idfind-uml}. Since it was supposed to be a rough overview, another IDFind module was left out - the |tweetlisten| module allows IDFind to respond to Twitter requests in a similar fashion as if the user was using the web user interface. This module was scrapped in FundFind since potential target users (including the author) just could not think of a way in which Twitter integration would be immediately useful. On the other hand, writing any sensible test coverage for an external service would have taken up valuable time which was used for more important features.
 
 This raises another important point - usually, tests can be inherited alongside features from parent codebases. However, IDFind had no automated tests, making for the decision to actually scrap the Twitter integration instead of just leaving it in the FundFind codebase due to FundFind's more comprehensive testing strategy. This is elaborated upon in \S\ref{testing-intro}.
 
+% TODO this is unfinished!
 In terms of further changes, the Harvesters package was added
 
 Finally, the contents of all of thes
@@ -94,12 +117,14 @@ Finally, the contents of all of thes
 
 Figure \ref{fig:idfind-uml} was intended only as an overview and had intentionally left out
 
-\section{Main Application}
+\section{fundfind}
 \label{design-main-first}
 % TODO remember to include classes contained within these modules in each module's description
 
-\subsection{Core}
-This is a core class of any Flask Python web framework project. It monitors all application code for changes and reloads components on-the-fly if changes are detected.
+\subsection{core}
+The Flask Python web framework is used in this project. %TODO what does flask do from site and cite
+%TODO point towards chapter 4 relevant section for more details
+|core| is, by convention (as many other things in Python) the name of the main module in a Flask-based application. It monitors all application code for changes and (in debug mode) reloads components on-the-fly if changes are detected.
 
 \subsection{DAO}
 Data Access Object module – a database abstraction layer. Contains all the model classes of the application as well as functions which deal with the elasticsearch index (data store).
@@ -117,28 +142,20 @@ This class is a wrapper around a simple JSON dictionary of key-value pairs which
 
 \subsection{Util}
 
-\subsection{TweetBot}
+\section{suggest}
 
-\section{Suggestions}
+\subsection{gtr}
 
-
-\section{Harvesters}
+\section{fundingharvest}
 \label{design-main-last}
 
 \subsection{HarvesterBase}
 
-\subsection{CliManualSubmitter}
-% why break naming conventions for classes? well, BBSRCRSSHarvester..... so hard-line first-letter-only-capital. But then have to use same convention everywhere - so that's how it happened.
 
 \subsection{RssHarvesterBase}
-
-\subsubsection{BbsrcRssHarvester}
+% TODO explain why a base class with inheritance - used to have CLI submitter as well as an e-mail harvester, but dropped - however design still good and extendable
 
 \subsubsection{EsrcRssHarvester}
-
-\subsection{EmailHarvesterBase}
-
-\subsubsection{EpsrcEmailHarvester}
 
 \section{Datastore}
 \label{design-datastore}

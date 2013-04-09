@@ -58,6 +58,9 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
+% custom enumerate lists
+\usepackage{enumerate}
+
 % Use the following to selectively exclude chapters
 %\includeonly{cover,abstract,acknowledge,declare,chapter1,chapter2}
 
@@ -94,7 +97,9 @@
 \newcounter{tmpc}
 
 % inline code
-\let\code\texttt
+%\let\code\texttt
+\usepackage{fancyvrb}
+\DefineShortVerb{\|}
 
 % reference format (references to other sections, NOT citation format)
 \def\myref#1{``\titleref{#1}'', \S\ref{#1}}

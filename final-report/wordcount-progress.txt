@@ -561,3 +561,125 @@ Subcounts:
 
 (errors:1)
 emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ 
+
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sun Apr  7 12:59:04 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8348
+Words in headers: 271
+Words outside text (captions, etc.): 24
+Number of headers: 108
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4620+97+3 (32/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  537+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sun Apr  7 14:52:40 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8365
+Words in headers: 277
+Words outside text (captions, etc.): 24
+Number of headers: 108
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4526+103+3 (32/1/1/0) Chapter: Development Process                                                                                                                                            
+  1854+48+12 (32/1/1/0) Chapter: Design                                                                                                                                                         
+  17+25+0 (8/0/0/0) Chapter: Implementation                                                                                                                                                     
+  0+23+0 (9/0/0/0) Chapter: Testing
+  648+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sun Apr  7 18:12:59 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8671
+Words in headers: 281
+Words outside text (captions, etc.): 24
+Number of headers: 109
+Number of floats/tables/figures: 3
+Number of math inlines: 3
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  4807+107+3 (33/1/2/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  673+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sun Apr  7 20:25:48 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 8972
+Words in headers: 281
+Words outside text (captions, etc.): 24
+Number of headers: 109
+Number of floats/tables/figures: 3
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  1313+32+9 (12/1/0/0) Chapter: Background and Objectives
+  5108+107+3 (33/1/1/0) Chapter: Development Process
+  1854+48+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  673+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$ date && ./countwords.sh 
+Sun Apr  7 22:43:43 BST 2013
+
+!!!  Reached end of file while waiting for }.  !!!
+File: wordcount.tex
+Encoding: utf8
+Words in text: 9838
+Words in headers: 297
+Words outside text (captions, etc.): 15
+Number of headers: 114
+Number of floats/tables/figures: 2
+Number of math inlines: 2
+Number of math displayed: 0
+Subcounts:
+  text+headers+captions (#headers/#floats/#inlines/#displayed)
+  2179+44+0 (16/0/0/0) Chapter: Background and Objectives
+  5108+110+3 (34/1/1/0) Chapter: Development Process
+  1854+49+12 (32/1/1/0) Chapter: Design
+  17+25+0 (8/0/0/0) Chapter: Implementation
+  0+23+0 (9/0/0/0) Chapter: Testing
+  673+45+0 (14/0/0/0) Chapter: Evaluation
+  7+1+0 (1/0/0/0) Chapter: Appendices
+
+(errors:1)
+emanuil@tokidoki:/win/d/university/third-year/diss/final-report$

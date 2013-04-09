@@ -1,26 +1,30 @@
-\chapter{Background \& Objectives}
+\chapter{Background and Objectives}
 \section{Scholarship and funding}
 \section{Audience and high-level requirements}
-\subsection{Professionals looking for funding}
+\subsection{Professionals Looking For Funding Group}
 \subsubsection{Accomplished scholars}
-\subsubsection{Junior academics}
-\subsubsection{Research development officers}
-\subsection{Those looking to advertise funding opportunities.}
-\subsubsection{Focusing on certain audience groups}
+\subsubsection{Junior Academics}
+\subsubsection{Research Development Officers}
+\subsection{Funders Group}
+\subsubsection{Research Councils in the UK}
+\subsubsection{Jisc}
+\subsubsection{Charities, Trusts and Others}
+\subsubsection{Commercial Organisations}
+\subsection{Analyst group}
+\subsection{Focusing on certain audience groups}
+\section{Project Aims}
 \section{Existing works}
-\section{Scholarly funding opportunities}
-\subsection{Funders}
-\subsection{The value of Openness in scholarship and elsewhere}
-\subsection{Scholars}
-\section{The project}
-\section{Existing works}
+% \section{Scholarly funding opportunities}
+% \subsection{Funders}
+% \subsection{The value of Openness in scholarship and elsewhere}
+% \subsection{Scholars}
+% \section{The project}
+% \section{Existing works}
 \section{Licensing}
-
-
-
 \chapter{Development Process}
 \section{Introduction}
 \subsection{Overview}
+\subsubsection{The Software Development}
 \subsection{Project management tools}
 \section{Evolution of the Development Process}
 \section{Modifications}
@@ -28,17 +32,35 @@
 \subsection{Is it Agile?}
 \subsubsection{Underestimation}
 \section{Requirements}
-\subsection{Requirements gathering}
-\subsection{Final requirements}
-\section{Design process}
+\subsection{Requirements Gathering}
+\subsection{Initial Requirements}
+\subsubsection{Search For Scholarly Funding Opportunities}
+\subsubsection{Submit Information About A Scholarly Funding Opportunity}
+\subsubsection{Submit Information About Funders}
+\subsubsection{Create Profiles}
+\subsubsection{Visualise Data}
+\subsubsection{E-mail Alerts}
+\subsubsection{Saving Searches}
+\subsubsection{Harvesting Funding Data From E-mail Digests}
+\subsubsection{Tagging Research As "Potentially Of Interest To" Users And Groups}
+\subsubsection{Specify Affiliation And Interests}
+\subsubsection{Responsive Mobile Web Design}
+\subsubsection{Bulk Funding Opportunity Data Import}
+\subsubsection{Harvesting Historical Funding Information}
+\subsubsection{RESTful API}
+\subsubsection{Exporting The Results Of Searches}
+\subsection{New Requirements}
+\subsubsection{Harvest Funding Data From Machine-Readable Sources}
+\subsubsection{Suggesting Relevant Historical Data}
+\subsection{Final Requirements}
+\section{Design Process}
 \section{Techologies used}
-
-
-
 \chapter{Design}
+\section{Introduction}
+\subsection{Design Details and Rationale}
 \section{Overall Architecture}
-\section{Alternative Designs}
-\section{Datastore}
+\subsection{Modules and Packages}
+\subsection{Changes over time}
 \section{Main Application}
 \subsection{Core}
 \subsection{DAO}
@@ -48,6 +70,7 @@
 \subsubsection{Default Settings}
 \subsection{Util}
 \subsection{TweetBot}
+\section{Suggestions}
 \section{Harvesters}
 \subsection{HarvesterBase}
 \subsection{CliManualSubmitter}
@@ -56,44 +79,22 @@
 \subsubsection{EsrcRssHarvester}
 \subsection{EmailHarvesterBase}
 \subsubsection{EpsrcEmailHarvester}
+\section{Datastore}
 \section{User Interface}
-% Looked at what values the data had in general, starting with EPSRC examples and some RSS feeds (cite them here).
-% Bootstrap integrates a lot of UI knowledge into itself
-% which is good, but not sufficient - reused IDFind's homepage design made by Mark @ Cottage Labs \cite{mark}.
-% submission forms - just ordered the items in order of perceived importance, mostly as presented in EPSRC data and RSS feeds. Put things related to FundFind at the bottom (e.g. tags) since the best way to write such metadata is to have thought about the values in the rest of the form.
 \subsection{AJAX functionality}
-\label{design-ajax}
-  %utilities e.g. slug
-  %gtr advanced suggestion stuff
-
 \section{API}
-  % divide into ``usability design'' - how usable API is by developers, what thought was put into that
-  % and technical design
   \subsection{Design for Developers}
-    % general waffle
-    % route table with explanations
-    
-    In addition to the functionality exposed through the routes described above, the AJAX functionality (\S\ref{design-ajax}) can also be used by API consumers. For example, the developers of a hypothetical ``News for Scholars'' newsfeed reader application might want to suggest previously funded bids to its UK readers. They have two options:
-    
-    \begin{enumerate}
-     \item Re-use the classes within the Suggest module which enable FundFind's ``this may be of interest'' feature. If the hypothetical application is written in Python, this will just involve copying $+$ editing the code and perhaps reading the Gateway to Research API documentation (for the UK information). If it is written in another language, ``re-use'' will mean looking at the logic contained within the 
-    \end{enumerate}
-
   \subsection{Technical design}
-  % Intro - API achieved by relying on the usual Python technologies, Flask, whatever IDFind had as basic API..
-  % Used HTTP protocol. What it is. Why.
   \subsubsection{Data format}
-  % JSON. What it is. Why. (Take some from PR).
-  % conneg. integrated Richard's package?
-
-
-
-
-
+\section{Alternative Designs}
 \chapter{Implementation}
-
-
-
+\section{User Interface}
+\section{Implementing The Main Application}
+\subsection{Faceted Search}
+\subsection{The Final Features}
+\subsubsection{Responsive Mobile Web Design}
+\subsection{The Dropped Features}
+\subsubsection{Harvesting Funding Data From E-mail Digests}
 \chapter{Testing}
 \section{Overall Approach to Testing}
 \section{Automated Testing}
@@ -103,14 +104,18 @@
 \subsection{Stress Testing}
 %\subsection{Other types of testing}
 \section{User Testing}
-
-
-
+\subsection{Responsive Mobile Web Design}
 \chapter{Evaluation}
 \section{Approaching the field of scholarly funding}
-\section{Whose requirements?}
-\section{Collecting information from disparate sources - technological suitability}
-\section{User needs}
-\section{Exploring scholarly funding}
-\section{In retrospect}
+\subsection{Condensing the insights gained}
+\section{Collecting Information From Disparate Sources - Technological Suitability}
+\section{User Needs}
+\subsection{Identifying Requirements}
+\subsection{Meeting Needs}
+\subsubsection{Those Looking To Analyse Scholarly Funding}
+\subsubsection{Exploring Scholarly Funding}
+\section{In Retrospect}
+\section{Future Work}
+\subsubsection{E-mail Alerts}
+\subsubsection{Exporting The Results Of Searches}
 \section{Learning}

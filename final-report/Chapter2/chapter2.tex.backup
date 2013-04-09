@@ -10,6 +10,10 @@
 % TODO add diagram of actual final development process and make sure it is described CLEARLY
 
 \subsection{Overview}
+
+
+
+\subsubsection{The Software Development}
 An Agile, iterative approach to the development of the software was initially chosen. It turned out that the approach did not fit the project / author / users context. In particular:
 
 \begin{enumerate}
@@ -167,6 +171,7 @@ The initial reasons for devising an Agile-like process (above) proved to (mostly
 \end{enumerate}
 
 \section{Requirements}
+\label{devprocess-requirements}
 % In most cases, the agreed objectives or requirements will be the result of a compromise between what would ideally have been produced and what was felt to be possible in the time available. A discussion of the process of arriving at the final list is usually appropriate.
 
 % not everything described in audience could be done
@@ -180,6 +185,7 @@ In this case, the project's requirements (in a suitable share-able form) are act
 % results - intermediary list - below
 
 \subsection{Initial Requirements}
+\label{initial-reqs}
 The initial requirements were informed by the general needs of the various audience groups (\myref{audience}).
 
 They are listed below alongside changes which were made (kept/dropped/changed/changed priority). Further discussion on the lessons learned and future work enabled by the dropped features is presented in \myref{future-work}. Features which went through major changes are discussed below in \myref{new-reqs}.
@@ -248,6 +254,7 @@ In \textbf{order of importance}:
 \end{itemize}
 
 \subsubsection{Harvesting Funding Data From E-mail Digests}
+\label{devprocess-feats-email-harvest}
 \begin{itemize}
  \item \textbf{Why}: This is one of the features which actually deal with importing data, fulfilling part of FundFind's core mission of federating funding data.
  \item \textbf{Priority rationale}: The importance of this was downplayed by the author - users did not have much to say on it, since they did not particularly care for the details of how FundFind was going to get its data, as long as it had some and they could use it.
@@ -284,7 +291,8 @@ All initial features described below were lower priority or in some way optional
  \item \textbf{Decision}: \textbf{Dropped} - it was just really of very limited use. Even backing up the data in the public FundFind instance does not require this feature, as the datastore can be backed up with a simple file copy command (\myref{design-datastore}).
 \end{itemize}
 
-\subsubsection{Harvesting Historic Funding Information}
+\subsubsection{Harvesting Historical Funding Information}
+\label{devprocess-feats-harvesting-historical-info}
 \begin{itemize}
  \item \textbf{Why}: Historic funding information can be quite valuable since it can grant insight into what was previously funded. If this includes the most recent 1-10 years of data, it could be used to see how fields develop. While hopefully no scholar would choose their field based solely on its history of funding, they could see how to pitch their work most effectively - often, it is difficult to strictly categorise research.
  
@@ -313,15 +321,20 @@ A number of new features were inserted into the initial list during development 
 
 \subsubsection{Harvest Funding Data From Machine-Readable Sources}
 \begin{itemize}
- \item \textbf{Why}: Simple convenience - being able to save a list of relevant funding opportunities for later perusal.
- \item \textbf{Priority rationale}: Everything else has some function beyond pure convenience and this would not save that much time or effort in any case. Similar to saving searches (\myref{reqs-saving-searches}), searches can already be shared via the search page URL (\myref{impl-facetview}) which further reduced the priority of this feature, since the same search should yield quite similar results (based on the assumption that a search worth saving is a pretty specific search). This was also consistently rated as low priority in user meetings.
- \item \textbf{Decision}: \textbf{Dropped}. It is hard enough to find \emph{one} highly relevant funding opportunity - finding multiple ones is not something that will happen easily without getting quite a lot of data into FundFind.
+ \item \textbf{Why}: It is far easier to process RSS feeds such as the EPSRC Open Calls RSS Feed \cite{epsrc-rss} than it was to process the EPSRC Funding Call E-mail Alerts, as discussed in \myref{impl-email-parse}.
+ \item \textbf{Priority}: Replaced \myref{devprocess-feats-email-harvest}.
+\end{itemize}
+
+\subsubsection{Suggesting Relevant Historical Data}
+\begin{itemize}
+ \item \textbf{Why}: As discussed in \myref{devprocess-feats-harvesting-historical-info} above, it was discovered that this is actually a good way to achieve the end goal of funding scholarship. This project may have started as being about discovering \emph{current} funding information, but this itself stemmed from the overarching goal getting more funds to more scholars. This only became possible quite late in the development process as Gateway to Research's data was discovered by the author in March and gave a concrete foundation on which to build this feature.
+ \item \textbf{Priority}: Lowest, tacked onto the end of the feature list. Very experimental due to potential data issues, lack of discussion with actual scholars (only other developers) and lack of clarity around presenting the information on the user interface. It was also technically quite ill-defined and difficult to achieve.
 \end{itemize}
 
 \subsection{Final Requirements}
 \label{final-reqs}
 
-The advanced functions themselves were also not just requirements which were further down the requirements list (such as RSS and E-mail harvesting of data), but were driven by what was possible - mostly in terms of skill and data availability, both of which played a big role throughout the project. The Gateway to Research project hackday (see \myref{audience-analyst}) finally gave concrete enough insight and a large historical data source of funding data which could, together, be used to produce a new feature.
+%REPEATS INFO FROM NEW REQUIREMENTS SECTION ABOVE The advanced functions themselves were also not just requirements which were further down the requirements list (such as RSS and E-mail harvesting of data), but were driven by what was possible - mostly in terms of skill and data availability, both of which played a big role throughout the project. The Gateway to Research project hackday (see \myref{audience-analyst}) finally gave concrete enough insight and a large historical data source of funding data which could, together, be used to produce a new feature.
 
 % just list the pruned list, nothing else to say about these after the Decision items above
 \begin{enumerate}
@@ -329,12 +342,13 @@ The advanced functions themselves were also not just requirements which were fur
 \item Submit Information About A Scholarly Funding Opportunity
 \item Submit Information About Funders
 \item Create Profiles
+\item Harvest Funding Data From Machine-Readable Sources
 \item Tagging Research As "Potentially Of Interest To" Users And Groups
 \item Specify Affiliation And Interests
 \item Responsive Mobile Web Design
 \item RESTful API
+\item Suggesting Relevant Historical Data
 \end{enumerate}
-
 
 
 % TODO REVIEW where to put this. You should briefly describe the design method you used and any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.
@@ -343,8 +357,10 @@ The advanced functions themselves were also not just requirements which were fur
 % briefly describe the design method you used and any support tools that you used
 % context and process implications on design
 
+%TODO write this after the overview diagram in the first section is done
 
 \section{Techologies used}
+\label{devprocess-tech-used}
 % REVIEW careful about point of view - this is about the development process and how the tools used impacted it.
 % ah screw it, just write reasons, can cut words later.
 
@@ -357,3 +373,24 @@ The advanced functions themselves were also not just requirements which were fur
 % always looking at other people's code, other FLOSS projects within OK movement
 % bootstrapping the codebase from IDFind
 % bootstrapping data gathering from bibserver
+
+As \myref{existing-works} and \myref{design-rationale} point out, Python was chosen as the main programming language of the application. HTML5, CSS and Javascript were used for the user interface. Similarly to the Python choice, this was due to multiple other Open Knowledge projects using them in this manner - so it would be easy for interested developers to read the code and contribute. Previous personal experience with these technologies helped as well, as this is a sole developer project.
+
+%Python is not without its faults, of course. Despite trying to be very newbie-friendly, the import system is difficult to understand, and the problem continues as users move on to intermediate proficiency as well. Understanding more advanced issues seems to be difficult even when its initial challenges have been mastered. The point is easily illustrated by the number of questions related to ``python import'' on the popular programming Q$+$A site stackoverflow.com \cite{so-python-import}, especially if the number of duplicates is considered.
+
+%This isn't just a problem for reusing code, it is a problem for organising code in an application. At least 6-7 hours had to be spent in order to understand how to do something as (expectedly) simple as importing other modules within the same application, and why seemingly unrelated (or even \emph{no}) changes seemed to result in an entirely unrunnable project.
+
+Basing the main application on another project that the author had participated in meant that a great deal of bootstrapping time was saved. A lot of knowledge about using the underlying Python frameworks was also reused. This was also partially true when the FundFind data harvester was written as it was again based on another Open Knowledge project, but the author had no previous experience with that code.
+
+On the other hand, trying to create something to the standards enforced by other projects in the same context (Open Knowledge) forced quite a lot of reading that might not have been strictly necessary outside this context.
+
+Python's interactive (REPL - Read, Evaluate, Print, Loop) interpreter was of great help to the development process. Instead of having to write a program in a file and then run it, the developer can type out the rough sequence of commands they want and see the results immediately. Seeing the results of a \emph{previous} command can be very important if the developer does not know or has just forgotten exactly what its output will be or look like. If the interpreter is run in the project's directory, all modules and other existing project bits can be accessed in the same way as in a written script.
+
+Python's philosophy of readability (no semicolons, indentation matters, new line means new statement) and certain programming conventions which have been built up around it meant that the parent codebase was quite easy to understand.
+
+Previous experience combined with the usage of relevant libraries meant that the quirks in developing with HTML and CSS - mainly the way CSS applies to HTML elements - did not delay development. On the other hand, having to learn how to work with the libraries certainly took some extra time, but saved a lot more (\myref{impl-ui}).
+
+% TODO REVIEW THIS SHOWS UP OK IN FINAL DRAFT AND FINAL RELEASE - verbatim env used, even though ``short'' one, so it could spill over the end of its line.
+The RESTful JSON API that the chosen datastore (elasticsearch) provides also accelerated the process somewhat, since the all of the project's data could be retrieved by pointing a web browser at |http://localhost:9200/fundfind/_search?q=*|.
+
+The command-line \textbf{V}i \textbf{IM}proved (vim) editor was used in conjunction with multiple graphical console windows (Konsole on KDE, Ubuntu GNU/Linux). This was not because of particular familiarity with vim, but rather because of a desire to gain such familiarity. It is also the only editor available on the testing server which currently hosts FundFind's public instance. Certain common text operations did actually become faster to accomplish in vim than in a conventional WYSIWYG editor over time (deleting and copying bits, lines or blocks of code being the most noticeable). On the other hand, quite a lot of time went into actually learning to use the new editor.
