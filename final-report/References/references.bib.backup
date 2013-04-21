@@ -3,10 +3,6 @@
 % @string{variable_name="string the variable_name refers to"}
 @string{aij= "Artificial Intelligence"}
 
-
-% This is an example of a book. By putting the title in {{ double brackets,
-% capitalisation is preserved.
-
 @MISC{Scrum,
 author = {{Scrum Alliance Inc.}},
 title = {{Scrum Is an Innovative Approach to Getting Work Done}},
@@ -586,10 +582,26 @@ note={Accessed April 2013},
 annote={This is the source code of the BibServer \cite{bibserver} project.}
 }
 
-@MISC{bibserver-src,
+@MISC{pep8,
 author = {{Guido van Rossum <guido at python.org>, Barry Warsaw <barry at python.org>}},
-title = {{PEP 8: Style Guide for Python Code / A Foolish Consistency is the Hobgoblin of Little Minds}},
-howpublished={\url{http://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds}},
+title = {{PEP 8: Style Guide for Python Code}},
+howpublished={\url{http://www.python.org/dev/peps/pep-0008/}},
 note={Accessed April 2013},
-annote={}
+annote={Several sections of the Python style Guide are cited. The topics of readability and naming code organisation units are of particular interest since they influence the design, implementation and naming of design elements in the software.}
+}
+
+@MISC{es-dateformats,
+author = {{Elasticsearch Global BV}},
+title = {{elasticsearch guide / date format}},
+howpublished={\url{http://www.elasticsearch.org/guide/reference/mapping/date-format/}},
+note={Accessed April 2013},
+annote={Discusses possible values in date formats in elasticsearch dynamic and custom mappings. Has an exhaustive list of pre-defined date formats which elasticsearch will recognise.}
+}
+
+@MISC{es-uid-field,
+author = {{Elasticsearch Global BV}},
+title = {{elasticsearch guide / uid field}},
+howpublished={\url{http://www.elasticsearch.org/guide/reference/mapping/uid-field/}},
+note={Accessed April 2013},
+annote={Discusses internal unique identifiers (uid) in elasticsearch and the uniqueness characteristics of id fields in documents (which is why it is cited).}
 }

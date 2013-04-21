@@ -7,17 +7,12 @@
 %review the relevant literature and any similar existing systems;
 
 \section{The Project}
+\label{intro-project}
 This project is about learning to deal with the field of funding in modern scholarship\footnote{A note on ``scholarship'' - the word and its derivatives are used throughout this text to mean all types of academic work, due to ``science'' being sometimes perceived as exclusionary to the Arts and Humanities fields.} and exploring how it could be opened up, from the point of view of a software developer. It is set within the context of the Open Knowledge field and seeks to add to this field by exploring how scholarly funding can be made more transparent and easier to find for all interested parties.
 
-The main vehicle of learning and main software output is an open-source web application named ``FundFind''. It's a simple crowdsourcing application which allows registered users to share information about funding opportunities under open\footnote{The Open Definition defines ``open'' well \cite{od}.} terms. Access to submitted information includes a machine-friendly API (Application Programmable Interface). % TODO explain how this makes it compliant with the Open Definition principles ...
+The main vehicle of learning and main software output is an open-source web application named ``FundFind''. It's a simple crowdsourcing application which allows registered users to share information about funding opportunities under open\footnote{The Open Definition defines ``open'' well \cite{od}.} terms. Its source code is available at \cite{fundfind-src}. Access to submitted information includes a machine-friendly API (Application Programmable Interface).
 
-% TODO make clear in FundFind UI and here that contributions are licensed under the same as SO.
-% then include another footnote in sentence above mentioning exact license chosen - or better put it in the text, it's important!
-% maybe put it in the Licensing section at the end of the chapter.
-
-One of the project features - getting funding data into the datastore - was developed as a separate technical project due to software licensing issues and due to natural low coupling between the main application and this feature. It is called ``Funding Harvest'' \cite{funding-harvest}.
-
-% TODO open up the source code repos for fundfind and funding harvest and cite them here.
+One of the project features - getting funding data into the datastore - was developed as a separate technical project due to natural low coupling between the main application and this feature. It is called ``Funding Harvest''. Its source code repository is publicly available at \cite{funding-harvest-src}.
 
 \section{Project Aims}
 \begin{itemize}
@@ -27,7 +22,6 @@ One of the project features - getting funding data into the datastore - was deve
     \item concrete development work which would enhance the software built during this project
     \end{enumerate}
   The foundations for this are laid in in \myref{future-work}.
-  % TODO should I have some outputs which ``distill'' this knowledge? Like a blog post on the CL website, or publish a list of the features or the progression of FundFind features, or just a blog post about FundFind dev process?
   
  \item Identify how much software it is possible to build by essentially starting and seeing how far it goes in a controlled fashion. The author's own initial lack of domain knowledge about field and technical skill level mean than a fixed feature list is hardly possible. However the progression of features and the final ``shape'' of the FundFind software is discussed in \myref{devprocess-requirements}.
 \end{itemize}
@@ -73,8 +67,6 @@ Private organisations are not far behind and may in fact be leading the way - on
 
 \section{Audience and high-level requirements}
 \label{audience}
-% TODO ADD VALUE PROPOSITION SECTION - 1. same info as elsewhere BUT time saving; 2. not LACKING any expected features; 3. additional features
-% TODO add which funders were considered and why those - maybe just arbitrary, just to get the app working..
 The potential audience of this project was discovered to be quite varied. It seems multiple stakeholders stand to benefit from more transparent scholarly funding dissemination.
 
 The requirements or potential uses that these users might want to put FundFind to are closely tied to the benefits that come with opening up funding data.
@@ -96,7 +88,7 @@ The requirements or potential uses that these users might want to put FundFind t
  \item \textbf{Benefits from opening up funding data}: (More) easily find and compare funding sources
  \item \textbf{Possible requirements from FundFind}: Find funding. To quote a postgraduate candidate: ``I want to do a taught MSc in Astrophysics but I can't afford to self fund. Where can I go and who will pay me?''
  
- Share funding information with peers (e.g. if a canididate for a Computer Vision PhD finds a good PhD studentship call for applications in Bioinformatics, they may well want to forward it to a colleague).
+ Share funding information with peers (e.g. if a candidate for a Computer Vision PhD finds a good PhD studentship call for applications in Bioinformatics, they may well want to forward it to a colleague).
 \end{itemize}
 
 \subsubsection{Research Development Officers}
@@ -176,21 +168,22 @@ In addition to the The Open Knowledge Foundation \cite{okfn-vision}, to whom the
 
 \section{Existing works}
 \label{existing-works}
-There is still (as opposed to the start of the project) no single piece or combination of pieces of software which enables involved stakeholders to do what this project would allow them to do upon completion, to the best of the author's knowledge.
+There is no single piece or combination of pieces of software which enables the identified audience to do what this project would allow them to do upon completion, to the best of the author's knowledge.
 
 Related Open Knowledge projects are still as relevant as at the beginning of the project, in particular the Open Knowledge Foundation ones at \cite{okfn-labs} and \cite{okfn-github}. \myref{design-rationale} notes individual projects which informed FundFind's technical design in some way.
 
 The FundFind codebase was initially based entirely on the IDFind project \cite{idfind}, which is available under the MIT license \cite{idfind-src}. Cottage Labs LLP and the author started it during the DevXS 2011 conference \cite{devxs}. IDFind was a good place to start, since the project's context (Open Knowledge, interested parties) is similar, so a similar set up and technologies could be used to accelerate the initial development.
 
-However, IDFind had not done anything like one of the new features which were added during development - harvesting funding data from machine-readable sources. It turned out that an Open Knowledge Foundation project, BibServer, had done something similar. The new Funding Harvest feature is actually technically separate from the rest of FundFind's codebase - it just puts whatever information it finds in FundFind's datastore and the only link between the two codebases is the datastore.
-
 \section{Licensing}
-% add IDFind's licensing status history here (bibserver's 2 copies, our copy MIT -> IDFind MIT April 2013 -> FundFind MIT April 2013), alluded to in \S\ref{pm-tools}
 
-FundFind is licensed under the MIT license, like its parent IDFind. % TODO why?
+FundFind is licensed under the MIT license, like its parent IDFind. This is a permissive license which should facilitate the widest possible use and reuse of code. Moreover, there is little reason to place particular restrictions since the target Open Knowledge / Funding fields are narrow enough and there isn't really any open-source software which sits at the intersection of the two.
 
-The reason why FundFind's low coupling with the Funding Harvest feature is stressed above is that BibServer, Funding Harvest's parent, is licensed under the Affero GPL \cite{bibserver-src}. This requires that Funding Harvest should also be licensed under Affero GPL, as AGPL is a copyleft license. The modular technical design enables FundFind and Funding Harvest to be developed side-by-side, fulfilling user needs without having to change FundFind's permissive open-source license.
-% IDFind - MIT
-% Code and ideas contribution paths
-% Bibserver -> IDFind -> FundFind
-% Bibserver -> FundFind (since Bibserver updated after IDFind made and changes not ported over yet)
+\subsection{Contributions}
+
+Contributions through FundFind's user interface (crowdsourcing) are licensed under the Creative Commons Attribution (CC-BY) \cite{cc-by-3} license, version 3.0 (latest at time of writing). This was chosen after considering a multitude of other licenses. In the end, the new Budapest Open Access Initiative recommendations and the Open Definition \cite{od} recommending CC-BY informed the choice.
+
+This license only applies to publicly visible (shared with the world) submissions. For now, it is not possible to share funding information only with certain users or groups - therefore, the license applies to all crowdsourced contributions. Proper access control was too costly to implement in light of more important / core features which would enable the system to at least act as a prototype for completely open sharing, before moving on to the more complex role of a virtual shelf of funding opportunities.
+
+The contributions license does not apply to data which has been harvested from data sources (like funders' websites or RSS feeds) automatically. The owners of the data would have to give written consent for Funding Harvest to harvest their data and publish it as CC-BY (or, better and more likely - publish it as CC-BY themselves). Funding Harvest is only a tool which, in combination with FundFind, is meant to showcase the benefits of having funding data open, thus convincing data sources to publish data more openly. It is not a tool to infringe on the copyrights of others, although it can be used as such. This is true of any software which does page scraping or even just consumes and records RSS feeds.
+
+Most records in FundFind's datastore denote the license they can be used under. If a record does not have a |license| field (user accounts do not, for example), then the default (restrictive) copyright rules apply to that data.

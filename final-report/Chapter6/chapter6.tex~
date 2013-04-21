@@ -15,27 +15,50 @@
 % FIXME
 Somewhere in February, the 4th (out of 6) month of the project, I realised that this domain of knowledge, scholarly funding, was going to be a tougher nut to crack than I had thought.
 
-decided late that the project was going to do requirements gathering as a formalised goal - inspired both by G4HE (Cottage Labs project) and difficulties in understanding the field \S\ref{eval-difficult-field}. These only became clear once the technical work started in earnest and it turned out it was in fact both a pretty big field, and one that was ripe with problems and conflicting interests.
+One thing that I should have done earlier is specified that actually trying to understand this sector beyond the needs of the software was going to be a requirement of the project. Requirements gathering as a formalised goal had plenty of precedent. In January, I came to know of the G4HE project which tries to ``engage with [...] Gateway to Research [...] to improve the information exchange between Higher Education Institutions and the Research Councils'', which is all about funding data. The difficulties only became clear once the technical work started in earnest and it turned out it was in fact both a pretty big field, and one that was ripe with problems and conflicting interests. Now, the requirements I managed to gather and the funding sector are discussed in this write-up (Chapters 1 and 2), but they could have produced far more output, e.g. a series of blog posts covering each issue in some detail. Furthermore, the G4HE project has far more resources than I have for essentially trying to do the same thing - how funding data can be useful to HEI-s and the people inside them - and a more structured approach on my part might have allowed me to push them for some of their outputs or to contribute my efforts.
 
-TODO FIXME EXPAND THIS HERE INTO A SUBSECTION ABOUT WHAT LEARNED ABOUT FIELD. Regardless of personal interest, it takes time to develop holistic understanding of a field like this. One analogy would be another human field of endeavour the author has a personal interest in - saving and re-homing homeless animals. Ripe with conflicting interests with a troubled history of ad-hoc evolution resulting from the intersection of these interests. FIXME TODO EXPAND HERE exactly what are the problems? Politics, money and the sincere wish to save every animal encountered, the good intentions sometimes resulting in bad outcomes 
-such as houses full of tens of animals which cannot be taken care of.
+%Regardless of personal interest, it takes time to develop holistic understanding of a field like this. One analogy would be another human field of endeavour the author has a personal interest in - saving and re-homing homeless animals. Ripe with conflicting interests with a troubled history of ad-hoc evolution resulting from the intersection of these interests. Politics, money and the sincere wish to save every animal encountered, the good intentions sometimes resulting in bad outcomes such as houses full of tens of animals which cannot be taken care of.
 
-% FIXME
-Relating information about the field and its problems to people outside the target audience and even across target user groups turned out to be much more difficult than expected. TODO more here?
+Relating information about the field and its problems to people outside the target audience and even across target user groups turned out to be much more difficult than expected.
 
 \subsection{Condensing the insights gained}
-Part of the point of the project was to see how the funding field worked. And this went fine, I now know a lot more about it than when I started. However, sharing this information seems really difficult. It feels like my sample was way too small and that any representation I choose for it will just be laughably bad. In reality, there is clearly a place in the world for a ``how does scholarly funding work for beginners, from a beginner'' collection of information, but presenting this appropriately seems incredibly difficult.
+Part of the point of the project was to see how the funding field worked. In terms of actually achieving understanding this went fine, I now know a lot more about it than when I started. However, sharing this information seems really difficult. It feels like my sample was way too small and that any representation I choose for it will just be laughably bad. In reality, there is clearly a place in the world for a ``how does scholarly funding work for beginners, from a beginner'' collection of information, but presenting this appropriately seems incredibly difficult.
 
-All the insights gained were attained through interviews. However, it was just my opinion of the content of these meetings that was actually going to make it into the final output. This can feel quite daunting - as a developer, I prefer to publish the data and let those whose work I support actually ``deal'' with it. However, in this case, I \emph{am} the researcher, this mysteriously skilled person who somehow knows what to do with this data. Others do not want to know about conversations I have had, they want knowledge - even understanding. My understanding. % TODO expand this
+All the insights gained were attained through interviews. However, it was just my opinion of the content of these meetings that was actually going to make it into the final output. This can feel quite daunting - as a developer, I prefer to publish the data and let those whose work I support actually ``deal'' with it. However, in this case, I \emph{am} the researcher, this mysteriously skilled person who somehow knows what to do with this data. Others do not want to know about conversations I have had, they want knowledge - even understanding.
 
-%However, I have done similar things before - I talked about what Open Knowledge is while I was still figuring it out, so I decided late on that one of the outputs of this project was to be a blog post on the topic. My previous attempt to tackle a new field is published on the Cottage Labs website, and we do publish thoughts which concern the Higher Education field, so this seemed like a good place to publish it \cite{fundfind-blog-post}.
-% FOR THE ABOVE ^ - NOTE chapter 1 has a relevant TODO : should I have some outputs which ``distill'' this knowledge? Like a blog post on the CL website, or publish a list of the features or the progression of FundFind features, or just a blog post about FundFind dev process?
+However, I have done similar things before - I talked about what Open Knowledge is while I was still figuring it out, so I decided late on that one of the outputs of this project was to be a blog post on the topic. It seemed like a waste to spend so much time thinking about what could be useful in the funding field and not sharing it, even if the outcome was far from conclusive. My previous attempt to tackle a new field is published on the Cottage Labs website \cite{cl-emanuil}, and we do publish thoughts which concern the Higher Education field, so this is probably where it will end up. For the moment, it is in Appendix \ref{funding-blog-post}.
+% FOR THE ABOVE ^ - NOTE chapter 1 has a relevant to-do item should I have some outputs which ``distill'' this knowledge? Like a blog post on the CL website, or publish a list of the features or the progression of FundFind features, or just a blog post about FundFind dev process?
 
 \section{Collecting Information From Disparate Sources - Technological Suitability}
 % Were the design decisions correct?
 % Could a more suitable set of tools have been chosen?
 % design decisions - evaluated
 % better tools, better decisions possible?
+
+\subsection{Working with the Datastore}
+\label{eval-datastore}
+Using an indexing server as the \emph{main} datastore for everything in the application is actually a little unconventional - usually, such software is used to analyse or store a big chunk of semi-structured data that the application has to deal with, e.g. a web crawler might throw HTML documents in there. Accounts and information coming in from HTML forms are certainly a secondary use case for this type of software.
+
+The nature of an indexing server is that it places much less constraints on the data than conventional datastores. That is actually precisely where its power comes from - it is still able to search through a large amount of data \emph{without} placing datatype and other constraints on it, in effect shifting the burden of processing the data to the datastore.
+
+However, this flexibility comes with a small price to pay - it can be difficult to guarantee the ``uniqueness'' of a certain set of fields. Unless |id| is being used to refer to a particular document in the index, \emph{every} query can return multiple results - there is no concept similar to that of primary keys. This is not a big problem, but can be challenging to the mindset of a developer used to having much finer control over what the data is, and it does affect the way the code is written (assume every query result is a list of results).
+
+After working with elasticsearch on a project as long as this, I really feel that it forces you to deal with the data instead of relying on arbitrarily constraining it (which now reminds me of ``IT Department said we can't do this''). I am sure the indexer can probably be configured to support data constraints, but going with the default functionality and letting it guide development makes for low coupling between the structure of the data and the FundFind software.
+
+To put this low coupling into context, let us assume that the Open Knowledge Foundation has decided to hold a hackday where funding data sources are found and consumed (websites: scraped, API-s: consumed, CSV-like files: loaded). All they would need is a single A4 page stating:
+\begin{itemize}
+\item URL of FundFind's current elasticsearch instance
+\item field name conventions for |funding_opportunity| from \myref{datastore-details}
+\item how to chuck data into elasticsearch using its HTTP API. HTTP is well known and most API-s use it as a transport medium, so it is very well supported by libraries in modern programming languages. Developers who are not familiar with it can be taught easily (everybody has used a web browser) and the others just need to know the endpoints to submit data to (e.g. |POST| to \\ \code{http://test.cottagelabs.com:9200/fundfind/funding\_opportunity/}).
+\end{itemize}
+
+In other words, there is no need for them to know how FundFind works, or even what it is, in order to be able to contribute data and scraper/parser/api client code. With a relational database, they would need to find a client/driver to connect to the database in their favourite programming language. The schema itself would be more skewed towards FundFind's specific retrieval and storage needs.
+
+This principle of low\emph{er} coupling is essentially what the Funding Harvest project demonstrates.
+
+Working with elasticsearch has been one of my favourite parts of this project. It is really lightweight and plugin development can allow for really interesting applications. One potential idea which came up during the Gateway to Research hackday includes outputting arbitrary data into a graph structure, so that visualisation libraries such as graphview \cite{graphview} can work on it immediately, thus seriously reducing the time needed to produce useful, insightful visualisations.
+
+Another idea that I had while working on FundFind and another open-source project, OpenArticleGauge \cite{oag} is writing an ``input'' plugin for elasticsearch so that it can index images in some fashion. Images and algorithms for analysing them vary greatly depending on the aims of analysis, so I looked towards medical images - looking for images of symptoms described by incoming data (either text, or another image). I'm pretty sure it's one of the most algorithmically difficult practical problems I can currently imagine, and there are existing solutions which do medical image search. I would be curious to see if some of their limitations might not be lifted by using elasticsearch to do the search (handle applying the algorithm and collecting the results), thus really focussing on the indexing / ``understanding'' algorithm itself, thus leading to a better solution.
 
 \section{User Needs}
 \subsection{Identifying Requirements}
@@ -48,10 +71,14 @@ It was still sensible to categorise new features which came up during developmen
 % How well did the software meet the needs of those who were expecting to use it?
 % not about features, but data
 
+It turned out that data was far more important to users than the other features. This was known from the first user meetings, but I had assumed I would be able to finish the software features \emph{and} focus on data gathering at the same time. Users didn't really get the other features without data though - a faceted search over an empty list is no good. That is why gathering data was finally prioritised after the basics were up and running.
+
 \subsubsection{Those Looking To Analyse Scholarly Funding}
 
 \subsubsection{Exploring Scholarly Funding}
-Within the group of people with analytical needs, there was a sub-group of developers which inspired and was part of the reason the project was conceived - Cottage Labs LLP, the Open Knowledge Foundation and the author. It was always the project's intention to learn about scholarly funding specifically so that these people could have a better idea of how to meet the Higher Education sector's needs.
+Within the group of people with analytical needs, there was a sub-group of developers which inspired and was part of the reason the project was conceived - Cottage Labs LLP, the Open Knowledge Foundation and the author. It was always the project's intention to learn about scholarly funding specifically so that these people could have a better idea of how to meet the Higher Education sector's needs. This went relatively well, the feature list presented in \myref{initial-reqs} is certainly a very good start and gives space for a lot more development in the future.
+
+The project was not presented to the Open Knowledge Foundation discussion list due to insufficient polish on the software side. Writing that first e-mail is quite important for gathering potential collaborators or even getting any feedback at all, so I fel it should at least have a solid base. On the other hand, developing for a long time without wider feedback from one of the target audience groups is probably not a good idea, as a lot of effort could end up wasted pursuing the wrong direction. A balance has to be struck between using other people's time and using my own, in order to eventually come up with a good product.
 % How well were any other project aims achieved?
 % learn more about it
 % personally, Cottage Labs, OKFN, Open Knowledge movement
@@ -59,13 +86,15 @@ Within the group of people with analytical needs, there was a sub-group of devel
 \section{In Retrospect}
 % If you were starting again, what would you do differently?
 
-% chapter 2 says Basing the project on another one that the author had participated in meant that a great deal of bootstrapping time was saved. A lot of knowledge about using the underlying Python frameworks was also reused. On the other hand, trying to create something to the standards enforced by other projects in the same context (Open Knowledge) forced quite a lot of reading that might not have been strictly necessary outside this context.
+Basing the project on another one was obviously a big decision. In retrospect, I should have been more careful - it did not have any tests! I cut out so much of it that in the end it was just the fact it was a Flask application which integrated the Flask-Login extension that saved any time at all. I'm sure it's not the only one that does it though, and identifying that this is what I actually wanted as a base would have helped immensely in obtaining a better (and tested) parent codebase. On the other hand it is good I didn't start trying to learn how to develop a web application in Python/Flask from scratch, since I was familiar with projects that used the combination, but hadn't written one from scratch before - which would have probably resulted in even less features making the final cut.
 
-% BUT it took quite a while to extend that knowledge to make the frameworks do what I wanted them to do NOW.
-% About 2nd sentence - trying to make something up to a certain standard that I hadn't coded to before was certainly difficult. The years of experience some of the authors of these projects have certainly have an impact on how quickly they seem to be able to write quality code. On the other hand, that is one of the great things about the Open Knowledge field, as long as it showcases a worthwhile idea and you spend enough time on it, it will gain at least recognition, and probably traction.
+The Open Knowledge and funding contexts forced quite a lot of reading (20+ hours) on top of what I already knew about the fields. Trying to figure out how the two fields intersect or should intersect is not something I accounted for in the initial time budget, but I am not sure I could have avoided it. I would try to focus more on the core features if I had the chance to do this again - no matter how lacking my understanding is, there is no end to learning more. The current understanding should have (and did) informed some sort of software development method and some feature list, just focus on delivering and evaluating. Do not cut the cycle short when new ideas come about or the flaws are exposed in old ones.
 
-% On the other hand, quite a lot of time went into actually learning to use the new editor.
-% so was it a good idea? used for all other programming projects throughout the year so it was not strictly a decision within the project, but don't think not doing it would have saved a great amount of time
+Another issue was pure technical skill. Upgrading a user interface library (Bootstrap) in order to integrate a component you want (facetview) would have taken the people I have worked with on hackdays etc. a lot less time than it took me. Clearly, observing how rapid development is done doesn't guarantee the ability to do it - there is no substitute for experience. This is particularly obvious if the original feature timeline is taken into account - how did I ever think I was going to be able to implement one feature a week? Probably possible - if I did absolutely nothing else most weeks!
+
+This, bad time management due to inaccurate estimates, is actually another issue. I did not do these underestimations (reading time and personal skill) just in the context of the project, I applied them consistently to other university work and extracurricular work. Other assignments often took priority when they came up, since I thought I could do them in a relatively small amount of time, tick them off my to-do list and focus on FundFind. I do not recall a case when I did not underestimate the time needed at least by 33\%, although it started getting better towards the end of the semester.
+
+I was clearly over capacity for a prolonged period of time, taking on some development work for the OpenArticleGauge project alongside the university work (15 days actually). It tries to see if a particular scholarly publisher's articles are open-access by detecting the license statements on publisher pages - all that just given a DOI (Digital Object Identifier, e.g. of an article of interest to the OAG user). It actually informed the RSS harvesting bit and helped with more Python knowledge, but no matter how interesting it was, fitting all the other university work, FundFind and OpenArticleGauge together was not possible. Perhaps possible for somebody with a little more technical skill and significantly more work management / focus abilities than me, but for me it was just wishful thinking. Saying ``no'' to interesting work is certainly a new concept for me - undergraduate years are usually spent trying to get any sort of useful real-world work done - but is obviously necessary for quality output.
 
 \section{Future Work}
 \label{future-work}
@@ -77,22 +106,61 @@ Within the group of people with analytical needs, there was a sub-group of devel
 
 % chapter 1 says Identify user requirements in the funding sector. Results presented in \myref{audience} above and more concretely in \myref{devprocess-requirements}. The data must be sufficient to enable the creation of a project roadmap for a) future research work into the requirements of user groups which were not engaged during this project; b) concrete development work which would build on the software built during this project. The foundations for this are laid in presented in \myref{future-work}.
 
+% tried to generate unique titles - not necessary! Two contexts - either search for opportunities (in which case the \emph{search} itself can be used, or really wanting to link to a particular opportunity, in which case ``share links'' could be generated which use the opportunity's |id| within the index. It took several hours to code this and in the end it just was not necessary. I should not have tried to design for the hypothetical issue of ``linking to a particular opportunity'' until I was actually focussing on it with the intention of coding and finishing it - quite the textbook case of the disadvantages of big up-front design versus Agile design, albeit on a small scale.
+
 \subsubsection{E-mail Alerts}
 This is a good feature and it's great that it was identified, especially since the author was not previously aware of the current scholars' workflow.
 
 %research officers' reports \myref{audience-research-officers}).
 \label{future-research-officers-reports}
 
-\subsubsection{Exporting The Results Of Searches}
-Nonetheless, research development officers' reports mentioned in \myref{audience-research-officers} could benefit from this feature, so it was added to Future Work, \myref{future-work}.
+\subsubsection{Exporting the Results of Searches}
+The need of research development officers to do reports of information they have submitted has been mentioned in \myref{audience}. This feature would fit the bill perfectly, although it would have to be combined with the ability to share information only with certain users/groups of users, since I did not get the impression that research officers would just like to collectively share all their funding data.
 
-% feedback option
+\subsubsection{More Advanced Feedback Feature}
+The ability to submit feedback to the project. This would only be useful as a software feature if it actually used some of the context, i.e. it allowed a user to capture an error in the software more easily or made error reporting faster or more visual. The comparison is with simple email and the GitHub issue tracker, and there is no point coding something which will do no better than these two.
 
 % use the tagging and profile information in ANY way
-% e.g. browse tags
+% e.g. browse tags - already doing that?
+
+% editing the information! Right now just submit and view, but no edit/delete.
+
+% perhaps under the appropriate feature subsubsection above - chapter 3 says The information submission pages were made manually in the parent IDFind project. There is, in fact, a library which will generate forms and can be configured to validate them - WTForms \cite{wtforms}. Unfortunately, this was discovered a little too late - the submission pages had been written and time had to be divided between other features.
+
+\subsubsection{RESTful API}
+\label{future-work-api}
+
+The API could be extended to reply in other data formats, such as XML - there will be projects who are already using XML despite JSON's simplicity, so this will only further the interoperability goal.
+
+Furthermore, proper content negotiation usually includes more support than just tacking |'.json'| at the end of the request URL - the HTTP Accept header is, apparently, the canonical way of doing this (there do not seem to be many sources describing this as fact beyond a few opinion pieces on programming blogs, but the Apache web server documentation says it is part of the HTTP 1.1 specification \cite{apache-content-negotiation}). There are python libraries which might help, although they do look like they are in the alpha stage at the time of writing \cite{negotiate} \cite{negotiator}.
+
+Furthermore, not all of FundFind's functionality is exposed via the API - the suggestion functionality might be quite useful to developers. The authors of a hypothetical ``News for Scholars'' newsfeed reader application might want to suggest previously funded bids to its UK readers, and FundFind can easily be adapted to serve as the server-side back-end of such an application, complete with the suggest functionality. Of course, right now it adds little value on top of Gateway to Research's own API, but if more data sources are added, this becomes more critical to FundFind's outlook as a modern open web application which exposes its useful functionality.
+
+\subsubsection{Suggesting Relevant Historical Data}
+
+Clearly, more data sources besides the Gateway to Research API could be added. In fact, the ESRC's ad-hoc API in the form of their RSS feed described in \myref{design-rcuk-esrc} is a prime candidate for this. Relevant news articles (e.g. from The Higher Education Times) could also be added.
+
+Beyond more and more data, one very important and yet minor change would be using the funding opportunity's title to suggest similar successful bids, instead of just the user's query. It would probably be necessary to enhance the user interface for viewing individual funding opportunities first since there just wouldn't be enough screen real estate to have multiple suggestion categories on the side of the current search results page.
+
+Furthermore, the suggestion algorithm itself can be improved. Instead of dumping everything coming in from the data sources, it could tokenise (break it up into words) the suggestion source - user's query or funding opportunity title. Then words such as ``the'' and ``and'' could be removed, as well as other commonly used English words, giving more weight to domain-specific keywords. Currently, Mark MacGillivray \cite{mark} is working on something similar while trying to analyse a person's scientific output, but alas, neither his PhD nor the associated software are published yet.
 
 \section{Learning}
-% LaTeX skills - not in industry, but if ever return to academia, lots of useful learned. Wordcount script, macros, large documents, divide focus using chapter files.
-% Open Knowledge field
-% funding field
-% Python for web applications, specifically in the way it's used by future employer
+
+This project certainly pushed the boundaries of what I could do, both technically and in terms of thinking about the wider issues around technology.
+
+Technically, my programming skills in Python have improved, with a much better idea of what is ``pythonic'', and even better - an understanding that it doesn't necessarily matter, if the software does what it is supposed to do. A balance needs to be found - a prototype cannot be written perfectly and there is little reason to waste precious time on doing so. This type of inflexibility is exactly why Agile approaches were developed, and now eschew ``big up-front design'' in most cases. I seem to go after technical implementation when I do not know what else to focus on. Having clean and maintainable code is certainly not only good, but a requirement in larger, more mature codebases. However, it is pointless when the code will be thrown away 10 minutes later because ``I found a component in my favourite UI library which does this far better than me''. Software projects certainly differ in their goals and context, and these differences need to be taken into account when writing code and picking a methodology. I judge the Python gain to be particularly valuable since a lot of Open Knowledge projects use it as previously noted, and I intend to work in that field.
+
+On the other hand striving to write code ``correctly'' also means reusing widely tested and used components, and to that end, I have certainly gotten better at building HTML/CSS/unobtrusive Javascript user interfaces.
+
+Vim, the command-line editor mentioned in \myref{devprocess-tech-used} was something that I probably needed to learn, especially for working in server environments. I am glad that I stuck with it, text editing is now slightly faster than with a conventional editor, even with my basic vim skills. It was probably not such a great idea to try to apply it to every single project during the year including FundFind, however. It didn't really contribute that much of a delay to FundFind, but it did impact other work at the beginning of the year, therefore impacting FundFind - there was no need to further complicate an already difficult work situation.
+
+The scholarly funding field has been an interesting challenge to comprehend, as noted above. This will certainly be useful - a lot of the current Open Knowledge field is dedicated to serving the needs of the academic community and being acquainted more closely with that community is most beneficial. Having looked at funding information targeted at all levels of the academic's career will also come in handy if I myself decide to become a scholar.
+
+A related, albeit much more narrowly focussed learning experience has been typesetting this document in \LaTeX. Clearly this is not as useful in industry, but it would be in academia. I had typeset documents in \LaTeX before, but learned a lot from the template provided for this write-up, as well as having successfully defined my own reference command to include the name of the target section. Dividing the focus of writing using separate chapter files and the TeXCount \cite{texcount} script are examples of further useful experience.
+
+\subsection{Applying Openness}
+Lastly, a very important lesson (towards which FundFind greatly contributed through trying to be an Open Knowledge project) was that Openness is not just a label that can be slapped over anything, especially technology, to magically make it better. When talking about ``Open'', the benefits that it will bring - or at least the reasons it is the ``right'' course - have to extremely clear. This came from trying to explain to potential users or friends what the benefits of opening u[ funding data would be.
+
+Open culture and the associated ambiance have been steadily gaining traction and seem appealing to a wide audience. A significant section of this audience is technologists and scientists, although the uptake by developers in industry seems greater than that by scholars in the hard sciences. In those circles, there are many who feel that openness must be good in some way, but major new ideas in the openness field seem to come from a small percentage of dedicated individuals. They seem to have a very well-defined idea of how an open approach can help other fields and then set about showing that to others. Examples include those who drive the Creative Commons organisation \cite{cc-team}, the Open Knowledge Foundation's Rufus Pollock \cite{rufus}, the Free Software Foundation's Richard Stallman \cite{rms}.
+
+On the other hand, the openness aspect of computer science is now explored by thousands of developers world-wide. Understanding why they (seemingly) readily accept that sharing one's work openly is beneficial and the ultimately correct thing to do seems key to understanding why scholars do not necessarily share information as readily. This is mostly of relevance to the Open Access field, which focuses on research output. However, why would a scholar \emph{submit} any information to FundFind? Why would they \emph{share} on FundFind - their time, accumulated experience, effort, even just list of funders to follow? I have asked this question at user meetings but the answer seems elusive. Determining what it is that makes developers do it (demonstrated benefit to each \emph{individual}, goodwill?) might help and is something which needs to be explored further.

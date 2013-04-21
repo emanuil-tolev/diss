@@ -97,7 +97,8 @@
 \newcounter{tmpc}
 
 % inline code
-%\let\code\texttt
+\let\code\texttt
+
 \usepackage{fancyvrb}
 \DefineShortVerb{\|}
 
@@ -179,6 +180,7 @@
 % include any appendices here
 \include{Appendix1/appendix1}
 \include{Appendix2/appendix2}
+\include{Appendix3/appendix3}
 
 \fancypagestyle{plain}{%
    \fancyhead{} %[C]{Annotated Bibliography}
@@ -189,7 +191,7 @@
 
 \setemptyheader
 
-\nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
+%\nocite{*} % include everything from the bibliography, irrespective of whether it has been referenced.
 
 % the following line is included so that the bibliography is also shown in the table of contents. There is the possibility that this is added to the previous page for the bibliography. To address this, a newline is added so that it appears on the first page for the bibliography. 
 \addcontentsline{toc}{chapter}{Annotated Bibliography} % Adds References to contents page

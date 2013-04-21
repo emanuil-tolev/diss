@@ -15,7 +15,7 @@ The main vehicle of learning and main software output is an open-source web appl
 % then include another footnote in sentence above mentioning exact license chosen - or better put it in the text, it's important!
 % maybe put it in the Licensing section at the end of the chapter.
 
-One of the project features - getting funding data into the datastore - was developed as a separate technical project due to software licensing issues and due to natural low coupling between the main application and this feature. It is called ``Funding Harvest'' \cite{funding-harvest}.
+One of the project features - getting funding data into the datastore - was developed as a separate technical project due to natural low coupling between the main application and this feature. It is called ``Funding Harvest'' \cite{funding-harvest}.
 
 % TODO open up the source code repos for fundfind and funding harvest and cite them here.
 
@@ -182,14 +182,11 @@ Related Open Knowledge projects are still as relevant as at the beginning of the
 
 The FundFind codebase was initially based entirely on the IDFind project \cite{idfind}, which is available under the MIT license \cite{idfind-src}. Cottage Labs LLP and the author started it during the DevXS 2011 conference \cite{devxs}. IDFind was a good place to start, since the project's context (Open Knowledge, interested parties) is similar, so a similar set up and technologies could be used to accelerate the initial development.
 
-However, IDFind had not done anything like one of the new features which were added during development - harvesting funding data from machine-readable sources. It turned out that an Open Knowledge Foundation project, BibServer, had done something similar. The new Funding Harvest feature is actually technically separate from the rest of FundFind's codebase - it just puts whatever information it finds in FundFind's datastore and the only link between the two codebases is the datastore.
-
 \section{Licensing}
 % add IDFind's licensing status history here (bibserver's 2 copies, our copy MIT -> IDFind MIT April 2013 -> FundFind MIT April 2013), alluded to in \S\ref{pm-tools}
 
-FundFind is licensed under the MIT license, like its parent IDFind. % TODO why?
+FundFind is licensed under the MIT license, like its parent IDFind. This is a permissive license which should facilitate the widest possible use and reuse of code. Moreover, there is little reason to place particular restrictions since the target Open Knowledge / Funding fields are narrow enough and there isn't really any open-source software which sits at the intersection of the two.% TODO why?
 
-The reason why FundFind's low coupling with the Funding Harvest feature is stressed above is that BibServer, Funding Harvest's parent, is licensed under the Affero GPL \cite{bibserver-src}. This requires that Funding Harvest should also be licensed under Affero GPL, as AGPL is a copyleft license. The modular technical design enables both to be developed, fulfilling user needs without having to change FundFind's permissive open-source license.
 % IDFind - MIT
 % Code and ideas contribution paths
 % Bibserver -> IDFind -> FundFind

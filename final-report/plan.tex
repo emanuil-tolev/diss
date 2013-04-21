@@ -1,5 +1,8 @@
 \chapter{Background and Objectives}
-\section{Scholarship and funding}
+\section{The Project}
+\section{Project Aims}
+\section{Scholarship and Funding}
+\subsection{The value of Openness in scholarship and elsewhere}
 \section{Audience and high-level requirements}
 \subsection{Professionals Looking For Funding Group}
 \subsubsection{Accomplished scholars}
@@ -12,19 +15,10 @@
 \subsubsection{Commercial Organisations}
 \subsection{Analyst group}
 \subsection{Focusing on certain audience groups}
-\section{Project Aims}
 \section{Existing works}
-% \section{Scholarly funding opportunities}
-% \subsection{Funders}
-% \subsection{The value of Openness in scholarship and elsewhere}
-% \subsection{Scholars}
-% \section{The project}
-% \section{Existing works}
 \section{Licensing}
 \chapter{Development Process}
 \section{Introduction}
-\subsection{Overview}
-\subsubsection{The Software Development}
 \subsection{Project management tools}
 \section{Evolution of the Development Process}
 \section{Modifications}
@@ -42,13 +36,13 @@
 \subsubsection{E-mail Alerts}
 \subsubsection{Saving Searches}
 \subsubsection{Harvesting Funding Data From E-mail Digests}
-\subsubsection{Tagging Research As "Potentially Of Interest To" Users And Groups}
-\subsubsection{Specify Affiliation And Interests}
+\subsubsection{Tagging Research as "Potentially of Interest to" Users and Groups}
+\subsubsection{Specify Affiliation and Interests}
 \subsubsection{Responsive Mobile Web Design}
 \subsubsection{Bulk Funding Opportunity Data Import}
 \subsubsection{Harvesting Historical Funding Information}
 \subsubsection{RESTful API}
-\subsubsection{Exporting The Results Of Searches}
+\subsubsection{Exporting The Results of Searches}
 \subsection{New Requirements}
 \subsubsection{Harvest Funding Data From Machine-Readable Sources}
 \subsubsection{Suggesting Relevant Historical Data}
@@ -59,42 +53,47 @@
 \section{Introduction}
 \subsection{Design Details and Rationale}
 \section{Overall Architecture}
-\subsection{Modules and Packages}
+\subsection{Organising code in Python}
 \subsection{Changes over time}
-\section{Main Application}
-\subsection{Core}
-\subsection{DAO}
-\subsection{Web}
-\subsection{Importer}
-\subsection{Config}
-\subsubsection{Default Settings}
-\subsection{Util}
-\subsection{TweetBot}
-\section{Suggestions}
-\section{Harvesters}
-\subsection{HarvesterBase}
-\subsection{CliManualSubmitter}
-\subsection{RssHarvesterBase}
-\subsubsection{BbsrcRssHarvester}
-\subsubsection{EsrcRssHarvester}
-\subsection{EmailHarvesterBase}
-\subsubsection{EpsrcEmailHarvester}
 \section{Datastore}
+\subsection{FundFind datastore details}
+\section{fundfind}
+\subsection{core}
+\subsection{dao}
+\subsection{web}
+\subsection{importer}
+\subsection{config}
+\subsubsection{default\_settings}
+\subsection{util}
+% \subsection{suggest}
+% \subsubsection{gtr}
+\section{fundingharvest}
+\subsection{base}
+\subsection{rss}
+\subsection{rcuk\_esrc}
 \section{User Interface}
-\subsection{AJAX functionality}
+\subsection{Content}
+\subsection{Exposing the content}
+\subsubsection{Faceted Search}
 \section{API}
-  \subsection{Design for Developers}
-  \subsection{Technical design}
-  \subsubsection{Data format}
-\section{Alternative Designs}
+%   \subsection{Design for Developers}
+\subsection{Data format}
+%\section{Alternative Designs}
 \chapter{Implementation}
-\section{User Interface}
+\section{Datastore access}
 \section{Implementing The Main Application}
-\subsection{Faceted Search}
-\subsection{The Final Features}
+\subsection{The Basics}
+\subsubsection{Search For Scholarly Funding Opportunities}
+\subsubsection{Submitting Information about Funders and Opportunities}
+\subsubsection{Create Profiles}
+\subsection{Advanced Features}
+\subsubsection{Harvest Funding Data From Machine-Readable Sources}
+\subsubsection{Tagging}
 \subsubsection{Responsive Mobile Web Design}
-\subsection{The Dropped Features}
-\subsubsection{Harvesting Funding Data From E-mail Digests}
+\subsubsection{RESTful API}
+\subsubsection{Suggesting Relevant Historical Data}
+% \subsection{The Dropped Features}
+% \subsubsection{Harvesting Funding Data From E-mail Digests}
 \chapter{Testing}
 \section{Overall Approach to Testing}
 \section{Automated Testing}
@@ -103,19 +102,23 @@
 \subsection{User Interface Testing}
 \subsection{Stress Testing}
 %\subsection{Other types of testing}
-\section{User Testing}
-\subsection{Responsive Mobile Web Design}
+%\section{User Testing}
+\section{Responsive Mobile Web Design}
 \chapter{Evaluation}
 \section{Approaching the field of scholarly funding}
 \subsection{Condensing the insights gained}
 \section{Collecting Information From Disparate Sources - Technological Suitability}
+\subsection{Working with the Datastore}
 \section{User Needs}
 \subsection{Identifying Requirements}
 \subsection{Meeting Needs}
-\subsubsection{Those Looking To Analyse Scholarly Funding}
 \subsubsection{Exploring Scholarly Funding}
 \section{In Retrospect}
 \section{Future Work}
 \subsubsection{E-mail Alerts}
-\subsubsection{Exporting The Results Of Searches}
+\subsubsection{Exporting the Results of Searches}
+\subsubsection{More Advanced Feedback Feature}
+\subsubsection{RESTful API}
+\subsubsection{Suggesting Relevant Historical Data}
 \section{Learning}
+\subsection{Applying Openness}

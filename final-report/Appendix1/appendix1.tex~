@@ -1,0 +1,12 @@
+\chapter{Third-Party Code and Libraries}
+
+User interface - Bootstrap \cite{bootstrap}, jQuery \cite{jquery}, jQuery UI \cite{jquery-ui}.
+
+Back-end - Flask \cite{flask}.
+
+Connecting to elasticsearch datastore - pyes \cite{pyes}.
+
+Parsing RSS - feedparser \cite{feedparser}.
+
+%TODO review
+Those should have already been mentioned in the text, not entirely sure how to proceed about splitting the code in ``own'' and ``based on third-party code''. It's all based on third-party code. The code itself basically lets information flow between the different layers and brings together components from these libraries to do this specific job, creating a couple of submission pages and one search/view page. That's one of the main unspoken tenets in web development nowadays - somebody somewhere has done it better, don't reinvent the wheel unless you're specifically learning how the wheel works...

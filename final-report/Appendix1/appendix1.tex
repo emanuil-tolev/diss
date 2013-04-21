@@ -1,3 +1,12 @@
 \chapter{Third-Party Code and Libraries}
 
-If you have made use of any third party code or software libraries, i.e. any code that you have not designed and written yourself, then you must include this appendix. As has been said in lectures, it is acceptable and likely that you will make use of third-party code and software libraries. The key requirement is that we understand what is your original work and what work is based on that of other people. Therefore, you need to clearly state what you have used and where the original material can be found. Also, if you have made any changes to the original versions, you must explain what you have changed. 
+User interface - Bootstrap \cite{bootstrap}, jQuery \cite{jquery}, jQuery UI \cite{jquery-ui}.
+
+Back-end - Flask \cite{flask}.
+
+Connecting to elasticsearch datastore - pyes \cite{pyes}.
+
+Parsing RSS - feedparser \cite{feedparser}.
+
+%TODO review
+Those should have already been mentioned in the text of chapter 3, not entirely sure how to proceed about splitting the code in ``own'' and ``based on third-party code''. It's all based on third-party code. The code itself basically lets information flow between the different layers and brings together components from these libraries to do this specific job, creating a couple of submission pages and one search/view page. That's one of the main unspoken tenets in web development nowadays - somebody somewhere has done it better, don't reinvent the wheel unless you're specifically learning how the wheel works...
