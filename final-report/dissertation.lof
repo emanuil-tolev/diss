@@ -1,12 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces FundFind initial timeline}}{13}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces FundFind initial timeline}}{14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of FundFind and Funding Harvest's technical architecture.}}{25}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of parent project IDFind's technical design presented in the Progress Report \cite {progress-report}. This should include several more modules, coloured in red (deleted for FundFind) and black (left in).}}{27}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces dao module overview - 3 classes and 2 functions}}{31}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of FundFind and Funding Harvest's technical architecture.}}{26}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Overview of parent project IDFind's technical design. Much more complete than presented in the Progress Report.}}{28}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces dao module overview - 3 classes and 2 functions}}{33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

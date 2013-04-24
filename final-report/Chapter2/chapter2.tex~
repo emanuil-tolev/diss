@@ -7,7 +7,6 @@
 %Introduce the specific model that you chose to use. 
 % You need to describe briefly the life cycle model that you used. Do not force your project into the waterfall model if it is better described by prototyping or some other evolutionary model. You do not need to write about all of the different process models that you are aware of. Focus on the process model that you have used. It is possible that you needed to adapt an existing process model to suit your project; clearly identify what you used and how you adapted it for your needs.
 
-% TODO add diagram of actual final development process and make sure it is described CLEARLY
 
 The project used an evolutionary prototyping approach. There were two phases:
 \begin{enumerate}
@@ -24,11 +23,7 @@ An Agile, iterative approach to the development of the software was initially ch
 
 The length of the requirements gathering phase and the complexity of developing the most important features was initially underestimated. Analysis of the intermediate outputs and measurement against the initial aims suggested that a different scope was necessary. The new goals required a different approach, but that alone would not provide an answer as to what FundFind should have aimed for while remaining realistic.
 
-Concentrating on and discussing the original goal of the FundFind project with interested parties proved fruitful. The overarching aims of ``learning about scholarly funding'' and ``prototyping a solution for sharing this information'' resulted in a leaner, more focussed set of requirements to work towards. Since work on the code had started and a basic web application was running, it was most appropriate to enhance this and peruse the chosen datastore's unique characteristics to add new features while retaining simplicity. This approach in the second phase of the project was essentially faster evolutionary prototyping (compared to the first phase), mostly due to building better understanding of the technologies involved and insufficient time to deliver all features on the list.
-
-% TODO add diagram here showing overview of project progress
-% phase 1 - fucking around, building basic app, fucking around some more
-% phase 2 - now with the wisdom of having fucked around so much, actually did something useful in no particularly structured way (a.k.a. evolutionary prototyping). Show progression of features.
+Concentrating on and discussing the original goal of the FundFind project with interested parties proved fruitful. The overarching aims of ``learning about scholarly funding'' and ``prototyping a solution for sharing this information'' resulted in a leaner, more focused set of requirements to work towards. Since work on the code had started and a basic web application was running, it was most appropriate to enhance this and peruse the chosen datastore's unique characteristics to add new features while retaining simplicity. This approach in the second phase of the project was essentially faster evolutionary prototyping (compared to the first phase), mostly due to building better understanding of the technologies involved and insufficient time to deliver all features on the list.
 
 \subsection{Project management tools}
 \label{pm-tools}
@@ -50,38 +45,42 @@ Initially, Agile practices such as Pair Programming \cite{pairprg}, full Scrum \
 
 Thus, initially, with no methodology fitting the precise needs of the project and the Agile Manifesto \cite{agile-manifesto} in mind, a methodology of an Agile \emph{character} was planned, using the Extreme Programming lifecycle as a base \cite{xp-lifecycle}. The idea was to use ideas such as Release Planning (plan a set of features), Iteration (develop in small increments) and Stories (described above).
 
-The basic steps which were defined were:
+It turned out Agile needed a consistent, if not constant, supply of time however. There was little development time availability in certain weeks, but far more in others. The size of different features differed as well, with a lot of the work going into the initial features and lower-priority features actually being completed relatively easily. Thus, ``evolutionary prototyping'' is a much more suitable term to describe the actual approach to development over time.
+
+The basic steps which were defined in the initial Agile methodology were:
 \begin{shadequote}
 \begin{enumerate}
-	\item Meet with a variety of potential users from the chosen user group (\S\ref{focus-groups}), trying to pick them so that each one has a different professional perspective on scholarship.
+	\item Meet with a variety of potential users from the chosen user group (\myref{focus-groups}), trying to pick them so that each one has a different professional perspective on scholarship.
 	\par\emph{Emanuil Tolev in FundFind Progress Report \cite{progress-report}}
 	\setcounter{tmpc}{\theenumi}
 \end{enumerate}
 \end{shadequote}
 
-This worked well, with candidate postgraduates, postgraduates, research assistants (post-doctoral), lecturers and developers all agreeing to give a bit of their time. The meetings were not as regular as initially hoped (1 per month with each user) due to users' commitments, author's committments and a particular characteristic of this project.
+This worked well, with candidate postgraduates, postgraduates, research assistants (post-doctoral), lecturers and developers all agreeing to give a bit of their time. The meetings were not as regular as initially hoped (1 per month with each user) due to users' commitments, author's commitments and a particular characteristic of this project.
 
-Looking at requirements presented in \S\ref{audience}, it is easy to see that the basic searching and sharing of opportunities were two \emph{really} important functions. Sharing is used to different ends by research officers, lecturers, postgraduates and funders, while searching is useful for different reasons to pretty much everybody. However, getting timely feedback from all target users was not considered to be possible - and that is required for iterative development. It was actually considered (and turned out to be - \S\ref{impl-hard-basics}) difficult enough to produce a prototype which made progress in satisfying the initial requirements of \emph{multiple} groups. Thus, meetings essentially happened at the start at the project (October, November, December) and at the end, in March and April, since most of the time inbetween was spent getting those two important features right. Advanced functionality was planned in March and developed in April and is described below in \S\ref{final-reqs}.
-
-\begin{shadequote}
-\begin{enumerate}
-	\setcounter{enumi}{\thetmpc}
-	\item Define \emph{and prioritise} the functionality of the project with each user in the form of the ``stories'' mentioned above. Record the results using the chosen project management tools (\S\ref{pm-tools}).
-	\par\emph{Emanuil Tolev in FundFind Progress Report \cite{progress-report}}
-	\setcounter{tmpc}{\theenumi}
-\end{enumerate}
-\end{shadequote}
-
-%This turned out to be a really good idea 
+Looking at requirements presented in \myref{audience}, it is easy to see that the basic searching and sharing of opportunities were two \emph{really} important functions. Sharing is used to different ends by research officers, lecturers, postgraduates and funders, while searching is useful for different reasons to pretty much everybody. However, getting timely feedback from all target users was not considered to be possible - and that is required for iterative development. It was actually considered (and turned out to be - \myref{impl-hard-basics}) difficult enough to produce a prototype which made progress in satisfying the initial requirements of \emph{multiple} groups. Thus, meetings essentially happened at the start at the project (October, November, December) and at the end, in March and April, since most of the time in-between was spent getting those two important features right. Advanced functionality was planned in March and developed in April and is described below in \myref{final-reqs}.
 
 \begin{shadequote}
 \begin{enumerate}
 	\setcounter{enumi}{\thetmpc}
-	\item Release planning - prepare an initial timeline of which project features are to be released when and denote ``release points''. This work can be repeated as required - the order and the features themselves might change on the basis of user feedback over time (this is how Agile projects try to deliver more value by responding to changing requirements). The total size of the work and the size of each feature will most probably remain the same. This piece of work produces the ``Project Timeline'' and the current version is included in \S\ref{timeline}.
+	\item Define \emph{and prioritise} the functionality of the project with each user in the form of the ``stories'' mentioned above. Record the results using the chosen project management tools (\myref{pm-tools}).
 	\par\emph{Emanuil Tolev in FundFind Progress Report \cite{progress-report}}
 	\setcounter{tmpc}{\theenumi}
 \end{enumerate}
 \end{shadequote}
+
+This turned out to be a really good idea as it was easy to re-prioritise features during meetings. However, different users had different priorities - some did not see much use for certain features while others preferred them (the differences were starker between user groups, as can be expected). Reconciling those differences into one final feature list was extremely difficult - in essence, it was not possible to please everybody.
+
+\begin{shadequote}
+\begin{enumerate}
+	\setcounter{enumi}{\thetmpc}
+	\item Release planning - prepare an initial timeline of which project features are to be released when and denote ``release points''. This work can be repeated as required - the order and the features themselves might change on the basis of user feedback over time (this is how Agile projects try to deliver more value by responding to changing requirements). The total size of the work and the size of each feature will most probably remain the same.
+	\par\emph{Emanuil Tolev in FundFind Progress Report \cite{progress-report}}
+	\setcounter{tmpc}{\theenumi}
+\end{enumerate}
+\end{shadequote}
+
+The total size of the work for each release and the size of each feature did not remain the same. A great amount of time was spent getting the underlying code and the first three features to work, whereas the final month of the project saw the completion of everything else. This is quite a typical situation in software development and the reasons for making the assumption above are unclear. It should simply not be made in software development.
 
 \begin{shadequote}
 \begin{enumerate}
@@ -92,6 +91,8 @@ Looking at requirements presented in \S\ref{audience}, it is easy to see that th
 \end{enumerate}
 \end{shadequote}
 
+The time allocated to the project each week varied (besides the variable size of the work itself noted above), so the timeboxing did not work out as well. On the other hand, breaking up more complex features into tasks was probably responsible for having as many as 10 items in the final feature list.
+
 \begin{shadequote}
 \begin{enumerate}
 	\setcounter{enumi}{\thetmpc}
@@ -101,7 +102,7 @@ Looking at requirements presented in \S\ref{audience}, it is easy to see that th
 \end{enumerate}
 \end{shadequote}
 	
-
+The problem here was again a different amount of time committed to the project each week. Usually it is possible to achieve consistency in feature delivery despite this, since some features will just take less time. This has been observed by the author in other projects. However, the observations held for the later stages of projects which had a developed basic framework (and had multiple, although few, developers) - this just did not hold for a prototype which had to be brought up from the ground single-handedly.
 
 % Within the coding part of each iteration, Test-Driven Development is employed using both unit and integration tests (the latter via browser automation with Selenium \cite{selenium}). This will be the evidence (on a basic technical level) for the ``correctness'' of the software. A basic form of Continuous Integration \cite{ci} will also be used - the Jenkins \cite{jenkins} software is currently being evaluated for the job. It basically runs all automated tests continuously, helping to detect regressions in code quality.
 % 
@@ -118,7 +119,7 @@ Looking at requirements presented in \S\ref{audience}, it is easy to see that th
 In the Progress Report features were planned and \emph{scheduled} in a timeline before development took place, but that is \emph{not} the Agile way at all.
 
 \subsection{What is Agile?}
-Agile is about getting work done in an iterative fashion so that there is always working software for the users to use. Estimates in Agile are about effort, complexity and risk. Estimates are also \emph{relative} - when new features are added to the project scope, they are estimated in comparison to previously added ones. (For a commonly used estimation points scale and more elaboration on Agile estimation, see \cite{agile-estimate}.) If numeric points are used for the estimation, the project ends up with several hundred / thousand points worth of features.
+Agile is about getting work done in an iterative fashion so that there is always working software for the users to use. Estimates in Agile are about effort, complexity and risk. Estimates are also \emph{relative} - when new features are added to the project scope, they are estimated in comparison to previously added ones. If numeric points are used for the estimation, the project ends up with several hundred / thousand points worth of features.
 
 Since those are prioritised by the customer/users, work can then start. What Agile teams seem to do is to essentially see how quickly they get through work - how many points they go through per week, which is called the ``velocity'' of the team.
 
@@ -156,7 +157,7 @@ However, it turned out that both the complexity of the scholarly funding field a
 
 Neither did users have enough time to be properly involved throughout the project, nor did the author have enough domain knowledge to understand the requirements and develop quickly enough \emph{in order to get the users involved} in the way in which Agile understands involvement.
 
-This conclusion and the process of arriving at it, ultimately, are the reason why the initial Agile-like development process was deemed unsuitable and why the project's progress is split so starkly into two phases as per Figure \ref{fig:new-process}.
+This conclusion and the process of arriving at it, ultimately, are the reason why the initial Agile-like development process was deemed unsuitable and why the project's progress is split so starkly into two phases.
 
 The initial reasons for devising an Agile-like process (above) proved to (mostly) be steps in the right direction, however:
 \begin{enumerate}
@@ -164,7 +165,7 @@ The initial reasons for devising an Agile-like process (above) proved to (mostly
  
  It could be argued that this was only a problem since the developer was also the ``initiator'' of the project (i.e. had to play user a lot more than usual). If a particular funder, Higher Education Institution or an organisation like the Open Knowledge Foundation wanted a project like this done, they would already know of certain problem characteristics - such as \emph{particular} drawbacks of having so much funding data ``closed''. Then, more targeted exploration could be done and technical development would also have more precise targets to meet.
  
- This is, in part, what caused the development process to look a lot more like \textbf{evolutionary prototyping} with a lot of requirements gathering between the prototype versions in Figure \ref{fig:new-process} rather than an Agile iterative approach.
+ This is, in part, what caused the development process to look a lot more like \textbf{evolutionary prototyping} with a lot of requirements gathering between the prototype versions rather than an Agile iterative approach.
  
  \item The assumption that users won't have time for anything but informal problem specification turned out to be correct. Thus, the ``stories'' concept proved to play an important role when gathering requirements from the target audience in short meetings, on the go or at hackdays.
  
@@ -226,7 +227,7 @@ In \textbf{order of importance}:
  
  In essence, if the funding opportunity data isn't good enough, a catalogue of funders would still be quite valuable. It was presumed to include some information to let the user search for an appropriate funder - like tagging the funders, or describing their interests.
  
- The idea actually came from a different Open Knowledge-related project called ACat (\textbf{A}cademic \textbf{Cat}alogue) \cite{acat} - an attempt to mine all information on all academic publishers, their journals \emph{and articles}. Even though ACat was just a hackday idea and hasn't evolved much since June 2012, it clearly showed the importance and value of having a list as simple as ``all UK academic publishers''.
+ The idea actually came from a different Open Knowledge-related project called ACat (\textbf{A}cademic \textbf{Cat}alogue, currently not published on the web) - an attempt to mine all information on all academic publishers, their journals \emph{and articles}. Even though ACat was just a hackday idea and hasn't evolved much since June 2012, it clearly showed the importance and value of having a list as simple as ``all UK academic publishers''.
  
  \item \textbf{Priority rationale}: Similar reasons to the feature above for this one to be so high up in the list in terms of crowdsourcing functionality. Its importance is very much tied to submitting information on funding opportunities - the more difficult it is to reconcile data from multiple sources (within the current scope), the more important this becomes.
  \item \textbf{Decision}: \textbf{Kept as-is}, for the same reasons as the feature above.
@@ -245,7 +246,7 @@ In \textbf{order of importance}:
 
 \subsubsection{Visualise Data}
 \begin{itemize}
- \item \textbf{Why}: It was thought that the Analyst audience group \myref{audience-analysis} would have an interest in this as it might spark other ideas about visualising funding data. Furthermore, scholars themselves might have had use for the result of the analysis - such as knowing how much their field is being funded at the moment.
+ \item \textbf{Why}: It was thought that the \myref{audience-analyst} would have an interest in this as it might spark other ideas about visualising funding data. Furthermore, scholars themselves might have had use for the result of the analysis - such as knowing how much their field is being funded at the moment.
  \item \textbf{Priority rationale}: Showcased the benefits of opening up funding data, which is one of FundFind's goals.
  \item \textbf{Decision}: \textbf{Dropped}. This turned out to be a little ill-defined. It embodied the quintessential software development problem of trying to predict what users want without actually knowing or being able to venture a good guess. The initial reasons as to why a visualisation might be useful are still true, of course, but it turned out developers who had done other Higher Education work understood the benefits of visualising such data quite well. Similarly, scholars could tell how well their field was funded just by looking at the data - the problem being that creating a visualisation that hid data appropriately and thus decreased cognitive load or increased insight was actually quite difficult. Representing the data in some much simpler visual way was not as hard, but also far from useful for people used to interpreting textual and numeric data. These insights were gained mainly during the Gateway to Research hackday (\myref{audience-analyst}).
 \end{itemize}
@@ -253,7 +254,7 @@ In \textbf{order of importance}:
 \subsubsection{E-mail Alerts}
 \begin{itemize}
  \item \textbf{Why}: Requirements gathering showed users using e-mail alerts / digests to receive the newest calls from funders. Thus, FundFind should probably offer a similar service as it federates such information.
- \item \textbf{Priority rationale}: Simply get users to use FundFind. With it, they would be getting the same information they could elsewhere, so this is just covering for value proposition \#2 from \myref{value-propositions}.
+ \item \textbf{Priority rationale}: Simply get users to use FundFind. With it, they would be getting the same information they could elsewhere, FundFind needs to present the same (or more) data in a better way, that's the value proposition. Thus, FundFind needs the data they could be getting elsewhere.
  \item \textbf{Decision}: \textbf{Dropped}. Turned out data - getting data - was more important than the gimmicks of managing data. This is where FundFind's role as a prototype and a limited vehicle of learning came into play.
 \end{itemize}
 
@@ -270,7 +271,7 @@ In \textbf{order of importance}:
 \begin{itemize}
  \item \textbf{Why}: This is one of the features which actually deal with importing data, fulfilling part of FundFind's core mission of federating funding data.
  \item \textbf{Priority rationale}: The importance of this was downplayed by the author - users did not have much to say on it, since they did not particularly care for the details of how FundFind was going to get its data, as long as it had some and they could use it.
- \item \textbf{Decision}: \textbf{Changed}. This is a good idea - however, all the information turned out to be available in machine readable formats (for the funders which were considered). It was also technically quite challenging (\myref{impl-email-parse}).
+ \item \textbf{Decision}: \textbf{Changed}. This is a good idea - however, all the information turned out to be available in machine readable formats (for the funders which were considered). It was also technically quite challenging.
 \end{itemize}
 
 \subsubsection{Tagging Research as "Potentially of Interest to" Users and Groups}
@@ -333,7 +334,7 @@ A number of new features were inserted into the initial list during development 
 
 \subsubsection{Harvest Funding Data From Machine-Readable Sources}
 \begin{itemize}
- \item \textbf{Why}: It is far easier to process RSS feeds such as the EPSRC Open Calls RSS Feed \cite{epsrc-rss} than it was to process the EPSRC Funding Call E-mail Alerts, as discussed in \myref{impl-email-parse}.
+ \item \textbf{Why}: It is far easier to process RSS feeds such as the EPSRC Open Calls RSS Feed \cite{epsrc-rss} than it was to process the EPSRC Funding Call E-mail Alerts.
  \item \textbf{Priority}: Replaced \myref{devprocess-feats-email-harvest}.
 \end{itemize}
 
@@ -363,18 +364,16 @@ A number of new features were inserted into the initial list during development 
 \end{enumerate}
 
 
-% TODO REVIEW where to put this. You should briefly describe the design method you used and any support tools that you used. You should discuss your choice of implementation tools - programming language, compilers, database management system, program development environment, etc.
-
 \section{Design Process}
-%TODO fill in!
 % briefly describe the design method you used and any support tools that you used
 % context and process implications on design
+The technical design approach was certainly bottom-up. It would start with a high-level idea, like the features described above, and proceed with looking up or creating an example (for harvesting / submitting data). Some sample code which did something very basic (e.g. loaded the example data) would follow. This was then transferred to the appropriate module and enhanced iteratively, using manual testing to see each version was working, until the code satisfied the goal. This iterative process was accelerated by the choice of programming language - in particular, the supporting tools, discussed below.
 
-%TODO write this after the overview diagram in the first section is done
+Other features such as searching did not involve that much technical design as certain components like facetview (for search) had already been chosen since they worked well with the datastore. The difficulty there was not in understanding how to solve a problem in principle, it was making the designated solution work by bringing different components together.
 
-\section{Techologies used}
+
+\section{Technologies Used}
 \label{devprocess-tech-used}
-% TODO REVIEW careful about point of view - this is about the development process and how the tools used impacted it.
 % ah screw it, just write reasons, can cut words later.
 
 % context and process implications on implementation tools
@@ -406,6 +405,4 @@ Previous experience combined with the usage of relevant libraries meant that the
 The RESTful JSON API that the chosen datastore (elasticsearch) provides also accelerated the process somewhat, since the all of the project's data could be retrieved by pointing a web browser at
 \\ |http://localhost:9200/fundfind/_search?q=*|.
 
-The command-line \textbf{V}i \textbf{IM}proved (vim) editor was used in conjunction with multiple graphical console windows (Konsole on KDE, Ubuntu GNU/Linux). This was not because of particular familiarity with vim, but rather because of a desire to gain such familiarity. It is also the only editor available on the testing server which currently hosts FundFind's public instance. Certain common text operations did actually become faster to accomplish in vim than in a conventional WYSIWYG editor over time (deleting and copying bits, lines or blocks of code being the most noticeable). On the other hand, quite a lot of time went into actually learning to use the new editor.
-
-%TODO add that paper for diagrams, bit like CRC diagrams, was used to help clarify thinking. Those then converted to more presentable form using LibreOffice Draw. Older version supplied by the Linux distribution used resulted in the inheritance arrows having filled arrowheads. LibreOffice on Windows (newer as there is no central distribution mechanism of userspace software on that OS) had the necessary arrowheads and the diagrams were improved. Diagramming software considered included ... including web alternatives such as ... but there were concerns about the quality of the exported data (watermarks, ease of export, export format 
+The command-line \textbf{V}i \textbf{IM}proved (vim) editor was used in conjunction with multiple graphical console windows (Konsole on KDE, Ubuntu GNU/Linux). This was not because of particular familiarity with vim, but rather because of a desire to gain such familiarity. It is also the only editor available on the testing server which currently hosts FundFind's public instance. Certain common text operations did actually become faster to accomplish in vim than in a conventional WYSIWYG editor over time (deleting and copying bits, lines or blocks of code being the most noticeable). On the other hand, quite a lot of time went into actually learning to use it.

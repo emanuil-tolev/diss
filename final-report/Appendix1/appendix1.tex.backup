@@ -1,3 +1,46 @@
 \chapter{Third-Party Code and Libraries}
+\label{third-party}
 
-User interface - Bootstrap \cite{bootstrap}, jQuery \cite{jquery}, jQuery UI \cite{jquery-ui}.
+\section{FundFind}
+\subsection{Python Packages}
+\subsubsection{Python Standard Distribution Packages}
+|json| is used for parsing the JSON data format (e.g. the app configuration is in a JSON file, the API responds with JSON).
+
+|sys| and |os| are Python packages for interacting with the Operating System. |sys| contains certain global pieces of information such as the running Python version number.
+
+|logging| handles logging output such as warnings, errors or just debugging information to the command line and to files.
+
+|uuid| handles the generation of UUID-format unique identifiers.
+
+|UserDict|, when subclassed by an application class, gives that class most of the properties of a dictionary. All |fundfind.dao| objects have property since they inherit from |fundfind.dao.DomainObject| which in turn is a child of |UserDict|. This allows things like |account['department']|.
+
+|httplib| is one of the myriad of Python libraries for handling HTTP connections. |requests| is another one, albeit much cleaner and easier to use and is used in the FundFind tests. |httplib| is used by certain |dao| methods for accessing the datastore which were not changed from the parent IDFind codebase and can probably be refactored out of use by making more extensive use of the |pyes| elasticsearch access library.
+
+|datetime| handles time in Python.
+
+|re| is the standard regular expressions Python module.
+
+|unicodedata| lends a hand in handling Unicode characters to the |util| module when producing URL-friendly slugs of strings.
+
+\subsubsection{Other Python Packages}
+
+Flask (|flask| in imports) is the main back-end framework upon which the whole web application is based \cite{flask}. The |fundfind.dao| module imports |werkzeug|, which is the underlying web server component for Flask for help with generating user password hashes.
+
+The Flask-Login extension (|flask.ext.login in imports) was used for helping with user authentication \cite{flask-login}.
+
+|pyes| was used for connecting to elasticsearch datastore \cite{pyes}.
+
+|parsedatetime| \cite{parsedatetime} is a module which tries to guess the time and date format from a simple string.
+
+\subsection{Non-Python Code}
+Web user interface libraries - Bootstrap \cite{bootstrap}, jQuery \cite{jquery}, jQuery UI \cite{jquery-ui}, linkify \cite{linkify} (linkify is just a jQuery plugin which turns text on HTML pages that looks like a URL into an actual clickable URL).
+
+Search page - facetview \cite{facetview}, developed as a jQuery plugin.
+
+
+\section{Funding Harvest}
+Funding Harvest uses the standard distribution Python packages |datetime|, |logging|, |json|, |sys|, |uuid|, |UserDict| and |httplib|, described above, for the same reasons (mostly |config| and |dao| modules, which are very similar to FundFind's).
+
+It does use feedparser \cite{feedparser} for parsing RSS feeds.
+
+%TODO review

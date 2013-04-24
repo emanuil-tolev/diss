@@ -1,4 +1,5 @@
 \chapter{Evaluation}
+\label{eval}
 
 %Such material is regarded as an important part of the dissertation; it should demonstrate that you are capable not only of carrying out a piece of work but also of thinking critically about how you did it and how you might have done it better. This is seen as an important part of an honours degree. 
 
@@ -71,7 +72,7 @@ It was still sensible to categorise new features which came up during developmen
 % How well did the software meet the needs of those who were expecting to use it?
 % not about features, but data
 
-\subsubsection{Those Looking To Analyse Scholarly Funding}
+It turned out that data was far more important to users than the other features. This was known from the first user meetings, but I had assumed I would be able to finish the software features \emph{and} focus on data gathering at the same time. Users didn't really get the other features without data though - a faceted search over an empty list is no good. That is why gathering data was finally prioritised after the basics were up and running.
 
 \subsubsection{Exploring Scholarly Funding}
 Within the group of people with analytical needs, there was a sub-group of developers which inspired and was part of the reason the project was conceived - Cottage Labs LLP, the Open Knowledge Foundation and the author. It was always the project's intention to learn about scholarly funding specifically so that these people could have a better idea of how to meet the Higher Education sector's needs. This went relatively well, the feature list presented in \myref{initial-reqs} is certainly a very good start and gives space for a lot more development in the future.
@@ -107,7 +108,15 @@ I was clearly over capacity for a prolonged period of time, taking on some devel
 % tried to generate unique titles - not necessary! Two contexts - either search for opportunities (in which case the \emph{search} itself can be used, or really wanting to link to a particular opportunity, in which case ``share links'' could be generated which use the opportunity's |id| within the index. It took several hours to code this and in the end it just was not necessary. I should not have tried to design for the hypothetical issue of ``linking to a particular opportunity'' until I was actually focussing on it with the intention of coding and finishing it - quite the textbook case of the disadvantages of big up-front design versus Agile design, albeit on a small scale.
 
 \subsubsection{E-mail Alerts}
-This is a good feature and it's great that it was identified, especially since the author was not previously aware of the current scholars' workflow.
+This is a good feature and it's great that it was identified, especially since the author was not previously aware of the current scholars' workflow. This will make use of tag information which is currently just being collected. It is probably best implemented as yet another small application which communicates with the datastore and runs a few complex queries. It could work as follows. For each funding opportunity:
+
+\begin{enumerate}
+\item maintain a datetime marker field called |email_alerts_last_processed| or similar
+\item let elasticsearch search for all users whose research interests match the opportunity's tags (at least one value in each list is the same)
+\item send an e-mail to the users returned by the query, who have not already had an e-mail about that opportunity
+\end{enumerate}
+
+``Who have not already had an e-mail'' is what actually caused this to go to the Future Work section at the design stage. A list of users who have already heard about this could be maintained, but then date windows (only opportunities new in the last week) should probably be introduced, at which point the feature becomes quite complex. facetview, the search interface, can actually generate elasticsearch queries, so in the technical sense the feature could be simplified slightly by reusing those capabilities - but reusing the Javascript code would probably not be trivial, even using software which is designed to run Javascript server-side like Node.js .
 
 %research officers' reports \myref{audience-research-officers}).
 \label{future-research-officers-reports}
@@ -118,9 +127,15 @@ The need of research development officers to do reports of information they have
 \subsubsection{More Advanced Feedback Feature}
 The ability to submit feedback to the project. This would only be useful as a software feature if it actually used some of the context, i.e. it allowed a user to capture an error in the software more easily or made error reporting faster or more visual. The comparison is with simple email and the GitHub issue tracker, and there is no point coding something which will do no better than these two.
 
+\subsubsection{Using The Tagging Information}
+Currently, tags (including research interests) are derived from the comma-separated strings that users enter. However, they're not used in the system in any way - allowing users to browse by tags would be a matter of understanding how to configure facetview to merge together tag values from different items, sort them by frequency and allow the user to filter the search results by any tag value.
+
+E-mail alerts would also have to make use of this information. The
 % use the tagging and profile information in ANY way
 % e.g. browse tags - already doing that?
 
+\subsubsection{Better User Profiles}
+Right now, there is no way to delete your profile or edit the information provided at registration. This was only left as-is due to the fact that you cannot do much with the information provided (e.g. research interests are collected, but not used, as is affiliation data). As both of these change, editing the profile data will become quite important.
 % editing the information! Right now just submit and view, but no edit/delete.
 
 % perhaps under the appropriate feature subsubsection above - chapter 3 says The information submission pages were made manually in the parent IDFind project. There is, in fact, a library which will generate forms and can be configured to validate them - WTForms \cite{wtforms}. Unfortunately, this was discovered a little too late - the submission pages had been written and time had to be divided between other features.
@@ -142,6 +157,8 @@ Beyond more and more data, one very important and yet minor change would be usin
 
 Furthermore, the suggestion algorithm itself can be improved. Instead of dumping everything coming in from the data sources, it could tokenise (break it up into words) the suggestion source - user's query or funding opportunity title. Then words such as ``the'' and ``and'' could be removed, as well as other commonly used English words, giving more weight to domain-specific keywords. Currently, Mark MacGillivray \cite{mark} is working on something similar while trying to analyse a person's scientific output, but alas, neither his PhD nor the associated software are published yet.
 
+One of the best outcomes of this project was successfully using the Gateway to Research API, which actually returns really interesting results. Only of the resource types is used however - ``project''. They also have people and organisations, and the data is stored in a datastore not dissimilar to elasticsearch (Apache Lucene). Suggesting ``people'' relevant to a search query from \emph{previous funding data} would yield some really interesting results, although Lucene's advanced searching capabilities or a data dump indexed into elasticsearch might have to be used to actually achieve this.
+
 \section{Learning}
 
 This project certainly pushed the boundaries of what I could do, both technically and in terms of thinking about the wider issues around technology.
@@ -162,3 +179,15 @@ Lastly, a very important lesson (towards which FundFind greatly contributed thro
 Open culture and the associated ambiance have been steadily gaining traction and seem appealing to a wide audience. A significant section of this audience is technologists and scientists, although the uptake by developers in industry seems greater than that by scholars in the hard sciences. In those circles, there are many who feel that openness must be good in some way, but major new ideas in the openness field seem to come from a small percentage of dedicated individuals. They seem to have a very well-defined idea of how an open approach can help other fields and then set about showing that to others. Examples include those who drive the Creative Commons organisation \cite{cc-team}, the Open Knowledge Foundation's Rufus Pollock \cite{rufus}, the Free Software Foundation's Richard Stallman \cite{rms}.
 
 On the other hand, the openness aspect of computer science is now explored by thousands of developers world-wide. Understanding why they (seemingly) readily accept that sharing one's work openly is beneficial and the ultimately correct thing to do seems key to understanding why scholars do not necessarily share information as readily. This is mostly of relevance to the Open Access field, which focuses on research output. However, why would a scholar \emph{submit} any information to FundFind? Why would they \emph{share} on FundFind - their time, accumulated experience, effort, even just list of funders to follow? I have asked this question at user meetings but the answer seems elusive. Determining what it is that makes developers do it (demonstrated benefit to each \emph{individual}, goodwill?) might help and is something which needs to be explored further.
+
+\section{Summary}
+
+I am generally satisfied with the progress made with regards to the goals presented in \myref{intro-aims}. The overarching idea was to explore the scholarly funding field, and I was particularly interested in doing it in such a way that I'd then (after this phase was completed) be able to develop FundFind into a proper service, leveraging Cottage Labs LLP's professional network and presenting it to the Open Knowledge Foundation, making it a valuable part of that movement towards Open Data.
+
+\begin{itemize}
+ \item ``Learn more about the funding sector and identify user requirements within it.'' - This was clearly satisfied, with the breakdown by potential audience members in \myref{audience} probably being the most valuable result. With this categorisation in hand, new examples can easily be added just by talking to professionals in the Higher Education sector, e.g. asking around at hackdays where publishers, representatives of funders (e.g. Wellcome Trust, Jisc, other HEI-s), the ARMA conference for research development officers. Thus, future exploration of user needs in this sector is enabled.
+  
+ \item ``Identify how much software it is possible to build by essentially starting and seeing how far it goes in a controlled fashion.'' - I would have certainly preferred to have a better-tested, more expansive system. A more structured approach to development might have been useful, but the number of hours spent certainly was not below the expected 400 hours by much. Software in academia, especially prototypes, are often built with the sole purpose of learning about a problem, or how to handle it with technology. The software quality is not guaranteed to be very high from a pure software engineering perspective (although it tries to stick to best practice), but its development allowed the feature list presented in \myref{devprocess-requirements}. It satisfies the goal of enabling future ``concrete development work which would enhance the software built during this project'' from \myref{intro-aims}.
+\end{itemize}
+
+I no longer wonder where to begin - as with many other projects developed in academia, I cannot see the end, but I now have something to aim for.

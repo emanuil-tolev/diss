@@ -2,10 +2,10 @@
 \contentsline {section}{\numberline {1.1}The Project}{1}
 \contentsline {section}{\numberline {1.2}Project Aims}{1}
 \contentsline {section}{\numberline {1.3}Scholarship and Funding}{2}
-\contentsline {subsection}{\numberline {1.3.1}The value of Openness in scholarship and elsewhere}{2}
-\contentsline {section}{\numberline {1.4}Audience and high-level requirements}{3}
-\contentsline {subsection}{\numberline {1.4.1}Professionals Looking For Funding Group}{3}
-\contentsline {subsubsection}{\numberline {1.4.1.1}Accomplished scholars}{3}
+\contentsline {subsection}{\numberline {1.3.1}The Value of Openness in Scholarship and Elsewhere}{2}
+\contentsline {section}{\numberline {1.4}Audience and High-Level Requirements}{3}
+\contentsline {subsection}{\numberline {1.4.1}Professionals Looking for Funding Group}{3}
+\contentsline {subsubsection}{\numberline {1.4.1.1}Accomplished Scholars}{3}
 \contentsline {subsubsection}{\numberline {1.4.1.2}Junior Academics}{4}
 \contentsline {subsubsection}{\numberline {1.4.1.3}Research Development Officers}{4}
 \contentsline {subsection}{\numberline {1.4.2}Funders Group}{4}
@@ -13,112 +13,125 @@
 \contentsline {subsubsection}{\numberline {1.4.2.2}Jisc}{5}
 \contentsline {subsubsection}{\numberline {1.4.2.3}Charities, Trusts and Others}{5}
 \contentsline {subsubsection}{\numberline {1.4.2.4}Commercial Organisations}{5}
-\contentsline {subsection}{\numberline {1.4.3}Analyst group}{6}
-\contentsline {subsection}{\numberline {1.4.4}Focusing on certain audience groups}{6}
-\contentsline {section}{\numberline {1.5}Existing works}{7}
+\contentsline {subsection}{\numberline {1.4.3}Analyst Group}{6}
+\contentsline {subsection}{\numberline {1.4.4}Focusing on Certain Audience Groups}{6}
+\contentsline {section}{\numberline {1.5}Existing Works}{7}
 \contentsline {section}{\numberline {1.6}Licensing}{7}
 \contentsline {subsection}{\numberline {1.6.1}Contributions}{7}
 \contentsline {chapter}{\numberline {2}Development Process}{9}
 \contentsline {section}{\numberline {2.1}Introduction}{9}
-\contentsline {subsection}{\numberline {2.1.1}Project management tools}{10}
+\contentsline {subsection}{\numberline {2.1.1}Project Management Tools}{10}
 \contentsline {section}{\numberline {2.2}Evolution of the Development Process}{10}
 \contentsline {section}{\numberline {2.3}Modifications}{12}
 \contentsline {subsection}{\numberline {2.3.1}What is Agile?}{12}
-\contentsline {subsection}{\numberline {2.3.2}Is it Agile?}{12}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Underestimation}{14}
-\contentsline {section}{\numberline {2.4}Requirements}{15}
-\contentsline {subsection}{\numberline {2.4.1}Requirements Gathering}{15}
-\contentsline {subsection}{\numberline {2.4.2}Initial Requirements}{15}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Search For Scholarly Funding Opportunities}{16}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Submit Information About A Scholarly Funding Opportunity}{16}
-\contentsline {subsubsection}{\numberline {2.4.2.3}Submit Information About Funders}{16}
-\contentsline {subsubsection}{\numberline {2.4.2.4}Create Profiles}{17}
-\contentsline {subsubsection}{\numberline {2.4.2.5}Visualise Data}{17}
-\contentsline {subsubsection}{\numberline {2.4.2.6}E-mail Alerts}{17}
-\contentsline {subsubsection}{\numberline {2.4.2.7}Saving Searches}{18}
-\contentsline {subsubsection}{\numberline {2.4.2.8}Harvesting Funding Data From E-mail Digests}{18}
-\contentsline {subsubsection}{\numberline {2.4.2.9}Tagging Research as "Potentially of Interest to" Users and Groups}{18}
-\contentsline {subsubsection}{\numberline {2.4.2.10}Specify Affiliation and Interests}{18}
-\contentsline {subsubsection}{\numberline {2.4.2.11}Responsive Mobile Web Design}{19}
-\contentsline {subsubsection}{\numberline {2.4.2.12}Bulk Funding Opportunity Data Import}{19}
-\contentsline {subsubsection}{\numberline {2.4.2.13}Harvesting Historical Funding Information}{19}
-\contentsline {subsubsection}{\numberline {2.4.2.14}RESTful API}{20}
-\contentsline {subsubsection}{\numberline {2.4.2.15}Exporting The Results of Searches}{20}
-\contentsline {subsection}{\numberline {2.4.3}New Requirements}{20}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Harvest Funding Data From Machine-Readable Sources}{20}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Suggesting Relevant Historical Data}{21}
-\contentsline {subsection}{\numberline {2.4.4}Final Requirements}{21}
-\contentsline {section}{\numberline {2.5}Design Process}{21}
-\contentsline {section}{\numberline {2.6}Techologies used}{21}
-\contentsline {chapter}{\numberline {3}Design}{23}
-\contentsline {section}{\numberline {3.1}Introduction}{23}
-\contentsline {subsection}{\numberline {3.1.1}Design Details and Rationale}{23}
-\contentsline {section}{\numberline {3.2}Overall Architecture}{25}
-\contentsline {subsection}{\numberline {3.2.1}Organising code in Python}{25}
-\contentsline {subsection}{\numberline {3.2.2}Changes over time}{26}
-\contentsline {section}{\numberline {3.3}Datastore}{27}
-\contentsline {subsection}{\numberline {3.3.1}FundFind datastore details}{28}
-\contentsline {section}{\numberline {3.4}fundfind}{30}
-\contentsline {subsection}{\numberline {3.4.1}core}{30}
-\contentsline {subsection}{\numberline {3.4.2}dao}{30}
-\contentsline {subsection}{\numberline {3.4.3}web}{32}
-\contentsline {subsection}{\numberline {3.4.4}importer}{33}
-\contentsline {subsection}{\numberline {3.4.5}config}{34}
-\contentsline {subsubsection}{\numberline {3.4.5.1}default\_settings}{34}
-\contentsline {subsection}{\numberline {3.4.6}util}{34}
-\contentsline {section}{\numberline {3.5}fundingharvest}{35}
-\contentsline {subsection}{\numberline {3.5.1}base}{35}
-\contentsline {subsection}{\numberline {3.5.2}rss}{35}
-\contentsline {subsection}{\numberline {3.5.3}rcuk\_esrc}{35}
-\contentsline {section}{\numberline {3.6}User Interface}{35}
-\contentsline {subsection}{\numberline {3.6.1}Content}{36}
-\contentsline {subsection}{\numberline {3.6.2}Exposing the content}{36}
-\contentsline {subsubsection}{\numberline {3.6.2.1}Faceted Search}{36}
-\contentsline {section}{\numberline {3.7}API}{37}
-\contentsline {subsection}{\numberline {3.7.1}Data format}{37}
-\contentsline {chapter}{\numberline {4}Implementation}{38}
-\contentsline {section}{\numberline {4.1}Datastore access}{38}
-\contentsline {section}{\numberline {4.2}Implementing The Main Application}{38}
-\contentsline {subsection}{\numberline {4.2.1}The Basics}{38}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Search For Scholarly Funding Opportunities}{38}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Submitting Information about Funders and Opportunities}{39}
-\contentsline {subsubsection}{\numberline {4.2.1.3}Create Profiles}{40}
-\contentsline {subsection}{\numberline {4.2.2}Advanced Features}{40}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Harvest Funding Data From Machine-Readable Sources}{40}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Tagging}{41}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Responsive Mobile Web Design}{41}
-\contentsline {subsubsection}{\numberline {4.2.2.4}RESTful API}{41}
-\contentsline {subsubsection}{\numberline {4.2.2.5}Suggesting Relevant Historical Data}{41}
-\contentsline {chapter}{\numberline {5}Testing}{42}
-\contentsline {section}{\numberline {5.1}Overall Approach to Testing}{42}
-\contentsline {section}{\numberline {5.2}Automated Testing}{42}
-\contentsline {subsection}{\numberline {5.2.1}Unit Tests}{42}
-\contentsline {subsection}{\numberline {5.2.2}Functional / Integration Tests}{42}
-\contentsline {subsection}{\numberline {5.2.3}User Interface Testing}{43}
-\contentsline {subsection}{\numberline {5.2.4}Stress Testing}{43}
-\contentsline {section}{\numberline {5.3}Responsive Mobile Web Design}{43}
-\contentsline {chapter}{\numberline {6}Evaluation}{44}
-\contentsline {section}{\numberline {6.1}Approaching the field of scholarly funding}{44}
-\contentsline {subsection}{\numberline {6.1.1}Condensing the insights gained}{44}
-\contentsline {section}{\numberline {6.2}Collecting Information From Disparate Sources - Technological Suitability}{45}
-\contentsline {subsection}{\numberline {6.2.1}Working with the Datastore}{45}
-\contentsline {section}{\numberline {6.3}User Needs}{46}
-\contentsline {subsection}{\numberline {6.3.1}Identifying Requirements}{46}
-\contentsline {subsection}{\numberline {6.3.2}Meeting Needs}{46}
-\contentsline {subsubsection}{\numberline {6.3.2.1}Exploring Scholarly Funding}{47}
-\contentsline {section}{\numberline {6.4}In Retrospect}{47}
-\contentsline {section}{\numberline {6.5}Future Work}{48}
-\contentsline {subsubsection}{\numberline {6.5.0.2}E-mail Alerts}{48}
-\contentsline {subsubsection}{\numberline {6.5.0.3}Exporting the Results of Searches}{48}
-\contentsline {subsubsection}{\numberline {6.5.0.4}More Advanced Feedback Feature}{48}
-\contentsline {subsubsection}{\numberline {6.5.0.5}RESTful API}{48}
-\contentsline {subsubsection}{\numberline {6.5.0.6}Suggesting Relevant Historical Data}{49}
-\contentsline {section}{\numberline {6.6}Learning}{49}
-\contentsline {subsection}{\numberline {6.6.1}Applying Openness}{50}
-\contentsline {chapter}{Appendices}{51}
-\contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{52}
-\contentsline {chapter}{\numberline {B}File Listings}{53}
-\contentsline {section}{\numberline {2.1}fundfind}{53}
-\contentsline {section}{\numberline {2.2}fundingharvest}{53}
-\contentsline {chapter}{\numberline {C}The Scholarly Funding Field - a Beginner's PoV}{54}
-\contentsline {chapter}{Annotated Bibliography}{55}
+\contentsline {subsection}{\numberline {2.3.2}Is it Agile?}{13}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Underestimation}{15}
+\contentsline {section}{\numberline {2.4}Requirements}{16}
+\contentsline {subsection}{\numberline {2.4.1}Requirements Gathering}{16}
+\contentsline {subsection}{\numberline {2.4.2}Initial Requirements}{16}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Search For Scholarly Funding Opportunities}{17}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Submit Information About A Scholarly Funding Opportunity}{17}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Submit Information About Funders}{17}
+\contentsline {subsubsection}{\numberline {2.4.2.4}Create Profiles}{18}
+\contentsline {subsubsection}{\numberline {2.4.2.5}Visualise Data}{18}
+\contentsline {subsubsection}{\numberline {2.4.2.6}E-mail Alerts}{18}
+\contentsline {subsubsection}{\numberline {2.4.2.7}Saving Searches}{19}
+\contentsline {subsubsection}{\numberline {2.4.2.8}Harvesting Funding Data From E-mail Digests}{19}
+\contentsline {subsubsection}{\numberline {2.4.2.9}Tagging Research as "Potentially of Interest to" Users and Groups}{19}
+\contentsline {subsubsection}{\numberline {2.4.2.10}Specify Affiliation and Interests}{20}
+\contentsline {subsubsection}{\numberline {2.4.2.11}Responsive Mobile Web Design}{20}
+\contentsline {subsubsection}{\numberline {2.4.2.12}Bulk Funding Opportunity Data Import}{20}
+\contentsline {subsubsection}{\numberline {2.4.2.13}Harvesting Historical Funding Information}{21}
+\contentsline {subsubsection}{\numberline {2.4.2.14}RESTful API}{21}
+\contentsline {subsubsection}{\numberline {2.4.2.15}Exporting The Results of Searches}{21}
+\contentsline {subsection}{\numberline {2.4.3}New Requirements}{21}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Harvest Funding Data From Machine-Readable Sources}{22}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Suggesting Relevant Historical Data}{22}
+\contentsline {subsection}{\numberline {2.4.4}Final Requirements}{22}
+\contentsline {section}{\numberline {2.5}Design Process}{22}
+\contentsline {section}{\numberline {2.6}Technologies Used}{23}
+\contentsline {chapter}{\numberline {3}Design}{24}
+\contentsline {section}{\numberline {3.1}Introduction}{24}
+\contentsline {subsection}{\numberline {3.1.1}Design Details and Rationale}{24}
+\contentsline {section}{\numberline {3.2}Overall Architecture}{26}
+\contentsline {subsection}{\numberline {3.2.1}Organising Code in Python}{26}
+\contentsline {subsection}{\numberline {3.2.2}Changes Over Time}{28}
+\contentsline {section}{\numberline {3.3}Datastore}{29}
+\contentsline {subsection}{\numberline {3.3.1}FundFind Datastore Details}{30}
+\contentsline {section}{\numberline {3.4}fundfind}{32}
+\contentsline {subsection}{\numberline {3.4.1}core}{32}
+\contentsline {subsection}{\numberline {3.4.2}dao}{32}
+\contentsline {subsection}{\numberline {3.4.3}web}{34}
+\contentsline {subsection}{\numberline {3.4.4}importer}{35}
+\contentsline {subsection}{\numberline {3.4.5}config}{36}
+\contentsline {subsubsection}{\numberline {3.4.5.1}default\_settings}{36}
+\contentsline {subsection}{\numberline {3.4.6}util}{37}
+\contentsline {subsection}{\numberline {3.4.7}view}{37}
+\contentsline {subsubsection}{\numberline {3.4.7.1}account}{37}
+\contentsline {subsection}{\numberline {3.4.8}suggest}{37}
+\contentsline {subsubsection}{\numberline {3.4.8.1}gtr}{38}
+\contentsline {section}{\numberline {3.5}fundingharvest}{38}
+\contentsline {subsection}{\numberline {3.5.1}dao}{38}
+\contentsline {subsection}{\numberline {3.5.2}config}{38}
+\contentsline {subsection}{\numberline {3.5.3}base}{38}
+\contentsline {subsection}{\numberline {3.5.4}rss}{39}
+\contentsline {subsection}{\numberline {3.5.5}rcuk\_esrc}{39}
+\contentsline {section}{\numberline {3.6}User Interface}{39}
+\contentsline {subsection}{\numberline {3.6.1}Content}{39}
+\contentsline {subsection}{\numberline {3.6.2}Exposing The Content}{40}
+\contentsline {subsubsection}{\numberline {3.6.2.1}Faceted Search}{40}
+\contentsline {section}{\numberline {3.7}API}{41}
+\contentsline {subsection}{\numberline {3.7.1}Data Format}{41}
+\contentsline {chapter}{\numberline {4}Implementation}{42}
+\contentsline {section}{\numberline {4.1}Overview of the Applications}{42}
+\contentsline {subsection}{\numberline {4.1.1}FundFind}{42}
+\contentsline {subsection}{\numberline {4.1.2}Funding Harvest}{44}
+\contentsline {section}{\numberline {4.2}Datastore Access}{44}
+\contentsline {section}{\numberline {4.3}Implementing the Main Application}{44}
+\contentsline {subsection}{\numberline {4.3.1}The Basics}{44}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Search for Scholarly Funding Opportunities}{44}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Submitting Information about Funders and Opportunities}{45}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Create Profiles}{46}
+\contentsline {subsection}{\numberline {4.3.2}Advanced Features}{46}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Harvest Funding Data From Machine-Readable Sources}{46}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Tagging}{47}
+\contentsline {subsubsection}{\numberline {4.3.2.3}User Interface And Responsive Mobile Web Design}{47}
+\contentsline {subsubsection}{\numberline {4.3.2.4}RESTful API}{47}
+\contentsline {subsubsection}{\numberline {4.3.2.5}Suggesting Relevant Historical Data}{48}
+\contentsline {chapter}{\numberline {5}Testing}{49}
+\contentsline {section}{\numberline {5.1}Overall Approach to Testing}{49}
+\contentsline {section}{\numberline {5.2}Automated Testing}{49}
+\contentsline {subsection}{\numberline {5.2.1}Integration Tests}{50}
+\contentsline {subsection}{\numberline {5.2.2}User Interface Testing}{50}
+\contentsline {subsection}{\numberline {5.2.3}Stress Testing}{51}
+\contentsline {section}{\numberline {5.3}Responsive Mobile Web Design}{51}
+\contentsline {chapter}{\numberline {6}Evaluation}{52}
+\contentsline {section}{\numberline {6.1}Approaching The Field Of Scholarly Funding}{52}
+\contentsline {subsection}{\numberline {6.1.1}Condensing The Insights Gained}{52}
+\contentsline {section}{\numberline {6.2}Collecting Information from Disparate Sources - Technological Suitability}{53}
+\contentsline {subsection}{\numberline {6.2.1}Working with the Datastore}{53}
+\contentsline {section}{\numberline {6.3}User Needs}{54}
+\contentsline {subsection}{\numberline {6.3.1}Identifying Requirements}{54}
+\contentsline {subsection}{\numberline {6.3.2}Meeting Needs}{54}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Exploring Scholarly Funding}{54}
+\contentsline {section}{\numberline {6.4}In Retrospect}{55}
+\contentsline {section}{\numberline {6.5}Future Work}{56}
+\contentsline {subsubsection}{\numberline {6.5.0.2}E-mail Alerts}{56}
+\contentsline {subsubsection}{\numberline {6.5.0.3}Exporting the Results of Searches}{56}
+\contentsline {subsubsection}{\numberline {6.5.0.4}More Advanced Feedback Feature}{56}
+\contentsline {subsubsection}{\numberline {6.5.0.5}Using The Tagging Information}{57}
+\contentsline {subsubsection}{\numberline {6.5.0.6}Better User Profiles}{57}
+\contentsline {subsubsection}{\numberline {6.5.0.7}RESTful API}{57}
+\contentsline {subsubsection}{\numberline {6.5.0.8}Suggesting Relevant Historical Data}{57}
+\contentsline {section}{\numberline {6.6}Learning}{58}
+\contentsline {subsection}{\numberline {6.6.1}Applying Openness}{59}
+\contentsline {section}{\numberline {6.7}Summary}{59}
+\contentsline {chapter}{Appendices}{61}
+\contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{62}
+\contentsline {section}{\numberline {1.1}FundFind}{62}
+\contentsline {subsection}{\numberline {1.1.1}Python Packages}{62}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Python Standard Distribution Packages}{62}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Other Python Packages}{62}
+\contentsline {subsection}{\numberline {1.1.2}Non-Python Code}{63}
+\contentsline {section}{\numberline {1.2}Funding Harvest}{63}
+\contentsline {chapter}{Annotated Bibliography}{64}

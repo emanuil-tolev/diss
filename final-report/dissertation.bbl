@@ -21,11 +21,26 @@
 \bibitem{guardian-finch}
 {Alok Jha}, ``{Open access is the future of academic publishing, says Finch
   report},''
-  \url{http://www.guardian.co.uk/science/2012/jun/19/open-access-academic-publishing-finch-report},
-  June 2012, accessed November 2012.
+  \url{http://www.guardian.co.uk/science/2012/jun/19/open-access-academic-publ%
+ishing-finch-report}, June 2012, accessed November 2012.
  \begin{quotation}\noindent A Guardian article describing the Finch report
   which looked into Open Access and its benefits for academic publishing and
   society at large. \end{quotation}
+
+\bibitem{apache-content-negotiation}
+{Apache Software Foundation}, ``{Content Negotiation},''
+  \url{http://httpd.apache.org/docs/2.2/content-negotiation.html}, accessed
+  April 2013.
+ \begin{quotation}\noindent A page in the Apache Webserver documentation
+  explaining what content negotiation is and how Apache implements is. It is
+  being cited for the clear explanation of the subject. \end{quotation}
+
+\bibitem{jinja2}
+{Armin Ronacher}, ``{Welcome to Jinja2},'' \url{http://jinja.pocoo.org/docs/},
+  accessed April 2013.
+ \begin{quotation}\noindent The welcome page of the Jinja templating engine, a
+  templating language for Python which comes bundled with the Flask web
+  framework. \end{quotation}
 
 \bibitem{cucumber}
 {Aslak Hellesoy}, ``{Cucumber - Making BDD fun},'' \url{https://cukes.info/},
@@ -44,18 +59,75 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   values behind the Agile software development collection of approaches to
   software development. \end{quotation}
 
+\bibitem{multi-mechanize}
+{Corey Goldberg}, ``{Multi-Mechanize - Performance Test Framework},''
+  \url{http://testutils.org/multi-mechanize/}, accessed April 2013.
+ \begin{quotation}\noindent The home page of multi-mechanize, a performance
+  (stress) testing framework written in Python. \end{quotation}
+
+\bibitem{artemis}
+{Cottage Labs LLP}, ``{artemis},''
+  \url{https://github.com/CottageLabs/artemis}, accessed April 2013.
+ \begin{quotation}\noindent The GitHub versioning system page of artemis - a
+  parts management system for a commercial company. \end{quotation}
+
 \bibitem{cl}
-{Cottage Labs LLP}, ``{cottage labs - we don't sell products, we trade our
-  skills},'' \url{http://cottagelabs.com/}, accessed November 2012.
+------, ``{cottage labs - we don't sell products, we trade our skills},''
+  \url{http://cottagelabs.com/}, accessed November 2012.
  \begin{quotation}\noindent The homepage of a partnership of freelance software
   developers working together to produce open source software for the benefit
   of Higher Education and commercial companies around the world. Dedicated to
   Open Knowledge and Open Scholarship. \end{quotation}
 
+\bibitem{cl-web-code}
+------, ``{Cottage Labs website code},''
+  \url{https://github.com/CottageLabs/cl}, accessed April 2013.
+ \begin{quotation}\noindent The GitHub versioning system page of cl - the
+  source code of www.cottagelabs.com . \end{quotation}
+
+\bibitem{leaps}
+------, ``{LEAPS},'' \url{https://github.com/CottageLabs/leaps}, accessed April
+  2013.
+ \begin{quotation}\noindent The GitHub versioning system page of the Lothians
+  Equal Access Programme for Schools (LEAPS) online questionnaire management
+  software. \end{quotation}
+
+\bibitem{mark}
+------, ``{Mark MacGillivray / Cottage Labs},''
+  \url{http://cottagelabs.com/people/mark}, accessed April 2013.
+ \begin{quotation}\noindent A page on the Cottage Labs website describing Mark
+  MacGillivray, one of the partnership's founders. \end{quotation}
+
+\bibitem{portality}
+------, ``{portality},'' \url{https://github.com/CottageLabs/portality},
+  accessed April 2013.
+ \begin{quotation}\noindent The GitHub versioning system page of portality -
+  All the basics for starting a portal frontend. Essentially an attempt to make
+  the back-end of IDFind, FundFind and many other Cottage Labs projects much
+  more reusable and encapsulate best practice while doing so. \end{quotation}
+
+\bibitem{xcri}
+------, ``{XCRI demonstrator project code},''
+  \url{https://github.com/CottageLabs/xcri}, accessed April 2013.
+ \begin{quotation}\noindent The GitHub versioning system page of xcri - the
+  source code of an application which consumes XCRI-CAP course feeds, for the
+  JISC XCRI-CAP course feeds demonstrator project. (XCRI-CAP is a way of
+  describing course data for education, including Higher Education. The idea is
+  to have the data in a machine-frienly form besides the institution's web
+  pages.) \end{quotation}
+
+\bibitem{facetview}
+{Cottage Labs LLP and Open Knowledge Foundation}, ``{FacetView - Pure
+  Javascript Frontend for SOLR and ElasticSearch},''
+  \url{http://okfnlabs.org/facetview/}, accessed November 2012.
+ \begin{quotation}\noindent Homepage of the Facetview project, a faceted
+  Javascript browser (front-end) to indexing servers such as elasticsearch.
+  \end{quotation}
+
 \bibitem{wellcome-oa}
 {Craig Brierley}, ``{Wellcome Trust strengthens its open access policy},''
-  \url{http://www.wellcome.ac.uk/News/Media-office/Press-releases/2012/WTVM055745.htm},
-  June 2012, accessed November 2012.
+  \url{http://www.wellcome.ac.uk/News/Media-office/Press-releases/2012/WTVM055%
+745.htm}, June 2012, accessed November 2012.
  \begin{quotation}\noindent A press release by the Wellcome Trust stating it is
   strengthening its Open Access policy and related punishment for breaking the
   terms of the policy, as well as linking to a full version of the policy.
@@ -69,6 +141,12 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   Creative Commons Attribution license version 3.0 Unported, with links to the
   legal text. \end{quotation}
 
+\bibitem{cc-team}
+------, ``{Creative Commons Staff},'' \url{http://creativecommons.org/staff},
+  accessed April 2013.
+ \begin{quotation}\noindent A diagram showing the structure and listing the
+  members of the Creative Commons team. \end{quotation}
+
 \bibitem{xp-lifecycle}
 {Don Wells}, ``{Extreme Programming Project},''
   \url{http://www.extremeprogramming.org/map/project.html}, accessed November
@@ -78,8 +156,23 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   diagram provide links to more detailed explanations of the various parts of
   the project lifecycle. \end{quotation}
 
+\bibitem{esrc-rss}
+{Economic and Social Research Council}, ``{ESRC RSS feeds},''
+  \url{http://www.esrc.ac.uk/rss-feeds.aspx}, accessed April 2013.
+ \begin{quotation}\noindent A page on the ESRC's website which describes the
+  varius RSS feeds and the ability to create custom ones (essentially creating
+  an API of sorts). \end{quotation}
+
+\bibitem{es-dateformats}
+{Elasticsearch Global BV}, ``{elasticsearch guide / date format},''
+  \url{http://www.elasticsearch.org/guide/reference/mapping/date-format/},
+  accessed April 2013.
+ \begin{quotation}\noindent Discusses possible values in date formats in
+  elasticsearch dynamic and custom mappings. Has an exhaustive list of
+  pre-defined date formats which elasticsearch will recognise. \end{quotation}
+
 \bibitem{es-uid-field}
-{Elasticsearch Global BV}, ``{elasticsearch guide / uid field},''
+------, ``{elasticsearch guide / uid field},''
   \url{http://www.elasticsearch.org/guide/reference/mapping/uid-field/},
   accessed April 2013.
  \begin{quotation}\noindent Discusses internal unique identifiers (uid) in
@@ -91,6 +184,24 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   \url{https://github.com/emanuil-tolev/fundfind}, accessed April 2013.
  \begin{quotation}\noindent Source code repository for FundFind, the main
   software output of this project. \end{quotation}
+
+\bibitem{fundingharvest-src}
+------, ``{fundingharvest at GitHub},''
+  \url{https://github.com/emanuil-tolev/fundingharvest}, accessed April 2013.
+ \begin{quotation}\noindent Source code repository for Funding Harvest, the
+  secondary software output of this project. \end{quotation}
+
+\bibitem{cl-emanuil-beginner-pov}
+------, ``{Open: Scholarship, Science, Knowledge, Access},''
+  \url{http://cottagelabs.com/news/open-scholarship-science-knowledge-access},
+  accessed April 2013.
+ \begin{quotation}\noindent A blog post by the author of this document,
+  describing a beginner's point of view to the Open Knowledge / .
+  \end{quotation}
+
+\bibitem{progress-report}
+------, ``{Progress Report - FundFind},'' Nov. 2012.
+ \begin{quotation}\noindent Progress report on this project. \end{quotation}
 
 \bibitem{idfind}
 {Emanuil Tolev and Cottage Labs LLP}, ``{ID Find - an identifier identifier},''
@@ -106,10 +217,20 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   project. It tries to guess what kind of identifier an unknown string is.
   \end{quotation}
 
+\bibitem{epsrc-example}
+{Engineering and Physical Sciences Research Council}, ``{A step towards an
+  intelligent information infrastructure},''
+  \url{http://www.epsrc.ac.uk/funding/calls/open/Pages/intelligentinformationi%
+nfrastructure.aspx}, accessed April 2013.
+ \begin{quotation}\noindent An example of an open funding call considered when
+  thinking of what values describe a funding opportunity for the crowdsourcing
+  pages. (Note: it will become an Archived or Closed call at some point, but
+  the fields and their values should still be clear). \end{quotation}
+
 \bibitem{epsrc-rss}
-{Engineering and Physical Sciences Research Council}, ``{EPSRC Open Calls RSS
-  Feed},'' \url{http://www.epsrc.ac.uk/funding/calls/open/pages/rss2.aspx},
-  accessed April 2013.
+------, ``{EPSRC Open Calls RSS Feed},''
+  \url{http://www.epsrc.ac.uk/funding/calls/open/pages/rss2.aspx}, accessed
+  April 2013.
  \begin{quotation}\noindent A machine-readable RSS feed of current funding
   opportunities at the EPSRC, one of the UK Research Councils. \end{quotation}
 
@@ -159,8 +280,8 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
 \bibitem{guardian-ukgov-oa2014}
 {Ian Sample}, ``{Free access to British scientific research within two
   years},''
-  \url{http://www.guardian.co.uk/science/2012/jul/15/free-access-british-scientific-research},
-  July 2012, accessed April 2013.
+  \url{http://www.guardian.co.uk/science/2012/jul/15/free-access-british-scien%
+tific-research}, July 2012, accessed April 2013.
  \begin{quotation}\noindent An article in the electronic edition in the
   Guardian newspaper detailing the UK Government's policy on Open Access
   publications in 2014. \end{quotation}
@@ -170,6 +291,13 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   2013.
  \begin{quotation}\noindent History page of Jisc. JISC have rebranded as Jisc.
   \end{quotation}
+
+\bibitem{advantages-apis}
+------, ``{The Advantages of API-s},''
+  \url{http://www.jisc.ac.uk/publications/reports/2012/advantages-of-api.aspx},
+  Dec. 2012, accessed April 2013.
+ \begin{quotation}\noindent A Jisc report on the advantages of Application
+  Programming Interfaces. \end{quotation}
 
 \bibitem{knight-foundation}
 {Knight Foundation}, ``{Knight Foundation - Informed \& Engaged Communities},''
@@ -188,9 +316,55 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   why they built their Application Programming Interface first, right from the
   start. \end{quotation}
 
+\bibitem{feedparser}
+{Kurt McKee, Mark Pilgrim}, ``{feedparser 5.1.3},''
+  \url{https://pypi.python.org/pypi/feedparser/}, accessed April 2013.
+ \begin{quotation}\noindent The Python Package Index page of feedparser, a
+  Python third-party package which can parse multiple feed formats such as Atom
+  and RSS. \end{quotation}
+
+\bibitem{graphview}
+{Mark MacGillivray}, ``{Gateway to Research data visualised using graphview},''
+  \url{http://test.cottagelabs.com/gtr/graphview/}, accessed April 2013.
+ \begin{quotation}\noindent An example of the graphview javascript library
+  running, trying to visualise data from the Gateway to Research project.
+  Unfortunately, the library is still in its pre-alpha stages and has not been
+  open-sourced yet. \end{quotation}
+
+\bibitem{parsedatetime}
+{Mike Taylor}, ``{parsedatetime 1.1.2},''
+  \url{https://pypi.python.org/pypi/parsedatetime/}, accessed April 2013.
+ \begin{quotation}\noindent The Python Package Index page of parsedatetime, a
+  Python third-party module which tries to parse human-readable dates and times
+  (i.e. understand dates from pure strings). \end{quotation}
+
+\bibitem{cronyism1}
+{Nature Publishing Group (Editorial)}, ``{Banish cronyism},''
+  \url{http://www.nature.com/news/banish-cronyism-1.11642}, accessed April
+  2013.
+ \begin{quotation}\noindent An editorial describing a recent scandal with
+  cancer research funds in Texas and allegations of cronyism in science.
+  \end{quotation}
+
+\bibitem{nomenklatura}
+{Open Knowledge Foundation}, ``{Let's link! - nomenklatura},''
+  \url{http://nomenklatura.pudo.org/}, accessed April 2013.
+ \begin{quotation}\noindent The home page of the nomenklatura project, a web
+  applicatoin for making mappings of variant names to a canonical form (e.g.
+  Prifysgol Aberystwyth University might be the canonical form of the
+  University of Aberystwyth variant). \end{quotation}
+
+\bibitem{activityapi}
+------, ``{OKFN Activity API},'' \url{https://github.com/okfn/activityapi},
+  accessed April 2013.
+ \begin{quotation}\noindent The GitHub versioning system page of the
+  activityapi project, an application whose main purpose it to provide an API
+  which aggregates online activity of the Open Knowledge Foundation (e.g.
+  tweets, blog posts). \end{quotation}
+
 \bibitem{od}
-{Open Knowledge Foundation}, ``{Open Definition v.1.1},''
-  \url{http://opendefinition.org/okd/}, accessed April 2013.
+------, ``{Open Definition v.1.1},'' \url{http://opendefinition.org/okd/},
+  accessed April 2013.
  \begin{quotation}\noindent The Open Definition - defines what ``open'' is in
   relation to content and data. \end{quotation}
 
@@ -217,17 +391,79 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
   how openness can be beneficial for society (meaning all of current human
   civilisation). \end{quotation}
 
+\bibitem{pybossa}
+------, ``{PyBossa},'' \url{https://github.com/PyBossa/pybossa}, accessed April
+  2013.
+ \begin{quotation}\noindent The home page of the pybossa project, a web
+  application which enables crowdsourcing tasks which require human
+  intervention to be executed. An instance of this application powers
+  http://crowdcrafting.org/. \end{quotation}
+
 \bibitem{bubbletree}
 ------, ``{Radial Bubble Tree Visualization},''
   \url{https://github.com/okfn/bubbletree}, accessed November 2012.
  \begin{quotation}\noindent Homepage of BubbleTree, a higher-level Javascript
   graphical visualisation library. \end{quotation}
 
+\bibitem{offenesparlament}
+{Open Knowledge Foundation Deutschland e.V.}, ``{Was passiert in Bundestag und
+  Bundesrat? - OffenesParlament},'' \url{http://offenesparlament.de/}, accessed
+  April 2013.
+ \begin{quotation}\noindent The home page of the Offenes Parlament project, a
+  German parliament legislative process tracker. \end{quotation}
+
+\bibitem{negotiate}
+{Public Library of Science and Cottage Labs LLP}, ``{negotiate 0.0.1},''
+  \url{https://pypi.python.org/pypi/negotiate}, accessed April 2013.
+ \begin{quotation}\noindent The Python Package Index page of a Python package
+  which aims to provide content negotiation functionality to Python web
+  application, and claims to integrate particularly well with Flask.
+  \end{quotation}
+
+\bibitem{oag}
+------, ``{OpenArticleGauge},'' \url{http://oag.cottagelabs.com/}, accessed
+  April 2013.
+ \begin{quotation}\noindent The home page of the OpenArticleGauge project, part
+  of the HowOpenIsIt suite, developed by the noted authors. \end{quotation}
+
+\bibitem{oag-api}
+------, ``{OpenArticleGauge API Documentation},''
+  \url{http://oag.cottagelabs.com/developers/api}, accessed April 2013.
+ \begin{quotation}\noindent The API documentation of the OpenArticleGauge
+  project, part of the HowOpenIsIt suite, developed by the noted authors.
+  \end{quotation}
+
+\bibitem{python-doc-modules}
+{Python Software Foundation}, ``{Modules in Python},''
+  \url{http://docs.python.org/2/tutorial/modules.html}, accessed April 2013.
+ \begin{quotation}\noindent A section of the Python documentation dedicated to
+  Python modules as a way of organising code in Python. \end{quotation}
+
 \bibitem{rcuk-on-gtr}
 {Research Councils United Kingdom}, ``{Gateway to Research},''
   \url{http://www.rcuk.ac.uk/research/Pages/gtr.aspx}, accessed April 2013.
  \begin{quotation}\noindent A description of the Gateway to Research project by
   its parent organisation, Research Councils UK. \end{quotation}
+
+\bibitem{gtr}
+------, ``{Gateway to Research},'' \url{http://gtr.rcuk.ac.uk/}, accessed April
+  2013.
+ \begin{quotation}\noindent The home page of the Gateway to Research project.
+  \end{quotation}
+
+\bibitem{negotiator}
+{Richard Jones}, ``{negotiator 1.0.0},''
+  \url{https://pypi.python.org/pypi/negotiator}, accessed April 2013.
+ \begin{quotation}\noindent The Python Package Index page of a Python framework
+  for making content negotiation decisions based on the HTTP accept headers.)
+  \end{quotation}
+
+\bibitem{rms}
+{Richard Stallman}, ``{Richard Stallman / A Serious Bio},''
+  \url{http://stallman.org/#serious}, accessed April 2013.
+ \begin{quotation}\noindent A section of Richard Stallman's home page, the
+  Founder of the Free Software Foundation. The page is from his personal
+  website. \end{quotation}
 
 \bibitem{rolls-royce}
 {Rolls-Royce plc}, ``{Research - Rolls-Royce},''
@@ -236,6 +472,13 @@ K.~Beck, M.~Beedle, A.~van Bennekum, A.~Cockburn, W.~Cunningham, M.~Fowler,
  \begin{quotation}\noindent Rolls-Royce is a commercial company which sports
   extensive R\&D. This page details Research Programmes in a wide variety of
   (technical and scientific) sectors. \end{quotation}
+
+\bibitem{rufus}
+{Rufus Pollock}, ``{Rufus Pollock / About},''
+  \url{http://rufuspollock.org/about/}, accessed April 2013.
+ \begin{quotation}\noindent A page describing Rufus Pollock, the Founder of the
+  Open Knowledge Foundation. The page is from his personal website.
+  \end{quotation}
 
 \bibitem{Scrum}
 {Scrum Alliance Inc.}, ``{Scrum Is an Innovative Approach to Getting Work
@@ -269,10 +512,16 @@ J.~Shore, ``{The Art of Agile Development},''
   running from 11th to 13th November 2011 at the University of Lincoln.
   \end{quotation}
 
+\bibitem{jquery-ui}
+{The jQuery Foundation}, ``{jQuery UI},'' \url{http://jqueryui.com/}, accessed
+  April 2013.
+ \begin{quotation}\noindent The home page of the jQuery UI Javascript/CSS
+  library. Note: this is a separate project from jQuery itself. \end{quotation}
+
 \bibitem{pm}
 E.~Tolev, ``{PivotalTracker - FundFind},''
   \url{https://www.pivotaltracker.com/projects/688967}, Nov. 2012, accessed
-  November 2012.
+  April 2013.
  \begin{quotation}\noindent Publicly visible project management for the
   software component of this project. By default, it will show what the author
   is currently working on and what is in the backlog. Click on ``Icebox'' (in
@@ -295,12 +544,46 @@ E.~Tolev, ``{PivotalTracker - FundFind},''
  \begin{quotation}\noindent The UK Government Open Data portal containing
   various datasets released under Open licences. \end{quotation}
 
+\bibitem{linkify}
+{Unknown}, ``{parsedatetime 1.1.2},''
+  \url{https://github.com/uudashr/jquery-linkify}, accessed April 2013.
+ \begin{quotation}\noindent The GitHub source control system page of linkify, a
+  jQuery plugin which turns text on HTML pages that looks like a URL into an
+  actual clickable URL. The author's real name is unknown, although their
+  GitHub handle / nickname is uudashr. \end{quotation}
+
+\bibitem{pyes}
+------, ``{pyes},'' \url{https://github.com/aparo/pyes}, accessed April 2013.
+ \begin{quotation}\noindent The GitHub source control system page of pyes, a
+  Python connector for the elasticsearch datastore. The author's real name is
+  unknown, although their GitHub handle / nickname is aparo. \end{quotation}
+
+\bibitem{texcount}
+------, ``{TeXCount},'' \url{http://app.uio.no/ifi/texcount/}, accessed April
+  2013.
+ \begin{quotation}\noindent A page describing the TeXCount script, a word count
+  script for LaTeX documents. Its ability to produce a wordcount for a document
+  as complex as this is a testament to its flexibility. \end{quotation}
+
+\bibitem{mobiletestme}
+{Vangelis Bibakis}, ``{MobileTest.me - Test your mobile sites and web
+  applications right from your browser},'' \url{http://mobiletest.me/},
+  accessed April 2013.
+ \begin{quotation}\noindent A web application which allows testing of other web
+  applications' mobile user interfaces. \end{quotation}
+
+\bibitem{iframe-evil}
+{Various}, ``{Why developers hate iframes?}''
+  \url{http://stackoverflow.com/a/1081330/1154882}, accessed April 2013.
+ \begin{quotation}\noindent A discussion on why the iframe element is
+  considered extremely bad practice in web development. \end{quotation}
+
 \bibitem{finch}
 {Various (a UK Government Working Group), chaired by Dame Janet Finch},
   ``{Accessibility, sustainability, excellence: how to expand access to
   research publications},''
-  \url{http://www.researchinfonet.org/wp-content/uploads/2012/06/Finch-Group-report-FINAL-VERSION.pdf},
-  June 2012, accessed November 2012.
+  \url{http://www.researchinfonet.org/wp-content/uploads/2012/06/Finch-Group-r%
+eport-FINAL-VERSION.pdf}, June 2012, accessed November 2012.
  \begin{quotation}\noindent The Finch report - looked into Open Access and its
   benefits for academic publishing and society at large, commisioned by the UK
   Government. \end{quotation}
@@ -319,8 +602,8 @@ E.~Tolev, ``{PivotalTracker - FundFind},''
 
 \bibitem{feedparser-ominous}
 ------, ``{Feedparser Documentation / Parsing a feed from a string},''
-  \url{http://pythonhosted.org/feedparser/introduction.html#parsing-a-feed-from-a-string},
-  accessed April 2013.
+  \url{http://pythonhosted.org/feedparser/introduction.html#parsing-a-feed-fro%
+m-a-string}, accessed April 2013.
  \begin{quotation}\noindent Gives a code example in Python on how to parse an
   RSS (or other e.g. Atom) feed using the feedparser Python library. The note
   specifying that the return value types could vary is of particular interest.
@@ -331,6 +614,21 @@ E.~Tolev, ``{PivotalTracker - FundFind},''
   \url{http://flask.pocoo.org/}, accessed November 2012.
  \begin{quotation}\noindent Homepage of the Flask Python web framework project,
   helps build RESTful web applications in Python. \end{quotation}
+
+\bibitem{flask-foreword}
+------, ``{Flask Documentation Foreword},''
+  \url{http://flask.pocoo.org/docs/foreword/}, accessed April 2013.
+ \begin{quotation}\noindent A part of the Flask documentation which is supposed
+  to be read before one gets started with Flask. Strives to answer some
+  questions about the purpose and goals of the project, and when it should or
+  should not be used it. \end{quotation}
+
+\bibitem{flask-login}
+------, ``{Flask-Login},''
+  \url{https://flask-login.readthedocs.org/en/latest/}, accessed April 2013.
+ \begin{quotation}\noindent The home page of the Flask-Login extension for
+  Flask, which helps with common operations needed to authenticate users. Does
+  not help with creating profiles, i.e. registering users. \end{quotation}
 
 \bibitem{jquery}
 ------, ``{jQuery is a new kind of JavaScript Library.}''
@@ -352,12 +650,27 @@ E.~Tolev, ``{PivotalTracker - FundFind},''
   make much sense to a reader unfamiliar with the topic, but should do with the
   example in the report body. \end{quotation}
 
+\bibitem{wellcome-example}
+{Wellcome Trust}, ``{Biomedical resource and technology development grants},''
+  \url{http://www.wellcome.ac.uk/Funding/Biomedical-science/Funding-schemes/St%
+rategic-awards-and-initiatives/WTDV031727.htm}, accessed April 2013.
+ \begin{quotation}\noindent An example of a funding opportunity by the Wellcome
+  Trust considered when thinking of what values describe a funding opportunity
+  for the crowdsourcing pages. \end{quotation}
+
 \bibitem{wellcome-trust}
-{Wellcome Trust}, ``{Wellcome Trust - We are a global charitable foundation
-  dedicated to achieving extraordinary improvements in health by supporting the
-  brightest minds.}'' \url{http://www.wellcome.ac.uk/}, accessed November 2012.
+------, ``{Wellcome Trust - We are a global charitable foundation dedicated to
+  achieving extraordinary improvements in health by supporting the brightest
+  minds.}'' \url{http://www.wellcome.ac.uk/}, accessed November 2012.
  \begin{quotation}\noindent The homepage of a global charitable foundation
   which funds lots of scholarly activities in a variety of areas.
   \end{quotation}
+
+\bibitem{wtforms}
+{WTForms Team}, ``{WTForms Documentation},''
+  \url{http://wtforms.simplecodes.com/docs/1.0.3/}, accessed April 2013.
+ \begin{quotation}\noindent The main page of the WTForms project which tries to
+  automate certain common tasks when generating HTML submission forms for the
+  web. \end{quotation}
 
 \end{thebibliography}

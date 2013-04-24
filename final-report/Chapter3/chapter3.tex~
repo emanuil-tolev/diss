@@ -32,25 +32,25 @@ FundFind
 \begin{itemize}
  \item is a web application
  
-This was decided right from the start of the project. The way current Open Knowledge Foundation and Cottage Labs projects worked was important since one of the two major target domains is Open Data / Knowledge and Cottage Labs is an interested party. Most OKFN projects are web applications - even the library ones have mostly been used in web applications. Cottage Labs have also focussed on web applications. Such applications have just proven themselves to be far more ``co-operative'' than traditional desktop applications - easy to access, easy to modify so that they expose their data via an API (interoperability). \S\ref{api-tech-design} details further interoperability decisions - the transport format (JSON) and protocol (HTTP).
+This was decided right from the start of the project. The way current Open Knowledge Foundation and Cottage Labs projects worked was important since one of the two major target domains is Open Data / Knowledge and Cottage Labs is an interested party. Most OKFN projects are web applications - even the library ones have mostly been used in web applications. Cottage Labs have also focused on web applications. Such applications have just proven themselves to be far more ``co-operative'' than traditional desktop applications - easy to access, easy to modify so that they expose their data via an API (interoperability). \myref{design-api} details further interoperability decisions - the transport format (JSON) and protocol (HTTP).
  
  \item is written in Python
 
-Similar factors to the interoperability point raised above played a role in deciding the language of the application. A lot of Open Knowledge projects use Python \cite{nomenklatura, offenesparlament, pybossa, activityapi} - the same goes for Cottage Labs projects \cite{leaps, portality, iioa, artemis, cl-web-code, xcri, negotiator}. The language is also simple and strives encourage and enable readability - ``code is read much more often than it is written'' \cite{pep8}.
+Similar factors to the interoperability point raised above played a role in deciding the language of the application. A lot of Open Knowledge projects use Python \cite{nomenklatura, offenesparlament, pybossa, activityapi} - the same goes for Cottage Labs projects \cite{leaps, portality, oag, artemis, cl-web-code, xcri, negotiator}. The language is also simple and strives encourage and enable readability - ``code is read much more often than it is written'' \cite{pep8}.
  
  \item stores its data in an asynchronous NoSQL data store with built-in search capabilities
  
- FundFind relies on elasticsearch to store its data. Elasticsearch is an indexing server which allows for sophisticated search queries against a body of text and other data \cite{es}. The essential advantages were simplicity, performance, usage by other Cottage Labs projects and certain options it leaves open for further development (see \S\ref{design-datastore}).
+ FundFind relies on elasticsearch to store its data. Elasticsearch is an indexing server which allows for sophisticated search queries against a body of text and other data \cite{es}. The essential advantages were simplicity, performance, usage by other Cottage Labs projects and certain options it leaves open for further development (see \myref{design-datastore}).
  
  \item has a mobile-friendly web interface
  
  FundFind is an application which tries to enable sharing of information - one of the highest priority features. Owing to the nature of the information it makes sense to try to make it mobile-friendly - scholars do not necessarily have to hear about funding opportunities while sitting at their desks.
  
- Whether they will also want to share this rather dense information while on the go is another matter entirely. Mobile-friendliness was not noted as having particularly high priority in the Progress Report, and it still does not - it was just easy to implement due to the fact that the libraries used to make the web user interface follow current best software engineering practice. More details are available in \S\ref{impl-ui}. Essentially, making a good UI by using the libraries properly would have led to a mobile-friendly UI (at the flick of a filename and a few CSS class names).
+ Whether they will also want to share this rather dense information while on the go is another matter entirely. Mobile-friendliness was not noted as having particularly high priority in the Progress Report, and it still does not - it was just easy to implement due to the fact that the libraries used to make the web user interface follow current best software engineering practice. More details are available in \myref{impl-ui}. Essentially, making a good UI by using the libraries properly would have led to a mobile-friendly UI (at the flick of a filename and a few CSS class names).
  
  \item exposes all its major features via an API
  
- The JISC Report ``Advantages of APIs'' states ``the API enables use and re-use; it is a tool by which we can disseminate knowledge'' \cite{advantages-apis}. This is the essential advantage of API-s and the reason the concept of an API has become one of the building blocks of the Open Knowledge movement. If FundFind aims to prototype a useful tool which will eventually contribute to Open Data (so taking into account the needs of the ``analytical'' audience group from \S\ref{audience-analyse}), it needs to eventually have an API. It is simply better to design the project with the API in mind instead of tacking it on later. One example is the HiFi project, which had the following to say on the subject:
+ The JISC Report ``Advantages of APIs'' states ``the API enables use and re-use; it is a tool by which we can disseminate knowledge'' \cite{advantages-apis}. This is the essential advantage of API-s and the reason the concept of an API has become one of the building blocks of the Open Knowledge movement. If FundFind aims to prototype a useful tool which will eventually contribute to Open Data (so taking into account the needs of the \myref{audience-analyst}), it needs to eventually have an API. It is simply better to design the project with the API in mind instead of tacking it on later. One example is the HiFi project, which had the following to say on the subject:
  
  \begin{shadequote}
   We built the API to satisfy these requirements first, then we built our app on top of the API. This turned out to be a great idea. We got to dogfood our API for the entire development process and it made testing a lot simpler.
@@ -79,9 +79,10 @@ The entities drawn with a rough dashed line are packages. Packages and modules a
 
 The entities drawn with a fine dashed line are more abstract concepts (datastore and user interface) which are elaborated upon below.
 
-Full listing of all source code files with notes is available in ``\titleref{file-listings}'', Appendix \ref{file-listings}.
+The empty arrowhead arrows denote dependency - more details below.
 
-\subsection{Organising code in Python}
+\subsection{Organising Code in Python}
+\label{organising-code-python}
 Traditionally Object-Oriented Programming talks about ``classes'' as, essentially, blueprints combining data structures and imperative code (methods) together. These can then be ``instantiated'' to produce a concrete ``object''.
 
 This is of course well-supported in Python. However, Python also has an additional convention when it comes to organising code - ``modules''. The Python documentation says ``You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.'' \cite{python-doc-modules}. While re-use of code is usually achieved by making everything an object in other languages like Java, Python actually allows functions and even just code statements at the top level of a source code file. Thus, instead of having to create a ``Util'' class with several static methods, Python authors are encouraged to simply define the functions they need at the module level. In other words, modules are a convenient way to bundle together \emph{related} pieces of code - whether that would just be a sequence of statements, function or class definitions. This may seem messy but has proven to be quite efficient by essentially allowing the developer to better express their mental model 
@@ -89,7 +90,7 @@ of how their program should be organised, instead of forcing a particular struct
 
 An obvious characteristic of Python modules is that they are also implicit namespaces. Thus, the built-in |int()| can easily be distinguished from |random.int()|. A Python program would have to |import random| before it can use |random.int()|.
 
-In this case, |random| happens to be a module that is part of the standard Python distribution. However, exactly the same rules apply to user-defined modules. Thus, the |<uses>| arrows which connect the modules in Figure \ref{fig:arch} essentially mean ``module X imports module Y and uses something from Y''.
+In this case, |random| happens to be a module that is part of the standard Python distribution. However, exactly the same rules apply to user-defined modules. Thus, the empty arrowhead arrows which connect the modules in Figure \ref{fig:arch} essentially mean ``module X imports module Y and uses something from Y''.
 
 Packages are simply a collection of modules. Since a module is a file, packages are just directories (containing a possibly empty |__init__.py| file) - another way to organise related code.
 
@@ -107,42 +108,43 @@ Almost without exception, class names use the CapWords convention.
 Style Guide for Python Code, Prescriptive: Naming Conventions \cite{pep8}
 \end{shadequote}
 
-\subsection{Changes over time}
+\subsection{Changes Over Time}
 \label{design-changes}
 % TODO redo this with a diagram showing the real initial IDFind code and showing deleted modules in red, added modules in green
-The core modules which form the main web application have not changed much from the parent IDFind project. The diagram of IDFind's technical design presented in the Progress Report \cite{progress-report} was meant to be an overview diagram and had left out several details. These are presented in Figure \ref{fig:idfind-new-uml}.
 
-Some of the modules which have been deleted during FundFind's development merit further discussion:
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.00\textwidth,]{Chapter3/idfind-new-uml.pdf}
+\caption{Overview of parent project IDFind's technical design. Much more complete than presented in the Progress Report.}
+\label{fig:idfind-new-uml}
+\end{figure}
+
+The list of core modules which form the main web application has not changed much from the parent IDFind project (the content has, of course). The diagram of IDFind's technical design presented in the Progress Report \cite{progress-report} was meant to be an overview diagram and had left out several details. These are now included in Figure \ref{fig:idfind-new-uml}. The modules presented with a very thin dashed line have been removed in FundFind. The others have been left in, but several new ones have been added.
+
+Those which were deleted merit further discussion:
 \begin{itemize}
 	\item |tweetlisten| allows IDFind to respond to Twitter requests in a similar fashion as if the user was using the web user interface.
 	
 	This module was scrapped in FundFind since potential target users (including the author) just could not think of a way in which Twitter integration would be \emph{immediately} useful. There was also an issue with the inherited tests, discussed in \myref{testing-intro}.
-%TODO describe other changes as per diagram
+	\item the whole |auth| package, containing the |collection| module was not being used for anything else but to check whether a user had certain privileges (probably left over from when IDFind itself was forked from another codebase). All dependencies on that were replaced with referenced to the |current_user| object provided by the Flask-Login extension (that is all |auth.collection| was actually using anyway).
+	\item |iomanager| again seems to have been inherited from IDFind's parent codebase. It was essentially being used as a generic way to display objects from the elasticsearch datastore, but only when there was no other appropriate way to display them. This happened when none of the routes in the |web| module responded to the incoming request. IDFind had inherited a generic search functionality with the idea of ``search all objects in IDFind's datastore'' but was quite limited and didn't visualise the results very well. |iomanager| was the bit that did the visualisation for this generic search. In FundFind, with facetview, and indeed direct (at least read-only) access to the elasticsearch datastore, this module just became obsolete and the limited search functionality was stripped from the main navigation bar.
 \end{itemize}
 
-In terms of changes, the contents of all of these modules have of course changed to accommodate FundFind's aims.
+In terms of changes, the contents of all of these modules which were kept have of course changed to accommodate FundFind's aims.
 
-%TODO include different diagram here
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.00\textwidth,]{Chapter3/idfind-uml.pdf}
-\caption{Overview of parent project IDFind's technical design presented in the Progress Report \cite{progress-report}. This should include several more modules, coloured in red (deleted for FundFind) and black (left in).}
-\label{fig:idfind-new-uml}
-\end{figure}
+Furthermore, a new package, |suggest| and one module within it, |gtr| were introduced in FundFind, with the aim of offering up suggestion for relevant past funded projects to FundFind users. Both are described in more detail in \myref{design-suggest} below.
 
 \section{Datastore}
 \label{design-datastore}
 A discussion of the nature of the slightly unconventional datastore is in order since it has informed the technical design of both FundFind and Funding Harvest.
 
- Indexing software is usually most easily understood in comparison to more traditional approaches of storing data, like relational databases (MySQL \cite{mysql}, Oracle \cite{oracle}). These store data in a highly structured way and the base structural unit is a table (theoretically equivalent to a set, which is where relational theory and such databases come from). The ``indexing'' part actually means ``analysis'' in the broadest sense. Given data - any data, images, text, Microsoft Word binary blobs pretending to be text - the software will try to find common features or look for certain characteristics in the data. For example, it will try to discern whether a particular string actually represent a datetime value.
+Indexing software is usually most easily understood in comparison to more traditional approaches of storing data, like relational databases (MySQL, Oracle). These store data in a highly structured way and the base structural unit is a table (theoretically equivalent to a set, which is where relational theory and such databases come from). The ``indexing'' part actually means ``analysis'' in the broadest sense. Given data - any data, images, text, Microsoft Word binary blobs pretending to be text - the software will try to find common features or look for certain characteristics in the data. For example, it will try to discern whether a particular string actually represent a datetime value.
  
  Elasticsearch is actually a NoSQL datastore - which essentially means that it deals with very simple key-value pairs as the basic unit of organising data \emph{instead of} tables, or sets. It also supports slightly more complex, but still very simple structures, such as lists and dictionaries (a.k.a. HashMaps). This means that the storage representation is also quite simple - in this case, all documents stored within an elasticsearch instance can be represented in the JSON data format. This simplicity enables elasticsearch to deal with semistructured data much more easily than a traditional relational database.
  
  In terms of individual values, it should be noted that they are all optional - elasticsearch has not been configured, in this project, to enforce presence of particular data - this is up to the application pushing to the index. This means that data validation is essentially entirely up to FundFind and Funding Harvest.
  
  A lot of funding data can be considered semistructured - one type of funding call might have a closing date, another one might not. When multiple data sources are considered it becomes even more difficult since different organisations publish different bits of data about their available funding. Since elasticsearch combines its simple storage with a powerful, fast search engine this makes such ``holes'' in the data a lot less important than usual - the ``usefulness'' of the data scales with its quality (there is no getting around the fact that less holes is better), but \emph{the software can deal with it} without throwing null pointer exceptions and \emph{the data that is present is still easily discoverable}.
- 
- % TODO REVIEW include an example of a JSON document that FundFind has, and then represent the same document using a relational structure of several tables. Point out how many are needed and that it's cumbersome. Concede that it gives a speed advantage with a lot of records, but retort that elasticsearch already achieves that speed just by searching the data instead of structuring it in a specific way, so the database can find it more quickly on disk...
  
  Elasticsearch's RESTful JSON-returning API usually enables rapid prototyping, evaluation and integration with Javascript visualisation libraries such as d3 \cite{d3} and BubbleTree \cite{bubbletree}. While these precise features are not implemented in this version of FundFind, the decision to use elasticsearch leaves this option open.
  
@@ -154,29 +156,25 @@ A discussion of the nature of the slightly unconventional datastore is in order 
  
  Multiple running elasticsearch instances can be easily joined together to form a cluster for resilience and performance. This is not used by this project but is discussed since it is an important scalability characteristic, especially for ``young'' software such as elasticsearch.
  
- % TODO ADD additionally, elasticsearch is asynchronous. Why the fuck is this an advantage over synchronous communication? Find text on this and re-write it here. Blocking for I/O, communicating with database usually a problem (caused meltdowns every year when marks were released). So maybe that's why it's better essentially.
- 
  Elasticsearch is extremely easy to back up - the API can be used to get a JSON data dump, but the |data| directory in the local elasticsearch installation can just be copied using the usual filesystem utilities and network storage techniques (e.g. an encrypted copy could be produced and uploaded to Dropbox via a one-line shell script). Elasticsearch will actually replicate its data automatically and instances which can see each other (in the same logical network) will find each other and can be set up to replicate each others data.
 
-\subsection{FundFind datastore details}
+\subsection{FundFind Datastore Details}
 \label{datastore-details}
 FundFind uses the |fundfind| index and categorises the documents it stores in the types described below. Due to the nature of an indexing engine, it is easier to not validate the properties that document types have - to leave them as simple conventions, names that the code \emph{should} use to access certain pieces of data. The code is free to sometimes save a user's username in an |id| field, and in |user_name| at other times. It should not do that, but it is not forced to - however, see \myref{design-dao} for the convention the code uses to prevent this from happening in practice.
 
 
 \begin{itemize}
-%TODO sort values below alphabetically
 \item |account| holds user profiles. Its properties are:
 	\begin{itemize}
 	\item |api_key| - Created by the Flask-Login extension, can be used to access non-public parts of the API (like editing a user profile). FundFind does not currently expose any non-public functionality through the API due to the additional complexity, security risk and low priority of the possible functions which need it.
-	\item |country, organisation, research_group| - these specify a person's affiliation.
-	%TODO make them plural lists - put in eval chapter
+	\item |country, organisation, department, research_group| - these specify a person's affiliation.
 	
-	\item |created| and |modified| - timestamps of when the profile was created and last modified. The data format does not matter, as long as it is something that elasticsearch understands to be a date, which is quite an exhaustive list \cite{es-dateformat}. FundFind uses the |datetime| Python module to get the current time in ISO format: 
+	\item |created| and |modified| - timestamps of when the profile was created and last modified. The data format does not matter, as long as it is something that elasticsearch understands to be a date, which is quite an exhaustive list \cite{es-dateformats}. FundFind uses the |datetime| Python module to get the current time in ISO format: 
 	\\ |2013-04-10T11:42:09.535000|.
-	%TODO maybe a detail for HOW it is generated for chapter 4?
 	
 	\item |email| - the user's email
 	\item |id| - In this particular case, the random digit id-s described above are overridden with the username, e.g. |emanuil|. This ensures that there will never be two users with the same username and makes it easy to tell users that the username is taken (see \myref{impl-datastore}).
+	\item |interests| - a list of research interests specified at registration of the profile
 	\item |password| - a hash of the user's password. See \myref{impl-profiles} for more details.
 	\end{itemize}
 
@@ -187,6 +185,10 @@ FundFind uses the |fundfind| index and categorises the documents it stores in th
     \item |homepage| - URL (hopefully) pointing to the organisation's home page
     \item |id| - random number as described above
     \item |interested_in, policies| - A string describing this funder's area of expertise.
+	\item |license| - an object (dictionary) describing the license this data is available under. For items coming in from the user interface, i.e. crowdsourced, this has a |type| of ``cc-by'' and a |version| of ``3.0'', as well as a |url| of
+	\\ |http://creativecommons.org/licenses/by/3.0/|. Items coming in from Funding Harvest will have a |type| of ``default-copyright'' and the other fields will be blank. This may change in the future as attempts are made to convince publishers of funding data to publish it more openly.
+	
+	Structure inspired by the way OpenArticleGauge describes licenses \cite{oag-api}.
     \item |name| - name of the funding organisation
     \item |owner| - the user who created this |funder| document.
     \item |tags| - a list of strings related to the funder - perhaps their field, policies (e.g. ``open access required'', ``green OA friendly'') or anything else the users feel like tagging
@@ -195,16 +197,19 @@ FundFind uses the |fundfind| index and categorises the documents it stores in th
     
 \item |funding_opportunity| describes a funding opportunity.
 
-It shares quite a few keys (field names) with |funder| - |created|, |modified|, |id|, |owner|, |tags| and |useful_links| all have very similar functions.
+It shares quite a few keys (field names) with |funder| - |created|, |license|, |modified|, |id|, |owner|, |tags| and |useful_links| all have very similar functions.
 	\begin{itemize}
 	\item |closing_date| - the date after which the funding opportunity goes ``historical'', i.e. no more responses / bids / expressions of interests are accepted by the funder for this opportunity
+	\item |funder| - an object (dictionary) describing the funder who is offering this funding opportunity. At present this is not a link to a |funder|-type document, it just contains |name| and |url|.
 	\item |funds| - amount of money offered
 	\item |funds_exactly_or_upto| - qualifies the figure in |funds|. What it means depends on the size of the opportunity - sometimes funders will announce opportunities for millions of pounds and expect to fund tens of project through this one stream of money. Some might be smaller, some larger - the wording used is often something like ``up to X thousand / million pounds are available for research into [...]''. An ``exactly'' value means that when projects specify how they are going to use the money, they will have to come close to that value to demonstrate they will use the funds effectively.
 	
 	Correctly interpreting this value requires funding domain experience and will probably need to be informed by the content of the |more_info| field as well.
 	\item |issue_date| - when the opportunity was published (by the funder)
+
 	\item |more_info| - more information about this opportunity - background, eligibility criteria, whatever is available
 	\item |title| - title of the funding opportunity (given to it by the funder)
+	\item |url| - URL pointing to the opportunity's page for more details. This is the ``canonical'' URL for this opportunity - the useful links can point to any web address with relevant information, but this is \emph{the} opportunity's page.
 	\end{itemize}
 \end{itemize}
 
@@ -216,7 +221,6 @@ The Flask Python micro web framework \cite{flask} is used in this project. A web
 \subsection{core}
 
 |core| is, by convention the name of the main module in a Flask-based application. It creates the main application object and loads the configuration, including putting in the default settings.
-%TODO for eval - this should probably be done in config...
 
 The call to start the application as a web service listening on a certain port is done here as well. If debug mode is enabled |core| will monitor all application code and reload components on-the-fly if changes are detected.
 
@@ -307,17 +311,17 @@ app.add_url_rule('/share_fundopp',
 
 The last line adds the new view class to the routes, so that it will be handed all requests which come in at |/share_fundopp|.
 
-|web| also defines a few functions to help with logging users in - more details in \myref{impl-create-profiles}.
-
 These are all routes that |web| defines:
 \begin{itemize}
 \item GET |/| - home page
-\item GET |/account/<user>| - view a user profile
+\item GET |/account/<user>| - view a user profile (would have to be logged in and can only view own profile)
 \item GET |/content/<path:path>| - generic route to server ``static'' content like tutorial pages, API pages and so on (only works if the supplied filename actually matches a template, otherwise 404 Not Found)
-\item GET, POST |/search| - search for funding opportunities and funders
+\item GET |/search| - search for funding opportunities and funders. This does not have a JSON form, i.e. it is not part of the FundFind API, it's just the HTML page which exposes FundFind's data. This is because FundFind's datastore of choice has far more extensive search capabilities for exposing the data than this project could ever hope to provide, including complex queries, fuzzy-like-this queries and scripts inside queries (dynamically ranking results based on an algorithm embedded in the query, i.e. dynamic fields).
 \item GET, POST |/describe_funder| - share information about a funding organisation
-\item GET, POST |/share_fundopp| - share information abotu a funding opportunity
-\item GET, POST |/slugify| - exposes the |util.slugify| function to the world via the API. This is mainly of use for AJAX requests, which are briefly discussed in \myref{design-ajax}, although API consumers could use it if they wish to.
+\item GET, POST |/share_fundopp| - share information about a funding opportunity
+\item GET, POST |/slugify| - exposes the |util.slugify| function to the world via the API. This is mainly of use for AJAX requests although API consumers could use it if they wish to.
+\item GET, POST |/suggest| - ideally, suggests a mix of artefacts related to the |similar_to| parameter it is passed, like news articles, projects, funding organisations. However, FundFind only supports projects from the GtR API at the moment, so this does the same as the route below.
+\item GET, POST |/suggest/projects| - suggests projects related to the |similar_to| parameter it is given, currently only from the Gateway to Research API.
 \end{itemize}
 
 
@@ -352,44 +356,93 @@ The |config| module makes it possible to say |from fundfind import config| in, f
 
 \begin{verbatim}
 # override certain defaults of the Flask-Bootstrap extension
-BOOTSTRAP_USE_MINIFIED = False # small performance gain not worth loss of debugging info yet
-BOOTSTRAP_JQUERY_VERSION = '1.9.1' # most up-to-date that's tested with the app
+BOOTSTRAP_USE_MINIFIED = False # small performance gain [...]
+BOOTSTRAP_JQUERY_VERSION = '1.9.1' # most up-to-date [...]
 \end{verbatim}
 
 The information is merged with the rest of the configuration when it is loaded.
 
 The reason there are two separate modules is because this design was recommended - this is a fully-featured Python file which could do far more than simply stating values, like the |config.json| file has to. The reason the |config.json| file still exists is that it works, it is easy to understand and work with, and it simply has not yet been merged into |default_settings|. It is debatable whether the configuration should be kept in a code module or more a immediately visible location such as the root of the code repository. Time constraints preclude such debate in this project, however.
 
+Right now it does not actually hold any useful settings since the Flask-Bootstrap extension is no longer in use, due to certain difficulties described in \myref{impl-ui}.
+
 \subsection{util}
-Currently defines two functions.
+Defines several functions which are generic and can be used throughout the code.
 
 |slugify| turns normal text (including Unicode text) into a more restricted version of URL-friendly text, called a ``slug''. It replaces whitespace and other delimiters and punctuation with underscores. For example, ``Inertial Fusion Energy  in the UK and Beyond       -  !?'' becomes ``inertial\_fusion\_energy\_in\_the\_uk\_and\_beyond''.
 
-% \subsection{suggest}
-% The |suggest| package serves as a facade - if |import suggest| is specified, it bundles together functions from the underlying modules to expose functionality like |from suggest import projects| or |from suggest import funding_opportunities|. In other words, the caller does not have to know the implementation details - they do not have to care about the fact that |gtr| and |hypothethical_module1|suggest projects, but |hypothethical_module2| suggests funding opportunities. Not having to know the names also helps easily maintain backwards compatability - if, for some reason, the |gtr| module is renamed to |gateway_to_research|, it will not break all the code which is importing the |suggest| package.
-% 
-% At the moment it \emph{only} contains the |gtr| module, which can only suggest projects, so only |from suggest import projects| will work.
-% 
-% \subsubsection{gtr}
-% Contains the |GTRConsumer| class which communicates with the Gateway to Research API. Its |suggest| method returns a list of the items which Gateway to Research returns given the user's query to FundFind. The query is just passed on to GtR and the results are displayed on the user interface without further processing.
+|clean_list| strips off trailing spaces off all the items in a list. It was previously written by the author for the IDFind project and its docstring (long-form in-code description) describes its purpose best, with a (modified for this document) example:
+\begin{verbatim}
+Example: you have a list of tags. This is coming in from
+an HTML form as a single string: e.g.
+research_interests = "research interest 1, birds, ".
+You do research_interests.split(",").
+Now you have the following list:
+["research interest 1"," birds", ""]
+You want to both trim the whitespace from list[1] and remove the empty
+element - list[2]. clean_list(tag_list) will do it.
+
+What it does (a.k.a. algorithm):
+1. Trim whitespace on both ends of individual strings
+2. Remove empty strings
+3. Only check for empty strings AFTER splitting and trimming the 
+individual strings (in order to remove empty list elements).
+\end{verbatim}
+
+|prep_link| simply puts |http://| in front of a link (perhaps specified as a useful link related to a funder) if it is not already there. It can also add a trailing slash, triggered via an optional argument.
+
+|str2isodt| can take a string and try to (quite intelligently) guess whether it is a date, time, or both together. It is a convenience wrapper around the third-party |parsedatetime| package which does the actual guessing. It is needed because |parsedatetime| does not return Python datetime objects, but its own format, and most Python code works most easily with such objects.
+
+\subsection{view}
+|view| is just a package which holds highly reusable Flask components called Views. There is only one view at the moment:
+
+\subsubsection{account}
+Handles user registration and things like logging the user in immediately after they register, so they are ``in'' their account after hitting ``Register''.
+
+\subsection{suggest}
+\label{design-suggest}
+The |suggest| package serves as a façade - if |import suggest| is specified, it bundles together functions from the underlying modules to expose functionality like
+\\|from suggest import suggest_projects|
+\\or (hypothetically)
+\\|from suggest import suggest_news|.
+\\In other words, the caller does not have to know the implementation details - they do not have to care about the fact that |gtr| and |hypothethical_module1| suggest projects, but
+\\|hypothethical_module2| 
+\\suggests news articles. Not having to know the names also helps to easily maintain backwards compatibility - if, for some reason, the |gtr| module is renamed to |gateway_to_research|, it will not break all the code which is importing the |suggest| package.
+
+At the moment it \emph{only} contains the |gtr| module, which can only suggest projects, so only |from suggest import suggest_projects| will actually work.
+
+\subsubsection{gtr}
+Contains the |suggest_projects| function which hits the GtR API and passes the results to the caller of FundFind's API (which in most cases will be its own user interface). It tries to catch certain error states like answers from the GtR API which are just invalid JSON, or HTTP codes other than 200 ``OK'' being returned by GtR. Its only argument is |similar_to|, which is a term that the returned GtR projects should be related to. When FundFind's user interface is using its |/suggest| or |/suggest_projects| route, this request parameter will be set to the user's search query, so the suggestions will be related to whatever the user is searching for.
+
+It also contains a few convenience functions:
+\begin{itemize}
+\item |_make_error| wraps error messages issued by |suggest_projects| in a JSON object, so that responses coming from the FundFind API are consistent (not JSON most-of-the-time versus strings when there is an error).
+\item |_build_svc_url| takes several of the module-level constant defined in this module and builds a URL for |suggest_projects| to use.
+\end{itemize}
 
 \section{fundingharvest}
 \label{design-main-last}
 
+\subsection{dao}
+The |dao| module here plays almost exactly the same role as in FundFind. In fact, the \emph{only} difference is that it does not define an |Account| object since it does not have to deal with user accounts - it only defines |Funder| and |FundingOpportunity|, which it uses to submit harvested information to the index.
+
+\subsection{config}
+Config plays exactly the same role as in FundFind.
+
 \subsection{base}
 \label{design-fundingharvest-base}
-This module contains the |BaseHarvester| class which contains no functionality, but is there in case child classes need common functionality which happens to have the same implementation. Utility functions such as |check_contents()| (ensure results being returned to the code have certain keys) are one example.
+This module contains the |BaseHarvester| class which contains no functionality, but is there in case child classes need common functionality which happens to have the same implementation. Utility functions such as |check_results()| (ensure results being returned to the code have certain keys) are one example.
 
-This is presently less useful in its current form since there is only one class which inherits from it - |RssHarvesterBase|. However, the initial design for the Funding Harvest project including a |CLISubmitter| which ``harvested'' information from the command line (i.e. tested the whole idea).
+This is presently less useful in its current form since there is only one class which inherits from it - |RSSHarvester|. However, the initial design for the Funding Harvest project including a |CLISubmitter| which ``harvested'' information from the command line (i.e. tested the whole idea).
 
-It also used to include an |EmailHarvesterBase| which was meant to provide common functionality for trying to parse e-mails, like connecting to an IMAP server and fetching the right e-mail (last in reverse chronological order to match a certain subject line and possibly other header conditions). |EpsrcEmailHarvester| would then connect to it. The feature was unfortunately dropped since it turned out to be too difficult to implement in the remaining time/priority considerations (see \myref{impl-email-parse}). However, |fundfind.email.harvester@gmail.com| has been created and is receiving weekly alerts from the EPSRC.
+It also used to include an |EmailHarvesterBase| which was meant to provide common functionality for trying to parse e-mails, like connecting to an IMAP server and fetching the right e-mail (last in reverse chronological order to match a certain subject line and possibly other header conditions). |EpsrcEmailHarvester| would then connect to it. The feature was unfortunately dropped since it turned out to be too difficult to implement in the remaining time/priority considerations. However, |fundfind.email.harvester@gmail.com| has been created and is receiving weekly alerts from the EPSRC.
 
 Therefore, the inheritance structure has been kept, keeping \myref{future-work} in mind.
 
 \subsection{rss}
 This module contains the |RSSHarvester| class which aims to provide common functionality such as |load_rss_feed()| to its children.
 
-\subsection{rcuk_esrc}
+\subsection{rcuk\_esrc}
 \label{design-rcuk-esrc}
 This module contains the |EsrcRssHarvester| class which consumes the RSS feed of the ESRC (Economic and Social Research Council). This council was chosen since their RSS feed \cite{esrc-rss} actually takes arguments such as search terms and time periods. RSS feeds are not supposed to be used like that - they ought to only contain the latest items since a server-determined date, usually a week or so. This is a really interesting case of somebody using their RSS publishing capabilities as an ad-hoc API, even allowing users to do what is essentially search queries, but not having to code an API or a user interface on top - just relying on the user to input the URL they want and bookmark it in their RSS reader!
 
@@ -397,8 +450,7 @@ However, this detail also made this feed very easy to use for a prototype projec
 
 \section{User Interface}
 
-The user interface is pretty simple - two information submission forms and a search page (which doubles up as a ``view records'' page) as well as a ``my account'' page.
-%TODO screenshots here
+The user interface is pretty simple - two information submission forms and a search page (which doubles up as a ``view records'' page) as well as a ``my account'' page (which presently only allows viewing of details, not editing).
 
 Designing a user interface usually revolves around two questions - what is being exposed (data, functionality) and how it is being exposed so that it can be best utilised by the users.
 
@@ -412,7 +464,7 @@ The process went as follows:
 \item later on, look through the data and see what the search/view page is unable to show and enhance its knowledge of the data
 \end{enumerate}
 
-\subsection{Exposing the content}
+\subsection{Exposing The Content}
 \label{design-ui-exposing-the-content}
 Web user interface libraries package a lot of professional UX (User eXperience) designers' and developers' knowledge into an easy to reuse package. Bootstrap \cite{bootstrap} is one such library and it was used together with jQuery \cite{jquery} and jQuery UI\cite{jquery-ui} to make FundFind's user interface, including the responsive mobile UI characteristic.
 
@@ -424,7 +476,8 @@ The fields in the information submission forms were just ordered in order of per
 \label{faceted-search}
 Faceted search \cite{faceted} was chosen as a core concept to build the user interface on due to its ability to allow easy exploration of large semistructured datasets and quick drill-down to data the user is interested in.
 
-At first, both the HTML user interface and the API were going to use this concept. However, faceted search is actually good for semistructured data because human minds are good at processing it. That is, as long as the data is analysed on the fly and  common fields and values are presented, as well as basic frequency analysis (how many times does value Y appear in field X). At the Gateway to Research hackday it became obvious quite quickly that the developers present did not care that much for the ``didYouMean'' key in the results as much as the raw data - and the raw data could only be retrieved through a pagination mechanism. Thus, the otherwise nice feature which helps human users a lot was not used at all as developers tried to page through the GtR API to retrieve a wholesome dataset from it - a question of different priorities. That is why the idea of including facets in the API has been dropped for the moment, as it is best to start from what API clients would actually want - the most basic being just the data - and then trying to find what further features they might want.
+At first, both the HTML user interface and the API were going to use this concept. However, faceted search is actually good for semistructured data because human minds are good at processing it. That is, as long as the data is analysed on the fly and  common fields and values are presented, as well as basic frequency analysis (how many times does value Y appear in field X). At the Gateway to Research hackday it became obvious quite quickly that the developers present did not care that much for the ``didYouMean'' key in the results as much as the raw data - and the raw data could only be retrieved through a pagination mechanism. Thus, the otherwise nice feature which helps human users a lot was not used at all as developers tried to page through the GtR API to retrieve a wholesome dataset from it - a question of different priorities. That is why the idea of including facets in the API has been dropped for the moment, as it is best to start from what API clients would actually want - the most basic being just 
+the data - and then trying to find what further features they might want.
 
 ``Facets'' can be thought of as the various ``columns'' of a dataset if it was flattened out into a CSV file or a SQL database table. Each record in the dataset has a some value in each column, and blanks are allowed. The analysis / aggregation of the unique values in a column is called a ``facet''. A (simplified) example of what the data for this project might look like can be seen in Table \ref{tab:facets-example}.
 
@@ -458,7 +511,6 @@ If we choose to construct facets from the Subject and Country fields, they would
 
 Faceted search is often used for semi-structured data when producing an exhaustive classification is difficult since the data available in different records varies and there are many ways to classify it. One example is library catalogues like the ExLibris Primo software \cite{primo}, where the artefacts the user could be looking for vary from journal articles through manuscripts to books, span various fields and are grouped by subject - very much like funding opportunities can be.
 
-%TODO examples here - from fundfind, even from other projects
 
 \section{API}
 \label{design-api}
@@ -479,7 +531,9 @@ Faceted search is often used for semi-structured data when producing an exhausti
 
 The API was implemented by using Flask's capabilities to declare handling of HTTP GET and POST in an easy way, described in \myref{design-web} and by detecting whether the request wants JSON format. If not, the HTML user interface is served.
 
-\subsection{Data format}
+The routes which form the most important parts of the API and which would actually be useful are |/describe_funder|, |/share_fundopp|, |/slugify|, |/suggest| and |/suggest/projects|, described above.
+
+\subsection{Data Format}
   JSON was used as the API's main data format mainly due to interoperability reasons - it is extremely simple and as such has support in most major programming languages. Furthermore, if it assumed that other Open Knowledge-related projects are most likely to use FundFind's API, then the fact that a lot of them are written in Python (as mentioned in \myref{design-rationale}) plays a role. Python has excellent support for JSON through a core library and more importantly, its most popular internal datastructures - dictionaries and lists - resemble JSON perfectly, making it easier to read and ``digest'' for Python programmers.
   
   Furthermore, FundFind uses JSON itself when communicating with its elasticsearch datastore, again via an API, and there was not much reason to introduce another transport medium at this stage of a prototype project.

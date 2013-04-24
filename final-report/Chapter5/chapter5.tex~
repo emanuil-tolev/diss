@@ -9,37 +9,55 @@
 % tests inherited from parent project - none!
 Usually, tests can be inherited alongside features from parent codebases. However, IDFind had no automated tests. This was a factor in some decisions, such as dropping certain features where limited development time is mentioned. A good example is IDFind's Twitter integration mentioned in \myref{design-changes}. Writing any sensible test coverage for an external service \emph{from scratch} would have taken up valuable time which was used for more important features.
 
-All testing except the user testing has been automated (with the exception of the usual develop-test-develop feedback loop). It turned out Test-Driven Development can only be applied when a certain level of knowledge of the target domain and the technology is readily available - otherwise there is simply not enough information about how the application is supposed to function in order to write the tests first. Thus, the conventional development loop was used.
+Most of the tests were manual. User interface testing (with the exception of the usual develop-test-develop feedback loop). It turned out Test-Driven Development can only be applied when a certain level of knowledge of the target domain and the technology is readily available - otherwise there is simply not enough information about how the application is supposed to function in order to write the tests first. Thus, the conventional development loop was used (develop-test).
 
-% pretty much the same content being tested in different ways
-% so have unit and integration tests
-% integration asserted content -> selenium for automated UI testing
-% integration asserted content -> mechanize for automated stress testing
+The Funding Harvest project is not tested automatically in any way. In the event that it actually finds, harvests and submits something to the index, this will be immediately visible on FundFind's user interface, without even reloading the page (as searches are executed after the user types in a query).
 
 \section{Automated Testing}
+Insufficient familiarity with the technologies involved resulted in a lot of time being spent on the exploratory phase of just getting things to work together, or copying a working example and modifying it to suit the project's needs. These are before testability can be achieved, where there is at least basic, but solid, knowledge of the technologies involved, the format of responses, return values etcetera. Furthermore, IDFind left no tests whatsoever.
 
-\subsection{Unit Tests}
-Since IDFind left no tests whatsoever, the most important modules of the system were tested - |core|, |dao|, |importer|. The |web| module was tested sufficiently by the integration tests.
+Thus, it was best to proceed with writing at least some integration tests which would cover all API routes (|/describe_funder|, |/share_fundopp|, |/slugify|, |/suggest| and |/suggest/projects|). These would ensure that what is supposed to be possible for a machine to do (that is why it's an API after all) is actually possible, as well as doubling up as small sample programs on how to the API, what the available routes are, the format of the responses etcetera. Covering these routes also had the side effect of putting 90\% of the code to work, thus greatly increasing the possibility of discovering defects even without unit tests. As automated tests, they are of course repeatable, in the sense that they can showcase regressions in quality just as quickly as unit tests, since they are never supposed to break.
 
-|util| was also tested, although |config| was not due to its nature. It would be pretty obvious if it did not work since the application would not run at all. 
+\subsection{Integration Tests}
+Integration tests were entirely separate from the codebase in the sense that they did not directly import any of the code being tested. They targeted the main API routes (listed above and described in \myref{design-web}) and as such, mostly provided coverage for the otherwise untested |web| module, while also testing whether it would properly call upon everything else in the system, and thus also testing whether everything else would do its job to finally serve appropriate results. The integration tests also test the content negotiation of the API, e.g. whether JSON is being served when requested.
 
-Only |rcuk_esrc| was tested from the Funding Harvest project since it is the only module which contains code beyond placeholder infrastructure (see \myref{design-fundingharvest-base}).
+The tests are quite simple - they take some sample data such as
+\begin{verbatim}
+funder = {
+    "description": "We are a global charitable [...]",
+    "tags": [
+        "healthcare",
+        "medical",
+        "biology",
+        "support open access"
+    ],
+    "owner": "emanuil",
+    "id": "3202f106e8894f08b49eb69d41863e88",
+    "name": "Wellcome Trust",
+    "created": "2013-02-08T10:38:29.273696",
+    "homepage": "http://www.wellcome.ac.uk/",
+    "modified": "2013-02-08T10:38:29.273719",
+    "useful_links": [
+        "http://www.wellcome.ac.uk/About-us/Jobs/[...]"
+    ],
+    "policies":
+    	"http://www.wellcome.ac.uk/About-us/Policy[...]",
+    "interested_in": "primarily healthcare, [...]"
+}
+\end{verbatim}
 
-\subsection{Functional / Integration Tests}
-% automated integration testing - after unit tests have succeeded, tests paths of functionality that use multiple modules
-Integration tests were entirely separate from the codebase in the sense that they did not directly import any of the code being tested. They targeted the API routes described in \myref{design-web} and as such, mostly provided coverage for the otherwise untested |web| module, while also testing whether it would properly call upon everything else in the system to do serve appropriate results. The integration tests also test the API, e.g. whether JSON is being served when requested.
+and HTTP POST it to the API routes. Those should respond with a JSON object with results, and this is checked by the tests. If python's |json| package fails to parse the result, then it is not valid JSON.
+
+After that very basic test is passed, certain values in the response are checked (e.g. whether |/slugify| returns a proper slug). If the test is testing data submission, then the elasticsearch datastore will return an appropriate result containing |"ok": true| and the tests look for this.
 
 \subsection{User Interface Testing}
-User interface testing was performed manually each time the interface was changed. Selenium IDE \cite{selenium} could be used to automate this testing, but testing the Javascript part (i.e. facetview) would require a quarter of the hours allocated to the software development part of this project in the first place, even if only due to lack of familiarity with the Selenium framework.
+User interface testing was performed manually each time the interface was changed. Selenium IDE \cite{selenium} could be used to automate this testing, but testing the Javascript part (i.e. facetview) would require a quarter of the hours allocated to the software development part of this project in the first place, even if only due to lack of familiarity with the Selenium framework. facetview does not come with any tests whatsoever.
 
 \subsection{Stress Testing}
 Stress testing could be done using the multi-mechanize \cite{multi-mechanize} suite. However, time constraints and the low priority of such tests preclude this for the moment, although the suite was investigated.
 
-%\subsection{Other types of testing}
-
-%\section{User Testing}
-% TODO WORK tested with candidate PG-s, PG-s, Postdocs, Lecturers, Developers
-
 \section{Responsive Mobile Web Design}
 \label{testing-mobile}
 The application was not tested on different devices, but relied on the Bootstrap framework to perform as expected of such a popular user interface framework, which it will probably do better than the less-than-experienced in responsive web design author. It was tested on a 2013 HTC Desire X device running the latest version of mobile Firefox. The device has a 4in. screen and runs a relatively recent version of the Android mobile operating system - 4.0, and is as such not particularly representative of the mobile device market.
+
+Because of that, the application was also tested using a free service called ``MobileTest.me'' \cite{mobiletestme}, which essentially does little but simulate different screen sizes (as well a few other minor tweaks). This is enough to trigger the responsive design built using Bootstrap however, and several deficiencies in the mobile user interface were caught this way, before performing a final test on the developer's personal mobile device.

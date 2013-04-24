@@ -7,19 +7,15 @@
 %review the relevant literature and any similar existing systems;
 
 \section{The Project}
+\label{intro-project}
 This project is about learning to deal with the field of funding in modern scholarship\footnote{A note on ``scholarship'' - the word and its derivatives are used throughout this text to mean all types of academic work, due to ``science'' being sometimes perceived as exclusionary to the Arts and Humanities fields.} and exploring how it could be opened up, from the point of view of a software developer. It is set within the context of the Open Knowledge field and seeks to add to this field by exploring how scholarly funding can be made more transparent and easier to find for all interested parties.
 
-The main vehicle of learning and main software output is an open-source web application named ``FundFind''. It's a simple crowdsourcing application which allows registered users to share information about funding opportunities under open\footnote{The Open Definition defines ``open'' well \cite{od}.} terms. Access to submitted information includes a machine-friendly API (Application Programmable Interface). % TODO explain how this makes it compliant with the Open Definition principles ...
+The main vehicle of learning and main software output is an open-source web application named ``FundFind''. It's a simple crowdsourcing application which allows registered users to share information about funding opportunities under open\footnote{The Open Definition defines ``open'' well \cite{od}.} terms. Its source code is available at \cite{fundfind-src}. Access to submitted information includes a machine-friendly API (Application Programmable Interface).
 
-% TODO make clear in FundFind UI and here that contributions are licensed under the same as SO.
-% then include another footnote in sentence above mentioning exact license chosen - or better put it in the text, it's important!
-% maybe put it in the Licensing section at the end of the chapter.
-
-One of the project features - getting funding data into the datastore - was developed as a separate technical project due to natural low coupling between the main application and this feature. It is called ``Funding Harvest'' \cite{funding-harvest}.
-
-% TODO open up the source code repos for fundfind and funding harvest and cite them here.
+One of the project features - getting funding data into the datastore - was developed as a separate technical project due to natural low coupling between the main application and this feature. It is called ``Funding Harvest''. Its source code repository is publicly available at \cite{fundingharvest-src}.
 
 \section{Project Aims}
+\label{intro-aims}
 \begin{itemize}
  \item Learn more about the funding sector and identify user requirements within it. Results presented in \myref{audience} and more concretely in \myref{devprocess-requirements}. The data must be sufficient to enable the creation of a project roadmap for
     \begin{enumerate}[a)]
@@ -27,7 +23,6 @@ One of the project features - getting funding data into the datastore - was deve
     \item concrete development work which would enhance the software built during this project
     \end{enumerate}
   The foundations for this are laid in in \myref{future-work}.
-  % TODO should I have some outputs which ``distill'' this knowledge? Like a blog post on the CL website, or publish a list of the features or the progression of FundFind features, or just a blog post about FundFind dev process?
   
  \item Identify how much software it is possible to build by essentially starting and seeing how far it goes in a controlled fashion. The author's own initial lack of domain knowledge about field and technical skill level mean than a fixed feature list is hardly possible. However the progression of features and the final ``shape'' of the FundFind software is discussed in \myref{devprocess-requirements}.
 \end{itemize}
@@ -41,7 +36,7 @@ Postgraduate-level scholars (candidates, postgraduates, post-doctoral researcher
 
 The quintessential problem is that the information about available funding is published in many different places. Usually each funding organisation publishes its own calls for proposals and announces its own studentships on its own website(s) and mailing list(s).
 
-Keeping up with these sources of information becomes quite difficult - so much so, that it takes a significant portion of research development officers' time. Worse still, this is a significant barrier for those looking into a career in academia - the fragmented information can make it difficult to build a mental picture of what the funding in one's chosen field ``looks like''. This leads to a feeling of opaqueness instead of transparency and being overwhelmed - instead of having a clear idea of what it takes to succeed in a chosen field. Sometimes it even leads to accusations of cronyism in distributing funding (private conversation as well as \cite{cronyism1, cronyism2}).
+Keeping up with these sources of information becomes quite difficult - so much so, that it takes a significant portion of research development officers' time. Worse still, this is a significant barrier for those looking into a career in academia - the fragmented information can make it difficult to build a mental picture of what the funding in one's chosen field ``looks like''. This leads to a feeling of opaqueness instead of transparency and being overwhelmed - instead of having a clear idea of what it takes to succeed in a chosen field. Sometimes it even leads to accusations of cronyism in distributing funding (e.g. \cite{cronyism1}).
 
 Furthermore, if this process is that difficult for person working in a specific country, then it can easily be estimated that globalisation of scholarship and scholars' mobility is hindered as well.
 
@@ -53,7 +48,7 @@ However, there is still no mechanism of getting \emph{federated, present, curren
 
 Something which allows searching the (vastly) different, \emph{currently available} streams of funding within academia was thus identified as potentially useful by various people interested in the subject.
 
-\subsection{The value of Openness in scholarship and elsewhere}
+\subsection{The Value of Openness in Scholarship and Elsewhere}
 The Free Software, Open Source and more recently, Open Knowledge (which Open Access is a part of) movements have all demonstrated that the value of information can be greatly multiplied simply by having more people access it, reuse it and even be creative with it (e.g. visualise or summarise). The Open Knowledge Foundation argues this \cite{okfn-vision}. Seminal works like ``The Cathedral and the Bazaar'' \cite{catb} have also argued this.
 
 Governments seem to have grasped the benefits as well. The UK Government has mandated that all research funded with public money (which is a lot in the UK - almost everything through the seven Research Councils) should be published as Open Access by 2014 \cite{guardian-ukgov-oa2014}. It has also funded initiatives such as Open UK governmental data in the form of data.gov.uk \cite{open-uk-gov-data} and the recent Finch report \cite{guardian-finch} \cite{finch}.
@@ -71,17 +66,15 @@ In practice, when applied to scholarly output such as publications, these have b
 
 Private organisations are not far behind and may in fact be leading the way - one of the largest funders of science in the UK and around the world, the Wellcome Trust, has had a progressive and strict Open Access policy since 2006 \cite{wellcome-oa}.
 
-\section{Audience and high-level requirements}
+\section{Audience and High-Level Requirements}
 \label{audience}
-% TODO ADD VALUE PROPOSITION SECTION - 1. same info as elsewhere BUT time saving; 2. not LACKING any expected features; 3. additional features
-% TODO add which funders were considered and why those - maybe just arbitrary, just to get the app working..
 The potential audience of this project was discovered to be quite varied. It seems multiple stakeholders stand to benefit from more transparent scholarly funding dissemination.
 
 The requirements or potential uses that these users might want to put FundFind to are closely tied to the benefits that come with opening up funding data.
 
-\subsection{Professionals Looking For Funding Group}
+\subsection{Professionals Looking for Funding Group}
 \label{audience-professionals}
-\subsubsection{Accomplished scholars}
+\subsubsection{Accomplished Scholars}
 \begin{itemize}
  \item \textbf{Who}: Academics - lecturers, professors
  \item \textbf{Aims}: Wish to fund future projects
@@ -96,7 +89,7 @@ The requirements or potential uses that these users might want to put FundFind t
  \item \textbf{Benefits from opening up funding data}: (More) easily find and compare funding sources
  \item \textbf{Possible requirements from FundFind}: Find funding. To quote a postgraduate candidate: ``I want to do a taught MSc in Astrophysics but I can't afford to self fund. Where can I go and who will pay me?''
  
- Share funding information with peers (e.g. if a canididate for a Computer Vision PhD finds a good PhD studentship call for applications in Bioinformatics, they may well want to forward it to a colleague).
+ Share funding information with peers (e.g. if a candidate for a Computer Vision PhD finds a good PhD studentship call for applications in Bioinformatics, they may well want to forward it to a colleague).
 \end{itemize}
 
 \subsubsection{Research Development Officers}
@@ -118,7 +111,7 @@ The needs of this group are estimated since funders were not engaged as users at
 \begin{itemize}
  \item \textbf{Who}: Main way of allocating \emph{public} scholarly funding in the United Kingdom.
  \item \textbf{Aims}: Wish to attract the best scholars in their own field, but also look to establish new cross-disciplinary  projects.
- \item \textbf{Benefits from opening up funding data}: Already committed to opening up historical funding data (e.g. Gateway to Research project \cite{rcuk-on-gtr}), would like to advertise current funding data more widely. The benefits are widening impact and incresing the inter- and intra-field interconnectedness of scholarship (scholars can learn about interesting funded projects and people that they didn't know about).
+ \item \textbf{Benefits from opening up funding data}: Already committed to opening up historical funding data (e.g. Gateway to Research project \cite{rcuk-on-gtr}), would like to advertise current funding data more widely. The benefits are widening impact and increasing the inter- and intra-field interconnectedness of scholarship (scholars can learn about interesting funded projects and people that they didn't know about).
  \item \textbf{Possible requirements from FundFind}: Mostly just search and upload of information. In particular: search for submitted items related to their institution. Bulk upload of opportunities. Control over the ``funder'' profile related to them.
 \end{itemize}
 
@@ -149,11 +142,11 @@ The needs of this group are estimated since funders were not engaged as users at
  \item \textbf{Possible requirements from FundFind}: Same as RCUK.
 \end{itemize}
 
-\subsection{Analyst group}
+\subsection{Analyst Group}
 \label{audience-analyst}
 Those looking to analyse scholarly funding - how it is allocated and/or spent.
 
-A hackday in the middle of March which focussed on the Gateway to Research project provided insight into the usefulness of certain initially planned features and inspired new ideas. The main audience of the hackday was this group. The GtR is an attempt to get the seven UK Research councils to publish historical funding data - who got funded, grant codes, who worked with whom, any related publications \cite{gtr}, etcetera via a web interface and a RESTful API. GtR is quite similar to FundFind, except that it relates to \emph{historical}, not current funding information, and of course contains a lot more information than FundFind is currently scoped to hold.
+A hackday in the middle of March which focused on the Gateway to Research project provided insight into the usefulness of certain initially planned features and inspired new ideas. The main audience of the hackday was this group. The GtR is an attempt to get the seven UK Research councils to publish historical funding data - who got funded, grant codes, who worked with whom, any related publications \cite{gtr}, etcetera via a web interface and a RESTful API. GtR is quite similar to FundFind, except that it relates to \emph{historical}, not current funding information, and of course contains a lot more information than FundFind is currently scoped to hold.
 
 \begin{itemize}
  \item \textbf{Who}: Software developers, journalists and others interested in Open Knowledge and visualising data for the purposes of transparency or advancing the digital economy \cite{okfn-vision} The author is included in this group. Other interested parties are analysts, bloggers and the general public.
@@ -164,7 +157,7 @@ A hackday in the middle of March which focussed on the Gateway to Research proje
 
 There is another group which belongs here - politicians. They may wish to demonstrate accountability and good decision making. Despite the fact that they are not usually known to readily embrace new technological solutions, they do do it when the advantages (at least from a Public Relations perspective, if no other) become clear. For example, the UK government more or less suddenly embraced Open Access for all publicly funded research \cite{guardian-ukgov-oa2014}.
 
-\subsection{Focusing on certain audience groups}
+\subsection{Focusing on Certain Audience Groups}
 \label{focus-groups}
 Satisfying the requirements of all user groups is more suitable for a larger, better-resourced project than this one.
 
@@ -176,18 +169,22 @@ In addition to the The Open Knowledge Foundation \cite{okfn-vision}, to whom the
 
 \section{Existing works}
 \label{existing-works}
-There is still (as opposed to the start of the project) no single piece or combination of pieces of software which enables involved stakeholders to do what this project would allow them to do upon completion, to the best of the author's knowledge.
+There is no single piece or combination of pieces of software which enables the identified audience to do what this project would allow them to do upon completion, to the best of the author's knowledge.
 
 Related Open Knowledge projects are still as relevant as at the beginning of the project, in particular the Open Knowledge Foundation ones at \cite{okfn-labs} and \cite{okfn-github}. \myref{design-rationale} notes individual projects which informed FundFind's technical design in some way.
 
 The FundFind codebase was initially based entirely on the IDFind project \cite{idfind}, which is available under the MIT license \cite{idfind-src}. Cottage Labs LLP and the author started it during the DevXS 2011 conference \cite{devxs}. IDFind was a good place to start, since the project's context (Open Knowledge, interested parties) is similar, so a similar set up and technologies could be used to accelerate the initial development.
 
 \section{Licensing}
-% add IDFind's licensing status history here (bibserver's 2 copies, our copy MIT -> IDFind MIT April 2013 -> FundFind MIT April 2013), alluded to in \S\ref{pm-tools}
 
-FundFind is licensed under the MIT license, like its parent IDFind. This is a permissive license which should facilitate the widest possible use and reuse of code. Moreover, there is little reason to place particular restrictions since the target Open Knowledge / Funding fields are narrow enough and there isn't really any open-source software which sits at the intersection of the two.% TODO why?
+FundFind is licensed under the MIT license, like its parent IDFind. This is a permissive license which should facilitate the widest possible use and reuse of code. Moreover, there is little reason to place particular restrictions since the target Open Knowledge / Funding fields are narrow enough and there isn't really any open-source software which sits at the intersection of the two.
 
-% IDFind - MIT
-% Code and ideas contribution paths
-% Bibserver -> IDFind -> FundFind
-% Bibserver -> FundFind (since Bibserver updated after IDFind made and changes not ported over yet)
+\subsection{Contributions}
+
+Contributions through FundFind's user interface (crowdsourcing) are licensed under the Creative Commons Attribution (CC-BY) \cite{cc-by-3} license, version 3.0 (latest at time of writing). This was chosen after considering a multitude of other licenses. In the end, the new Budapest Open Access Initiative recommendations and the Open Definition \cite{od} recommending CC-BY informed the choice.
+
+This license only applies to publicly visible (shared with the world) submissions. For now, it is not possible to share funding information only with certain users or groups - therefore, the license applies to all crowdsourced contributions. Proper access control was too costly to implement in light of more important / core features which would enable the system to at least act as a prototype for completely open sharing, before moving on to the more complex role of a virtual shelf of funding opportunities.
+
+The contributions license does not apply to data which has been harvested from data sources (like funders' websites or RSS feeds) automatically. The owners of the data would have to give written consent for Funding Harvest to harvest their data and publish it as CC-BY (or, better and more likely - publish it as CC-BY themselves). Funding Harvest is only a tool which, in combination with FundFind, is meant to showcase the benefits of having funding data open, thus convincing data sources to publish data more openly. It is not a tool to infringe on the copyrights of others, although it can be used as such. This is true of any software which does page scraping or even just consumes and records RSS feeds.
+
+Most records in FundFind's datastore denote the license they can be used under. If a record does not have a |license| field (user accounts do not, for example), then the default (restrictive) copyright rules apply to that data.

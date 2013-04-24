@@ -6,25 +6,95 @@
 
 % working within context of other projects, have to keep conventions in mind, although better ways of doing things always welcome
 
-Instead of going through the minute details of how the architecture described in \myref{design} is implemented, this chapter will focus on how the functionality for the final software features was achieved. One common topic - datastore interaction - is tackled first.
+Instead of going through the minute details of how the architecture described in Chapter \ref{design} is implemented, this chapter will focus on how the functionality for the final software features was achieved. Common topics are tackled first: a lower-level overview of the applications' architecture and interaction with the datastore.
 
-% TODO note which libraries / parent code turned out to not be so suitable
+\section{Overview of the Applications}
+\subsection{FundFind}
+\begin{verbatim}
+|-- config.py
+|-- core.py
+|-- dao.py
+|-- default_settings.py
+|-- importer.py
+|-- __init__.py
+|-- static
+|   |-- css
+|   |   |-- fundfind.css
+|   |-- js
+|       |-- fundfind.js
+|   |-- vendor
+|       |-- bootstrap-2.0.0
+|       |-- facetview
+|       |-- jquery-ui-1.8.18.custom
+|       |-- linkify
+|-- suggest
+|   |-- gtr.py
+|   |-- __init__.py
+|-- templates
+|   |-- account
+|   |   |-- login.html
+|   |   |-- register.html
+|   |   |-- view.html
+|   |-- base.html
+|   |-- describe_funder.html
+|   |-- facetview.html
+|   |-- _formhelpers.html
+|   |-- home
+|   |   |-- content.html
+|   |   |-- index.html
+|   |-- search.html
+|   |-- share_fundopp.html
+|-- util.py
+|-- view
+|   |-- account.py
+|   |-- __init__.py
+|-- web.py
+\end{verbatim}
 
-\section{Datastore access}
+The |.py| files at the root are python code files. |__init__.py| makes directories into actual Python packages (see \myref{organising-code-python}). Modules in Python assume the name of the Python file without the |.py| extension, so |web.py| is, by definition, the |web| described in \myref{design-web}. These files contain the code which integrates together the third-party code listed in Appendix \ref{third-party} to achieve all of FundFind's functionality.
+
+The |web| module uses the Flask web framework templating capabilities to load the files under the |templates| directory when the routes listed in \myref{design-web} are requested by a browser in HTML format (the templates are not used when building JSON responses for the machine-friendly API). |base.html| is referenced by every other template file and includes the Bootstrap, jQuery and jQuery UI web user interface libraries, as well as FundFind-specific CSS styles and Javascript functionality from |static/css/fundfind.css| and |static/js/fundfind.js|. The templates are written in the Jinja2 templating language \cite{jinja2}, a flexible templating engine which comes bundled with Flask.
+
+|static/vendor/| contains \emph{all} non-Python third-party code - everything listed in Appendix \ref{third-party} as used by FundFind which is \emph{not} a Python package (the Appendix specifies this). This neat separation of code is actually just a convention used by Flask-based web applications. The reason Python packages are excluded is because they are supposed to be installed elsewhere in the system, so that they are usable by all Python software on a system, not just this application. In practice, this works a bit differently and packages are often bundled with their applications to ensure that only the intended version is used, but they are nonetheless not contained within the application's source directory, but in a ``virtual environment'' which also contains the application's source directory. There is no chance of confusing third-party Python code with the application's code since none of it is actually present in the application's directory - the application modules |import| packages that they 
+need to use (usually at the top of the file) and then just call the appropriate functions.
+
+Python does support a way of renaming imported functionality to more convenient names and importing only parts of third-party code (e.g. a single class or function from a whole module). In that case, it is not necessary to prefix the call to the third-party code with the third-party package name. For example:
+
+|from json import loads| at the top of the file will allow use of
+\\|loads(turn_this_string_into_json)| 
+\\anywhere in the code of that module. FundFind imports its own modules from the main |fundfind| package in a similar manner, so that it does not have to say
+\\|fundfind.some_module.some_function()| 
+\\everywhere but just |some_module.some_function|. This is not used to obfuscate any third-party functionality and present it as FundFind's anywhere in the code, and |from|-style import statements which refer to third-party code are all located at the top of their respective modules, to avoid any chance of confusion. (They may be used inline for better readability, but only for FundFind's own modules.)
+
+\subsection{Funding Harvest}
+\begin{verbatim}
+|-- base.py
+|-- config.py
+|-- dao.py
+|-- __init__.py
+|-- rss.py
+|-- rcuk_esrc.py
+\end{verbatim}
+
+Since this application only has a command-line user interface (the |base| module serves as the runnable entry point), it does not include web UI libraries. It does use some third-party Python packages and built-in Python packages, described in Appendix \ref{third-party}, but calls to these are quite obvious, as discussed above.
+
+
+\section{Datastore Access}
+\label{impl-datastore}
 The |dao| module merits further discussion.
 
 When the |upsert| method generates |id|s for the incoming data, it currently simply generates UUID4 (random unique identifiers). \myref{design-dao} uses |Account| to illustrate the point that |id| generation could be overridden on a per-DAO-class basis. In the case of |Account| they will actually usually be specified (the users choose a username and that is used as the |id|), so a random number will \emph{not} be generated.
 
-% TODO pyes
+The |pyes| library was used in the |dao| module to access the elasticsearch datastore. It converts the datastore's HTTP responses into Python objects, providing native shortcuts to the rather extensive elasticsearch API. It also does this for the opposite FundFind / Funding Harvest use it for their submissions to elasticsearch.
 
-\section{Implementing The Main Application}
+\section{Implementing the Main Application}
 
 \subsection{The Basics}
 \label{impl-hard-basics}
 
 The one crowdsourcing basic function which has to be present in a project which hopes to get any input from its audience is submission of information. One step further is allowing users to view the submitted content. These were thought to be quite easy to achieve at the beginning of the project, which turned out to be possibly the greatest miscalculation in the whole piece of work.
 
-\subsubsection{Search For Scholarly Funding Opportunities}
+\subsubsection{Search for Scholarly Funding Opportunities}
 \label{impl-facetview}
 \label{impl-search}
 The combined search/view page is an important part of the user interface, allowing the user to drill down through (potentially) a lot of semistructured data to find what they want.
@@ -33,12 +103,9 @@ The facetview project is a pure Javascript faceted search interface to elasticse
 
 In the case of this page, the effort was mostly configuring facetview to show all the fields the data had and surround the content of those fields with appropriate formatting. For example, the name of the field (e.g. ``Homepage'') would be underlined in contrast to the content of the field. Fields also (usually) need to sit on separate lines and facetview had to be configured to put them in separate |<div>|s since these are block HTML elements.
 
-By default facetview would query absolutely everything in the index, which meant that user accounts were showing up together with funding opportunities and funders. On the other hand, restricting it to show only one document type would not work either, since both funders and funding opportunities are of interest to the users (who can then refine the results they are seeing). This also meant that a default type had to be chosen, since testing showed that showing both result types, while technically possible, was confusing for users. Funders are now shown by default just due to the testing data for funders being of higher quality than funding opportunities and demonstrating facetview's capabilities better. This default required a more intuitive way of switching the document types being shown than ``click on Funders to deactivate the filter, then click on the other one to activate that'' - two specific buttons now take care of switching to either document type.
-%TODO include screenshot of buttons here
+By default facetview would query absolutely everything in the index, which meant that user accounts were showing up together with funding opportunities and funders. On the other hand, restricting it to show only one document type would not work either, since both funders and funding opportunities are of interest to the users (who can then refine the results they are seeing). Thus, a particular facetview option was used - predefined filters. This filters the results to just funders and funding opportunities (and the user is free to then further filter them to just one of these types).
 
-%TODO describe how facetview is configured
-
-%TODO describe how searches can be shared just by copying the url of the search page here
+One neat feature of facetview, developed recently at the Gateway to Research hackday, was that of being able to share a search simply by copying the URL of the search page. When a search is executed (every time the user stops typing in the search box), the URL of the page changes to include the user's query. Sharing information for a funder and related opportunities can thus be done just by typing in the name, e.g. ``wellcome trust'' 
 
 On top of the configuration, there was a significant problem with actually using facetview in the fundfind codebase. The parent IDFind codebase was still using an older version (1.3) of the Bootstrap HTML user interface library. Facetview was using an incompatible 2.x version. This was known before the mid-project demonstration, but took so long to fix that the search page had to be demonstrated using an iframe (embedding another page inside it), which is a big no-no in the modern user experience field. (One explanation puts it really well: ``They break the one-document-per-URL paradigm, which is essential for the proper functioning of the web (think bookmarks, deep-links, search engines, ...).'' \cite{iframe-evil}.)
 
@@ -73,36 +140,43 @@ which promptly answers with something similar to:
 
 This lists all the properties that all documents submitted to the |fundfind| index have had and how they were analysed (e.g. date versus string), grouped by document type. Not all documents need to have all the properties of course - this is just a list of all the properties that elasticsearch has had to analyse. Which is all that is necessary for configuring facetview, since it can deal with semistructured data with missing fields in it just like the datastore can.
 
-jQuery was used to create the ``add more'' buttons on the information submission pages. Adding more useful links adds more text input fields, while adding more tags extends the tags input field. Processing the extra |useful_links| in the |importer| module was an interesting challenge - at first, new elements created using jQuery were given numbers at the end of their names, like |useful_link1|, |useful_link2| and so on. The back-end code then iterated through a loop a 100 times, trying to get content from these elements (which would of course break if anybody ever submitted more than 100 useful links - it would discard everything above a 100). Then it turned out it is possible to declare the |input| element's name attribute as follows: |name="useful_links[]| (note the square brackets). Apparently, this is supposed to signal to the web server that this is an incoming list of values. So Flask's underlying webserver, Werkzeug, provided the |getlist()| function on the HTTP request object, to deal with this situation.
+jQuery was used to create the ``add more'' buttons on the information submission pages. Adding more useful links adds more text input fields, while adding more tags extends the tags input field. Processing the extra |useful_links| in the |importer| module was an interesting challenge - at first, new elements created using jQuery were given numbers at the end of their names, like |useful_link1|, |useful_link2| and so on. The back-end code then iterated through a loop a 100 times, trying to get content from these elements (which would of course break if anybody ever submitted more than 100 useful links - it would discard everything above a 100). Then it turned out it is possible to declare the |input| element's name attribute as follows: |name="useful_links[]| (note the square brackets). Apparently, this is supposed to signal to the web server that this is an incoming list of values. So Flask's underlying webserver, Werkzeug, provided the |getlist()| function on the HTTP request object, to deal with this 
+situation.
 
 FundFind does |request.values.getlist('useful_links[]')| and then iterates over the Python list this returns in a conventional Python way |for link in list|, instead of using integers on a list of an unknown size. It should be noted this feature did not change much in FundFind, although it was written by the same author for the parent IDFind project.
 
 \subsubsection{Create Profiles}
 \label{impl-profiles}
 % chapter 3 says 	\item |password| - a hash of the user's password. See \myref{impl-profiles} for more details.
-Profiles are handled almost entirely by the Flask-Login extension, except for registation of accounts. \cite{flask-login}
+Profiles are handled almost entirely by the Flask-Login extension, except for registration of accounts. \cite{flask-login}
 
 This uses the Flask views described in \myref{design-web}, Flask blueprints and WTForms to create several actions - registering a user, logging in and logging out. Flask blueprints are a way of sharing common operations, such as rendering a particular template and processing a particular form - if another application wanted to use FundFind's user registration form, it would just need the blueprint file and would need to call |app.register_blueprint()| in their equivalent of the |web| module.
 
 \subsection{Advanced Features}
 
 \subsubsection{Harvest Funding Data From Machine-Readable Sources}
-%TODO this is pure fucking fiction, fix it after doing the work!
-This was implemented using the Feedparser \cite{feedparser} library. After loading the feeds, some mapping of keys was done, e.g. ``name'' was renamed to ``title''. Unknown keys were left as they are and saved alongside the other keys, so that searching would catch them and more importantly, so that data would not be lost. This makes this RSS harvester design somewhat more futureproof than usual, i.e. if the data sources decide to add values to the data the new information would be indexed anyway. It would not display in the search results with the current facetview configuration (having to specify how to display fields explicitly) but if that were upgraded, RSS feeds could simply be chucked into the system with little more than conversion to JSON.
+This was implemented using the Feedparser \cite{feedparser} library. After loading the feeds, a result object (just a dictionary of key-value pairs) is built up from the feed data and some mapping of keys is done, e.g. ``name'' gets renamed to ``title''.
 
 Feedparser behaved quite well, following the Python convention of ``it just works'' i.e. sensible default settings out of the box and supporting the widest possible range of inputs (feed formats like RSS, Atom etc. in this case). Its documentation does contain a pretty ominous sentence:
 
 \begin{shadequote}
-Values are returned as Python Unicode strings (except when they?re not ? see Character Encoding Detection for all the gory details).
+Values are returned as Python Unicode strings (except when they're not - see Character Encoding Detection for all the gory details).
 \par\emph{Feedparser documentation \cite{feedparser-ominous}}
 \end{shadequote}
 
-\subsubsection{Tagging}
-Both ``Tagging Research as "Potentially of Interest to" Users And Groups'' and ``Specify Affiliation and Interests'' fall under this category. These were actually pretty easy - all that was necessary was to let users put in a comma-separated string. The string was then parsed and cleaned up, first by chunking it up into a list using Python's |.split(",")|  string method and the |importer.Importer._clean_list| method described in \myref{design-importer}. The ``add more'' button on the interface was added as described above in \myref{impl-submitting}.
+The implications of this have not been considered due to time constraints and Funding Harvest itself does not care about the values, but the pyes library it is using to connect to the datastore might actually mind.
 
-\subsubsection{Responsive Mobile Web Design}
+\subsubsection{Tagging}
+Both ``Tagging Research as "Potentially of Interest to" Users And Groups'' and ``Specify Affiliation and Interests'' fall under this category. These were actually pretty easy - all that was necessary was to let users put in a comma-separated string. The string was then parsed and cleaned up, first by chunking it up into a list using Python's |.split(",")|  string method and the |util.clean_list()| method described in \myref{design-importer}. The ``add more'' button on the interface was added as described above in \myref{impl-submitting}.
+
+\subsubsection{User Interface And Responsive Mobile Web Design}
 \label{impl-mobile}
-This was done in a very simple way - sticking to using Bootstrap 2.3, the newest (at the time) version of Twitter's Bootstrap library even though it caused the major upgrade pains described above, and using its mobile-friendly version (so a question of loading the right files). Luckily, the the Flask-Bootstrap \cite{flask-bootstrap} extension was discovered before \emph{too} much time was spent just to get it to load in the right place. Apparently, one is supposed to put Javascript components at the bottom of the HTML page, so the rest of the content can load - if they are in |<head>| the browser \emph{must} use blocking, synchronous loading and wait for them to arrive before doing anything else.
+\label{impl-ui}
+Initially, this was done in a very simple way - just using Bootstrap 1.3, an old version of Twitter's Bootstrap library. The major upgrade pains described above were essentially integration difficulties between facetview and the old IDFind user interface, caused precisely by the age of the version of this library.
+
+Thus, it was upgraded to Bootstrap 2.3 and a the old IDFind HTML templates were changed, with the hope of simply using its mobile-friendly version (so a question of loading the right files). The Flask-Bootstrap extension was used, with the goal of encapsulating best practice when it comes to structuring the HTML pages (the developer is supposed to inherit from its templates). Apparently, one is supposed to put Javascript components at the bottom of the HTML page, so the rest of the content can load - if they are in |<head>| the browser \emph{must} use blocking, synchronous loading and wait for them to arrive before doing anything else.
+
+However, Bootstrap 2.3 broke facetview's layout. It's usually a simple fix, but in this case the HTML of the search box, options, filters and so on is actually generated inside facetview itself, which is pure Javascript and jQuery (a Javascript library). It is also one big file, so it was quite difficult to find out where the layout generation was actually being done. It turned out to be easier to \emph{downgrade} Bootstrap to version 2.0.1, which what facetview has been using for the past 9 months or so. Luckily, this did not break FundFind Bootstrap v.2.3-compatible layout, and all the pages finally worked (including on mobiles). However, Flask-Bootstrap did not have a release for Bootstrap 2.0.1, so it was stripped out, and Bootstrap was included manually in the |<head>| of |base.html| (so in all pages).
 
 \subsubsection{RESTful API}
 \label{impl-api}
@@ -111,15 +185,18 @@ FundFind detects whether the request wants a JSON API response or the HTML user 
 
 \subsubsection{Suggesting Relevant Historical Data}
 
-Coded as pure Javascript since all that is really needed is an AJAX call to the Gateway to Research API, which will happily return JSON. The |GTRConsumer| class uses HTTP GET requests to communicate with the Gateway to Research API. Its |suggest| method just uses the API's |/search| HTTP GET route to look for projects which contain the user's query to FundFind.
+This was going to be coded as pure Javascript since all that is really needed is an AJAX call to the Gateway to Research API, which will happily return JSON. However, one important characteristic of AJAX was overlooked - cross-domain requests are not allowed. The browser simply would not make the AJAX call to |gtr.rcuk.ac.uk| from |localhost| or even
+\\|fundfind.cottagelabs.com|, 
+\\for very good and widely accepted security reasons.
+
+Thus, a server-side |suggest| package and a |gtr| module became necessary.
+
+The |GTRConsumer| class uses HTTP GET requests to communicate with the Gateway to Research API. Its |suggest| method just uses the API's |/search| HTTP GET route to look for projects which contain the user's query to FundFind.
 
 It does not currently process the query in any way, just asks the GtR API to give it back everything it thinks contains a particular string. The GtR API may actually do clever processing and include ``similar results'' in the resultset - it does not currently do that, but is in active development and may well change.
 
-% \subsection{The Dropped Features}
-% % TODO add all the dropped features from chapter 2, Initial Requirements here
-% The decision to drop some features came after some design and exploratory technical work had been done.
-% 
-% \subsubsection{Harvesting Funding Data From E-mail Digests}
-% \label{impl-email-parse}
-% % chap2 says It is far easier to process RSS feeds such as the EPSRC Open Calls RSS Feed \cite{epsrc-rss} than it was to process the EPSRC Funding Call E-mail Alerts, as discussed in \myref{impl-email-parse}.
-%fundfind.email.harvester@gmail.com
+%TODO exactly what do files do, where's the 3rd party, where's the parent code, where's the glue code and an overview of what it does!
+%\section{Overview of technical outputs and third party code}
+%Those should have already been mentioned in the text of chapter 3, not entirely sure how to proceed about splitting the code in ``own'' and ``based on third-party code''. It's all based on third-party code. The code itself basically lets information flow between the different layers and brings together components from these libraries to do this specific job, creating a couple of submission pages and one search/view page. That's one of the main unspoken tenets in web development nowadays - somebody somewhere has done it better, don't reinvent the wheel unless you're specifically learning how the wheel works...
+%\subsection{FundFind}
+%\subsection{Funding Harvest}

@@ -1,4 +1,5 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertation.aux
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: cover.aux
 A level-1 auxiliary file: declaration.aux
 A level-1 auxiliary file: acknowledgements.aux
@@ -10,60 +11,53 @@ A level-1 auxiliary file: Chapter4/chapter4.aux
 A level-1 auxiliary file: Chapter5/chapter5.aux
 A level-1 auxiliary file: Chapter6/chapter6.aux
 A level-1 auxiliary file: Appendix1/appendix1.aux
-A level-1 auxiliary file: Appendix2/appendix2.aux
-A level-1 auxiliary file: Appendix3/appendix3.aux
 The style file: IEEEannot.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 472446405560.
 Database file #1: References/references.bib
-Warning--I didn't find a database entry for "progress-report"
-Warning--I didn't find a database entry for "funding-harvest-src"
-Warning--I didn't find a database entry for "cronyism1"
-Warning--I didn't find a database entry for "cronyism2"
-Warning--I didn't find a database entry for "gtr"
-Warning--I didn't find a database entry for "agile-estimate"
-Warning--I didn't find a database entry for "acat"
-Warning--I didn't find a database entry for "nomenklatura"
-Warning--I didn't find a database entry for "offenesparlament"
-Warning--I didn't find a database entry for "pybossa"
-Warning--I didn't find a database entry for "activityapi"
-Warning--I didn't find a database entry for "leaps"
-Warning--I didn't find a database entry for "portality"
-Warning--I didn't find a database entry for "iioa"
-Warning--I didn't find a database entry for "artemis"
-Warning--I didn't find a database entry for "cl-web-code"
-Warning--I didn't find a database entry for "xcri"
-Warning--I didn't find a database entry for "negotiator"
-Warning--I didn't find a database entry for "advantages-apis"
-Warning--I didn't find a database entry for "python-doc-modules"
-Warning--I didn't find a database entry for "mysql"
-Warning--I didn't find a database entry for "oracle"
-Warning--I didn't find a database entry for "es-dateformat"
-Warning--I didn't find a database entry for "oag-api"
-Warning--I didn't find a database entry for "flask-foreword"
-Warning--I didn't find a database entry for "esrc-rss"
-Warning--I didn't find a database entry for "epsrc-example"
-Warning--I didn't find a database entry for "wellcome-example"
-Warning--I didn't find a database entry for "jquery-ui"
-Warning--I didn't find a database entry for "iframe-evil"
-Warning--I didn't find a database entry for "wtforms"
-Warning--I didn't find a database entry for "flask-login"
-Warning--I didn't find a database entry for "feedparser"
-Warning--I didn't find a database entry for "flask-bootstrap"
-Warning--I didn't find a database entry for "multi-mechanize"
-Warning--I didn't find a database entry for "cl-emanuil"
-Warning--I didn't find a database entry for "graphview"
-Warning--I didn't find a database entry for "oag"
-Warning--I didn't find a database entry for "apache-content-negotiation"
-Warning--I didn't find a database entry for "negotiate"
-Warning--I didn't find a database entry for "mark"
-Warning--I didn't find a database entry for "texcount"
-Warning--I didn't find a database entry for "cc-team"
-Warning--I didn't find a database entry for "rufus"
-Warning--I didn't find a database entry for "rms"
-Warning--I didn't find a database entry for "pyes"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-(There were 46 warnings)
+You've used 88 entries,
+            4538 wiz_defined-function locations,
+            1309 strings with 31156 characters,
+and the built_in function-call counts, 41740 in all, are:
+= -- 3798
+> -- 713
+< -- 0
++ -- 312
+- -- 208
+* -- 1688
+:= -- 7299
+add.period$ -- 176
+call.type$ -- 88
+change.case$ -- 455
+chr.to.int$ -- 0
+cite$ -- 88
+duplicate$ -- 3131
+empty$ -- 3661
+format.name$ -- 209
+if$ -- 8822
+int.to.chr$ -- 0
+int.to.str$ -- 88
+missing$ -- 719
+newline$ -- 372
+num.names$ -- 176
+pop$ -- 2310
+preamble$ -- 1
+purify$ -- 280
+quote$ -- 2
+skip$ -- 2979
+stack$ -- 0
+substring$ -- 702
+swap$ -- 1667
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 6
+type$ -- 704
+warning$ -- 0
+while$ -- 176
+width$ -- 90
+write$ -- 820

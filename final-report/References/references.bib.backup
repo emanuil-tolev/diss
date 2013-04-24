@@ -93,7 +93,7 @@ title = {{PivotalTracker - FundFind}},
 howpublished={\url{https://www.pivotaltracker.com/projects/688967}},
 month=Nov,
 year={2012},
-note={Accessed November 2012},
+note={Accessed April 2013},
 annote={Publicly visible project management for the software component of this project. By default, it will show what the author is currently working on and what is in the backlog. Click on ``Icebox'' (in the top left-hand corner of the web page, next to the ``CURRENT'' and ``BACKLOG'' links) to see all recorded user stories and chores for getting the project done. Stories in the Icebox are ordered in descending order in terms of priority, i.e. the more important ones according to aggregated user opinion are at the top.}
 }
 
@@ -605,3 +605,367 @@ howpublished={\url{http://www.elasticsearch.org/guide/reference/mapping/uid-fiel
 note={Accessed April 2013},
 annote={Discusses internal unique identifiers (uid) in elasticsearch and the uniqueness characteristics of id fields in documents (which is why it is cited).}
 }
+
+@MISC{primo,
+author = {{Ex Libris Ltd.}},
+title = {{ExLibris Primo - A New User Experience}},
+howpublished={\url{http://www.exlibrisgroup.com/category/PrimoUserExperience}},
+note={Accessed April 2013},
+annote={Describes the expected user experience that users of this library catalogue system might have. In particular, presents faceted search (called faceted navigation) as a big advantage when searching through a lot of data.}
+}
+
+@MISC{feedparser-ominous,
+author = {{Various authors - an open-source project}},
+title = {{Feedparser Documentation / Parsing a feed from a string}},
+howpublished={\url{http://pythonhosted.org/feedparser/introduction.html#parsing-a-feed-from-a-string}},
+note={Accessed April 2013},
+annote={Gives a code example in Python on how to parse an RSS (or other e.g. Atom) feed using the feedparser Python library. The note specifying that the return value types could vary is of particular interest.}
+}
+
+@MISC{cc-by-3,
+author = {{Creative Commons}},
+title = {{Creative Commons Attribution 3.0 Unported (CC BY 3.0)}},
+howpublished={\url{http://creativecommons.org/licenses/by/3.0/}},
+note={Accessed April 2013},
+annote={Readable (i.e. not legalese) explanation of the Creative Commons Attribution license version 3.0 Unported, with links to the legal text.}
+}
+
+@MISC{fundfind-src,
+author = {{Emanuil Tolev}},
+title = {{fundfind at GitHub}},
+howpublished={\url{https://github.com/emanuil-tolev/fundfind}},
+note={Accessed April 2013},
+annote={Source code repository for FundFind, the main software output of this project.}
+}
+
+@MISC{fundingharvest-src,
+author = {{Emanuil Tolev}},
+title = {{fundingharvest at GitHub}},
+howpublished={\url{https://github.com/emanuil-tolev/fundingharvest}},
+note={Accessed April 2013},
+annote={Source code repository for Funding Harvest, the secondary software output of this project.}
+}
+
+@MISC{iframe-evil,
+author = {{Various}},
+title = {{Why developers hate iframes?}},
+howpublished={\url{http://stackoverflow.com/a/1081330/1154882}},
+note={Accessed April 2013},
+annote={A discussion on why the iframe element is considered extremely bad practice in web development.}
+}
+
+@MISC{cronyism1,
+author = {{Nature Publishing Group (Editorial)}},
+title = {{Banish cronyism}},
+howpublished={\url{http://www.nature.com/news/banish-cronyism-1.11642}},
+note={Accessed April 2013},
+annote={An editorial describing a recent scandal with cancer research funds in Texas and allegations of cronyism in science.}
+}
+
+@MISC{gtr,
+author = {{Research Councils United Kingdom}},
+title = {{Gateway to Research}},
+howpublished={\url{http://gtr.rcuk.ac.uk/}},
+note={Accessed April 2013},
+annote={The home page of the Gateway to Research project.}
+}
+
+@MISC{progress-report,
+author = {{Emanuil Tolev}},
+title = {{Progress Report - FundFind}},
+month = Nov,
+year = {2012},
+annote = {Progress report on this project.}
+}
+
+@MISC{nomenklatura,
+author = {{Open Knowledge Foundation}},
+title = {{Let's link! - nomenklatura}},
+howpublished={\url{http://nomenklatura.pudo.org/}},
+note={Accessed April 2013},
+annote={The home page of the nomenklatura project, a web applicatoin for making mappings of variant names to a canonical form (e.g. Prifysgol Aberystwyth University might be the canonical form of the University of Aberystwyth variant).}
+}
+
+@MISC{offenesparlament,
+author = {{Open Knowledge Foundation Deutschland e.V.}},
+title = {{Was passiert in Bundestag und Bundesrat? - OffenesParlament}},
+howpublished={\url{http://offenesparlament.de/}},
+note={Accessed April 2013},
+annote={The home page of the Offenes Parlament project, a German parliament legislative process tracker.}
+}
+
+@MISC{pybossa,
+author = {{Open Knowledge Foundation}},
+title = {{PyBossa}},
+howpublished={\url{https://github.com/PyBossa/pybossa}},
+note={Accessed April 2013},
+annote={The home page of the pybossa project, a web application which enables crowdsourcing tasks which require human intervention to be executed. An instance of this application powers http://crowdcrafting.org/.}
+}
+
+@MISC{activityapi,
+author = {{Open Knowledge Foundation}},
+title = {{OKFN Activity API}},
+howpublished={\url{https://github.com/okfn/activityapi}},
+note={Accessed April 2013},
+annote={The GitHub versioning system page of the activityapi project, an application whose main purpose it to provide an API which aggregates online activity of the Open Knowledge Foundation (e.g. tweets, blog posts).}
+}
+
+@MISC{leaps,
+author = {{Cottage Labs LLP}},
+title = {{LEAPS}},
+howpublished={\url{https://github.com/CottageLabs/leaps}},
+note={Accessed April 2013},
+annote={The GitHub versioning system page of the Lothians Equal Access Programme for Schools (LEAPS) online questionnaire management software.}
+}
+
+@MISC{portality,
+author = {{Cottage Labs LLP}},
+title = {{portality}},
+howpublished={\url{https://github.com/CottageLabs/portality}},
+note={Accessed April 2013},
+annote={The GitHub versioning system page of portality - All the basics for starting a portal frontend. Essentially an attempt to make the back-end of IDFind, FundFind and many other Cottage Labs projects much more reusable and encapsulate best practice while doing so.}
+}
+
+
+@MISC{artemis,
+author = {{Cottage Labs LLP}},
+title = {{artemis}},
+howpublished={\url{https://github.com/CottageLabs/artemis}},
+note={Accessed April 2013},
+annote={The GitHub versioning system page of artemis - a parts management system for a commercial company.}
+}
+
+@MISC{cl-web-code,
+author = {{Cottage Labs LLP}},
+title = {{Cottage Labs website code}},
+howpublished={\url{https://github.com/CottageLabs/cl}},
+note={Accessed April 2013},
+annote={The GitHub versioning system page of cl - the source code of www.cottagelabs.com .}
+}
+
+@MISC{xcri,
+author = {{Cottage Labs LLP}},
+title = {{XCRI demonstrator project code}},
+howpublished={\url{https://github.com/CottageLabs/xcri}},
+note={Accessed April 2013},
+annote={The GitHub versioning system page of xcri - the source code of an application which consumes XCRI-CAP course feeds, for the JISC XCRI-CAP course feeds demonstrator project. (XCRI-CAP is a way of describing course data for education, including Higher Education. The idea is to have the data in a machine-frienly form besides the institution's web pages.)}
+}
+
+@MISC{negotiator,
+author = {{Richard Jones}},
+title = {{negotiator 1.0.0}},
+howpublished={\url{https://pypi.python.org/pypi/negotiator}},
+note={Accessed April 2013},
+annote={The Python Package Index page of a Python framework for making content negotiation decisions based on the HTTP accept headers.)}
+}
+
+@MISC{advantages-apis,
+author = {{Jisc}},
+title = {{The Advantages of API-s}},
+howpublished={\url{http://www.jisc.ac.uk/publications/reports/2012/advantages-of-api.aspx}},
+month=Dec,
+year={2012},
+note={Accessed April 2013},
+annote={A Jisc report on the advantages of Application Programming Interfaces.}
+}
+
+@MISC{python-doc-modules,
+author = {{Python Software Foundation}},
+title = {{Modules in Python}},
+howpublished={\url{http://docs.python.org/2/tutorial/modules.html}},
+note={Accessed April 2013},
+annote={A section of the Python documentation dedicated to Python modules as a way of organising code in Python.}
+}
+
+@MISC{oag-api,
+author = {{Public Library of Science and Cottage Labs LLP}},
+title = {{OpenArticleGauge API Documentation}},
+howpublished={\url{http://oag.cottagelabs.com/developers/api}},
+note={Accessed April 2013},
+annote={The API documentation of the OpenArticleGauge project, part of the HowOpenIsIt suite, developed by the noted authors.}
+}
+
+@MISC{flask-foreword,
+author = {{Various authors - an open-source project}},
+title = {{Flask Documentation Foreword}},
+howpublished={\url{http://flask.pocoo.org/docs/foreword/}},
+note={Accessed April 2013},
+annote={A part of the Flask documentation which is supposed to be read before one gets started with Flask. Strives to answer some questions about the purpose and goals of the project, and when it should or should not be used it.}
+}
+
+@MISC{esrc-rss,
+author = {{Economic and Social Research Council}},
+title = {{ESRC RSS feeds}},
+howpublished={\url{http://www.esrc.ac.uk/rss-feeds.aspx}},
+note={Accessed April 2013},
+annote={A page on the ESRC's website which describes the varius RSS feeds and the ability to create custom ones (essentially creating an API of sorts).}
+}
+
+@MISC{epsrc-example,
+author = {{Engineering and Physical Sciences Research Council}},
+title = {{A step towards an intelligent information infrastructure}},
+howpublished={\url{http://www.epsrc.ac.uk/funding/calls/open/Pages/intelligentinformationinfrastructure.aspx}},
+note={Accessed April 2013},
+annote={An example of an open funding call considered when thinking of what values describe a funding opportunity for the crowdsourcing pages. (Note: it will become an Archived or Closed call at some point, but the fields and their values should still be clear).}
+}
+
+@MISC{wellcome-example,
+author = {{Wellcome Trust}},
+title = {{Biomedical resource and technology development grants}},
+howpublished={\url{http://www.wellcome.ac.uk/Funding/Biomedical-science/Funding-schemes/Strategic-awards-and-initiatives/WTDV031727.htm}},
+note={Accessed April 2013},
+annote={An example of a funding opportunity by the Wellcome Trust considered when thinking of what values describe a funding opportunity for the crowdsourcing pages.}
+}
+
+@MISC{jquery-ui,
+author = {{The jQuery Foundation}},
+title = {{jQuery UI}},
+howpublished={\url{http://jqueryui.com/}},
+note={Accessed April 2013},
+annote={The home page of the jQuery UI Javascript/CSS library. Note: this is a separate project from jQuery itself.}
+}
+
+@MISC{jinja2,
+author = {{Armin Ronacher}},
+title = {{Welcome to Jinja2}},
+howpublished={\url{http://jinja.pocoo.org/docs/}},
+note={Accessed April 2013},
+annote={The welcome page of the Jinja templating engine, a templating language for Python which comes bundled with the Flask web framework.}
+}
+
+@MISC{wtforms,
+author = {{WTForms Team}},
+title = {{WTForms Documentation}},
+howpublished={\url{http://wtforms.simplecodes.com/docs/1.0.3/}},
+note={Accessed April 2013},
+annote={The main page of the WTForms project which tries to automate certain common tasks when generating HTML submission forms for the web.}
+}
+
+@MISC{flask-login,
+author = {{Various authors - an open-source project}},
+title = {{Flask-Login}},
+howpublished={\url{https://flask-login.readthedocs.org/en/latest/}},
+note={Accessed April 2013},
+annote={The home page of the Flask-Login extension for Flask, which helps with common operations needed to authenticate users. Does not help with creating profiles, i.e. registering users.}
+}
+
+@MISC{feedparser,
+author = {{Kurt McKee, Mark Pilgrim}},
+title = {{feedparser 5.1.3}},
+howpublished={\url{https://pypi.python.org/pypi/feedparser/}},
+note={Accessed April 2013},
+annote={The Python Package Index page of feedparser, a Python third-party package which can parse multiple feed formats such as Atom and RSS.}
+}
+
+@MISC{multi-mechanize,
+author = {{Corey Goldberg}},
+title = {{Multi-Mechanize - Performance Test Framework}},
+howpublished={\url{http://testutils.org/multi-mechanize/}},
+note={Accessed April 2013},
+annote={The home page of multi-mechanize, a performance (stress) testing framework written in Python.}
+}
+
+@MISC{mobiletestme,
+author = {{Vangelis Bibakis}},
+title = {{MobileTest.me - Test your mobile sites and web applications right from your browser}},
+howpublished={\url{http://mobiletest.me/}},
+note={Accessed April 2013},
+annote={A web application which allows testing of other web applications' mobile user interfaces.}
+}
+
+@MISC{graphview,
+author = {{Mark MacGillivray}},
+title = {{Gateway to Research data visualised using graphview}},
+howpublished={\url{http://test.cottagelabs.com/gtr/graphview/}},
+note={Accessed April 2013},
+annote={An example of the graphview javascript library running, trying to visualise data from the Gateway to Research project. Unfortunately, the library is still in its pre-alpha stages and has not been open-sourced yet.}
+}
+
+@MISC{oag,
+author = {{Public Library of Science and Cottage Labs LLP}},
+title = {{OpenArticleGauge}},
+howpublished={\url{http://oag.cottagelabs.com/}},
+note={Accessed April 2013},
+annote={The home page of the OpenArticleGauge project, part of the HowOpenIsIt suite, developed by the noted authors.}
+}
+
+@MISC{apache-content-negotiation,
+author = {{Apache Software Foundation}},
+title = {{Content Negotiation}},
+howpublished={\url{http://httpd.apache.org/docs/2.2/content-negotiation.html}},
+note={Accessed April 2013},
+annote={A page in the Apache Webserver documentation explaining what content negotiation is and how Apache implements is. It is being cited for the clear explanation of the subject.}
+}
+
+@MISC{negotiate,
+author = {{Public Library of Science and Cottage Labs LLP}},
+title = {{negotiate 0.0.1}},
+howpublished={\url{https://pypi.python.org/pypi/negotiate}},
+note={Accessed April 2013},
+annote={The Python Package Index page of a Python package which aims to provide content negotiation functionality to Python web application, and claims to integrate particularly well with Flask.}
+}
+
+@MISC{mark,
+author = {{Cottage Labs LLP}},
+title = {{Mark MacGillivray / Cottage Labs}},
+howpublished={\url{http://cottagelabs.com/people/mark}},
+note={Accessed April 2013},
+annote={A page on the Cottage Labs website describing Mark MacGillivray, one of the partnership's founders.}
+}
+
+@MISC{texcount,
+author = {{Unknown}},
+title = {{TeXCount}},
+howpublished={\url{http://app.uio.no/ifi/texcount/}},
+note={Accessed April 2013},
+annote={A page describing the TeXCount script, a word count script for LaTeX documents. Its ability to produce a wordcount for a document as complex as this is a testament to its flexibility.}
+}
+
+@MISC{cc-team,
+author = {{Creative Commons}},
+title = {{Creative Commons Staff}},
+howpublished={\url{http://creativecommons.org/staff}},
+note={Accessed April 2013},
+annote={A diagram showing the structure and listing the members of the Creative Commons team.}
+}
+
+@MISC{rufus,
+author = {{Rufus Pollock}},
+title = {{Rufus Pollock / About}},
+howpublished={\url{http://rufuspollock.org/about/}},
+note={Accessed April 2013},
+annote={A page describing Rufus Pollock, the Founder of the Open Knowledge Foundation. The page is from his personal website.}
+}
+
+@MISC{rms,
+author = {{Richard Stallman}},
+title = {{Richard Stallman / A Serious Bio}},
+howpublished={\url{http://stallman.org/#serious}},
+note={Accessed April 2013},
+annote={A section of Richard Stallman's home page, the Founder of the Free Software Foundation. The page is from his personal website.}
+}
+
+@MISC{pyes,
+author = {{Unknown}},
+title = {{pyes}},
+howpublished={\url{https://github.com/aparo/pyes}},
+note={Accessed April 2013},
+annote={The GitHub source control system page of pyes, a Python connector for the elasticsearch datastore. The author's real name is unknown, although their GitHub handle / nickname is aparo.}
+}
+
+@MISC{cl-emanuil-beginner-pov,
+author = {{Emanuil Tolev}},
+title = {{Open: Scholarship, Science, Knowledge, Access}},
+howpublished={\url{http://cottagelabs.com/news/open-scholarship-science-knowledge-access}},
+note={Accessed April 2013},
+annote={A blog post by the author of this document, describing a beginner's point of view to the Open Knowledge / .}
+}
+
+@MISC{parsedatetime,
+author = {{Mike Taylor}},
+title = {{parsedatetime 1.1.2}},
+howpublished={\url{https://pypi.python.org/pypi/parsedatetime/}},
+note={Accessed April 2013},
+annote={The Python Package Index page of parsedatetime, a Python third-party module which tries to parse human-readable dates and times (i.e. understand dates from pure strings).}
+}
+

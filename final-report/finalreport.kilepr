@@ -168,12 +168,12 @@ ReadWrite=true
 
 [item:Appendix1/appendix1.tex]
 archive=true
-column=0
+column=203
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=36
 mode=LaTeX
-open=true
+open=false
 order=8
 
 [item:Appendix2/appendix2.tex]
@@ -183,87 +183,87 @@ encoding=UTF-8
 highlight=LaTeX
 line=0
 mode=LaTeX
-open=true
+open=false
 order=9
 
 [item:Appendix3/appendix3.tex]
 archive=true
-column=0
+column=138
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=7
 mode=LaTeX
-open=true
+open=false
 order=10
 
 [item:Chapter1/chapter1.tex]
 archive=true
-column=0
+column=24
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=169
 mode=LaTeX
-open=true
+open=false
 order=2
 
 [item:Chapter2/chapter2.tex]
 archive=true
-column=981
+column=36
 encoding=UTF-8
 highlight=LaTeX
-line=410
+line=27
 mode=LaTeX
-open=true
+open=false
 order=3
 
 [item:Chapter3/chapter3.tex]
 archive=true
-column=0
+column=2
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=534
 mode=LaTeX
-open=true
+open=false
 order=4
 
 [item:Chapter4/chapter4.tex]
 archive=true
-column=0
+column=2
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=189
 mode=LaTeX
-open=true
+open=false
 order=5
 
 [item:Chapter5/chapter5.tex]
 archive=true
-column=0
+column=2
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=19
 mode=LaTeX
-open=true
+open=false
 order=6
 
 [item:Chapter6/chapter6.tex]
 archive=true
-column=0
+column=12
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=39
 mode=LaTeX
-open=true
+open=false
 order=7
 
 [item:References/references.bib]
 archive=true
-column=0
+column=1
 encoding=UTF-8
 highlight=BibTeX
-line=0
+line=977
 mode=BibTeX
-open=true
+open=false
 order=1
 
 [item:abstract.tex]
@@ -288,10 +288,10 @@ order=-1
 
 [item:cover.tex]
 archive=true
-column=50
+column=27
 encoding=UTF-8
 highlight=LaTeX
-line=3
+line=11
 mode=LaTeX
 open=false
 order=-1
@@ -308,12 +308,12 @@ order=-1
 
 [item:dissertation.tex]
 archive=true
-column=18
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=182
+line=28
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:finalreport.kilepr]
@@ -327,8 +327,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:Appendix1/appendix1.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=203
+CursorLine=36
 JumpList=
 ViMarks=
 
@@ -339,50 +339,50 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Appendix3/appendix3.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=138
+CursorLine=7
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Chapter1/chapter1.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=24
+CursorLine=169
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Chapter2/chapter2.tex]
-CursorColumn=981
-CursorLine=410
+CursorColumn=36
+CursorLine=27
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Chapter3/chapter3.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=2
+CursorLine=534
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Chapter4/chapter4.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=2
+CursorLine=189
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Chapter5/chapter5.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=2
+CursorLine=19
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:Chapter6/chapter6.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=12
+CursorLine=39
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:References/references.bib]
-CursorColumn=0
-CursorLine=0
+CursorColumn=1
+CursorLine=977
 JumpList=
 ViMarks=
 
@@ -399,8 +399,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:cover.tex]
-CursorColumn=50
-CursorLine=3
+CursorColumn=27
+CursorLine=11
 JumpList=
 ViMarks=
 
@@ -411,8 +411,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:dissertation.tex]
-CursorColumn=18
-CursorLine=182
+CursorColumn=0
+CursorLine=28
 JumpList=
 ViMarks=
 ViRegisterContents=\s,
